@@ -1,0 +1,35 @@
+{
+  "order":10,
+  "origins": [
+    "quirks:acid",
+    "quirks:fa_jin",
+    "quirks:invisibility",
+    "quirks:permeation"
+
+  ],
+  "enabled": true,
+  "replace": false,
+  "gui_title":{
+    "choose_origin":{
+      "type":"translatable",
+      "translate":"origins.gui.choose_quirk.title"
+    },
+    "view_origin":{
+      "type":"translatable",
+      "translate": "origins.gui.view_quirk.title"
+    }
+  },
+  "missing_name":{
+        "type":"translatable",
+    "translate":"origins.gui.missing_quirk.name"
+  },
+  "missing_description":{
+        "type":"translatable",
+    "translate":"origins.gui.missing_quirk.description"
+  },
+  "allow_random": true,
+  "allow_random_unchoosable":true,
+  "auto_choose": false,
+  "hidden": false,
+  "loading_priority": 10
+}

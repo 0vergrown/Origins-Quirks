@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"quirks:invisibility/invisible",
+		"quirks:invisibility/warp_refraction"
+	],
+	"icon":{
+		"id": "minecraft:air"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}
