@@ -1,5 +1,6 @@
 {
 	"powers": [
+		"quirks:acid/corrosive_liquid",
 		"quirks:acid/acid_veil"
 	],
     "icon":{
