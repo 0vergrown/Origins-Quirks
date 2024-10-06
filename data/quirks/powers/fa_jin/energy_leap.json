@@ -402,6 +402,12 @@
                "compare_to":0
             },
             {
+               "type": "origins:resource",
+               "resource": "quirks:fa_jin/move_cycler_resource",
+               "comparison": "==",
+               "compare_to": 1
+            },
+            {
                "type":"origins:on_block"
             }
          ]

@@ -4,12 +4,10 @@
       "type":"origins:and",
       "actions":[
          {
-            "type":"origins:modify_resource",
-            "modifier":{
-               "operation":"add_base_early",
-               "value":-1.00
-            },
-            "resource":"quirks:acid/corrosive_liquid_resource"
+            "type":"origins:change_resource",
+            "resource":"quirks:acid/corrosive_liquid_resource",
+            "change":-1,
+            "operation":"add"
          },
          {
             "type":"origins:play_sound",

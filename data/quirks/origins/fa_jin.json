@@ -1,5 +1,6 @@
 {
 	"powers": [
+		"quirks:fa_jin/move_cycler",
 		"quirks:fa_jin/kinetic_energy",
 		"quirks:fa_jin/kinetic_charge",
 		"quirks:fa_jin/burst_dash",

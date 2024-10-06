@@ -20,6 +20,12 @@
                "compare_to":0
             },
             {
+               "type": "origins:resource",
+               "resource": "quirks:fa_jin/move_cycler_resource",
+               "comparison": "==",
+               "compare_to": 0
+            },
+            {
                "type":"origins:moving",
                "horizontally":true,
                "vertically":true
@@ -47,6 +53,12 @@
                "resource":"quirks:fa_jin/kinetic_energy_resource",
                "comparison":"!=",
                "compare_to":0
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:fa_jin/move_cycler_resource",
+               "comparison": "==",
+               "compare_to": 0
             },
             {
                "type":"origins:sprinting"
