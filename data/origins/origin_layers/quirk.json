@@ -4,7 +4,8 @@
     "quirks:acid",
     "quirks:fa_jin",
     "quirks:invisibility",
-    "quirks:permeation"
+    "quirks:permeation",
+    "quirks:sloshed"
 
   ],
   "enabled": true,

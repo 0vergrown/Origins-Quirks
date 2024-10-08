@@ -1067,7 +1067,7 @@
    },
    "condition":{
       "type":"origins:resource",
-      "resource":"quirks:fa_jin/move_cycler_resource",
+      "resource":"quirks:fa_jin/move_selector_resource",
       "comparison":"==",
       "compare_to":2
    }

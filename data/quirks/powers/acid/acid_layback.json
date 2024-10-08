@@ -37,9 +37,15 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.secondary_active",
+         "key":"key.origins.primary_active",
          "continuous":false
-      }
+      },
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:acid/move_selector_resource",
+         "comparison":"==",
+         "compare_to":2
+     }
    },
    "jump":{
       "type":"origins:modify_jump",

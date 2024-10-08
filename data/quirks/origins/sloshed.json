@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"quirks:sloshed/move_selector",
+		"quirks:sloshed/sloshed_aura",
+		"quirks:sloshed/targeted_slosh",
+		"quirks:sloshed/hide_in_plain_sight"
+	],
+    "icon":{
+        "id":"minecraft:potion",
+        "components": {
+            "minecraft:potion_contents": {
+              "potion": "minecraft:poison",
+              "custom_color": 4309864
+            }
+          }
+     },
+	"unchoosable": false,
+	"order": 10,
+	"impact": 2,
+	"loading_priority": 0
+}

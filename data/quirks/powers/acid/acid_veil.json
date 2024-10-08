@@ -157,5 +157,11 @@
    "key":{
       "key":"key.origins.primary_active",
       "continuous":true
-   }
+   },
+   "condition":{
+      "type":"origins:resource",
+      "resource":"quirks:acid/move_selector_resource",
+      "comparison":"==",
+      "compare_to":1
+  }
 }
