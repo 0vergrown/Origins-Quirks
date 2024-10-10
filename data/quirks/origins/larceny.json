@@ -1,9 +1,10 @@
 {
 	"powers": [
+		"quirks:larceny/move_selector",
 		"quirks:larceny/steal"
 	],
 	"icon":{
-		"id": "minecraft:air"
+		"id": "minecraft:bundle"
 	},
 	"unchoosable": false,
 	"order": 10,
