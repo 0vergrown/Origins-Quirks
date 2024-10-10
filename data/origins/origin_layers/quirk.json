@@ -1,36 +1,36 @@
 {
   "order":10,
-  "origins": [
-    "quirks:acid",
-    "quirks:fa_jin",
-    "quirks:invisibility",
-    "quirks:permeation",
-    "quirks:sloshed"
-
+  "origins":[
+     "quirks:acid",
+     "quirks:fa_jin",
+     "quirks:heal",
+     "quirks:invisibility",
+     "quirks:permeation",
+     "quirks:sloshed"
   ],
-  "enabled": true,
-  "replace": false,
+  "enabled":true,
+  "replace":false,
   "gui_title":{
-    "choose_origin":{
-      "type":"translatable",
-      "translate":"origins.gui.choose_quirk.title"
-    },
-    "view_origin":{
-      "type":"translatable",
-      "translate": "origins.gui.view_quirk.title"
-    }
+     "choose_origin":{
+        "type":"translatable",
+        "translate":"origins.gui.choose_quirk.title"
+     },
+     "view_origin":{
+        "type":"translatable",
+        "translate":"origins.gui.view_quirk.title"
+     }
   },
   "missing_name":{
-        "type":"translatable",
-    "translate":"origins.gui.missing_quirk.name"
+     "type":"translatable",
+     "translate":"origins.gui.missing_quirk.name"
   },
   "missing_description":{
-        "type":"translatable",
-    "translate":"origins.gui.missing_quirk.description"
+     "type":"translatable",
+     "translate":"origins.gui.missing_quirk.description"
   },
-  "allow_random": true,
+  "allow_random":true,
   "allow_random_unchoosable":true,
-  "auto_choose": false,
-  "hidden": false,
-  "loading_priority": 10
+  "auto_choose":false,
+  "hidden":false,
+  "loading_priority":10
 }

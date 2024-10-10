@@ -4,6 +4,18 @@
       "type":"origins:and",
       "actions":[
          {
+            "type":"origins:play_sound",
+            "sound":"minecraft:entity.cat.hiss",
+            "volume":0.30,
+            "pitch":2.00
+         },
+         {
+            "type":"origins:play_sound",
+            "sound":"minecraft:entity.arrow.shoot",
+            "volume":1.00,
+            "pitch":2.00
+         },
+         {
             "type":"origins:if_else",
             "condition":{
                "type":"origins:resource",
@@ -20,53 +32,53 @@
             "else_action":{
                "type":"origins:damage",
                "amount":4,
-               "damage_type":"minecraft:wither"
+               "damage_type":"minecraft:dry_out"
             }
          },
          {
-            "type":"origins:spawn_entity",
-            "entity_type":"minecraft:armor_stand",
-            "tag":"{Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:[\"acid_shot\"],DisabledSlots:4144959}",
-            "entity_action":{
-               "type":"origins:and",
-               "actions":[
-                  {
-                     "type":"origins:grant_power",
-                     "power":"quirks:acid/acid_shot_effects",
-                     "source":"quirks:acid/acid_shot_effects"
+            "type":"origins:raycast",
+            "distance":30.00,
+            "block":true,
+            "entity":true,
+            "shape_type":"collider",
+            "fluid_handling":"any",
+            "bientity_condition":{
+               "type":"origins:target_condition",
+               "condition":{
+                  "type":"origins:living"
+               }
+            },
+            "bientity_action":{
+               "type":"origins:target_action",
+               "action":{
+                  "type":"origins:area_of_effect",
+                  "radius":2.10,
+                  "shape":"sphere",
+                  "bientity_action":{
+                     "type":"origins:target_action",
+                     "action":{
+                        "type":"origins:damage",
+                        "amount":4,
+                        "damage_type":"minecraft:wither"
+                     }
                   },
-                  {
-                     "type":"origins:add_velocity",
-                     "x":0.00,
-                     "y":0.50,
-                     "z":2.00,
-                     "space":"local",
-                     "set":true
-                  },
-                  {
-                     "type":"origins:play_sound",
-                     "sound":"minecraft:entity.splash_potion.throw",
-                     "volume":1.00,
-                     "pitch":1.15
-                  }
-               ]
-            }
-         },
-         {
-            "type":"origins:execute_command",
-            "command":"execute as @e[type=minecraft:armor_stand,tag=acid_shot,sort=nearest,limit=1] at @s rotated as @p run tp @s ~ ~ ~ ~ ~"
+                  "include_actor":true
+               }
+            },
+            "command_at_hit":"particle minecraft:effect ~ ~ ~ 0 0 0 0.05 500 force",
+            "command_along_ray":"particle minecraft:sneeze ^ ^ ^ 0 0 0 0.02 50 force",
+            "command_step":1.00,
+            "command_along_ray_only_on_hit":false
          }
       ]
    },
-   "cooldown":1,
+   "cooldown":10,
    "hud_render":{
-      "should_render":true,
-      "sprite_location":"origins:textures/gui/resource_bar.png",
-      "bar_index":5
+      "should_render":false
    },
    "key":{
       "key":"key.origins.primary_active",
-      "continuous":false
+      "continuous": false
    },
    "condition":{
       "type":"origins:resource",

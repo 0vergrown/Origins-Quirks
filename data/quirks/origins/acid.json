@@ -4,7 +4,8 @@
 		"quirks:acid/corrosive_liquid",
 		"quirks:acid/acid_shot",
 		"quirks:acid/acid_veil",
-		"quirks:acid/acid_layback"
+		"quirks:acid/acid_layback",
+		"quirks:acid/acidman"
 	],
     "icon":{
         "id":"minecraft:player_head",

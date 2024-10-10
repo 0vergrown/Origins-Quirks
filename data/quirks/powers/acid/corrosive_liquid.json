@@ -11,11 +11,38 @@
        },
        "start_value":0
     },
+    "strength":{
+      "type":"origins:resource",
+      "min":0,
+      "max":10,
+      "hud_render":{
+         "should_render":true,
+         "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+         "bar_index":7
+      },
+      "start_value": 0
+   },
+   "passive_gain":{
+      "type":"origins:action_over_time",
+      "entity_action":{
+         "type":"origins:change_resource",
+         "resource":"quirks:acid/corrosive_liquid_resource",
+         "change":1,
+         "operation":"add"
+      },
+      "interval":60,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:acid/corrosive_liquid_resource",
+         "comparison":"!=",
+         "compare_to":200
+      }
+   },
     "light_pink_skin":{
        "type":"origins:model_color",
-       "red":1.0,
-       "green":0.7137,
-       "blue":0.7569,
+       "red":1.00,
+       "green":0.7843137254901961,
+       "blue":0.8862745098039216,
        "alpha":1.0,
        "condition":{
           "type":"origins:resource",
@@ -72,12 +99,12 @@
           ]
        }
     },
-    "new_york_pink_skin":{
+    "normal_skin":{
        "type":"origins:model_color",
-       "red":0.8431,
-       "green":0.5137,
-       "blue":0.4980,
-       "alpha":1.0,
+       "red":1.00,
+       "green":1.00,
+       "blue":1.00,
+       "alpha":1.00,
        "condition":{
           "type":"origins:resource",
           "resource":"quirks:acid/corrosive_liquid_resource",
