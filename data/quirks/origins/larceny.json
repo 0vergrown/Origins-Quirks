@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"quirks:larceny/steal"
+	],
+	"icon":{
+		"id": "minecraft:air"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 1,
+	"loading_priority": 0
+}
