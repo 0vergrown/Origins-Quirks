@@ -1,6 +1,10 @@
 {
 	"powers": [
-		"quirks:gigantification/attribute"
+		"quirks:gigantification/move_selector",
+		"quirks:gigantification/gigantification",
+		"quirks:gigantification/giant_slam",
+		"quirks:gigantification/unstoppable_charge",
+		"quirks:gigantification/frustration_surge"
 	],
     "icon":{
         "id":"minecraft:player_head",
