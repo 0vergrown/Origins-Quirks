@@ -1,5 +1,6 @@
 {
 	"powers": [
+		"quirks:permeation/move_selector",
 		"quirks:permeation/permeation",
 		"quirks:permeation/phantom_menace",
 		"quirks:permeation/blinder_touch_eyeball_crush"

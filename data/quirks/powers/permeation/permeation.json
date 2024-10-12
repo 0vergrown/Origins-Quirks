@@ -114,6 +114,12 @@
       "key":{
          "key":"key.origins.primary_active",
          "continuous":false
+      },
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:permeation/move_selector_resource",
+         "comparison":"==",
+         "compare_to":0
       }
    },
    "phase_fall":{
@@ -358,8 +364,8 @@
       },
       "interval":1,
       "condition":{
-         "type": "origins:all_of",
-         "conditions": [
+         "type":"origins:all_of",
+         "conditions":[
             {
                "type":"origins:inventory",
                "inventory_types":[
@@ -379,8 +385,8 @@
                "compare_to":0
             },
             {
-               "type": "origins:any_of",
-               "conditions": [
+               "type":"origins:any_of",
+               "conditions":[
                   {
                      "type":"origins:resource",
                      "resource":"quirks:permeation/permeation_resource",

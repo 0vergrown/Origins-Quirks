@@ -3,7 +3,7 @@
     "resource":{
        "type":"origins:resource",
        "min":0,
-       "max":4,
+       "max":2,
        "hud_render":{
           "should_render":false
        },
@@ -17,13 +17,13 @@
              {
                 "condition":{
                    "type":"origins:resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "comparison":"==",
                    "compare_to":0
                 },
                 "action":{
                    "type":"origins:change_resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "change":1,
                    "operation":"add"
                 }
@@ -31,13 +31,13 @@
              {
                 "condition":{
                    "type":"origins:resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "comparison":"==",
                    "compare_to":1
                 },
                 "action":{
                    "type":"origins:change_resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "change":1,
                    "operation":"add"
                 }
@@ -45,41 +45,13 @@
              {
                 "condition":{
                    "type":"origins:resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "comparison":"==",
                    "compare_to":2
                 },
                 "action":{
                    "type":"origins:change_resource",
-                   "resource":"quirks:acid/move_selector_resource",
-                   "change":1,
-                   "operation":"add"
-                }
-             },
-             {
-                "condition":{
-                   "type":"origins:resource",
-                   "resource":"quirks:acid/move_selector_resource",
-                   "comparison":"==",
-                   "compare_to":3
-                },
-                "action":{
-                   "type":"origins:change_resource",
-                   "resource":"quirks:acid/move_selector_resource",
-                   "change":1,
-                   "operation":"add"
-                }
-             },
-             {
-                "condition":{
-                   "type":"origins:resource",
-                   "resource":"quirks:acid/move_selector_resource",
-                   "comparison":"==",
-                   "compare_to":4
-                },
-                "action":{
-                   "type":"origins:change_resource",
-                   "resource":"quirks:acid/move_selector_resource",
+                   "resource":"quirks:permeation/move_selector_resource",
                    "change":0,
                    "operation":"set"
                 }
@@ -97,7 +69,7 @@
     },
     "base":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/five_move_overlay_base",
+       "texture":"quirks:move_selector/permeation/three_move_overlay_base",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -109,7 +81,7 @@
     },
     "power_1":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/overlay_power_1",
+       "texture":"quirks:move_selector/permeation/overlay_power_1",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -121,7 +93,7 @@
     },
     "power_2":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/overlay_power_2",
+       "texture":"quirks:move_selector/permeation/overlay_power_2",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -133,7 +105,7 @@
     },
     "power_3":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/overlay_power_3",
+       "texture":"quirks:move_selector/permeation/overlay_power_3",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -143,33 +115,9 @@
        "hide_with_hud":true,
        "visible_in_third_person":true
     },
-    "power_4":{
-      "type":"origins:overlay",
-      "texture":"quirks:move_selector/acid/overlay_power_4",
-      "strength":1.00,
-      "red":1.00,
-      "green":1.00,
-      "blue":1.00,
-      "draw_mode":"texture",
-      "draw_phase":"above_hud",
-      "hide_with_hud":true,
-      "visible_in_third_person":true
-   },
-   "power_5":{
-      "type":"origins:overlay",
-      "texture":"quirks:move_selector/acid/overlay_power_5",
-      "strength":1.00,
-      "red":1.00,
-      "green":1.00,
-      "blue":1.00,
-      "draw_mode":"texture",
-      "draw_phase":"above_hud",
-      "hide_with_hud":true,
-      "visible_in_third_person":true
-   },
     "frame_slot_1":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/move_selector_frame_slot_1",
+       "texture":"quirks:move_selector/permeation/move_selector_frame_slot_1",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -180,14 +128,14 @@
        "visible_in_third_person":true,
        "condition":{
           "type":"origins:resource",
-          "resource":"quirks:acid/move_selector_resource",
+          "resource":"quirks:permeation/move_selector_resource",
           "comparison":"==",
           "compare_to":0
        }
     },
     "frame_slot_2":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/move_selector_frame_slot_2",
+       "texture":"quirks:move_selector/permeation/move_selector_frame_slot_2",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -198,14 +146,14 @@
        "visible_in_third_person":true,
        "condition":{
           "type":"origins:resource",
-          "resource":"quirks:acid/move_selector_resource",
+          "resource":"quirks:permeation/move_selector_resource",
           "comparison":"==",
           "compare_to":1
        }
     },
     "frame_slot_3":{
        "type":"origins:overlay",
-       "texture":"quirks:move_selector/acid/move_selector_frame_slot_3",
+       "texture":"quirks:move_selector/permeation/move_selector_frame_slot_3",
        "strength":1.00,
        "red":1.00,
        "green":1.00,
@@ -216,45 +164,9 @@
        "visible_in_third_person":true,
        "condition":{
           "type":"origins:resource",
-          "resource":"quirks:acid/move_selector_resource",
+          "resource":"quirks:permeation/move_selector_resource",
           "comparison":"==",
           "compare_to":2
        }
-    },
-    "frame_slot_4":{
-      "type":"origins:overlay",
-      "texture":"quirks:move_selector/acid/move_selector_frame_slot_4",
-      "strength":1.00,
-      "red":1.00,
-      "green":1.00,
-      "blue":1.00,
-      "draw_mode":"texture",
-      "draw_phase":"above_hud",
-      "hide_with_hud":true,
-      "visible_in_third_person":true,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":3
-      }
-   },
-   "frame_slot_5":{
-      "type":"origins:overlay",
-      "texture":"quirks:move_selector/acid/move_selector_frame_slot_5",
-      "strength":1.00,
-      "red":1.00,
-      "green":1.00,
-      "blue":1.00,
-      "draw_mode":"texture",
-      "draw_phase":"above_hud",
-      "hide_with_hud":true,
-      "visible_in_third_person":true,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":4
-      }
-   }
+    }
 }
