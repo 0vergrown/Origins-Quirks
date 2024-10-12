@@ -16,6 +16,7 @@ This datapack requires the following to function properly:
 - [Fabric Loader](https://fabricmc.net/) - Recommend loader the mods run on.
 - [Fabric API](https://fabricmc.net/use/) - Necessary for running mods in the Fabric mod loader environment.
 - [Origins Mod](https://github.com/apace100/origins-fabric) - A Minecraft mod that allows you to choose an Origin at the beginning, granting various abilities and drawbacks.
+- [Origins: Quirks (Resources)](https://github.com/0vergrown/Origins-Quirks-Resources) - Resource Pack that is required for the pack to work properly. Contains all textures and translations files etc.
 
 ## Installation
 To install the Origins: Quirks datapack, follow these steps:
