@@ -1,10 +1,11 @@
 {
 	"powers": [
+		"quirks:invisibility/move_selector",
 		"quirks:invisibility/invisible",
 		"quirks:invisibility/warp_refraction"
 	],
 	"icon":{
-		"id": "minecraft:air"
+		"id": "minecraft:glass"
 	},
 	"unchoosable": false,
 	"order": 10,
