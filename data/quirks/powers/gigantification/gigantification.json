@@ -52,38 +52,57 @@
        "modifiers":[
           {
              "attribute":"minecraft:player.block_interaction_range",
-             "operation":"addition",
-             "value":15.00
+             "operation":"add_value",
+             "amount":15.00,
+             "id":"quirks:gigantification_block_interaction_range"
           },
           {
              "attribute":"minecraft:player.entity_interaction_range",
-             "operation":"addition",
-             "value":15.00
+             "operation":"add_value",
+             "amount":15.00,
+             "id":"quirks:gigantification_entity_interaction_range"
           },
           {
              "attribute":"minecraft:generic.scale",
-             "operation":"addition",
-             "value":8.00
+             "operation":"add_value",
+             "amount":8.00,
+             "id":"quirks:gigantification_max_size"
           },
           {
              "attribute":"minecraft:generic.step_height",
-             "operation":"addition",
-             "value":4.00
+             "operation":"add_value",
+             "amount":4.00,
+             "id":"quirks:gigantification_step_height"
           },
           {
              "attribute":"minecraft:generic.jump_strength",
-             "operation":"addition",
-             "value":1.00
+             "operation":"add_value",
+             "amount":1.00,
+             "id":"quirks:gigantification_jump"
           },
           {
              "attribute":"minecraft:generic.safe_fall_distance",
-             "operation":"addition",
-             "value":8.00
+             "operation":"add_value",
+             "amount":8.00,
+             "id":"quirks:gigantification_safe_fall_distance"
           },
           {
              "attribute":"minecraft:generic.attack_damage",
-             "operation":"addition",
-             "value":10.00
+             "operation":"add_value",
+             "amount":10.00,
+             "id":"quirks:gigantification_damage_dealt"
+          },
+          {
+             "attribute":"minecraft:generic.knockback_resistance",
+             "operation":"add_value",
+             "amount":1.00,
+             "id":"quirks:gigantification_knockback_resistance"
+          },
+          {
+             "attribute":"minecraft:generic.movement_speed",
+             "operation":"add_multiplied_total",
+             "amount":0.60,
+             "id":"quirks:gigantification_movement_speed"
           }
        ],
        "tick_rate":1,

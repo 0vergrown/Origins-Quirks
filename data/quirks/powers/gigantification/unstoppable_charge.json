@@ -33,6 +33,12 @@
         "key": {
             "key": "key.origins.primary_active",
             "continuous": false
-        }
+        },
+        "condition":{
+          "type":"origins:resource",
+          "resource":"quirks:gigantification/move_selector_resource",
+          "comparison":"==",
+          "compare_to":2
+       }
       }      
 }

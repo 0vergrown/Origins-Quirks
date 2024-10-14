@@ -5,7 +5,7 @@
        "entity_action":{
           "type":"origins:explode",
           "power":6,
-          "destruction_type":"break",
+          "destruction_type":"destroy_with_decay",
           "damage_self":false,
           "create_fire":false
        },
@@ -36,7 +36,7 @@
        "block_action":{
           "type":"origins:explode",
           "power":6,
-          "destruction_type":"break",
+          "destruction_type":"destroy_with_decay",
           "create_fire":false
        },
        "item_condition":{

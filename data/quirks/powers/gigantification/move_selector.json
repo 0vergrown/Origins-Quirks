@@ -5,7 +5,9 @@
        "min":0,
        "max":2,
        "hud_render":{
-          "should_render":false
+          "should_render":true,
+          "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+          "bar_index": 2
        },
        "start_value":0
     },
