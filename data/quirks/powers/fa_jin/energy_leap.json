@@ -61,6 +61,61 @@
                         "operation":"add"
                      },
                      {
+                        "type":"origins:area_of_effect",
+                        "radius":3.00,
+                        "shape":"cube",
+                        "bientity_action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:target_action",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":1.00,
+                                    "z":0.00,
+                                    "space":"world",
+                                    "set":false
+                                 }
+                              },
+                              {
+                                 "type":"origins:delay",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":0.00,
+                                    "z":1.00,
+                                    "reference":"position",
+                                    "set":false
+                                 },
+                                 "ticks":1
+                              }
+                           ]
+                        },
+                        "bientity_condition":{
+                           "type":"origins:target_condition",
+                           "condition":{
+                              "type":"origins:on_block"
+                           }
+                        },
+                        "include_actor":false
+                     },
+                     {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:poof",
+                        "count": 100,
+                        "speed": 1.00,
+                        "force": true,
+                        "spread": {
+                           "x": 1.00,
+                           "y": 1.00,
+                           "z": 1.00
+                        },
+                        "offset_x": 0.00,
+                        "offset_y": 0.00,
+                        "offset_z": 0.00
+                     },
+                     {
                         "type":"origins:apply_effect",
                         "effect":{
                            "id":"minecraft:jump_boost",
@@ -130,6 +185,61 @@
                         "resource":"quirks:fa_jin/kinetic_energy_resource",
                         "change":-10,
                         "operation":"add"
+                     },
+                     {
+                        "type":"origins:area_of_effect",
+                        "radius":3.00,
+                        "shape":"cube",
+                        "bientity_action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:target_action",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":1.00,
+                                    "z":0.00,
+                                    "space":"world",
+                                    "set":false
+                                 }
+                              },
+                              {
+                                 "type":"origins:delay",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":0.00,
+                                    "z":1.00,
+                                    "reference":"position",
+                                    "set":false
+                                 },
+                                 "ticks":1
+                              }
+                           ]
+                        },
+                        "bientity_condition":{
+                           "type":"origins:target_condition",
+                           "condition":{
+                              "type":"origins:on_block"
+                           }
+                        },
+                        "include_actor":false
+                     },
+                     {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:poof",
+                        "count": 100,
+                        "speed": 1.00,
+                        "force": true,
+                        "spread": {
+                           "x": 1.00,
+                           "y": 1.00,
+                           "z": 1.00
+                        },
+                        "offset_x": 0.00,
+                        "offset_y": 0.00,
+                        "offset_z": 0.00
                      },
                      {
                         "type":"origins:apply_effect",
@@ -203,6 +313,61 @@
                         "operation":"add"
                      },
                      {
+                        "type":"origins:area_of_effect",
+                        "radius":3.00,
+                        "shape":"cube",
+                        "bientity_action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:target_action",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":1.00,
+                                    "z":0.00,
+                                    "space":"world",
+                                    "set":false
+                                 }
+                              },
+                              {
+                                 "type":"origins:delay",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":0.00,
+                                    "z":1.00,
+                                    "reference":"position",
+                                    "set":false
+                                 },
+                                 "ticks":1
+                              }
+                           ]
+                        },
+                        "bientity_condition":{
+                           "type":"origins:target_condition",
+                           "condition":{
+                              "type":"origins:on_block"
+                           }
+                        },
+                        "include_actor":false
+                     },
+                     {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:poof",
+                        "count": 100,
+                        "speed": 1.00,
+                        "force": true,
+                        "spread": {
+                           "x": 1.00,
+                           "y": 1.00,
+                           "z": 1.00
+                        },
+                        "offset_x": 0.00,
+                        "offset_y": 0.00,
+                        "offset_z": 0.00
+                     },
+                     {
                         "type":"origins:apply_effect",
                         "effect":{
                            "id":"minecraft:jump_boost",
@@ -272,6 +437,61 @@
                         "resource":"quirks:fa_jin/kinetic_energy_resource",
                         "change":-10,
                         "operation":"add"
+                     },
+                     {
+                        "type":"origins:area_of_effect",
+                        "radius":3.00,
+                        "shape":"cube",
+                        "bientity_action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:target_action",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":1.00,
+                                    "z":0.00,
+                                    "space":"world",
+                                    "set":false
+                                 }
+                              },
+                              {
+                                 "type":"origins:delay",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":0.00,
+                                    "z":1.00,
+                                    "reference":"position",
+                                    "set":false
+                                 },
+                                 "ticks":1
+                              }
+                           ]
+                        },
+                        "bientity_condition":{
+                           "type":"origins:target_condition",
+                           "condition":{
+                              "type":"origins:on_block"
+                           }
+                        },
+                        "include_actor":false
+                     },
+                     {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:poof",
+                        "count": 100,
+                        "speed": 1.00,
+                        "force": true,
+                        "spread": {
+                           "x": 1.00,
+                           "y": 1.00,
+                           "z": 1.00
+                        },
+                        "offset_x": 0.00,
+                        "offset_y": 0.00,
+                        "offset_z": 0.00
                      },
                      {
                         "type":"origins:apply_effect",
@@ -345,6 +565,61 @@
                         "operation":"add"
                      },
                      {
+                        "type":"origins:area_of_effect",
+                        "radius":3.00,
+                        "shape":"cube",
+                        "bientity_action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:target_action",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":1.00,
+                                    "z":0.00,
+                                    "space":"world",
+                                    "set":false
+                                 }
+                              },
+                              {
+                                 "type":"origins:delay",
+                                 "action":{
+                                    "type":"origins:add_velocity",
+                                    "x":0.00,
+                                    "y":0.00,
+                                    "z":1.00,
+                                    "reference":"position",
+                                    "set":false
+                                 },
+                                 "ticks":1
+                              }
+                           ]
+                        },
+                        "bientity_condition":{
+                           "type":"origins:target_condition",
+                           "condition":{
+                              "type":"origins:on_block"
+                           }
+                        },
+                        "include_actor":false
+                     },
+                     {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:poof",
+                        "count": 100,
+                        "speed": 1.00,
+                        "force": true,
+                        "spread": {
+                           "x": 1.00,
+                           "y": 1.00,
+                           "z": 1.00
+                        },
+                        "offset_x": 0.00,
+                        "offset_y": 0.00,
+                        "offset_z": 0.00
+                     },
+                     {
                         "type":"origins:apply_effect",
                         "effect":{
                            "id":"minecraft:jump_boost",
@@ -402,10 +677,10 @@
                "compare_to":0
             },
             {
-               "type": "origins:resource",
-               "resource": "quirks:fa_jin/move_selector_resource",
-               "comparison": "==",
-               "compare_to": 1
+               "type":"origins:resource",
+               "resource":"quirks:fa_jin/move_selector_resource",
+               "comparison":"==",
+               "compare_to":1
             },
             {
                "type":"origins:on_block"
