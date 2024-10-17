@@ -1,0 +1,55 @@
+{
+    "type":"origins:target_action_on_hit",
+    "entity_action":{
+       "type":"origins:and",
+       "actions":[
+          {
+             "type":"origins:choice",
+             "actions":[
+                {
+                   "element":{
+                      "type":"origins:execute_command",
+                      "command":"execute at @s positioned ~ ~0.3 ~ run function quirks:severance/cleave_slash_1"
+                   },
+                   "weight":20
+                },
+                {
+                   "element":{
+                      "type":"origins:execute_command",
+                      "command":"execute at @s positioned ~ ~0.3 ~ run function quirks:severance/cleave_slash_2"
+                   },
+                   "weight":20
+                },
+                {
+                   "element":{
+                      "type":"origins:execute_command",
+                      "command":"execute at @s positioned ~ ~0.3 ~ run function quirks:severance/cleave_slash_3"
+                   },
+                   "weight":20
+                }
+             ]
+          },
+          {
+             "type":"origins:play_sound",
+             "sound":"quirks:severance.slash",
+             "volume":1.00,
+             "pitch":1.00
+          },
+          {
+             "type":"origins:damage",
+             "amount":6,
+             "damage_type":"quirks:severance/cleave"
+          }
+       ]
+    },
+    "cooldown":1,
+    "hud_render":{
+       "should_render":false
+    },
+    "condition":{
+       "type":"origins:resource",
+       "resource":"quirks:severance/move_selector_resource",
+       "comparison":"==",
+       "compare_to":1
+    }
+}

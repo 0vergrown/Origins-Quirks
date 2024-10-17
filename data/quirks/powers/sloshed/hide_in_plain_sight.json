@@ -38,11 +38,11 @@
                   "operation":"set"
                },
                {
-                  "type":"origins:action_on_set",
+                  "type":"origins:action_on_entity_set",
                   "set":"quirks:sloshed/hide_in_plain_sight_set",
                   "bientity_action":{
-                     "type":"origins:remove_from_set",
-                     "set":"example:entities_to_exclude"
+                     "type":"origins:remove_from_entity_set",
+                     "set":"quirks:sloshed/hide_in_plain_sight_set"
                   },
                   "limit":0,
                   "reverse":false
@@ -117,8 +117,18 @@
       "render_armor":false,
       "render_outline":false,
       "bientity_condition":{
-         "type":"origins:in_set",
-         "set":"quirks:sloshed/hide_in_plain_sight_set"
+         "type":"origins:all_of",
+         "conditions":[
+            {
+               "type":"origins:in_entity_set",
+               "set":"quirks:sloshed/hide_in_plain_sight_set"
+            },
+            {
+               "type":"origins:distance",
+               "comparison":"<=",
+               "compare_to":10
+            }
+         ]
       },
       "condition":{
          "type":"origins:all_of",

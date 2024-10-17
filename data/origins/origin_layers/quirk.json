@@ -8,6 +8,7 @@
      "quirks:invisibility",
      "quirks:larceny",
      "quirks:permeation",
+     "quirks:severance",
      "quirks:sloshed"
   ],
   "enabled":true,
