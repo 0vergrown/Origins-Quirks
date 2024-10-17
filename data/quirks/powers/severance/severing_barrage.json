@@ -5,7 +5,7 @@
         "entity_action": {
             "type": "origins:spawn_entity",
             "entity_type": "minecraft:marker",
-            "tag":"{Silent:1b,Invulnerable:1b,Tags:[\"quirks.dismantle_marker\"]}",
+            "tag":"{Silent:1b,Invulnerable:1b,Tags:[\"quirks.severing_barrage_marker\"]}",
             "entity_action": {
                 "type": "origins:and",
                 "actions": [
