@@ -1,0 +1,44 @@
+{
+    "type":"origins:action_over_time",
+    "entity_action":{
+       "type":"origins:and",
+       "actions":[
+          {
+             "type":"origins:execute_command",
+             "command":"tp @s ^ ^1 ^2 ~ ~"
+          },
+          {
+             "type":"origins:play_sound",
+             "sound":"quirks:severance.slash",
+             "volume":1.00,
+             "pitch":1.00
+          },
+          {
+             "type":"origins:area_of_effect",
+             "radius":3.00,
+             "shape":"cube",
+             "bientity_action":{
+                "type":"origins:damage",
+                "amount":10,
+                "damage_type":"quirks:severance/cleave"
+             },
+             "bientity_condition":{
+                "type":"origins:target_condition",
+                "condition":{
+                   "type":"origins:living"
+                }
+             },
+             "include_actor":false
+          },
+          {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "execute as @e[scores={dismantle=2}] at @s rotated ~ 0 positioned ^ ^1.8 ^0.2 run function sukuna:dismantleparts/dismantle7"
+            },
+            "ticks": 1
+          }
+       ]
+    },
+    "interval":40
+ }
