@@ -24,7 +24,7 @@ particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^2.15 ^1.1 ^0 0 0 0 0 1 f
 particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^2.2 ^1.1 ^0 0 0 0 0 1 force @a
 particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^1.85 ^1.05 ^0 0 0 0 0 1 force @a
 particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^1.9 ^1.05 ^0 0 0 0 0 1 force @a
-particle minecraft:dust 0.1 0.1 0.1 0.3 ^1.95 ^1.05 ^0 0 0 0 0 1 force @a
+particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^1.95 ^1.05 ^0 0 0 0 0 1 force @a
 particle minecraft:dust{color:[0.0,0.0,0.0],scale:0.3} ^2 ^1.05 ^0 0 0 0 0 1 force @a
 particle minecraft:dust 0.99 0.99 0.99 0.3 ^2.05 ^1.05 ^0 0 0 0 0 1 force @a
 particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.3} ^2.1 ^1.05 ^0 0 0 0 0 1 force @a
