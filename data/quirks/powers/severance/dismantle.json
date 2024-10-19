@@ -1,0 +1,44 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:marker",
+                "tag": "{Silent:1b,Invulnerable:1b}",
+                "entity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tp @s ^ ^ ^1"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute as @s store result entity @s Rotation[1] float 1 run random value -180..180"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "execute as @s store result entity @s Rotation[0] float 1 run random value -180..180"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key":"key.origins.primary_active",
+        "continuous": false
+    },
+    "condition":{
+        "type":"origins:resource",
+        "resource":"quirks:severance/move_selector_resource",
+        "comparison":"==",
+        "compare_to":0
+     }
+}
