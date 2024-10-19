@@ -5,13 +5,13 @@
         "entity_action": {
             "type": "origins:spawn_entity",
             "entity_type": "minecraft:marker",
-            "tag":"{Silent:1b,Invulnerable:1b,Tags:[\"quirks.severing_barrage_marker\"]}",
+            "tag":"{Silent:1b,Invulnerable:1b}",
             "entity_action": {
                 "type": "origins:and",
                 "actions": [
                     {
                         "type": "origins:execute_command",
-                        "command": "tp @s ^ ^1 ^2 ~ ~"
+                        "command": "tp @s ^ ^ ^2 ~ ~"
                     },
                     {
                         "type": "origins:delay",
@@ -20,7 +20,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -60,7 +60,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -100,7 +100,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -140,7 +140,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -180,7 +180,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -220,7 +220,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -260,7 +260,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -304,7 +304,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -344,7 +344,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -384,7 +384,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -424,7 +424,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -464,7 +464,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -504,7 +504,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -548,7 +548,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -588,7 +588,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -628,7 +628,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -668,7 +668,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -708,7 +708,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -748,7 +748,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -792,7 +792,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -832,7 +832,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -872,7 +872,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -912,7 +912,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
@@ -952,7 +952,7 @@
                             "actions": [
                                 {
                                     "type": "origins:execute_command",
-                                    "command": "tp @s ^ ^1 ^2 ~ ~"
+                                    "command": "tp @s ^ ^ ^2 ~ ~"
                                 },
                                 {
                                     "type": "origins:execute_command",
