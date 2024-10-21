@@ -5,13 +5,13 @@
        "actions":[
           {
              "type":"origins:execute_command",
-             "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks,severance.open_flame.command_1\",\"underlined\":false}"
+             "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_1\",\"underlined\":false}"
           },
           {
              "type":"origins:delay",
              "action":{
                 "type":"origins:execute_command",
-                "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks,severance.open_flame.command_2\",\"underlined\":false}"
+                "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_2\",\"underlined\":false}"
              },
              "ticks":20
           },
