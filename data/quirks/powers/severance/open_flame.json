@@ -1,0 +1,34 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks,severance.open_flame.command_1\",\"underlined\":false}"
+            },
+            {
+                "type": "origins:delay",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks,severance.open_flame.command_2\",\"underlined\":false}"    
+                },
+                "ticks": 20
+            }
+        ]
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key":"key.origins.primary_active",
+        "continuous": false
+    },
+    "condition":{
+        "type":"origins:resource",
+        "resource":"quirks:severance/move_selector_resource",
+        "comparison":"==",
+        "compare_to":4
+     }
+}
