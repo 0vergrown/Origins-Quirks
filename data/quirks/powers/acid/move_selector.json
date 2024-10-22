@@ -1,4 +1,24 @@
 {
+   "badges":[
+      {
+         "type":"origins:tooltip",
+         "sprite":"origins:textures/gui/badge/active.png",
+         "text":{
+            "translate":"badge.quirks.acid.move_selector",
+            "with":[
+               {
+                  "keybind":"key.origins.secondary_active"
+               },
+               {
+                  "keybind":"key.sneak"
+               },
+               {
+                  "keybind":"key.origins.secondary_active"
+               }
+            ]
+         }
+      }
+   ],
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",
@@ -16,100 +36,60 @@
          "actions":[
             {
                "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:acid/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":0
+                  "type":"origins:sneaking"
                },
                "action":{
-                  "type":"origins:and",
+                  "type":"origins:if_else_list",
                   "actions":[
                      {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
+                        "condition":{
+                           "type":"origins:resource",
+                           "resource":"quirks:acid/move_selector_resource",
+                           "comparison":"==",
+                           "compare_to":0
+                        },
+                        "action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:change_resource",
+                                 "resource":"quirks:acid/move_selector_resource",
+                                 "change":4,
+                                 "operation":"set"
+                              },
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"quirks:move_slector.click",
+                                 "volume":1.00,
+                                 "pitch":1.00
+                              }
+                           ]
+                        }
                      },
                      {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
-                     }
-                  ]
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:acid/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":1
-               },
-               "action":{
-                  "type":"origins:and",
-                  "actions":[
-                     {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
-                     },
-                     {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
-                     }
-                  ]
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:acid/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":2
-               },
-               "action":{
-                  "type":"origins:and",
-                  "actions":[
-                     {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
-                     },
-                     {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
-                     }
-                  ]
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:acid/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":3
-               },
-               "action":{
-                  "type":"origins:and",
-                  "actions":[
-                     {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
-                     },
-                     {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
+                        "condition":{
+                           "type":"origins:resource",
+                           "resource":"quirks:acid/move_selector_resource",
+                           "comparison":"!=",
+                           "compare_to":0
+                        },
+                        "action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:change_resource",
+                                 "resource":"quirks:acid/move_selector_resource",
+                                 "change":-1,
+                                 "operation":"add"
+                              },
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"quirks:move_slector.click",
+                                 "volume":1.00,
+                                 "pitch":1.00
+                              }
+                           ]
+                        }
                      }
                   ]
                }
@@ -129,6 +109,31 @@
                         "resource":"quirks:acid/move_selector_resource",
                         "change":0,
                         "operation":"set"
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"quirks:move_slector.click",
+                        "volume":1.00,
+                        "pitch":1.00
+                     }
+                  ]
+               }
+            },
+            {
+               "condition":{
+                  "type":"origins:resource",
+                  "resource":"quirks:acid/move_selector_resource",
+                  "comparison":"!=",
+                  "compare_to":4
+               },
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type":"origins:change_resource",
+                        "resource":"quirks:acid/move_selector_resource",
+                        "change":1,
+                        "operation":"add"
                      },
                      {
                         "type":"origins:play_sound",

@@ -4,10 +4,24 @@
       "type":"origins:and",
       "actions":[
          {
-            "type":"origins:change_resource",
-            "resource":"quirks:acid/corrosive_liquid_resource",
-            "change":-1,
-            "operation":"add"
+            "type":"origins:if_else",
+            "condition":{
+               "type":"origins:resource",
+               "resource":"quirks:acid/corrosive_liquid_resource",
+               "comparison":">=",
+               "compare_to":1
+            },
+            "if_action":{
+               "type":"origins:change_resource",
+               "resource":"quirks:acid/corrosive_liquid_resource",
+               "change":-1,
+               "operation":"add"
+            },
+            "else_action":{
+               "type":"origins:damage",
+               "amount":4,
+               "damage_type":"minecraft:dry_out"
+            }
          },
          {
             "type":"origins:play_sound",
@@ -59,11 +73,13 @@
                                  "speed":0.18,
                                  "force":true,
                                  "spread":{
-                                    "x":0.2,
-                                    "y":0.2,
-                                    "z":0.2
+                                    "x":0.20,
+                                    "y":0.20,
+                                    "z":0.20
                                  },
-                                 "offset_y":0.5
+                                 "offset_x":0.00,
+                                 "offset_y":0.50,
+                                 "offset_z":0.00
                               },
                               {
                                  "type":"origins:execute_command",
@@ -86,6 +102,14 @@
                         }
                      },
                      "include_actor":false
+                  },
+                  {
+                     "type":"origins:delay",
+                     "action":{
+                        "type":"origins:execute_command",
+                        "command":"kill @s"
+                     },
+                     "ticks":2
                   }
                ]
             }
@@ -117,11 +141,13 @@
                                  "speed":0.18,
                                  "force":true,
                                  "spread":{
-                                    "x":0.2,
-                                    "y":0.2,
-                                    "z":0.2
+                                    "x":0.20,
+                                    "y":0.20,
+                                    "z":0.20
                                  },
-                                 "offset_y":0.5
+                                 "offset_x":0.00,
+                                 "offset_y":0.50,
+                                 "offset_z":0.00
                               },
                               {
                                  "type":"origins:execute_command",
@@ -144,6 +170,14 @@
                         }
                      },
                      "include_actor":false
+                  },
+                  {
+                     "type":"origins:delay",
+                     "action":{
+                        "type":"origins:execute_command",
+                        "command":"kill @s"
+                     },
+                     "ticks":2
                   }
                ]
             }
@@ -163,5 +197,5 @@
       "resource":"quirks:acid/move_selector_resource",
       "comparison":"==",
       "compare_to":1
-  }
+   }
 }

@@ -78,7 +78,7 @@
    },
    "key":{
       "key":"key.origins.primary_active",
-      "continuous": false
+      "continuous":false
    },
    "condition":{
       "type":"origins:resource",
