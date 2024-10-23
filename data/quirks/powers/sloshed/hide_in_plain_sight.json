@@ -126,7 +126,7 @@
             {
                "type":"origins:distance",
                "comparison":"<=",
-               "compare_to":10
+               "compare_to":10.00
             }
          ]
       },
