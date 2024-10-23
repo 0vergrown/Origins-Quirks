@@ -1,104 +1,208 @@
 {
-   "type":"origins:multiple",
-   "resource":{
-      "type":"origins:resource",
-      "min":0,
-      "max":200,
-      "hud_render":{
-         "should_render":true,
-         "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_01.png",
-         "bar_index":15
+   "type": "origins:multiple",
+   "resource": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 400,
+      "hud_render": {
+         "should_render": true,
+         "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+         "bar_index": 15
       },
-      "start_value":0
+      "start_value": 0
    },
-   "passive_gain":{
-      "type":"origins:action_over_time",
-      "entity_action":{
-         "type":"origins:change_resource",
-         "resource":"quirks:acid/corrosive_liquid_resource",
-         "change": 1,
-         "operation":"add"
+   "passive_gain": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+         "type": "origins:if_else",
+         "condition": {
+            "type": "origins:any_of",
+            "conditions": [
+               {
+                  "type": "origins:food_level",
+                  "comparison": "<=",
+                  "compare_to": 3
+               },
+               {
+                  "type": "origins:relative_health",
+                  "comparison": "<=",
+                  "compare_to": 0.3
+               },
+               {
+                  "type":"origins:resource",
+                  "resource":"quirks:acid/acidman_resource",
+                  "comparison":"==",
+                  "compare_to":1
+               }
+            ]
+         },
+         "if_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+               "operation": "add_base_early",
+               "amount": 0.50
+            },
+            "resource": "quirks:acid/corrosive_liquid_resource"
+         },
+         "else_action": {
+            "type": "origins:change_resource",
+            "resource": "quirks:acid/corrosive_liquid_resource",
+            "change": 2,
+            "operation": "add"
+         }
       },
-      "interval":20,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/corrosive_liquid_resource",
-         "comparison":"<",
-         "compare_to":200
+      "interval": 20,
+      "condition": {
+         "type": "origins:resource",
+         "resource": "quirks:acid/corrosive_liquid_resource",
+         "comparison": "<",
+         "compare_to": 400
       }
    },
-   "light_pink_skin":{
-      "type":"origins:model_color",
-      "red":1.00,
-      "green":0.7843137254901961,
-      "blue":0.8862745098039216,
-      "alpha":1.0,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/corrosive_liquid_resource",
-         "comparison":">=",
-         "compare_to":150
+   "lightest_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.9137254901960784,
+      "blue": 0.9254901960784314,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:resource",
+         "resource": "quirks:acid/corrosive_liquid_resource",
+         "comparison": ">=",
+         "compare_to": 350
       }
    },
-   "pink_skin":{
-      "type":"origins:model_color",
-      "red":1.0,
-      "green":0.7529,
-      "blue":0.7961,
-      "alpha":1.0,
-      "condition":{
-         "type":"origins:all_of",
-         "conditions":[
+   "very_pale_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.8156862745098039,
+      "blue": 0.8431372549019608,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:all_of",
+         "conditions": [
             {
-               "type":"origins:resource",
-               "resource":"quirks:acid/corrosive_liquid_resource",
-               "comparison":">=",
-               "compare_to":100
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": ">=",
+               "compare_to": 300
             },
             {
-               "type":"origins:resource",
-               "resource":"quirks:acid/corrosive_liquid_resource",
-               "comparison":"<=",
-               "compare_to":149
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<=",
+               "compare_to": 349
             }
          ]
       }
    },
-   "misty_rose_skin":{
-      "type":"origins:model_color",
-      "red":1.0,
-      "green":0.8941,
-      "blue":0.8824,
-      "alpha":1.0,
-      "condition":{
-         "type":"origins:all_of",
-         "conditions":[
+   "pale_pink_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.7137254901960784,
+      "blue": 0.7568627450980392,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:all_of",
+         "conditions": [
             {
-               "type":"origins:resource",
-               "resource":"quirks:acid/corrosive_liquid_resource",
-               "comparison":">=",
-               "compare_to":50
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": ">=",
+               "compare_to": 250
             },
             {
-               "type":"origins:resource",
-               "resource":"quirks:acid/corrosive_liquid_resource",
-               "comparison":"<=",
-               "compare_to":99
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<=",
+               "compare_to": 299
             }
          ]
       }
    },
-   "normal_skin":{
-      "type":"origins:model_color",
-      "red":1.00,
-      "green":1.00,
-      "blue":1.00,
-      "alpha":1.00,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/corrosive_liquid_resource",
-         "comparison":"<=",
-         "compare_to":49
+   "light_pink_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.6156862745098039,
+      "blue": 0.6705882352941176,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:all_of",
+         "conditions": [
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": ">=",
+               "compare_to": 200
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<=",
+               "compare_to": 249
+            }
+         ]
+      }
+   },
+   "medium_pink_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.5137254901960784,
+      "blue": 0.5882352941176471,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:all_of",
+         "conditions": [
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": ">=",
+               "compare_to": 150
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<=",
+               "compare_to": 199
+            }
+         ]
+      }
+   },
+   "dark_pink_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.4156862745098039,
+      "blue": 0.5019607843137255,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:all_of",
+         "conditions": [
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": ">=",
+               "compare_to": 100
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<=",
+               "compare_to": 149
+            }
+         ]
+      }
+   },
+   "darkest_pink_skin": {
+      "type": "origins:model_color",
+      "red": 1.00,
+      "green": 0.3156862745098039,
+      "blue": 0.4019607843137255,
+      "alpha": 1.0,
+      "condition": {
+         "type": "origins:resource",
+         "resource": "quirks:acid/corrosive_liquid_resource",
+         "comparison": "<=",
+         "compare_to": 99
       }
    }
 }
