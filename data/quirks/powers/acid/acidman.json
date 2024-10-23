@@ -152,6 +152,24 @@
          ]
       }
    },
+   "overlay":{
+      "type": "origins:overlay",
+      "texture": "quirks:vision/acid/slime_block",
+      "strength": 0.4,
+      "red":0.00,
+      "green":0.1822222222222222,
+      "blue":1.00,
+      "draw_mode": "texture",
+      "draw_phase": "below_hud",
+      "hide_with_hud": false,
+      "visible_in_third_person": true,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:acid/acidman_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   },
    "projectile_destruction_and_entity_harm":{
       "type":"origins:action_over_time",
       "entity_action":{
@@ -220,7 +238,7 @@
                },
                {
                   "condition":{
-                     "type":"origins:any_of",
+                     "type":"origins:all_of",
                      "conditions":[
                         {
                            "type":"origins:distance",
@@ -282,8 +300,35 @@
             }
          }
       },
-      "target_condition": {
-         "type": "origins:living"
+      "target_condition":{
+         "type":"origins:living"
+      },
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:acid/acidman_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   },
+   "reset_on_death":{
+      "type":"origins:action_on_death",
+      "bientity_action":{
+         "type":"origins:target_action",
+         "action":{
+            "type":"origins:change_resource",
+            "resource":"quirks:acid/acidman_resource",
+            "change":0,
+            "operation":"set"
+         }
+      },
+      "bientity_condition":{
+         "type":"origins:target_condition",
+         "condition":{
+            "type":"origins:resource",
+            "resource":"quirks:acid/acidman_resource",
+            "comparison":"==",
+            "compare_to":1
+         }
       }
    }
 }

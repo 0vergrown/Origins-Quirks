@@ -5,7 +5,8 @@
 		"quirks:acid/acid_shot",
 		"quirks:acid/acid_veil",
 		"quirks:acid/acid_layback",
-		"quirks:acid/acidman"
+		"quirks:acid/acidman",
+		"quirks:acid/alma"
 	],
     "icon":{
         "id":"minecraft:player_head",

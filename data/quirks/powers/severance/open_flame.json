@@ -1,68 +1,68 @@
 {
-    "type":"origins:active_self",
-    "entity_action":{
-       "type":"origins:and",
-       "actions":[
-          {
-             "type":"origins:execute_command",
-             "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_1\",\"underlined\":false}"
-          },
-          {
-             "type":"origins:delay",
-             "action":{
-                "type":"origins:execute_command",
-                "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_2\",\"underlined\":false}"
-             },
-             "ticks":20
-          },
-          {
-             "type":"origins:delay",
-             "action":{
-                "type":"origins:and",
-                "actions":[
-                   {
-                      "type":"origins:spawn_particles",
-                      "particle":"minecraft:flash",
-                      "count":1,
-                      "speed":1.00,
-                      "force":true,
-                      "spread":{
-                         "x":1.00,
-                         "y":1.00,
-                         "z":1.00
-                      },
-                      "offset_x":0.00,
-                      "offset_y":0.50,
-                      "offset_z":0.00
-                   },
-                   {
-                    "type": "origins:spawn_entity",
-                    "entity_type": "minecraft:armor_stand",
-                    "tag": "{NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,DisabledSlots:4144959}",
-                    "entity_action": {
-                        "type": "origins:grant_power",
-                        "power": "quirks:severance/open_flame_armor_stand_effects",
-                        "source": "quirks:severance/open_flame_armor_stand_effects"
-                    }
-                   }
-                ]
-             },
-             "ticks":25
-          }
-       ]
-    },
-    "cooldown":1,
-    "hud_render":{
-       "should_render":false
-    },
-    "key":{
-       "key":"key.origins.primary_active",
-       "continuous":false
-    },
-    "condition":{
-       "type":"origins:resource",
-       "resource":"quirks:severance/move_selector_resource",
-       "comparison":"==",
-       "compare_to":4
-    }
+   "type":"origins:active_self",
+   "entity_action":{
+      "type":"origins:and",
+      "actions":[
+         {
+            "type":"origins:execute_command",
+            "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_1\",\"underlined\":false}"
+         },
+         {
+            "type":"origins:delay",
+            "action":{
+               "type":"origins:execute_command",
+               "command":"title @s title {\"bold\":false,\"color\":\"gold\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"translate\":\"title.text.quirks.severance.open_flame.command_2\",\"underlined\":false}"
+            },
+            "ticks":20
+         },
+         {
+            "type":"origins:delay",
+            "action":{
+               "type":"origins:and",
+               "actions":[
+                  {
+                     "type":"origins:spawn_particles",
+                     "particle":"minecraft:flash",
+                     "count":1,
+                     "speed":1.00,
+                     "force":true,
+                     "spread":{
+                        "x":1.00,
+                        "y":1.00,
+                        "z":1.00
+                     },
+                     "offset_x":0.00,
+                     "offset_y":0.50,
+                     "offset_z":0.00
+                  },
+                  {
+                     "type":"origins:spawn_entity",
+                     "entity_type":"minecraft:armor_stand",
+                     "tag":"{NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,DisabledSlots:4144959}",
+                     "entity_action":{
+                        "type":"origins:grant_power",
+                        "power":"quirks:severance/open_flame_armor_stand_effects",
+                        "source":"quirks:severance/open_flame_armor_stand_effects"
+                     }
+                  }
+               ]
+            },
+            "ticks":25
+         }
+      ]
+   },
+   "cooldown":1,
+   "hud_render":{
+      "should_render":false
+   },
+   "key":{
+      "key":"key.origins.primary_active",
+      "continuous":false
+   },
+   "condition":{
+      "type":"origins:resource",
+      "resource":"quirks:severance/move_selector_resource",
+      "comparison":"==",
+      "compare_to":4
+   }
 }
