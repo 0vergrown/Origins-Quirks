@@ -1,61 +1,25 @@
-Terms of Use and Service
+All Rights Reserved License
 
-These Terms of Use and Service (the "Terms") govern the use of Minecraft content created by Overgrown (the "Creator"), including but not limited to code, mods, data packs, texture packs, resource packs, and any other assets (collectively referred to as the "Content"). By using, downloading, or accessing any of the Content, you agree to be bound by these Terms.
+Copyright © 2024 Overgrown. All rights reserved.
 
-1. License
+This content, including but not limited to code, mods, data packs, texture packs, resource packs, and any other assets (the "Content"), created by Overgrown, is protected by copyright law and international treaties. Except as expressly permitted in writing by the creator, Overgrown, you may not:
 
-The Creator grants you a non-exclusive, non-transferable, revocable, limited license to use the Content for personal, non-commercial purposes only. You may not sell, rent, lease, sublicense, distribute, modify, or create derivative works of the Content without the express written permission of the Creator.
+1. Use the Content for any commercial purposes;
+2. Modify, distribute, transmit, publicly display, publicly perform, or create derivative works based on the Content;
+3. Use or copy the Content for any reason other than personal, non-commercial use;
+4. Reverse engineer, decompile, or disassemble the Content.
 
-2. Intellectual Property
+Permission for use of the Content is granted only for personal, non-commercial purposes, subject to the following conditions:
 
-All rights, title, and interest in the Content, including but not limited to all copyrights, trademarks, and other intellectual property rights, are owned by the Creator. The Creator retains all rights not expressly granted to you in these Terms.
+1. You may download and use the Content for personal use;
+2. You must provide clear and visible attribution to Overgrown when using the Content in any media, including videos, livestreams, and screenshots, with a link back to the original source;
+3. You must not claim ownership of the Content in whole or in part.
 
-3. Restrictions
+The Creator reserves the right to modify, update, or discontinue the Content at any time without prior notice.
 
-You agree that you will not:
-  
-  i. Use the Content for any unlawful or unauthorized purpose;
-  
-  ii. Reverse engineer, decompile, or disassemble the Content;
-  
-  iii. Use, copy, or reproduce the Content except as permitted by these Terms.
+Disclaimer of Warranty:
+The Content is provided "as is," without any express or implied warranties. The creator disclaims any liability for damages resulting from the use of the Content.
 
-4. Updates and Modifications
-
-The Creator reserves the right to modify, update, or discontinue any part of the Content at any time without notice. Additionally, the Creator may revise these Terms at their discretion, and it is your responsibility to review them regularly for any changes.
-
-5. Disclaimer of Warranties
-
-The Content is provided "as is" and "as available" without any warranties of any kind, either express or implied. The Creator disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. The Creator makes no guarantees that the Content will be error-free or uninterrupted.
-
-6. Limitation of Liability
-
-In no event shall the Creator be liable for any direct, indirect, incidental, special, punitive, or consequential damages, including but not limited to loss of profits, goodwill, data, or other intangible losses, arising out of or in connection with your use of or inability to use the Content, even if the Creator has been advised of the possibility of such damages.
-
-7. Indemnity
-
-You agree to defend, indemnify, and hold harmless the Creator, its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses, including legal and accounting fees, arising from or in any way connected with your access to or use of the Content.
-
-8. Governing Law
-
-These Terms are governed by and construed in accordance with the laws of the jurisdiction in which the Creator is based, without regard to its conflict of law provisions.
-
-9. Attribution and Acknowledgement
-
-If you use any of the Content, you must provide clear and visible attribution to the Creator. You must include a link back to the original source from which the Content was downloaded. You may not claim that you or any third party created or owns any part of the Content. Failure to provide proper attribution is a violation of these Terms.
-
-10. Content Removal
-
-The Creator reserves the right to request the removal of the Content from any platform, medium, or server at any time and for any reason. Upon receipt of such a request, you must promptly remove the specified Content and cease its use. Failure to comply with such a request constitutes a violation of these Terms.
-
-11. Media Usage
-
-You are permitted to use the Content in the creation of media, including but not limited to videos, photos, livestreams, and screenshots. However, any media that features or utilizes the Content must provide clear and visible attribution to the Creator and include a link back to the original download source. Failure to provide appropriate credit is a violation of these Terms.
-
-12. Exemptions and Special Permissions
-
-The Creator may, at their sole discretion, grant certain individuals or entities exemptions from some or all of these Terms. These special permissions, including but not limited to the right to use the Content without attribution, must be granted in writing by the Creator and cannot be assumed or inferred. The Creator may revoke such permissions at any time.
-
-13. Termination
-
-Any violation of these Terms will result in the immediate termination of your right to use the Content. Upon termination, you must cease all use of the Content and remove it from any device, platform, or medium in which it has been installed or uploaded.
+For permissions or inquiries, please contact:
+Email: overgrownmc@gmail.com
+Discord: 0vergrown
