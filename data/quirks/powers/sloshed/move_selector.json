@@ -16,50 +16,60 @@
          "actions":[
             {
                "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:sloshed/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":0
+                  "type":"origins:sneaking"
                },
                "action":{
-                  "type":"origins:and",
+                  "type":"origins:if_else_list",
                   "actions":[
                      {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:sloshed/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
+                        "condition":{
+                           "type":"origins:resource",
+                           "resource":"quirks:sloshed/move_selector_resource",
+                           "comparison":"==",
+                           "compare_to":0
+                        },
+                        "action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:change_resource",
+                                 "resource":"quirks:sloshed/move_selector_resource",
+                                 "change":2,
+                                 "operation":"set"
+                              },
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"quirks:move_slector.click",
+                                 "volume":1.00,
+                                 "pitch":1.00
+                              }
+                           ]
+                        }
                      },
                      {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
-                     }
-                  ]
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:resource",
-                  "resource":"quirks:sloshed/move_selector_resource",
-                  "comparison":"==",
-                  "compare_to":1
-               },
-               "action":{
-                  "type":"origins:and",
-                  "actions":[
-                     {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:sloshed/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
-                     },
-                     {
-                        "type":"origins:play_sound",
-                        "sound":"quirks:move_slector.click",
-                        "volume":1.00,
-                        "pitch":1.00
+                        "condition":{
+                           "type":"origins:resource",
+                           "resource":"quirks:sloshed/move_selector_resource",
+                           "comparison":"!=",
+                           "compare_to":0
+                        },
+                        "action":{
+                           "type":"origins:and",
+                           "actions":[
+                              {
+                                 "type":"origins:change_resource",
+                                 "resource":"quirks:sloshed/move_selector_resource",
+                                 "change":-1,
+                                 "operation":"add"
+                              },
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"quirks:move_slector.click",
+                                 "volume":1.00,
+                                 "pitch":1.00
+                              }
+                           ]
+                        }
                      }
                   ]
                }
@@ -79,6 +89,31 @@
                         "resource":"quirks:sloshed/move_selector_resource",
                         "change":0,
                         "operation":"set"
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"quirks:move_slector.click",
+                        "volume":1.00,
+                        "pitch":1.00
+                     }
+                  ]
+               }
+            },
+            {
+               "condition":{
+                  "type":"origins:resource",
+                  "resource":"quirks:sloshed/move_selector_resource",
+                  "comparison":"!=",
+                  "compare_to":2
+               },
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type":"origins:change_resource",
+                        "resource":"quirks:sloshed/move_selector_resource",
+                        "change":1,
+                        "operation":"add"
                      },
                      {
                         "type":"origins:play_sound",
