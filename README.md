@@ -1,26 +1,57 @@
 # Origins: Quirks
 
-**This Pack Adds:**
-- Custom Quirks
-- Custom Progression System
-- Quirk Strength & Proficiency System
+**Origins: Quirks** is a Minecraft data pack that introduces unique abilities inspired by Quirks from *My Hero Academia*. Each Quirk grants players new ways to interact with the world, offering a diverse and customizable gameplay experience. With a custom progression system, quirk strength scaling, and proficiency mechanics, players can evolve their abilities based on their gameplay style.
 
-**Pack Detail:**
-**Icon**: Varied\
-**Impact**: Varied Based On Quirk\
-**Description**: Placeholder
+## Features
+- **Custom Quirks**: A variety of Quirks inspired by *My Hero Academia* with unique abilities.
+- **Progression System**: Quirks grow stronger with use, allowing players to develop proficiency in their chosen Quirk.
+- **Quirk Strength & Proficiency**: Abilities scale as players gain experience, increasing power and utility over time.
+
+## Current Quirks
+- Acid (Almost Done)
+- Fa Jin (Not Finished)
+- Gigantification (Not Finished)
+- Heal
+- Invisibility
+- Larceny
+- Permeation
+- Severance (Not Finished)
+- Sloshed (Not Finished)
+
+## Planned Quirks
+- Hardening
+- Steel
+- Sugar Rush
+- Limitless
 
 ---
+
 ## Dependencies
-This datapack requires the following to function properly:
-- [Fabric Loader](https://fabricmc.net/) - Recommend loader the mods run on.
-- [Fabric API](https://fabricmc.net/use/) - Necessary for running mods in the Fabric mod loader environment.
-- [Origins Mod](https://github.com/apace100/origins-fabric) - A Minecraft mod that allows you to choose an Origin at the beginning, granting various abilities and drawbacks.
-- [Origins: Quirks (Resources)](https://github.com/0vergrown/Origins-Quirks-Resources) - Resource Pack that is required for the pack to work properly. Contains all textures and translations files etc.
+This data pack requires the following mods to function correctly:
+- [**Fabric Loader**](https://fabricmc.net/): The recommended mod loader for running the data pack.
+- [**Fabric API**](https://fabricmc.net/use/): Essential for running mods within the Fabric loader environment.
+- [**Origins Mod**](https://github.com/apace100/origins-fabric): Grants the base functionality for selecting an Origin with abilities and drawbacks.
+- [**Origins: Quirks (Resources)**](https://github.com/0vergrown/Origins-Quirks-Resources): A resource pack required for textures, translations, and additional visual assets.
 
 ## Installation
-To install the Origins: Quirks datapack, follow these steps:
-1. Make sure you have all dependencies installed.
-2. Download the latest release of Origins: Quirks from the [release page](https://modrinth.com/datapack/origins-quirks).
-3. Place the downloaded file in the `datapacks` folder of your Minecraft world directory.
-4. Restart your Minecraft world or use `/reload` if the world is already running.
+
+To install and use the Origins: Quirks data pack, follow these steps:
+
+1. **Install Dependencies**: Ensure you have installed Fabric Loader, Fabric API, and the Origins mod.
+2. **Download**: Head over to the [release page](https://modrinth.com/datapack/origins-quirks) and download the latest release of the Origins: Quirks data pack.
+3. **Add to Minecraft**: Place the `.zip` file in the `datapacks` folder located inside your Minecraft world directory.
+4. **Reload or Restart**: If your world is running, use the `/reload` command, or restart the Minecraft world to apply the changes.
+
+---
+
+## Contributions
+
+Contributions are welcome! Feel free to submit issues or pull requests to improve the data pack. Please ensure that all submissions follow the [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- Special thanks to the *My Hero Academia* community for inspiration.
+- Thanks to the [Origins Mod](https://github.com/apace100/origins-fabric) creators for providing a fantastic platform to build on.
