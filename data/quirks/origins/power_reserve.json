@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"quirks:power_reserve/move_selector",
+		"quirks:power_reserve/steal"
+	],
+	"icon":{
+		"id": "minecraft:respawn_anchor"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}

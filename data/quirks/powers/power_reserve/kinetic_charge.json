@@ -1,0 +1,26 @@
+{
+    "type": "origins:multiple",
+    "resource":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 5
+        },
+        "start_value": 0
+    },
+    "gain_from_movement":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": 1
+            },
+            "resource": "quirks:power_reserve/kinetic_charge_resource"
+        },
+        "interval": 20
+    }
+}
