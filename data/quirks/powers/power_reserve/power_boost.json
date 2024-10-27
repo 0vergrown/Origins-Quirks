@@ -1,0 +1,124 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "quirks:power_reserve/kinetic_charge_resource",
+                        "comparison": "==",
+                        "compare_to": 5
+                    }
+                },
+                "action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type":"origins:and",
+                        "actions":[
+                           {
+                              "type":"origins:play_sound",
+                              "sound":"minecraft:entity.generic.explode",
+                              "volume":0.70,
+                              "pitch":1.00
+                           },
+                           {
+                              "type":"origins:spawn_particles",
+                              "particle":"minecraft:explosion",
+                              "count":5,
+                              "speed":0.50,
+                              "force":false,
+                              "spread":{
+                                 "x":0.50,
+                                 "y":0.50,
+                                 "z":0.50
+                              },
+                              "offset_x": 0.00,
+                              "offset_y":0.50,
+                              "offset_z": 0.00
+                           },
+                           {
+                              "type":"origins:spawn_particles",
+                              "particle":"minecraft:cloud",
+                              "count":10,
+                              "speed":0.10,
+                              "force":false,
+                              "spread":{
+                                 "x":1.50,
+                                 "y":1.50,
+                                 "z":1.50
+                              },
+                              "offset_x": 0.00,
+                              "offset_y": 0.50,
+                              "offset_z": 0.00
+                           },
+                           {
+                            "type": "origins:add_velocity",
+                            "x": 0.00,
+                            "y": 0.30,
+                            "z": 0.80,
+                            "space": "velocity_horizontal_normalized",
+                            "set": false
+                          },
+                           {
+                              "type":"origins:area_of_effect",
+                              "radius":5.00,
+                              "shape":"cube",
+                              "bientity_action":{
+                                 "type":"origins:add_velocity",
+                                 "x":0.00,
+                                 "y":0.80,
+                                 "z":0.50,
+                                 "reference":"position",
+                                 "set":false
+                              },
+                              "bientity_condition": {
+                                  "type": "origins:target_condition",
+                                  "condition": {
+                                      "type": "origins:origin",
+                                      "origin": "quirks:power_reserve",
+                                      "layer": "origins:quirk"
+                                  },
+                                  "inverted": true
+                              },
+                              "include_actor":true
+                           }
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 12
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:speed",
+                        "amplifier": 1,
+                        "duration": 80
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 18
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:speed",
+                        "amplifier": 0,
+                        "duration": 80
+                    }
+                }
+            }
+        ]
+    }
+}
