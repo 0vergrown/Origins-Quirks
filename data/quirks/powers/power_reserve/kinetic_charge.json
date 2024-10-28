@@ -1,319 +1,534 @@
 {
-    "type": "origins:multiple",
-    "resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 100,
-        "hud_render": {
-            "should_render": true,
-            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-            "bar_index": 5
-        },
-        "start_value": 0
+    "type":"origins:multiple",
+    "resource":{
+       "type":"origins:resource",
+       "min":0,
+       "max":100,
+       "hud_render":{
+          "should_render":true,
+          "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+          "bar_index":5
+       },
+       "start_value":0
     },
-    "gain_from_movement": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:if_else_list",
-            "actions": [
-                {
-                    "condition": {
-                        "type": "origins:sprinting"
-                    },
-                    "action": {
-                        "type": "origins:modify_resource",
-                        "modifier": {
-                            "operation": "add_base_early",
-                            "amount": 4.00
-                        },
-                        "resource": "quirks:power_reserve/kinetic_charge_resource"
-                    }
+    "gain_from_movement":{
+       "type":"origins:action_over_time",
+       "entity_action":{
+          "type":"origins:if_else_list",
+          "actions":[
+             {
+                "condition":{
+                   "type":"origins:sprinting"
                 },
-                {
-                    "condition": {
-                        "type": "origins:all_of",
-                        "conditions": [
-                            {
-                                "type": "origins:sneaking"
-                            },
-                            {
-                                "type": "origins:moving",
-                                "vertically": false,
-                                "horizontally": true
-                            }
-                        ]
-                    },
-                    "action": {
-                        "type": "origins:modify_resource",
-                        "modifier": {
-                            "operation": "add_base_early",
-                            "amount": 1.00
-                        },
-                        "resource": "quirks:power_reserve/kinetic_charge_resource"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:moving",
-                        "vertically": false,
-                        "horizontally": true
-                    },
-                    "action": {
-                        "type": "origins:modify_resource",
-                        "modifier": {
-                            "operation": "add_base_early",
-                            "amount": 2.00
-                        },
-                        "resource": "quirks:power_reserve/kinetic_charge_resource"
-                    }
+                "action":{
+                   "type":"origins:modify_resource",
+                   "modifier":{
+                      "operation":"add_base_early",
+                      "amount":0.40
+                   },
+                   "resource":"quirks:power_reserve/kinetic_charge_resource"
                 }
-            ]
-        },
-        "rising_action": {
-            "type": "origins:if_else_list",
-            "actions": [
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 5
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.five_percent\"}"
-                    }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:sneaking"
+                      },
+                      {
+                         "type":"origins:moving",
+                         "vertically":false,
+                         "horizontally":true
+                      }
+                   ]
                 },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 10
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ten_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 15
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifteen_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 20
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.twenty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 25
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.twenty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 30
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.thirty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 35
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.thirty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 40
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.forty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 45
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.forty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 50
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 55
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 60
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.sixty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 65
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.sixty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 70
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.seventy_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 75
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.seventy_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 80
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.eighty_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 85
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.eighty_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 90
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ninety_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": "==",
-                        "compare_to": 95
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#FF0000\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ninety_five_percent\"}"
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "quirks:power_reserve/kinetic_charge_resource",
-                        "comparison": ">=",
-                        "compare_to": 100
-                    },
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"bold\":true,\"color\":\"#FF0000\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.one_hundred_percent\"}"
-                    }
+                "action":{
+                   "type":"origins:modify_resource",
+                   "modifier":{
+                      "operation":"add_base_early",
+                      "amount":0.10
+                   },
+                   "resource":"quirks:power_reserve/kinetic_charge_resource"
                 }
-            ]
-        },
-        "interval": 20
+             },
+             {
+                "condition":{
+                   "type":"origins:moving",
+                   "vertically":false,
+                   "horizontally":true
+                },
+                "action":{
+                   "type":"origins:modify_resource",
+                   "modifier":{
+                      "operation":"add_base_early",
+                      "amount":0.20
+                   },
+                   "resource":"quirks:power_reserve/kinetic_charge_resource"
+                }
+             }
+          ]
+       },
+       "rising_action":{
+          "type":"origins:if_else_list",
+          "actions":[
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":5
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":9
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":10
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":14
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ten_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":15
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":19
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifteen_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":20
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":24
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.twenty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":25
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":29
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.twenty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":30
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":34
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.thirty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":35
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":39
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.thirty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":40
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":44
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.forty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":45
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":49
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":false,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.forty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":50
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":54
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":55
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":59
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.fifty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":60
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":64
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.sixty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":65
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":69
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.sixty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":70
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":74
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.seventy_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":75
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":79
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.seventy_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":80
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":84
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.eighty_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":85
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":89
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.eighty_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":90
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":94
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#0F4D2E\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ninety_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:all_of",
+                   "conditions":[
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":">=",
+                         "compare_to":95
+                      },
+                      {
+                         "type":"origins:resource",
+                         "resource":"quirks:power_reserve/kinetic_charge_resource",
+                         "comparison":"<=",
+                         "compare_to":99
+                      }
+                   ]
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#FF0000\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.ninety_five_percent\"}"
+                }
+             },
+             {
+                "condition":{
+                   "type":"origins:resource",
+                   "resource":"quirks:power_reserve/kinetic_charge_resource",
+                   "comparison":"==",
+                   "compare_to":100
+                },
+                "action":{
+                   "type":"origins:execute_command",
+                   "command":"tellraw @s {\"bold\":true,\"color\":\"#FF0000\",\"italic\":false,\"translate\":\"text.quirks.power_reserve.kinetic_charge.one_hundred_percent\"}"
+                }
+             }
+          ]
+       },
+       "interval":1,
+       "condition":{
+          "type":"origins:resource",
+          "resource":"quirks:power_reserve/move_selector_resource",
+          "comparison":"==",
+          "compare_to":0
+       }
     }
 }

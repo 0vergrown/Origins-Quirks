@@ -20,15 +20,10 @@
                "compare_to":0
             },
             {
-               "type": "origins:resource",
-               "resource": "quirks:fa_jin/move_selector_resource",
-               "comparison": "==",
-               "compare_to": 0
-            },
-            {
-               "type":"origins:moving",
-               "horizontally":true,
-               "vertically":true
+               "type":"origins:resource",
+               "resource":"quirks:fa_jin/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
             },
             {
                "type":"origins:sprinting"
@@ -55,10 +50,10 @@
                "compare_to":0
             },
             {
-               "type": "origins:resource",
-               "resource": "quirks:fa_jin/move_selector_resource",
-               "comparison": "==",
-               "compare_to": 0
+               "type":"origins:resource",
+               "resource":"quirks:fa_jin/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
             },
             {
                "type":"origins:sprinting"
