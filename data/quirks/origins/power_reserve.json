@@ -1,7 +1,8 @@
 {
 	"powers": [
 		"quirks:power_reserve/move_selector",
-		"quirks:power_reserve/steal"
+		"quirks:power_reserve/kinetic_charge",
+		"quirks:power_reserve/power_boost"
 	],
 	"icon":{
 		"id": "minecraft:respawn_anchor"
