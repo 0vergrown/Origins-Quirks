@@ -2,7 +2,9 @@
 	"powers": [
 		"quirks:power_reserve/move_selector",
 		"quirks:power_reserve/kinetic_charge",
-		"quirks:power_reserve/power_boost"
+		"quirks:power_reserve/power_boost",
+		"quirks:power_reserve/speed_burst",
+		"quirks:power_reserve/endurance_enhancement"
 	],
 	"icon":{
 		"id": "minecraft:respawn_anchor"
