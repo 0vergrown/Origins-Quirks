@@ -1,16 +1,5 @@
 {
    "type":"origins:multiple",
-   "energy":{
-      "type":"origins:resource",
-      "min":0,
-      "max":100,
-      "hud_render":{
-         "should_render":true,
-         "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
-         "bar_index":5
-      },
-      "start_value":0
-   },
    "power_output":{
       "type":"origins:resource",
       "min":0,
@@ -154,242 +143,14 @@
          "compare_to":0
       }
    },
-   "gain_and_depletion_of_energy":{
-      "type":"origins:action_over_time",
-      "entity_action":{
-         "type":"origins:if_else_list",
-         "actions":[
-            {
-               "condition":{
-                  "type":"origins:all_of",
-                  "conditions":[
-                     {
-                        "type":"origins:sprinting",
-                        "inverted":false
-                     },
-                     {
-                        "type":"origins:moving",
-                        "vertically":false,
-                        "horizontally":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:mining_fatigue",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:slowness",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:hunger",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:food_level",
-                        "comparison":"<=",
-                        "compare_to":6,
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:relative_health",
-                        "comparison":"<=",
-                        "compare_to":0.5,
-                        "inverted":true
-                     }
-                  ]
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":4.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:all_of",
-                  "conditions":[
-                     {
-                        "type":"origins:sneaking"
-                     },
-                     {
-                        "type":"origins:moving",
-                        "vertically":false,
-                        "horizontally":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:mining_fatigue",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:slowness",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:hunger",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:food_level",
-                        "comparison":"<=",
-                        "compare_to":6,
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:relative_health",
-                        "comparison":"<=",
-                        "compare_to":0.5,
-                        "inverted":true
-                     }
-                  ]
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":1.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:all_of",
-                  "conditions":[
-                     {
-                        "type":"origins:sprinting",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:moving",
-                        "vertically":false,
-                        "horizontally":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:mining_fatigue",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:slowness",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:hunger",
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:food_level",
-                        "comparison":"<=",
-                        "compare_to":6,
-                        "inverted":true
-                     },
-                     {
-                        "type":"origins:relative_health",
-                        "comparison":"<=",
-                        "compare_to":0.5,
-                        "inverted":true
-                     }
-                  ]
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":2.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:any_of",
-                  "conditions":[
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:mining_fatigue",
-                        "inverted":false
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:slowness",
-                        "inverted":false
-                     },
-                     {
-                        "type":"origins:status_effect",
-                        "effect":"minecraft:hunger",
-                        "inverted":false
-                     }
-                  ]
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":-1.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:relative_health",
-                  "comparison":"<=",
-                  "compare_to":0.5,
-                  "inverted":false
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":-2.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            },
-            {
-               "condition":{
-                  "type":"origins:food_level",
-                  "comparison":"<=",
-                  "compare_to":6
-               },
-               "action":{
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "amount":-4.00
-                  },
-                  "resource":"quirks:power_reserve/kinetic_charge_energy"
-               }
-            }
-         ]
-      },
-      "interval":40,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:power_reserve/move_selector_resource",
-         "comparison":"==",
-         "compare_to":0
-      }
-   },
    "output_message_level_0":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"white\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"0%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",
@@ -397,13 +158,13 @@
       }
    },
    "output_message_level_1":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"#66ffcc\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"20%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",
@@ -411,13 +172,13 @@
       }
    },
    "output_message_level_2":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"#66FF99\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"40%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",
@@ -425,13 +186,13 @@
       }
    },
    "output_message_level_3":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"#66ff66\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"60%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",
@@ -439,13 +200,13 @@
       }
    },
    "output_message_level_4":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"#66ff33\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"80%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",
@@ -453,13 +214,13 @@
       }
    },
    "output_message_level_5":{
-      "type": "origins:action_over_time",
-      "rising_action": {
+      "type":"origins:action_over_time",
+      "rising_action":{
          "type":"origins:execute_command",
          "command":"title @s actionbar {\"bold\":false,\"color\":\"#66cc00\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"100%\",\"underlined\":false}"
       },
-      "interval": 1,
-      "condition": {
+      "interval":1,
+      "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_power_output",
          "comparison":"==",

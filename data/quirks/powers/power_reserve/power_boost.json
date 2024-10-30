@@ -21,32 +21,42 @@
                      "action":{
                         "type":"origins:if_else",
                         "condition":{
-                           "type":"origins:all_of",
-                           "conditions":[
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":">=",
-                                 "compare_to":1
-                              },
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":"<=",
-                                 "compare_to":39
-                              }
-                           ]
+                           "type":"origins:resource",
+                           "resource":"quirks:power_reserve/awakening",
+                           "comparison":"==",
+                           "compare_to":0
                         },
                         "if_action":{
-                           "type":"origins:change_resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "change":-20,
-                           "operation":"add"
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:and",
+                              "actions":[
+                                 {
+                                    "type":"origins:change_resource",
+                                    "resource":"quirks:power_reserve/backlash_strain",
+                                    "change":1,
+                                    "operation":"add"
+                                 },
+                                 {
+                                    "type":"origins:damage",
+                                    "amount":4,
+                                    "damage_type":"minecraft:player_attack"
+                                 }
+                              ]
+                           },
+                           "fail_action":{
+                              "type":"origins:change_resource",
+                              "resource":"quirks:power_reserve/backlash_strain",
+                              "change":2,
+                              "operation":"add"
+                           },
+                           "chance":0.10
                         },
                         "else_action":{
-                           "type":"origins:damage",
-                           "amount":4,
-                           "damage_type":"minecraft:player_attack"
+                           "type":"origins:change_resource",
+                           "resource":"quirks:power_reserve/backlash_strain",
+                           "change":-1,
+                           "operation":"add"
                         }
                      }
                   },
@@ -146,32 +156,42 @@
                      "action":{
                         "type":"origins:if_else",
                         "condition":{
-                           "type":"origins:all_of",
-                           "conditions":[
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":">=",
-                                 "compare_to":40
-                              },
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":"<=",
-                                 "compare_to":59
-                              }
-                           ]
+                           "type":"origins:resource",
+                           "resource":"quirks:power_reserve/awakening",
+                           "comparison":"==",
+                           "compare_to":0
                         },
                         "if_action":{
-                           "type":"origins:change_resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "change":-40,
-                           "operation":"add"
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:and",
+                              "actions":[
+                                 {
+                                    "type":"origins:change_resource",
+                                    "resource":"quirks:power_reserve/backlash_strain",
+                                    "change":2,
+                                    "operation":"add"
+                                 },
+                                 {
+                                    "type":"origins:damage",
+                                    "amount":5,
+                                    "damage_type":"minecraft:player_attack"
+                                 }
+                              ]
+                           },
+                           "fail_action":{
+                              "type":"origins:change_resource",
+                              "resource":"quirks:power_reserve/backlash_strain",
+                              "change":3,
+                              "operation":"add"
+                           },
+                           "chance":0.10
                         },
                         "else_action":{
-                           "type":"origins:damage",
-                           "amount":5,
-                           "damage_type":"minecraft:player_attack"
+                           "type":"origins:change_resource",
+                           "resource":"quirks:power_reserve/backlash_strain",
+                           "change":-2,
+                           "operation":"add"
                         }
                      }
                   },
@@ -271,32 +291,42 @@
                      "action":{
                         "type":"origins:if_else",
                         "condition":{
-                           "type":"origins:all_of",
-                           "conditions":[
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":">=",
-                                 "compare_to":60
-                              },
-                              {
-                                 "type":"origins:resource",
-                                 "resource":"quirks:power_reserve/kinetic_charge_energy",
-                                 "comparison":"<=",
-                                 "compare_to":79
-                              }
-                           ]
+                           "type":"origins:resource",
+                           "resource":"quirks:power_reserve/awakening",
+                           "comparison":"==",
+                           "compare_to":0
                         },
                         "if_action":{
-                           "type":"origins:change_resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "change":-60,
-                           "operation":"add"
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:and",
+                              "actions":[
+                                 {
+                                    "type":"origins:change_resource",
+                                    "resource":"quirks:power_reserve/backlash_strain",
+                                    "change":3,
+                                    "operation":"add"
+                                 },
+                                 {
+                                    "type":"origins:damage",
+                                    "amount":6,
+                                    "damage_type":"minecraft:player_attack"
+                                 }
+                              ]
+                           },
+                           "fail_action":{
+                              "type":"origins:change_resource",
+                              "resource":"quirks:power_reserve/backlash_strain",
+                              "change":4,
+                              "operation":"add"
+                           },
+                           "chance":0.10
                         },
                         "else_action":{
-                           "type":"origins:damage",
-                           "amount":6,
-                           "damage_type":"minecraft:player_attack"
+                           "type":"origins:change_resource",
+                           "resource":"quirks:power_reserve/backlash_strain",
+                           "change":-3,
+                           "operation":"add"
                         }
                      }
                   },
@@ -397,20 +427,41 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "comparison":">=",
-                           "compare_to":80
+                           "resource":"quirks:power_reserve/awakening",
+                           "comparison":"==",
+                           "compare_to":0
                         },
                         "if_action":{
-                           "type":"origins:change_resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "change":-80,
-                           "operation":"add"
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:and",
+                              "actions":[
+                                 {
+                                    "type":"origins:change_resource",
+                                    "resource":"quirks:power_reserve/backlash_strain",
+                                    "change":4,
+                                    "operation":"add"
+                                 },
+                                 {
+                                    "type":"origins:damage",
+                                    "amount":7,
+                                    "damage_type":"minecraft:player_attack"
+                                 }
+                              ]
+                           },
+                           "fail_action":{
+                              "type":"origins:change_resource",
+                              "resource":"quirks:power_reserve/backlash_strain",
+                              "change":5,
+                              "operation":"add"
+                           },
+                           "chance":0.10
                         },
                         "else_action":{
-                           "type":"origins:damage",
-                           "amount":7,
-                           "damage_type":"minecraft:player_attack"
+                           "type":"origins:change_resource",
+                           "resource":"quirks:power_reserve/backlash_strain",
+                           "change":-4,
+                           "operation":"add"
                         }
                      }
                   },
@@ -478,7 +529,7 @@
                               "bientity_condition":{
                                  "type":"origins:target_condition",
                                  "condition":{
-                                    "type": "origins:living"
+                                    "type":"origins:living"
                                  }
                               },
                               "include_actor":true
@@ -508,20 +559,41 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
+                           "resource":"quirks:power_reserve/awakening",
                            "comparison":"==",
-                           "compare_to":100
+                           "compare_to":0
                         },
                         "if_action":{
-                           "type":"origins:change_resource",
-                           "resource":"quirks:power_reserve/kinetic_charge_energy",
-                           "change":0,
-                           "operation":"set"
+                           "type":"origins:chance",
+                           "success_action":{
+                              "type":"origins:and",
+                              "actions":[
+                                 {
+                                    "type":"origins:change_resource",
+                                    "resource":"quirks:power_reserve/backlash_strain",
+                                    "change":5,
+                                    "operation":"add"
+                                 },
+                                 {
+                                    "type":"origins:damage",
+                                    "amount":8,
+                                    "damage_type":"minecraft:player_attack"
+                                 }
+                              ]
+                           },
+                           "fail_action":{
+                              "type":"origins:change_resource",
+                              "resource":"quirks:power_reserve/backlash_strain",
+                              "change":6,
+                              "operation":"add"
+                           },
+                           "chance":0.10
                         },
                         "else_action":{
-                           "type":"origins:damage",
-                           "amount":8,
-                           "damage_type":"minecraft:player_attack"
+                           "type":"origins:change_resource",
+                           "resource":"quirks:power_reserve/backlash_strain",
+                           "change":-5,
+                           "operation":"add"
                         }
                      }
                   },
@@ -589,7 +661,7 @@
                               "bientity_condition":{
                                  "type":"origins:target_condition",
                                  "condition":{
-                                    "type": "origins:living"
+                                    "type":"origins:living"
                                  }
                               },
                               "include_actor":true

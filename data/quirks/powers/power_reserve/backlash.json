@@ -1,0 +1,153 @@
+{
+    "type":"origins:multiple",
+    "strain":{
+       "type":"origins:resource",
+       "min":0,
+       "max":100,
+       "hud_render":{
+          "should_render":true,
+          "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+          "bar_index":15,
+          "condition":{
+             "type":"origins:resource",
+             "resource":"quirks:power_reserve/kinetic_charge_strain",
+             "comparison":"!=",
+             "compare_to":0
+          }
+       },
+       "start_value":0
+    },
+    "strain_drain":{
+      "type": "origins:action_over_time",
+      "entity_action": {
+         "type": "origins:if_else_list",
+         "actions": [
+             {
+                 "condition": {
+                  "type": "origins:and",
+                  "conditions": [
+                      {
+                        "type":"origins:resource",
+                        "resource":"quirks:power_reserve/kinetic_charge_power_output",
+                        "comparison":"==",
+                        "compare_to":1
+                      },
+                      {      
+                          "type": "origins:invisible"
+                      }
+                  ]
+                 },
+                 "action": {
+                     "type": "origins:apply_effect",
+                     "effect": {
+                         "effect": "minecraft:speed",
+                         "amplifier": 2,
+                         "duration": 80
+                     }
+                 }
+             },
+             {
+                 "condition": {
+                     "type": "origins:health",
+                     "comparison": "<=",
+                     "compare_to": 12
+                 },
+                 "action": {
+                     "type": "origins:apply_effect",
+                     "effect": {
+                         "effect": "minecraft:speed",
+                         "amplifier": 1,
+                         "duration": 80
+                     }
+                 }
+             },
+             {
+                 "condition": {
+                     "type": "origins:health",
+                     "comparison": "<=",
+                     "compare_to": 18
+                 },
+                 "action": {
+                     "type": "origins:apply_effect",
+                     "effect": {
+                         "effect": "minecraft:speed",
+                         "amplifier": 0,
+                         "duration": 80
+                     }
+                 }
+             }
+         ]
+      },
+      "interval": 20,
+      "condition": {
+         "type":"origins:resource",
+         "resource":"quirks:power_reserve/kinetic_charge_power_output",
+         "comparison":"==",
+         "compare_to":0
+      }
+    },
+    "strain_effects_70":{
+       "type":"origins:action_over_time",
+       "entity_action":{
+          "type":"origins:apply_effect",
+          "effects":[
+             {
+                "effect":"minecraft:slowness",
+                "duration":400,
+                "amplifier":1,
+                "is_ambient":false,
+                "show_particles":false,
+                "show_icon":true
+             },
+             {
+                "effect":"minecraft:weakness",
+                "duration":400,
+                "amplifier":1,
+                "is_ambient":false,
+                "show_particles":false,
+                "show_icon":true
+             },
+             {
+                "effect":"minecraft:mining_fatigue",
+                "duration":400,
+                "amplifier":1,
+                "is_ambient":false,
+                "show_particles":false,
+                "show_icon":true
+             }
+          ]
+       },
+       "interval":60,
+       "condition":{
+          "type":"origins:all_of",
+          "conditions":[
+             {
+                "type":"origins:resource",
+                "resource":"quirks:power_reserve/backlash_strain",
+                "comparison":">",
+                "compare_to":70
+             },
+             {
+                "type":"origins:resource",
+                "resource":"quirks:power_reserve/backlash_strain",
+                "comparison":"<",
+                "compare_to":100
+             }
+          ]
+       }
+    },
+    "strain_hurt_100":{
+        "type": "origins:damage_over_time",
+        "interval": 30,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_type": "minecraft:magic",
+        "condition":{
+            "type":"origins:resource",
+            "resource":"quirks:power_reserve/backlash_strain",
+            "comparison":"==",
+            "compare_to":100
+         }
+    }
+}
