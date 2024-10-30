@@ -4,7 +4,9 @@
 		"quirks:power_reserve/kinetic_charge",
 		"quirks:power_reserve/power_boost",
 		"quirks:power_reserve/speed_burst",
-		"quirks:power_reserve/endurance_enhancement"
+		"quirks:power_reserve/endurance_enhancement",
+		"quirks:power_reserve/awakening",
+		"quirks:power_reserve/backlash"
 	],
 	"icon":{
 		"id": "minecraft:respawn_anchor"
