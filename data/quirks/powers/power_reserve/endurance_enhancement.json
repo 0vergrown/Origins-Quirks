@@ -15,15 +15,9 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":">=",
-               "compare_to":20
-            },
-            {
-               "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":"<=",
-               "compare_to":24
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
+               "comparison":"==",
+               "compare_to":0
             },
             {
                "type":"origins:resource",
@@ -49,15 +43,9 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":">=",
-               "compare_to":40
-            },
-            {
-               "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":"<=",
-               "compare_to":44
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
+               "comparison":"==",
+               "compare_to":1
             },
             {
                "type":"origins:resource",
@@ -83,15 +71,9 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":">=",
-               "compare_to":60
-            },
-            {
-               "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":"<=",
-               "compare_to":64
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
+               "comparison":"==",
+               "compare_to":2
             },
             {
                "type":"origins:resource",
@@ -119,7 +101,7 @@
                "type":"origins:resource",
                "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"==",
-               "compare_to":4
+               "compare_to":3
             },
             {
                "type":"origins:resource",
@@ -147,7 +129,7 @@
                "type":"origins:resource",
                "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"==",
-               "compare_to":5
+               "compare_to":4
             },
             {
                "type":"origins:resource",

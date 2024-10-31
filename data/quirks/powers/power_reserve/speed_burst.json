@@ -1,35 +1,16 @@
 {
    "type":"origins:multiple",
-   "energy_drain":{
+   "backlash":{
       "type":"origins:action_over_time",
       "entity_action":{
-         "type":"origins:modify_resource",
-         "modifier":{
-            "operation":"add_base_early",
-            "amount":-0.50
+         "type":"origins:chance",
+         "success_action":{
+            "type":"origins:change_resource",
+            "resource":"quirks:power_reserve/backlash_strain",
+            "change":1,
+            "operation":"add"
          },
-         "resource":"quirks:power_reserve/kinetic_charge_energy"
-      },
-      "interval":20,
-      "condition":{
-         "type":"origins:all_of",
-         "conditions":[
-            {
-               "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
-               "comparison":"!=",
-               "compare_to":0
-            },
-            {
-               "type":"origins:resource",
-               "resource":"quirks:power_reserve/move_selector_resource",
-               "comparison":"==",
-               "compare_to":2
-            },
-            {
-               "type":"origins:sprinting"
-            }
-         ]
+         "chance":0.01
       }
    },
    "effects":{
@@ -133,7 +114,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"!=",
                "compare_to":0
             },
@@ -164,7 +145,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"quirks:power_reserve/kinetic_charge_energy",
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"!=",
                "compare_to":0
             },
