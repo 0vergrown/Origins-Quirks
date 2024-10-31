@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"quirks:blackwhip/move_selector",
+		"quirks:blackwhip/whip_swing",
+		"quirks:blackwhip/pinpoint_focus"
+	],
+	"icon":{
+		"id": "minecraft:green_dye"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 2,
+	"loading_priority": 0
+}

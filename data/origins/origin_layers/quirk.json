@@ -2,6 +2,7 @@
   "order":10,
   "origins":[
      "quirks:acid",
+     "quirks:blackwhip",
      "quirks:fa_jin",
      "quirks:gigantification",
      "quirks:heal",
