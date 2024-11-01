@@ -1,98 +1,85 @@
 {
-    "type":"origins:multiple",
-    "set":{
-       "type":"origins:entity_set",
-       "action_on_add":{
-          "type":"origins:target_action",
-          "action":{
-             "type":"origins:grant_power",
-             "power":"quirks:blackwhip/whip_swing_target_effects",
-             "source":"quirks:blackwhip/whip_swing_target_effects"
-          }
-       },
-       "action_on_remove":{
-          "type":"origins:target_action",
-          "action":{
-             "type":"origins:execute_command",
-             "command":"kill @s"
-          }
-       }
-    },
-    "active":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:if_else",
-          "condition":{
-             "type":"origins:entity_set_size",
-             "set":"quirks:blackwhip/whip_swing_set",
-             "comparison":"==",
-             "compare_to":0
-          },
-          "if_action":{
-             "type":"origins:raycast",
-             "distance":25.00,
-             "block":true,
-             "entity":false,
-             "shape_type":"collider",
-             "fluid_handling":"none",
-             "hit_action":{
-                "type":"origins:and",
-                "actions":[
-                   {
-                      "type":"origins:spawn_entity",
-                      "entity_type":"minecraft:armor_stand",
-                      "tag":"{NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b}",
-                      "entity_action":{
-                         "type":"origins:and",
-                         "actions":[
-                            {
-                               "type":"origins:execute_command",
-                               "command":"tag @s add blackwhip.whip_swing_target"
-                            },
-                            {
-                               "type":"origins:delay",
-                               "action":{
-                                  "type":"origins:execute_command",
-                                  "command":"tag @s remove blackwhip.whip_swing_target"
-                               },
-                               "ticks":1
-                            }
-                         ]
-                      },
-                      "bientity_action":{
-                         "type":"origins:add_to_set",
-                         "set":"quirks:blackwhip/whip_swing_set"
-                      }
-                   },
-                   {
-                      "type":"origins:play_sound",
-                      "sound":"minecraft:item.crossbow.shoot",
-                      "volume":0.20,
-                      "pitch":1.60
-                   },
-                   {
-                      "type":"origins:play_sound",
-                      "sound":"minecraft:entity.phantom.bite",
-                      "volume":1.00,
-                      "pitch":2.00
-                   }
-                ]
-             },
-             "command_at_hit":"teleport @e[limit=1,tag=blackwhip.whip_swing_target,type=minecraft:armor_stand] @s",
-             "command_hit_offset":0.5
-          },
-          "else_action":{
-             "type":"origins:heal",
-             "amount":6
-          }
-       },
-       "cooldown": 1,
-       "hud_render": {
-        "should_render": false
-       },
-       "key": {
-        "key": "key.origins.primary_active",
-        "continuous": false
-       }
-    }
+   "type":"origins:active_self",
+   "entity_action":{
+      "type":"origins:if_else",
+      "condition":{
+         "type":"origins:raycast",
+         "distance":20.00,
+         "block":false,
+         "entity":true,
+         "shape_type":"visual",
+         "fluid_handling":"none"
+      },
+      "if_action":{
+         "type":"origins:raycast",
+         "distance":20.00,
+         "block":false,
+         "entity":true,
+         "shape_type":"visual",
+         "fluid_handling":"none",
+         "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+               "type":"origins:living"
+            }
+         },
+         "bientity_action":{
+            "type":"origins:add_velocity",
+            "x":0.00,
+            "y":0.00,
+            "z":-3.00,
+            "reference":"position",
+            "set":false
+         },
+         "command_along_ray":"particle minecraft:smoke ~ ~0.5 ~ 0 0 0 0 10",
+         "command_along_ray_only_on_hit":true
+      },
+      "else_action":{
+         "type":"origins:raycast",
+         "distance":20.00,
+         "block":true,
+         "entity":false,
+         "shape_type":"outline",
+         "fluid_handling":"none",
+         "hit_action":{
+            "type":"origins:and",
+            "actions":[
+               {
+                  "type":"origins:delay",
+                  "action":{
+                     "type":"origins:add_velocity",
+                     "x":0.00,
+                     "y":0.00,
+                     "z":3.00,
+                     "space":"local",
+                     "set":false
+                  },
+                  "ticks":3
+               },
+               {
+                  "type":"origins:delay",
+                  "action":{
+                     "type":"origins:add_velocity",
+                     "x":0.00,
+                     "y":0.125,
+                     "z":0.00,
+                     "space":"world",
+                     "set":false
+                  },
+                  "ticks":4
+               }
+            ]
+         },
+         "command_along_ray":"particle minecraft:smoke ~ ~0.5 ~ 0 0 0 0 10",
+         "command_along_ray_only_on_hit":true
+      }
+   },
+   "cooldown": 1,
+   "hud_render": {
+      "should_render": false
+   },
+   "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+   }
 }
