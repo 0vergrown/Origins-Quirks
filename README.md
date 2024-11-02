@@ -9,7 +9,7 @@
 
 ## Current Quirks
 - Acid (Almost Done)
-- Fa Jin (Not Finished)
+- Fa Jin
 - Gigantification (Not Finished)
 - Heal
 - Invisibility
