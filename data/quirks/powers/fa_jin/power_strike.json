@@ -154,12 +154,40 @@
                                        "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.84,0.06,0.06],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.84,0.06,0.06],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.00,0.00,0.00],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.00,0.00,0.00],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
                                        "type":"origins:play_sound",
@@ -356,12 +384,40 @@
                                        "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.84,0.06,0.06],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.84,0.06,0.06],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.00,0.00,0.00],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.00,0.00,0.00],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
                                        "type":"origins:play_sound",
@@ -558,12 +614,40 @@
                                        "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.84,0.06,0.06],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.84,0.06,0.06],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.00,0.00,0.00],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.00,0.00,0.00],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
                                        "type":"origins:play_sound",
@@ -774,12 +858,40 @@
                                        "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.84,0.06,0.06],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.84,0.06,0.06],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.00,0.00,0.00],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.00,0.00,0.00],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
                                        "type":"origins:play_sound",
@@ -990,12 +1102,40 @@
                                        "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.84,0.06,0.06],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.84,0.06,0.06],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
-                                       "type":"origins:execute_command",
-                                       "command":"particle dust{color:[0.00,0.00,0.00],scale:1} ~ ~1 ~ 0.50 0.50 0.50 0.00 70 force"
+                                       "type":"origins:spawn_particles",
+                                       "particle":{
+                                          "type":"minecraft:dust",
+                                          "params":"{color:[0.00,0.00,0.00],scale:1}"
+                                       },
+                                       "count":70,
+                                       "speed":0.00,
+                                       "force":true,
+                                       "spread":{
+                                          "x":0.50,
+                                          "y":0.50,
+                                          "z":0.50
+                                       },
+                                       "offset_x":0.00,
+                                       "offset_y":1.00,
+                                       "offset_z":0.00
                                     },
                                     {
                                        "type":"origins:play_sound",
