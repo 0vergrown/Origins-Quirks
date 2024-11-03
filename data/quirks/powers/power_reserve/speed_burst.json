@@ -7,10 +7,16 @@
          "success_action":{
             "type":"origins:change_resource",
             "resource":"quirks:power_reserve/backlash_strain",
-            "change":1,
+            "change":20,
             "operation":"add"
          },
-         "chance":0.01
+         "chance":0.01,
+         "fail_action": {
+            "type":"origins:change_resource",
+            "resource":"quirks:power_reserve/backlash_strain",
+            "change":1,
+            "operation":"add"
+         }
       }
    },
    "effects":{

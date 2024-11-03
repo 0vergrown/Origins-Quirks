@@ -456,7 +456,7 @@
             }
          ]
       },
-      "interval":1,
+      "interval":20,
       "condition":{
          "type":"origins:resource",
          "resource":"quirks:power_reserve/kinetic_charge_energy",
