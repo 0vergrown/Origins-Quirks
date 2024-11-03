@@ -4,8 +4,7 @@
 		"quirks:severance/dismantle",
 		"quirks:severance/cleave",
 		"quirks:severance/rend",
-		"quirks:severance/severing_barrage",
-		"quirks:severance/open_flame"
+		"quirks:severance/severing_barrage"
 	],
     "icon":{
         "id":"minecraft:player_head",

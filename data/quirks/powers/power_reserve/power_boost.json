@@ -76,7 +76,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
@@ -125,7 +125,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
@@ -308,7 +308,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
@@ -491,7 +491,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
@@ -674,7 +674,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
@@ -890,7 +890,7 @@
                                           "type":"origins:if_else",
                                           "condition":{
                                              "type":"origins:resource",
-                                             "resource":"quirks:power_reserve/awakening",
+                                             "resource":"quirks:power_reserve/awakening_resource",
                                              "comparison":"==",
                                              "compare_to":1
                                           },
