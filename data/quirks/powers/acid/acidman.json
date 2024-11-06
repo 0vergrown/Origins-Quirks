@@ -82,23 +82,10 @@
          "compare_to":3
       }
    },
-   "main_body_particles":{
-      "type":"origins:particle",
-      "particle":"minecraft:sneeze",
-      "count":20,
-      "speed":0.01,
-      "force":true,
-      "spread":{
-         "x":0.60,
-         "y":0.45,
-         "z":0.60
-      },
-      "offset_x":0.00,
-      "offset_y":0.90,
-      "offset_z":0.00,
-      "frequency":1,
-      "visible_in_first_person":false,
-      "visible_while_invisible":false,
+   "invisibility":{
+      "type": "origins:invisibility",
+      "render_armor": false,
+      "render_outline": false,
       "condition":{
          "type":"origins:all_of",
          "conditions":[
@@ -117,23 +104,34 @@
          ]
       }
    },
-   "main_body_aura_particles":{
-      "type":"origins:particle",
-      "particle":"minecraft:effect",
-      "count":15,
-      "speed":0.01,
-      "force":true,
-      "spread":{
-         "x":0.70,
-         "y":0.45,
-         "z":0.70
+   "particles":{
+      "type": "origins:action_over_time",
+      "entity_action": {
+         "type": "origins:and",
+         "actions": [
+            {
+               "type": "origins:execute_command",
+               "command": "execute as @s at @s rotated ~ 0 positioned ^ ^1.8 ^ run particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:0.7} ^ ^ ^-0.2 0.135 0.09 0.135 0 6 normal @a"
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "execute as @s at @s rotated ~ 0 positioned ^ ^1.0 ^ run particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:0.65} ^ ^ ^ 0.05 0.5 0.05 0 6 normal @a"
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "execute as @s at @s rotated ~ 0 positioned ^ ^1.2 ^ run particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:0.8} ^ ^ ^ 0.25 0.6 0.25 0 10 normal @a"
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "execute as @s at @s rotated ~ 0 positioned ^ ^1.8 ^ run particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.14} ^0.1 ^ ^0.1 0.0225 0.008 0.0225 0 8 normal @a"
+            },
+            {
+               "type": "origins:execute_command",
+               "command": "execute as @s at @s rotated ~ 0 positioned ^ ^1.8 ^ run particle minecraft:dust{color:[1.0,1.0,1.0],scale:0.14} ^-0.1 ^ ^0.1 0.0225 0.008 0.0225 0 8 normal @a"
+            }
+         ]
       },
-      "offset_x":0.00,
-      "offset_y":0.90,
-      "offset_z":0.00,
-      "frequency":1,
-      "visible_in_first_person":false,
-      "visible_while_invisible":false,
+      "interval": 1,
       "condition":{
          "type":"origins:all_of",
          "conditions":[
@@ -162,7 +160,7 @@
       "draw_mode": "texture",
       "draw_phase": "below_hud",
       "hide_with_hud": false,
-      "visible_in_third_person": true,
+      "visible_in_third_person": false,
       "condition":{
          "type":"origins:resource",
          "resource":"quirks:acid/acidman_resource",
