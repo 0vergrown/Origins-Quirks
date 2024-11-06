@@ -4,8 +4,8 @@
        "type":"origins:and",
        "actions":[
           {
-             "type":"origins:execute_command",
-             "command":"tp @s ^ ^ ^0.3"
+            "type":"origins:execute_command",
+            "command":"tp @s ^ ^ ^3 ~ ~"
           },
           {
              "type":"origins:spawn_particles",
