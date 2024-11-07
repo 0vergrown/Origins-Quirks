@@ -12,10 +12,12 @@
    "resource_drain":{
       "type":"origins:action_over_time",
       "entity_action":{
-         "type":"origins:change_resource",
-         "resource":"quirks:acid/corrosive_liquid_resource",
-         "change":-1,
-         "operation":"add"
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"add_base_early",
+            "amount":-3.00
+         },
+         "resource":"quirks:acid/corrosive_liquid_resource"
       },
       "interval":15,
       "condition":{
@@ -47,16 +49,20 @@
             "compare_to":0
          },
          "if_action":{
-            "type":"origins:change_resource",
-            "resource":"quirks:acid/acid_layback_resource",
-            "change":1,
-            "operation":"set"
+            "type":"origins:modify_resource",
+            "modifier":{
+               "operation":"set_total",
+               "amount":1.00
+            },
+            "resource":"quirks:acid/acid_layback_resource"
          },
          "else_action":{
-            "type":"origins:change_resource",
-            "resource":"quirks:acid/acid_layback_resource",
-            "change":0,
-            "operation":"set"
+            "type":"origins:modify_resource",
+            "modifier":{
+               "operation":"set_total",
+               "amount":0.00
+            },
+            "resource":"quirks:acid/acid_layback_resource"
          }
       },
       "cooldown":1,
@@ -171,7 +177,7 @@
                "bientity_action":{
                   "type":"origins:damage",
                   "amount":1,
-                  "damage_type":"minecraft:wither"
+                  "damage_type":"quirks:acid/acid_corrosion"
                },
                "bientity_condition":{
                   "type":"origins:all_of",
@@ -282,7 +288,7 @@
       "type":"origins:active_self",
       "entity_action":{
          "type":"origins:raycast",
-         "distance":4.00,
+         "distance":5.00,
          "block":false,
          "entity":true,
          "shape_type":"outline",

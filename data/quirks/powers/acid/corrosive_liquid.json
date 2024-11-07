@@ -45,10 +45,12 @@
             "resource": "quirks:acid/corrosive_liquid_resource"
          },
          "else_action": {
-            "type": "origins:change_resource",
-            "resource": "quirks:acid/corrosive_liquid_resource",
-            "change": 2,
-            "operation": "add"
+            "type": "origins:modify_resource",
+            "modifier": {
+               "operation": "add_base_early",
+               "amount": 2.00
+            },
+            "resource": "quirks:acid/corrosive_liquid_resource"
          }
       },
       "interval": 20,

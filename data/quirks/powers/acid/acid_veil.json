@@ -20,7 +20,7 @@
             "else_action":{
                "type":"origins:damage",
                "amount":4,
-               "damage_type":"minecraft:dry_out"
+               "damage_type":"quirks:acid/acid_corrosion"
             }
          },
          {
@@ -102,14 +102,6 @@
                         }
                      },
                      "include_actor":false
-                  },
-                  {
-                     "type":"origins:delay",
-                     "action":{
-                        "type":"origins:execute_command",
-                        "command":"kill @s"
-                     },
-                     "ticks":2
                   }
                ]
             }
@@ -170,14 +162,6 @@
                         }
                      },
                      "include_actor":false
-                  },
-                  {
-                     "type":"origins:delay",
-                     "action":{
-                        "type":"origins:execute_command",
-                        "command":"kill @s"
-                     },
-                     "ticks":2
                   }
                ]
             }

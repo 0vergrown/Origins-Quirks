@@ -32,7 +32,7 @@
             "else_action":{
                "type":"origins:damage",
                "amount":4,
-               "damage_type":"minecraft:dry_out"
+               "damage_type":"quirks:acid/acid_corrosion"
             }
          },
          {
@@ -59,7 +59,7 @@
                      "action":{
                         "type":"origins:damage",
                         "amount":4,
-                        "damage_type":"minecraft:wither"
+                        "damage_type":"quirks:acid/acid_corrosion"
                      }
                   },
                   "include_actor":true
@@ -78,7 +78,7 @@
    },
    "key":{
       "key":"key.origins.primary_active",
-      "continuous":false
+      "continuous":true
    },
    "condition":{
       "type":"origins:resource",

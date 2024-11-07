@@ -17,6 +17,26 @@
             "change":1,
             "operation":"add"
          }
+      },
+      "condition":{
+         "type":"origins:all_of",
+         "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/kinetic_charge_power_output",
+               "comparison":"!=",
+               "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/move_selector_resource",
+               "comparison":"==",
+               "compare_to":2
+            },
+            {
+               "type":"origins:sprinting"
+            }
+         ]
       }
    },
    "effects":{

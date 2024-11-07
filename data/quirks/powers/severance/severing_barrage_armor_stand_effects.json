@@ -40,7 +40,7 @@
                 "bientity_action":{
                    "type":"origins:damage",
                    "amount":10,
-                   "damage_type":"quirks:severance/cleave"
+                   "damage_type":"quirks:severance/severing_barrage"
                 },
                 "bientity_condition":{
                    "type":"origins:all_of",

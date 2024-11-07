@@ -39,7 +39,7 @@
                 "bientity_action":{
                    "type":"origins:damage",
                    "amount":12,
-                   "damage_type":"quirks:severance/cleave"
+                   "damage_type":"quirks:severance/razor"
                 },
                 "bientity_condition":{
                    "type":"origins:all_of",

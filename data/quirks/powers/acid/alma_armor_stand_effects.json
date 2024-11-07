@@ -134,7 +134,7 @@
                       "action":{
                          "type":"origins:damage",
                          "amount":1,
-                         "damage_type":"minecraft:wither"
+                         "damage_type":"quirks:acid/acid_corrosion"
                       }
                    }
                 ]
