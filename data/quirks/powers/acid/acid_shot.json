@@ -5,15 +5,10 @@
       "actions":[
          {
             "type":"origins:play_sound",
-            "sound":"minecraft:entity.cat.hiss",
-            "volume":0.30,
-            "pitch":2.00
-         },
-         {
-            "type":"origins:play_sound",
-            "sound":"minecraft:entity.arrow.shoot",
+            "sound":"quirks:acid.acid_shot_fired",
+            "category": "players",
             "volume":1.00,
-            "pitch":2.00
+            "pitch":1.00
          },
          {
             "type":"origins:if_else",
@@ -57,16 +52,28 @@
                   "bientity_action":{
                      "type":"origins:target_action",
                      "action":{
-                        "type":"origins:damage",
-                        "amount":4,
-                        "damage_type":"quirks:acid/acid_corrosion"
+                        "type": "origins:and",
+                        "actions": [
+                           {
+                              "type":"origins:damage",
+                              "amount":4,
+                              "damage_type":"quirks:acid/acid_corrosion"
+                           },
+                           {
+                              "type":"origins:play_sound",
+                              "sound":"quirks:acid.acid_shot_hit",
+                              "category": "ambient",
+                              "volume":1.00,
+                              "pitch":1.00
+                           }
+                        ]
                      }
                   },
                   "include_actor":true
                }
             },
-            "command_at_hit":"particle minecraft:effect ~ ~ ~ 0 0 0 0.05 500 force",
-            "command_along_ray":"particle minecraft:sneeze ^ ^ ^ 0 0 0 0.02 50 force",
+            "command_at_hit":"particle minecraft:effect ~ ~ ~ 0 0 0 0.05 500 force @a",
+            "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.0} ^ ^ ^ 0 0 0 0.02 50 force @a",
             "command_step":1.00,
             "command_along_ray_only_on_hit":false
          }

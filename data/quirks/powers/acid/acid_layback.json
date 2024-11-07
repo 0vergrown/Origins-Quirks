@@ -15,7 +15,7 @@
          "type":"origins:modify_resource",
          "modifier":{
             "operation":"add_base_early",
-            "amount":-3.00
+            "amount":-10.00
          },
          "resource":"quirks:acid/corrosive_liquid_resource"
       },
@@ -84,7 +84,7 @@
       "type":"origins:modify_jump",
       "modifier":{
          "operation":"add_base_early",
-         "amount":0.2
+         "amount":0.20
       },
       "condition":{
          "type":"origins:all_of",
@@ -142,7 +142,10 @@
             },
             {
                "type":"origins:spawn_particles",
-               "particle":"minecraft:sneeze",
+               "particle":{
+                  "type": "minecraft:dust_color_transition",
+                  "params": "{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.7}"
+               },
                "count":10,
                "speed":0.01,
                "force":false,
