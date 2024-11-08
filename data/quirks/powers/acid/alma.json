@@ -17,20 +17,55 @@
                "type":"origins:resource",
                "resource":"quirks:acid/corrosive_liquid_resource",
                "comparison":">=",
-               "compare_to":100
+               "compare_to":50
             },
             "if_action":{
-               "type":"origins:modify_resource",
-               "modifier":{
-                  "operation":"add_base_early",
-                  "amount":-100.00
-               },
-               "resource":"quirks:acid/corrosive_liquid_resource"
+               "type": "origins:choice",
+               "actions": [
+                   {
+                       "element": {    
+                        "type": "origins:modify_resource",
+                        "modifier": {
+                           "operation": "add_base_early",
+                           "amount": -50.00
+                        },
+                        "resource": "quirks:acid/corrosive_liquid_resource"
+                       },
+                       "weight": 20
+                   },
+                   {
+                       "element": {
+                        "type": "origins:modify_resource",
+                        "modifier": {
+                           "operation": "add_base_early",
+                           "amount": -75.00
+                        },
+                        "resource": "quirks:acid/corrosive_liquid_resource"
+                       },
+                       "weight": 20
+                   }
+               ]
             },
             "else_action":{
-               "type":"origins:damage",
-               "amount":10,
-               "damage_type":"quirks:acid/acid_corrosion"
+               "type": "origins:choice",
+               "actions": [
+                   {
+                       "element": {    
+                        "type":"origins:damage",
+                        "amount":6,
+                        "damage_type":"quirks:acid/acid_corrosion"
+                       },
+                       "weight": 20
+                   },
+                   {
+                       "element": {
+                        "type":"origins:damage",
+                        "amount":8,
+                        "damage_type":"quirks:acid/acid_corrosion"
+                       },
+                       "weight": 20
+                   }
+               ]
             }
          },
          {
@@ -74,20 +109,9 @@
       "continuous":false
    },
    "condition":{
-      "type":"origins:all_of",
-      "conditions":[
-         {
-            "type":"origins:resource",
-            "resource":"quirks:acid/move_selector_resource",
-            "comparison":"==",
-            "compare_to":4
-         },
-         {
-            "type":"origins:resource",
-            "resource":"quirks:acid/acidman_resource",
-            "comparison":"==",
-            "compare_to":1
-         }
-      ]
+      "type":"origins:resource",
+      "resource":"quirks:acid/move_selector_resource",
+      "comparison":"==",
+      "compare_to":4
    }
 }

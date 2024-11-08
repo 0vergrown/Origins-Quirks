@@ -12,12 +12,61 @@
    "resource_drain":{
       "type":"origins:action_over_time",
       "entity_action":{
-         "type":"origins:modify_resource",
-         "modifier":{
-            "operation":"add_base_early",
-            "amount":-3.00
+         "type":"origins:if_else",
+         "condition":{
+            "type":"origins:resource",
+            "resource":"quirks:acid/corrosive_liquid_resource",
+            "comparison":">=",
+            "compare_to":25
          },
-         "resource":"quirks:acid/corrosive_liquid_resource"
+         "if_action":{
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "element": {    
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                        "operation": "add_base_early",
+                        "amount": -25.00
+                     },
+                     "resource": "quirks:acid/corrosive_liquid_resource"
+                    },
+                    "weight": 20
+                },
+                {
+                    "element": {
+                     "type": "origins:modify_resource",
+                     "modifier": {
+                        "operation": "add_base_early",
+                        "amount": -35.00
+                     },
+                     "resource": "quirks:acid/corrosive_liquid_resource"
+                    },
+                    "weight": 20
+                }
+            ]
+         },
+         "else_action":{
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "element": {    
+                     "type":"origins:damage",
+                     "amount":4,
+                     "damage_type":"quirks:acid/acid_corrosion"
+                    },
+                    "weight": 20
+                },
+                {
+                    "element": {
+                     "type":"origins:damage",
+                     "amount":5,
+                     "damage_type":"quirks:acid/acid_corrosion"
+                    },
+                    "weight": 20
+                }
+            ]
+         }
       },
       "falling_action":{
          "type":"origins:modify_resource",

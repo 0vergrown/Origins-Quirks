@@ -6,9 +6,13 @@
          {
             "type":"origins:play_sound",
             "sound":"quirks:acid.acid_shot_fired",
-            "category": "players",
+            "category":"players",
             "volume":1.00,
             "pitch":1.00
+         },
+         {
+            "type":"origins:swing_hand",
+            "hand":"MAIN_HAND"
          },
          {
             "type":"origins:if_else",
@@ -16,23 +20,60 @@
                "type":"origins:resource",
                "resource":"quirks:acid/corrosive_liquid_resource",
                "comparison":">=",
-               "compare_to":5
+               "compare_to":3
             },
             "if_action":{
-               "type":"origins:change_resource",
-               "resource":"quirks:acid/corrosive_liquid_resource",
-               "change":-5,
-               "operation":"add"
+               "type":"origins:choice",
+               "actions":[
+                  {
+                     "element":{
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"add_base_early",
+                           "amount":-3.00
+                        },
+                        "resource":"quirks:acid/corrosive_liquid_resource"
+                     },
+                     "weight":20
+                  },
+                  {
+                     "element":{
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"add_base_early",
+                           "amount":-5.00
+                        },
+                        "resource":"quirks:acid/corrosive_liquid_resource"
+                     },
+                     "weight":20
+                  }
+               ]
             },
             "else_action":{
-               "type":"origins:damage",
-               "amount":4,
-               "damage_type":"quirks:acid/acid_corrosion"
+               "type":"origins:choice",
+               "actions":[
+                  {
+                     "element":{
+                        "type":"origins:damage",
+                        "amount":1,
+                        "damage_type":"quirks:acid/acid_corrosion"
+                     },
+                     "weight":20
+                  },
+                  {
+                     "element":{
+                        "type":"origins:damage",
+                        "amount":1.5,
+                        "damage_type":"quirks:acid/acid_corrosion"
+                     },
+                     "weight":20
+                  }
+               ]
             }
          },
          {
             "type":"origins:raycast",
-            "distance":30.00,
+            "distance":20.00,
             "block":true,
             "entity":true,
             "shape_type":"collider",
@@ -52,8 +93,8 @@
                   "bientity_action":{
                      "type":"origins:target_action",
                      "action":{
-                        "type": "origins:and",
-                        "actions": [
+                        "type":"origins:and",
+                        "actions":[
                            {
                               "type":"origins:damage",
                               "amount":4,
@@ -62,7 +103,7 @@
                            {
                               "type":"origins:play_sound",
                               "sound":"quirks:acid.acid_shot_hit",
-                              "category": "ambient",
+                              "category":"ambient",
                               "volume":1.00,
                               "pitch":1.00
                            }
@@ -73,7 +114,7 @@
                }
             },
             "command_at_hit":"particle minecraft:effect ~ ~ ~ 0 0 0 0.05 500 force @a",
-            "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.0} ^ ^ ^ 0 0 0 0.02 50 force @a",
+            "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.0} ^-0.4 ^-0.7 ^0.1 0 0 0 0.02 50 force @a",
             "command_step":1.00,
             "command_along_ray_only_on_hit":false
          }

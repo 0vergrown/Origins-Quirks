@@ -12,14 +12,63 @@
    "resource_drain":{
       "type":"origins:action_over_time",
       "entity_action":{
-         "type":"origins:modify_resource",
-         "modifier":{
-            "operation":"add_base_early",
-            "amount":-10.00
+         "type":"origins:if_else",
+         "condition":{
+            "type":"origins:resource",
+            "resource":"quirks:acid/corrosive_liquid_resource",
+            "comparison":">=",
+            "compare_to":10
          },
-         "resource":"quirks:acid/corrosive_liquid_resource"
+         "if_action":{
+            "type":"origins:choice",
+            "actions":[
+               {
+                  "element":{
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:acid/corrosive_liquid_resource"
+                  },
+                  "weight":20
+               },
+               {
+                  "element":{
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-20.00
+                     },
+                     "resource":"quirks:acid/corrosive_liquid_resource"
+                  },
+                  "weight":20
+               }
+            ]
+         },
+         "else_action":{
+            "type":"origins:choice",
+            "actions":[
+               {
+                  "element":{
+                     "type":"origins:damage",
+                     "amount":2,
+                     "damage_type":"quirks:acid/acid_corrosion"
+                  },
+                  "weight":20
+               },
+               {
+                  "element":{
+                     "type":"origins:damage",
+                     "amount":3.5,
+                     "damage_type":"quirks:acid/acid_corrosion"
+                  },
+                  "weight":20
+               }
+            ]
+         }
       },
-      "interval":15,
+      "interval":20,
       "condition":{
          "type":"origins:all_of",
          "conditions":[
@@ -104,22 +153,14 @@
          ]
       }
    },
-   "speed_and_strength":{
+   "speed":{
       "type":"origins:conditioned_attribute",
-      "modifiers":[
-         {
-            "attribute":"minecraft:generic.movement_speed",
-            "operation":"add_multiplied_total",
-            "amount":1.00,
-            "id":"quirks:acid_layback_speed"
-         },
-         {
-            "attribute":"minecraft:generic.attack_damage",
-            "operation":"add_multiplied_total",
-            "amount":0.50,
-            "id":"quirks:acid_layback_attack"
-         }
-      ],
+      "modifier":{
+         "attribute":"minecraft:generic.movement_speed",
+         "operation":"add_multiplied_total",
+         "amount":1.00,
+         "id":"quirks:acid_layback_speed"
+      },
       "tick_rate":1,
       "update_health":false,
       "condition":{
@@ -137,6 +178,7 @@
             {
                "type":"origins:play_sound",
                "sound":"minecraft:entity.cat.hiss",
+               "category": "players",
                "volume":0.30,
                "pitch":2.00
             },
@@ -175,7 +217,7 @@
             },
             {
                "type":"origins:area_of_effect",
-               "radius":2.00,
+               "radius":1.00,
                "shape":"cube",
                "bientity_action":{
                   "type":"origins:damage",
@@ -208,10 +250,12 @@
          ]
       },
       "falling_action":{
-         "type":"origins:change_resource",
-         "resource":"quirks:acid/acid_layback_resource",
-         "change":0,
-         "operation":"set"
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"set_total",
+            "amount":0.00
+         },
+         "resource":"quirks:acid/acid_layback_resource"
       },
       "interval":1,
       "condition":{
