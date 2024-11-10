@@ -9,6 +9,7 @@
 
 ## Current Quirks
 - Acid (Almost Done)
+- Blackwhip (In Progress)
 - Fa Jin
 - Gigantification (Not Finished)
 - Heal
@@ -55,4 +56,4 @@ This project is licensed under the All Rights Reserved License - see the [LICENS
 
 ## Acknowledgments
 - Special thanks to the *My Hero Academia* community for inspiration.
-- Thanks to the [Origins Mod](https://github.com/apace100/origins-fabric) creators for providing a fantastic platform to build on.
+- Thanks to the [Origins Mod](https://github.com/apace100/origins-fabric) creators for providing a fantastic mod to build on.
