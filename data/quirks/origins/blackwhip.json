@@ -2,6 +2,7 @@
 	"powers": [
 		"quirks:blackwhip/move_selector",
 		"quirks:blackwhip/whip_swing",
+		"quirks:blackwhip/pull",
 		"quirks:blackwhip/pinpoint_focus"
 	],
 	"icon":{

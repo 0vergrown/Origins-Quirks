@@ -6,8 +6,8 @@
          "type":"origins:target_action",
          "action":{
             "type":"origins:grant_power",
-            "power":"quirks:blackwhip/hook",
-            "source":"quirks:blackwhip/hook"
+            "power":"quirks:blackwhip/whip_swing_bat_effects",
+            "source":"quirks:blackwhip/whip_swing_bat_effects"
          }
       },
       "action_on_remove":{
@@ -17,8 +17,8 @@
             "actions":[
                {
                   "type":"origins:revoke_power",
-                  "power":"quirks:blackwhip/hook",
-                  "source":"quirks:blackwhip/hook"
+                  "power":"quirks:blackwhip/whip_swing_bat_effects",
+                  "source":"quirks:blackwhip/whip_swing_bat_effects"
                },
                {
                   "type":"origins:delay",
@@ -215,7 +215,7 @@
          "actions":[
             {
                "type":"origins:execute_command",
-               "command":"execute as @s at @e[type=minecraft:bat,distance=7.5..27.5,limit=1] run teleport @e[distance=0] ~ ~ ~ facing entity @s"
+               "command":"execute as @s at @n[type=minecraft:bat,limit=1,tag=blackwhip.whip_swing_target] run teleport @e[distance=0] ~ ~ ~ facing entity @s"
             },
             {
                "type":"origins:action_on_entity_set",
@@ -320,7 +320,7 @@
          "type":"origins:add_velocity",
          "x":0.00,
          "y":0.00,
-         "z":0.05,
+         "z":0.06,
          "space":"local",
          "set":false
       },
@@ -373,7 +373,7 @@
          "type":"origins:add_velocity",
          "x":0.00,
          "y":0.00,
-         "z":-0.05,
+         "z":-0.06,
          "space":"local",
          "set":false
       },
@@ -424,7 +424,7 @@
       "type":"origins:active_self",
       "entity_action":{
          "type":"origins:add_velocity",
-         "x":0.05,
+         "x":0.06,
          "y":0.00,
          "z":0.00,
          "space":"local",
@@ -473,7 +473,7 @@
       "type":"origins:active_self",
       "entity_action":{
          "type":"origins:add_velocity",
-         "x":-0.05,
+         "x":-0.06,
          "y":0.00,
          "z":0.00,
          "space":"local",
@@ -526,7 +526,7 @@
       "type":"origins:active_self",
       "entity_action":{
          "type":"origins:selector_action",
-         "selector":"@n[type=minecraft:bat,distance=1..7.5,limit=1]",
+         "selector":"@n[type=minecraft:bat,limit=1,tag=blackwhip.whip_swing_target]",
          "bientity_action":{
             "type":"origins:invert",
             "action":{
