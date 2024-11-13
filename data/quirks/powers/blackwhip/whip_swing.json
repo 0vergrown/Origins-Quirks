@@ -167,6 +167,12 @@
       "key":{
          "key":"key.origins.primary_active",
          "continuous":false
+      },
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:blackwhip/move_selector_resource",
+         "comparison":"==",
+         "compare_to":0
       }
    },
    "slow_falling":{
@@ -176,6 +182,12 @@
       "condition":{
          "type":"origins:all_of",
          "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
             {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
@@ -283,6 +295,12 @@
          "type":"origins:all_of",
          "conditions":[
             {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
                "comparison":">",
@@ -335,6 +353,12 @@
       "condition":{
          "type":"origins:all_of",
          "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
             {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
@@ -389,6 +413,12 @@
          "type":"origins:all_of",
          "conditions":[
             {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
                "comparison":">",
@@ -437,6 +467,12 @@
       "condition":{
          "type":"origins:all_of",
          "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
             {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
@@ -490,6 +526,12 @@
       "condition":{
          "type":"origins:all_of",
          "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
             {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",
@@ -575,6 +617,12 @@
       "condition":{
          "type":"origins:all_of",
          "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"quirks:blackwhip/move_selector_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
             {
                "type":"origins:entity_set_size",
                "set":"quirks:blackwhip/whip_swing_actor_set",

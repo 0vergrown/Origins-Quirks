@@ -113,8 +113,8 @@
                   "include_actor":true
                }
             },
-            "command_at_hit":"particle minecraft:effect ~ ~ ~ 0 0 0 0.05 500 force @a",
-            "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.0} ^-0.4 ^-0.7 ^0.1 0 0 0 0.02 50 force @a",
+            "command_at_hit":"particle minecraft:effect ^-0.37 ^-0.7 ^0.1 0 0 0 0.05 500 force @a",
+            "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.0} ^-0.37 ^-0.7 ^0.1 0 0 0 0.02 50 force @a",
             "command_step":1.00,
             "command_along_ray_only_on_hit":false
          }

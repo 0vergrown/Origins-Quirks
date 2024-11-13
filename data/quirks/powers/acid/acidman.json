@@ -27,7 +27,7 @@
                      "type": "origins:modify_resource",
                      "modifier": {
                         "operation": "add_base_early",
-                        "amount": -25.00
+                        "amount": -5.00
                      },
                      "resource": "quirks:acid/corrosive_liquid_resource"
                     },
@@ -38,7 +38,7 @@
                      "type": "origins:modify_resource",
                      "modifier": {
                         "operation": "add_base_early",
-                        "amount": -35.00
+                        "amount": -3.00
                      },
                      "resource": "quirks:acid/corrosive_liquid_resource"
                     },

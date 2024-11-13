@@ -8,7 +8,7 @@
 - **Quirk Strength & Proficiency**: Abilities scale as players gain experience, increasing power and utility over time.
 
 ## Current Quirks
-- Acid (Almost Done)
+- Acid
 - Blackwhip (In Progress)
 - Fa Jin
 - Gigantification (Not Finished)
