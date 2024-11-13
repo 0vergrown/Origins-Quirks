@@ -38,12 +38,39 @@
                   }
                },
                "bientity_action":{
-                  "type":"origins:add_velocity",
-                  "x":0.00,
-                  "y":0.00,
-                  "z":-3.00,
-                  "reference":"position",
-                  "set":false
+                  "type": "origins:and",
+                  "actions": [
+                     {
+                        "type":"origins:add_velocity",
+                        "x":0.00,
+                        "y":0.00,
+                        "z":-3.00,
+                        "reference":"position",
+                        "set":false
+                     },
+                     {
+                        "type": "origins:actor_action",
+                        "action": {
+                           "type": "origins:and",
+                           "actions": [
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"minecraft:item.crossbow.shoot",
+                                 "category": "players",
+                                 "volume":0.20,
+                                 "pitch":1.60
+                              },
+                              {
+                                 "type":"origins:play_sound",
+                                 "sound":"minecraft:entity.phantom.bite",
+                                 "category": "players",
+                                 "volume":1.00,
+                                 "pitch":2.00
+                              }
+                           ]
+                        }
+                     }
+                  ]
                },
                "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.0,0.0,0.0],to_color:[0.22,0.27,0.28],scale:1} ~ ~ ~ 0 0 0 0.01 1 normal",
                "command_along_ray_only_on_hit":true
@@ -83,31 +110,29 @@
                "shape_type":"outline",
                "fluid_handling":"none",
                "hit_action":{
-                  "type":"origins:and",
-                  "actions":[
+                  "type": "origins:and",
+                  "actions": [
                      {
-                        "type":"origins:delay",
-                        "action":{
-                           "type":"origins:add_velocity",
-                           "x":0.00,
-                           "y":0.00,
-                           "z":3.00,
-                           "space":"local",
-                           "set":false
-                        },
-                        "ticks":3
+                        "type":"origins:add_velocity",
+                        "x":0.00,
+                        "y":0.20,
+                        "z":0.40,
+                        "space":"local",
+                        "set":false
                      },
                      {
-                        "type":"origins:delay",
-                        "action":{
-                           "type":"origins:add_velocity",
-                           "x":0.00,
-                           "y":0.125,
-                           "z":0.00,
-                           "space":"world",
-                           "set":false
-                        },
-                        "ticks":4
+                        "type":"origins:play_sound",
+                        "sound":"minecraft:item.crossbow.shoot",
+                        "category": "players",
+                        "volume":0.20,
+                        "pitch":1.60
+                     },
+                     {
+                        "type":"origins:play_sound",
+                        "sound":"minecraft:entity.phantom.bite",
+                        "category": "players",
+                        "volume":1.00,
+                        "pitch":2.00
                      }
                   ]
                },

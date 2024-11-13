@@ -109,10 +109,17 @@
                "actions":[
                   {
                      "type":"origins:play_sound",
-                     "sound":"minecraft:block.dispenser.launch",
-                     "category":"master",
-                     "volume":0.40,
-                     "pitch":0.60
+                     "sound":"minecraft:item.crossbow.shoot",
+                     "category": "players",
+                     "volume":0.20,
+                     "pitch":1.60
+                  },
+                  {
+                     "type":"origins:play_sound",
+                     "sound":"minecraft:entity.phantom.bite",
+                     "category": "players",
+                     "volume":1.00,
+                     "pitch":2.00
                   },
                   {
                      "type":"origins:delay",
