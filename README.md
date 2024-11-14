@@ -19,6 +19,7 @@
 - Power Reserve (Not Finished)
 - Severance (Not Finished)
 - Sloshed (Not Finished)
+- Smokescreen (In Progress)
 
 ## Planned Quirks
 - Hardening

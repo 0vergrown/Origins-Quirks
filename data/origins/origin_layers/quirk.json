@@ -11,7 +11,8 @@
      "quirks:permeation",
      "quirks:power_reserve",
      "quirks:severance",
-     "quirks:sloshed"
+     "quirks:sloshed",
+     "quirks:smokescreen"
   ],
   "enabled":true,
   "replace":false,
