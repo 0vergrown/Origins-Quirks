@@ -467,10 +467,12 @@
       "bientity_action":{
          "type":"origins:target_action",
          "action":{
-            "type":"origins:change_resource",
-            "resource":"quirks:acid/acidman_resource",
-            "change":0,
-            "operation":"set"
+            "type":"origins:modify_resource",
+            "modifier":{
+               "operation":"set_total",
+               "amount":0.00
+            },
+            "resource":"quirks:acid/acidman_resource"
          }
       },
       "bientity_condition":{

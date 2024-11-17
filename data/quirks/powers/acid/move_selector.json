@@ -52,10 +52,12 @@
                            "type":"origins:and",
                            "actions":[
                               {
-                                 "type":"origins:change_resource",
-                                 "resource":"quirks:acid/move_selector_resource",
-                                 "change":4,
-                                 "operation":"set"
+                                 "type":"origins:modify_resource",
+                                 "modifier":{
+                                    "operation":"set_total",
+                                    "amount":4.00
+                                 },
+                                 "resource":"quirks:acid/move_selector_resource"
                               },
                               {
                                  "type":"origins:play_sound",
@@ -77,10 +79,12 @@
                            "type":"origins:and",
                            "actions":[
                               {
-                                 "type":"origins:change_resource",
-                                 "resource":"quirks:acid/move_selector_resource",
-                                 "change":-1,
-                                 "operation":"add"
+                                 "type":"origins:modify_resource",
+                                 "modifier":{
+                                    "operation":"add_base_early",
+                                    "amount":-1.00
+                                 },
+                                 "resource":"quirks:acid/move_selector_resource"
                               },
                               {
                                  "type":"origins:play_sound",
@@ -105,10 +109,12 @@
                   "type":"origins:and",
                   "actions":[
                      {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":0,
-                        "operation":"set"
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"set_total",
+                           "amount":0.00
+                        },
+                        "resource":"quirks:acid/move_selector_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -130,10 +136,12 @@
                   "type":"origins:and",
                   "actions":[
                      {
-                        "type":"origins:change_resource",
-                        "resource":"quirks:acid/move_selector_resource",
-                        "change":1,
-                        "operation":"add"
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"add_base_early",
+                           "amount":1.00
+                        },
+                        "resource":"quirks:acid/move_selector_resource"
                      },
                      {
                         "type":"origins:play_sound",
