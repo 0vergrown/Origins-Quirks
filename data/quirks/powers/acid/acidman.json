@@ -118,7 +118,7 @@
                },
                {
                   "type": "origins:execute_command",
-                  "command": "playsound quirks:acid.acidman_activate player @a[distance=1..16] ~ ~ ~ 1.00 1.00 1.00"
+                  "command": "playsound quirks:acid.acidman_activate player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
                }
             ]
          },
@@ -135,7 +135,7 @@
                },
                {
                   "type": "origins:execute_command",
-                  "command": "playsound quirks:acid.acidman_activate player @a[distance=1..16] ~ ~ ~ 1.00 0.50 1.00"
+                  "command": "playsound quirks:acid.acidman_activate player @a[distance=0..16] ~ ~ ~ 1.00 0.50 1.00"
                }
             ]
          }
@@ -145,14 +145,8 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.origins.quaternary_active",
          "continuous":false
-      },
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":3
       }
    },
    "head_particles":{
@@ -306,7 +300,7 @@
    },
    "overlay":{
       "type":"origins:overlay",
-      "texture":"quirks:vision/acid/slime_block",
+      "texture":"minecraft:block/slime_block",
       "strength":0.4,
       "red":1.00,
       "green":1.00,
@@ -457,26 +451,21 @@
       }
    },
    "reset_on_death":{
-      "type":"origins:action_on_death",
-      "bientity_action":{
-         "type":"origins:target_action",
-         "action":{
-            "type":"origins:modify_resource",
-            "modifier":{
-               "operation":"set_total",
-               "value":0.00
-            },
-            "resource":"quirks:acid/acidman_resource"
-         }
+      "type": "origins:action_on_callback",
+      "entity_action_respawned": {
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"set_total",
+            "value":0.00
+         },
+         "resource":"quirks:acid/acidman_resource"
       },
-      "bientity_condition":{
-         "type":"origins:target_condition",
-         "condition":{
-            "type":"origins:resource",
-            "resource":"quirks:acid/acidman_resource",
-            "comparison":"==",
-            "compare_to":1
-         }
+      "execute_chosen_when_orb": false,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:acid/acidman_resource",
+         "comparison":"==",
+         "compare_to":1
       }
-   }
+  }
 }

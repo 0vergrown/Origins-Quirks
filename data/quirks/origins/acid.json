@@ -1,6 +1,5 @@
 {
 	"powers": [
-		"quirks:acid/move_selector",
 		"quirks:acid/corrosive_liquid",
 		"quirks:acid/acid_shot",
 		"quirks:acid/acid_veil",

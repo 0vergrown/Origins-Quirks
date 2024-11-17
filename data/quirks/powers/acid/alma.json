@@ -7,7 +7,7 @@
             "type":"origins:modify_resource",
             "modifier":{
                "operation":"set_total",
-               "amount":0.00
+               "value":0.00
             },
             "resource":"quirks:acid/acidman_resource"
          },
@@ -20,60 +20,57 @@
                "compare_to":50
             },
             "if_action":{
-               "type": "origins:choice",
-               "actions": [
-                   {
-                       "element": {    
-                        "type": "origins:modify_resource",
-                        "modifier": {
-                           "operation": "add_base_early",
-                           "amount": -50.00
+               "type":"origins:choice",
+               "actions":[
+                  {
+                     "element":{
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"add_base_early",
+                           "value":-50.00
                         },
-                        "resource": "quirks:acid/corrosive_liquid_resource"
-                       },
-                       "weight": 20
-                   },
-                   {
-                       "element": {
-                        "type": "origins:modify_resource",
-                        "modifier": {
-                           "operation": "add_base_early",
-                           "amount": -75.00
+                        "resource":"quirks:acid/corrosive_liquid_resource"
+                     },
+                     "weight":20
+                  },
+                  {
+                     "element":{
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"add_base_early",
+                           "value":-75.00
                         },
-                        "resource": "quirks:acid/corrosive_liquid_resource"
-                       },
-                       "weight": 20
-                   }
+                        "resource":"quirks:acid/corrosive_liquid_resource"
+                     },
+                     "weight":20
+                  }
                ]
             },
             "else_action":{
-               "type": "origins:choice",
-               "actions": [
-                   {
-                       "element": {    
+               "type":"origins:choice",
+               "actions":[
+                  {
+                     "element":{
                         "type":"origins:damage",
                         "amount":6,
                         "damage_type":"quirks:acid/acid_corrosion"
-                       },
-                       "weight": 20
-                   },
-                   {
-                       "element": {
+                     },
+                     "weight":20
+                  },
+                  {
+                     "element":{
                         "type":"origins:damage",
                         "amount":8,
                         "damage_type":"quirks:acid/acid_corrosion"
-                       },
-                       "weight": 20
-                   }
+                     },
+                     "weight":20
+                  }
                ]
             }
          },
          {
-            "type":"origins:play_sound",
-            "sound":"quirks:acid.alma",
-            "category":"players",
-            "volume":1.00,
-            "pitch":1.00
+            "type":"origins:execute_command",
+            "command":"playsound quirks:acid.alma player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
          },
          {
             "type":"origins:spawn_entity",
@@ -105,13 +102,7 @@
       "should_render":false
    },
    "key":{
-      "key":"key.origins.primary_active",
+      "key":"key.origins.quinary_active",
       "continuous":false
-   },
-   "condition":{
-      "type":"origins:resource",
-      "resource":"quirks:acid/move_selector_resource",
-      "comparison":"==",
-      "compare_to":4
    }
 }

@@ -4,11 +4,8 @@
       "type":"origins:and",
       "actions":[
          {
-            "type":"origins:play_sound",
-            "sound":"quirks:acid.acid_shot_fired",
-            "category":"players",
-            "volume":1.00,
-            "pitch":1.00
+            "type": "origins:execute_command",
+            "command": "playsound quirks:acid.acid_shot_fired player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
          },
          {
             "type":"origins:swing_hand",
@@ -30,7 +27,7 @@
                         "type":"origins:modify_resource",
                         "modifier":{
                            "operation":"add_base_early",
-                           "amount":-3.00
+                           "value":-3.00
                         },
                         "resource":"quirks:acid/corrosive_liquid_resource"
                      },
@@ -41,7 +38,7 @@
                         "type":"origins:modify_resource",
                         "modifier":{
                            "operation":"add_base_early",
-                           "amount":-5.00
+                           "value":-5.00
                         },
                         "resource":"quirks:acid/corrosive_liquid_resource"
                      },
@@ -101,11 +98,8 @@
                               "damage_type":"quirks:acid/acid_corrosion"
                            },
                            {
-                              "type":"origins:play_sound",
-                              "sound":"quirks:acid.acid_shot_hit",
-                              "category":"ambient",
-                              "volume":1.00,
-                              "pitch":1.00
+                              "type": "origins:execute_command",
+                              "command": "playsound quirks:acid.acid_shot_hit ambient @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
                            }
                         ]
                      }
@@ -127,11 +121,5 @@
    "key":{
       "key":"key.origins.primary_active",
       "continuous":true
-   },
-   "condition":{
-      "type":"origins:resource",
-      "resource":"quirks:acid/move_selector_resource",
-      "comparison":"==",
-      "compare_to":0
    }
 }

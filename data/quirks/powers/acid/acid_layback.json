@@ -27,7 +27,7 @@
                      "type":"origins:modify_resource",
                      "modifier":{
                         "operation":"add_base_early",
-                        "amount":-10.00
+                        "value":-10.00
                      },
                      "resource":"quirks:acid/corrosive_liquid_resource"
                   },
@@ -38,7 +38,7 @@
                      "type":"origins:modify_resource",
                      "modifier":{
                         "operation":"add_base_early",
-                        "amount":-20.00
+                        "value":-20.00
                      },
                      "resource":"quirks:acid/corrosive_liquid_resource"
                   },
@@ -101,7 +101,7 @@
             "type":"origins:modify_resource",
             "modifier":{
                "operation":"set_total",
-               "amount":1.00
+               "value":1.00
             },
             "resource":"quirks:acid/acid_layback_resource"
          },
@@ -109,7 +109,7 @@
             "type":"origins:modify_resource",
             "modifier":{
                "operation":"set_total",
-               "amount":0.00
+               "value":0.00
             },
             "resource":"quirks:acid/acid_layback_resource"
          }
@@ -119,21 +119,15 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.origins.ternary_active",
          "continuous":false
-      },
-      "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":2
       }
    },
    "jump":{
       "type":"origins:modify_jump",
       "modifier":{
          "operation":"add_base_early",
-         "amount":0.20
+         "value":0.20
       },
       "condition":{
          "type":"origins:and",
@@ -157,9 +151,9 @@
       "type":"origins:conditioned_attribute",
       "modifier":{
          "attribute":"minecraft:generic.movement_speed",
-         "operation":"add_multiplied_total",
-         "amount":0.30,
-         "id":"quirks:acid_layback_speed"
+         "operation":"multiply_total",
+         "value":0.30,
+         "name":"quirks_acid_layback_speed"
       },
       "tick_rate":1,
       "update_health":false,
@@ -174,7 +168,7 @@
       "type": "origins:modify_slipperiness",
       "modifier": {
           "operation": "multiply_total_multiplicative",
-          "amount": 0.80
+          "value": 0.80
       },
       "condition": {
          "type":"origins:resource",
@@ -199,7 +193,7 @@
                "type":"origins:spawn_particles",
                "particle":{
                   "type": "minecraft:dust_color_transition",
-                  "params": "{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.7}"
+                  "params": "0.51 0.79 0.55 1.7 0.57 0.93 0.66"
                },
                "count":10,
                "speed":0.01,
@@ -266,7 +260,7 @@
          "type":"origins:modify_resource",
          "modifier":{
             "operation":"set_total",
-            "amount":0.00
+            "value":0.00
          },
          "resource":"quirks:acid/acid_layback_resource"
       },

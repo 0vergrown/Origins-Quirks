@@ -112,11 +112,8 @@
                                  "command":"kill @s"
                               },
                               {
-                                 "type":"origins:play_sound",
-                                 "sound":"quirks:acid.acid_shot_hit",
-                                 "category": "master",
-                                 "volume":1.00,
-                                 "pitch":1.00
+                              "type": "origins:execute_command",
+                              "command": "playsound quirks:acid.acid_shot_hit master @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
                               }
                            ]
                         }
