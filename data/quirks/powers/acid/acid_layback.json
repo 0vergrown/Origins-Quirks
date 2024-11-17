@@ -70,7 +70,7 @@
       },
       "interval":20,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -136,7 +136,7 @@
          "amount":0.20
       },
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -238,7 +238,7 @@
                   "damage_type":"quirks:acid/acid_corrosion"
                },
                "bientity_condition":{
-                  "type":"origins:all_of",
+                  "type":"origins:and",
                   "conditions":[
                      {
                         "type":"origins:invert",
@@ -272,7 +272,7 @@
       },
       "interval":1,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -328,7 +328,7 @@
       },
       "interval":1,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:passenger",
@@ -377,7 +377,7 @@
          "continuous":false
       },
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:passenger",
@@ -435,7 +435,7 @@
          "continuous":false
       },
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:passenger",

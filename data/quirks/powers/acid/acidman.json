@@ -27,7 +27,7 @@
                      "type": "origins:modify_resource",
                      "modifier": {
                         "operation": "add_base_early",
-                        "amount": -5.00
+                        "value": -5.00
                      },
                      "resource": "quirks:acid/corrosive_liquid_resource"
                     },
@@ -38,7 +38,7 @@
                      "type": "origins:modify_resource",
                      "modifier": {
                         "operation": "add_base_early",
-                        "amount": -3.00
+                        "value": -3.00
                      },
                      "resource": "quirks:acid/corrosive_liquid_resource"
                     },
@@ -72,13 +72,13 @@
          "type":"origins:modify_resource",
          "modifier":{
             "operation":"set_total",
-            "amount":0.00
+            "value":0.00
          },
          "resource":"quirks:acid/acidman_resource"
       },
       "interval":20,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -112,16 +112,13 @@
                   "type":"origins:modify_resource",
                   "modifier":{
                      "operation":"set_total",
-                     "amount":1.00
+                     "value":1.00
                   },
                   "resource":"quirks:acid/acidman_resource"
                },
                {
-                  "type":"origins:play_sound",
-                  "sound":"quirks:acid.acidman_activate",
-                  "category":"players",
-                  "volume":1.00,
-                  "pitch":1.00
+                  "type": "origins:execute_command",
+                  "command": "playsound quirks:acid.acidman_activate player @a[distance=1..16] ~ ~ ~ 1.00 1.00 1.00"
                }
             ]
          },
@@ -132,16 +129,13 @@
                   "type":"origins:modify_resource",
                   "modifier":{
                      "operation":"set_total",
-                     "amount":0.00
+                     "value":0.00
                   },
                   "resource":"quirks:acid/acidman_resource"
                },
                {
-                  "type":"origins:play_sound",
-                  "sound":"quirks:acid.acidman_activate",
-                  "category":"players",
-                  "volume":1.00,
-                  "pitch":0.50
+                  "type": "origins:execute_command",
+                  "command": "playsound quirks:acid.acidman_activate player @a[distance=1..16] ~ ~ ~ 1.00 0.50 1.00"
                }
             ]
          }
@@ -165,7 +159,7 @@
       "type":"origins:particle",
       "particle":{
          "type":"minecraft:dust_color_transition",
-         "params":"{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.7}"
+         "params":"0.51 0.79 0.55 1.7 0.57 0.93 0.66"
       },
       "count":6,
       "speed":0.00,
@@ -182,7 +176,7 @@
       "visible_in_first_person":false,
       "visible_while_invisible":true,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -203,7 +197,7 @@
       "type":"origins:particle",
       "particle":{
          "type":"minecraft:dust_color_transition",
-         "params":"{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.7}"
+         "params":"0.51 0.79 0.55 1.7 0.57 0.93 0.66"
       },
       "count":6,
       "speed":0.00,
@@ -220,7 +214,7 @@
       "visible_in_first_person":false,
       "visible_while_invisible":true,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -241,7 +235,7 @@
       "type":"origins:particle",
       "particle":{
          "type":"minecraft:dust_color_transition",
-         "params":"{from_color:[0.51,0.79,0.55],to_color:[0.57,0.93,0.66],scale:1.7}"
+         "params":"0.51 0.79 0.55 1.7 0.57 0.93 0.66"
       },
       "count":10,
       "speed":0.00,
@@ -258,7 +252,7 @@
       "visible_in_first_person":false,
       "visible_while_invisible":true,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -293,7 +287,7 @@
       "visible_in_first_person":false,
       "visible_while_invisible":true,
       "condition":{
-         "type":"origins:all_of",
+         "type":"origins:and",
          "conditions":[
             {
                "type":"origins:resource",
@@ -396,7 +390,7 @@
                },
                {
                   "condition":{
-                     "type":"origins:all_of",
+                     "type":"origins:and",
                      "conditions":[
                         {
                            "type":"origins:distance",
@@ -470,7 +464,7 @@
             "type":"origins:modify_resource",
             "modifier":{
                "operation":"set_total",
-               "amount":0.00
+               "value":0.00
             },
             "resource":"quirks:acid/acidman_resource"
          }

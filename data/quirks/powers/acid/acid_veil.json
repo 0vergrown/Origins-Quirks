@@ -19,7 +19,7 @@
                         "type": "origins:modify_resource",
                         "modifier": {
                            "operation": "add_base_early",
-                           "amount": -1.00
+                           "value": -1.00
                         },
                         "resource": "quirks:acid/corrosive_liquid_resource"
                        },
@@ -30,7 +30,7 @@
                         "type": "origins:modify_resource",
                         "modifier": {
                            "operation": "add_base_early",
-                           "amount": -2.00
+                           "value": -2.00
                         },
                         "resource": "quirks:acid/corrosive_liquid_resource"
                        },
@@ -86,7 +86,7 @@
          {
             "type":"origins:spawn_entity",
             "entity_type":"minecraft:area_effect_cloud",
-            "tag":"{Particle:{type:\"effect\"},Radius:1f,Duration:10,potion_contents:{custom_color:14942185,custom_effects:[{id:\"minecraft:slowness\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b},{id:\"minecraft:weakness\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b},{id:\"minecraft:wither\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b}]}}",
+            "tag":"{Particle:\"effect\",Radius:1f,Duration:10,Color:1347973,Effects:[{Id:2,Amplifier:0b,Duration:80,ShowParticles:0b},{Id:18,Amplifier:0b,Duration:80,ShowParticles:0b},{Id:20,Amplifier:0b,Duration:80,ShowParticles:0b}]}",
             "entity_action":{
                "type":"origins:and",
                "actions":[
@@ -146,7 +146,7 @@
          {
             "type":"origins:spawn_entity",
             "entity_type":"minecraft:area_effect_cloud",
-            "tag":"{Particle:{type:\"effect\"},Radius:1f,Duration:10,potion_contents:{custom_color:14942185,custom_effects:[{id:\"minecraft:slowness\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b},{id:\"minecraft:weakness\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b},{id:\"minecraft:wither\",amplifier:0,duration:80,show_particles:0b,show_icon:1b,ambient:0b}]}}",
+            "tag":"{Particle:\"effect\",Radius:1f,Duration:10,Color:1347973,Effects:[{Id:2,Amplifier:0b,Duration:80,ShowParticles:0b},{Id:18,Amplifier:0b,Duration:80,ShowParticles:0b},{Id:20,Amplifier:0b,Duration:80,ShowParticles:0b}]}",
             "entity_action":{
                "type":"origins:and",
                "actions":[

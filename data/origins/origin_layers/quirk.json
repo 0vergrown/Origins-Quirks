@@ -1,18 +1,7 @@
 {
   "order":10,
   "origins":[
-     "quirks:acid",
-     "quirks:blackwhip",
-     "quirks:fa_jin",
-     "quirks:gigantification",
-     "quirks:heal",
-     "quirks:invisibility",
-     "quirks:larceny",
-     "quirks:permeation",
-     "quirks:power_reserve",
-     "quirks:severance",
-     "quirks:sloshed",
-     "quirks:smokescreen"
+     "quirks:acid"
   ],
   "enabled":true,
   "replace":false,

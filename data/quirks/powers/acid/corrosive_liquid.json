@@ -16,7 +16,7 @@
       "entity_action": {
          "type": "origins:if_else",
          "condition": {
-            "type": "origins:any_of",
+            "type":"origins:or",
             "conditions": [
                {
                   "type": "origins:food_level",
@@ -81,7 +81,7 @@
       "blue": 0.8431372549019608,
       "alpha": 1.0,
       "condition": {
-         "type": "origins:all_of",
+         "type":"origins:and",
          "conditions": [
             {
                "type": "origins:resource",
@@ -105,7 +105,7 @@
       "blue": 0.7568627450980392,
       "alpha": 1.0,
       "condition": {
-         "type": "origins:all_of",
+         "type":"origins:and",
          "conditions": [
             {
                "type": "origins:resource",
@@ -129,7 +129,7 @@
       "blue": 0.6705882352941176,
       "alpha": 1.0,
       "condition": {
-         "type": "origins:all_of",
+         "type":"origins:and",
          "conditions": [
             {
                "type": "origins:resource",
@@ -153,7 +153,7 @@
       "blue": 0.5882352941176471,
       "alpha": 1.0,
       "condition": {
-         "type": "origins:all_of",
+         "type":"origins:and",
          "conditions": [
             {
                "type": "origins:resource",
@@ -177,7 +177,7 @@
       "blue": 0.5019607843137255,
       "alpha": 1.0,
       "condition": {
-         "type": "origins:all_of",
+         "type":"origins:and",
          "conditions": [
             {
                "type": "origins:resource",
