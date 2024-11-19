@@ -17,29 +17,33 @@
                 "command":"particle minecraft:dust_color_transition{from_color:[0.68,0.51,0.79],to_color:[0.86,0.56,0.94],scale:4} ~ ~ ~ 7 3 7 0.01 50 normal @a"
              },
              {
-                "type":"origins:area_of_effect",
-                "radius":10.00,
-                "shape":"cube",
-                "bientity_action":{
-                   "type":"origins:target_action",
-                   "action":{
-                      "type":"origins:apply_effect",
-                      "effect":{
-                         "id":"minecraft:blindness",
-                         "duration":150,
-                         "amplifier":0,
-                         "ambient":false,
-                         "show_particles":true,
-                         "show_icon":true
-                      }
-                   }
-                },
-                "bientity_condition":{
-                   "type":"origins:in_entity_set",
-                   "set":"quirks:smokescreen/full_blast_armor_stand_effects_set",
-                   "inverted":true
-                },
-                "include_actor":false
+               "type": "origins:delay",
+               "action": {
+                  "type":"origins:area_of_effect",
+                  "radius":10.00,
+                  "shape":"cube",
+                  "bientity_action":{
+                     "type":"origins:target_action",
+                     "action":{
+                        "type":"origins:apply_effect",
+                        "effect":{
+                           "id":"minecraft:blindness",
+                           "duration":150,
+                           "amplifier":0,
+                           "ambient":false,
+                           "show_particles":true,
+                           "show_icon":true
+                        }
+                     }
+                  },
+                  "bientity_condition":{
+                     "type":"origins:in_entity_set",
+                     "set":"quirks:smokescreen/full_blast_armor_stand_effects_set",
+                     "inverted":true
+                  },
+                  "include_actor":false
+               },
+               "ticks": 1
              }
           ]
        },

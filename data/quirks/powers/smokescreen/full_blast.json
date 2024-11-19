@@ -13,6 +13,13 @@
                     "source": "quirks:smokescreen/full_blast_armor_stand_effects"
                 },
                 {
+                    "type": "origins:play_sound",
+                    "sound": "quirks:smokescreen.full_blast.release",
+                    "category": "players",
+                    "volume": 1.00,
+                    "pitch": 1.00
+                },
+                {
                     "type": "origins:delay",
                     "action": {
                         "type": "origins:execute_command",
