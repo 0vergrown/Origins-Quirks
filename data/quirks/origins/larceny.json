@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"quirks:larceny/steal"
+	],
+	"icon":"minecraft:bundle",
+	"unchoosable": false,
+	"order": 10,
+	"impact": 1,
+	"loading_priority": 0,
+    "name": "Larceny",
+    "description": "Quirk Type: Emitter\n\nLarceny allows you to take any object directly from an opponent's hand, instantly transferring it to yours. Ideal for disarming foes, this Quirk is highly effective against weapon users, but requires a clear line of sight to activate. Size limitations also apply, so large items cannot be stolen."
+}

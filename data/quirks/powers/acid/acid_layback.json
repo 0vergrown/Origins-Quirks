@@ -1,4 +1,6 @@
 {
+   "name":"Acid Layback",
+   "description":"The user releases acid from their feet, dissolving the ground beneath them to create a low-friction surface. Additionally, by grabbing a target and spinning on this surface at high speeds, the gained momentum increases the velocity and power of any projectiles launched. [Ternary]",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",

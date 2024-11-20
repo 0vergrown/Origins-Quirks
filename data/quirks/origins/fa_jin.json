@@ -13,5 +13,7 @@
 	"unchoosable": false,
 	"order": 10,
 	"impact": 3,
-	"loading_priority": 0
+	"loading_priority": 0,
+	"name": "Fa Jin",
+	"description": "Quirk Type: Emitter\n\nThe Fa Jin Quirk enables the user to store kinetic energy through repetitive movements and release it for explosive bursts of speed and power. This versatile ability can be used to augment movement, deliver powerful attacks, and perform high jumps, providing both offensive and utility advantages."
 }

@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"quirks:invisibility/invisible",
+		"quirks:invisibility/warp_refraction"
+	],
+	"icon":"minecraft:glass",
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0,
+	"name": "Invisibility",
+	"description": "Quirk Type: Mutant\n\nInvisibility grants the user complete invisibility, making them undetectable to the naked eye. The Quirk also provides light manipulation abilities, allowing the user to refract light to blind opponents or redirect energy. While powerful for stealth and ambushes, it has vulnerabilities, such as revealing visible gear and being countered by certain sensory abilities."
+}

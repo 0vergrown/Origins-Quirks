@@ -1,4 +1,6 @@
 {
+   "name":"Acid Veil",
+   "description":"Generate a thick wall of acid to block incoming attacks. The acid is dense enough to dissolve projectiles before they reach the user. [Secondary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

@@ -1,4 +1,6 @@
 {
+   "name": "Energy Leap",
+   "description": "Expend kinetic energy to launch yourself into the air, performing a powerful leap. The strength of the jump depends on the amount of stored energy, creating a shockwave that slightly pushes nearby entities upward. [Secondary]",
    "type":"origins:multiple",
    "if_on_ground":{
       "type":"origins:resource",

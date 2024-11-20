@@ -1,4 +1,6 @@
 {
+   "name": "Explosive Release",
+   "description": "Upon reaching maximum kinetic energy, unleash it all in an explosive blast. This powerful area-of-effect attack damages nearby enemies and sends them flying. [Quaternary]",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",

@@ -1,4 +1,6 @@
 {
+   "name":"Acidman",
+   "description":"The user envelops their entire body in a large mass of acid, becoming a living shield. While coated in this acid, the user is highly resistant to physical damage and can melt anything that comes into contact with them. Additionally, when Acidman is activated, the corrosive liquid generation is reduced to 0.5 units per second, as the active maintenance of this ability requires more energy. [Quaternary]",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",

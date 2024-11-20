@@ -1,0 +1,7 @@
+{
+    "name": "Invisible",
+    "description": "You are naturally invisible to others, giving you a permanent stealth advantage. Armor and equipment remain visible unless removed. Your invisibility cannot be turned off, making it ideal for evasion or ambush tactics.",
+    "type": "origins:invisibility",
+    "render_armor": true,
+    "render_outline": true
+}

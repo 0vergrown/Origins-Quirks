@@ -2,7 +2,11 @@
   "order":10,
   "origins":[
      "quirks:acid",
-     "quirks:fa_jin"
+     "quirks:fa_jin",
+     "quirks:heal",
+     "quirks:invisibility",
+     "quirks:larceny",
+     "quirks:permeation"
   ],
   "enabled":true,
   "replace":false,

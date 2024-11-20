@@ -1,4 +1,6 @@
 {
+   "name": "Burst Dash",
+   "description": "Release stored energy to boost your movement speed for a short period, propelling you forward at an incredible pace. Ideal for closing the distance quickly or dodging attacks. [Primary]",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",
@@ -51,7 +53,7 @@
          "type":"origins:modify_resource",
          "modifier":{
             "operation":"add_base_early",
-            "value":-0.50
+            "value":-1.00
          },
          "resource":"quirks:fa_jin/kinetic_energy_resource"
       },

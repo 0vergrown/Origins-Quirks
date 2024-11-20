@@ -1,4 +1,6 @@
 {
+   "name": "Kinetic Charge",
+   "description": "Kinetic Charge is the process by which energy is stored by crouching repeatedly. This stored energy can later be used to activate different Fa Jin abilities.",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

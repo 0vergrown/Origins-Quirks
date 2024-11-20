@@ -1,4 +1,6 @@
 {
+   "name": "Power Strike",
+   "description": "Focus a burst of kinetic energy into a powerful attack, delivering a blow that knocks back enemies and deals increased damage. Surrounding entities are hit by the shockwave. [Ternary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:if_else_list",
