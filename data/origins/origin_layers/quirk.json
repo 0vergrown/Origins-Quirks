@@ -1,7 +1,8 @@
 {
   "order":10,
   "origins":[
-     "quirks:acid"
+     "quirks:acid",
+     "quirks:fa_jin"
   ],
   "enabled":true,
   "replace":false,
