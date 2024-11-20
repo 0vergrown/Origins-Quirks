@@ -24,10 +24,12 @@
          "type":"origins:and",
          "actions":[
             {
-               "type":"origins:change_resource",
-               "resource":"quirks:fa_jin/explosive_release_resource",
-               "change":1,
-               "operation":"set"
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "amount":1.00
+               },
+               "resource":"quirks:fa_jin/explosive_release_resource"
             },
             {
                "type":"origins:play_sound",
@@ -75,10 +77,12 @@
          "type":"origins:and",
          "actions":[
             {
-               "type":"origins:change_resource",
-               "resource":"quirks:fa_jin/explosive_release_charge",
-               "change":1,
-               "operation":"add"
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"add_base_early",
+                  "amount":1.00
+               },
+               "resource":"quirks:fa_jin/explosive_release_charge"
             },
             {
                "type":"origins:play_sound",
@@ -160,22 +164,28 @@
                "offset_z":0.00
             },
             {
-               "type":"origins:change_resource",
-               "resource":"quirks:fa_jin/kinetic_energy_resource",
-               "change":0,
-               "operation":"set"
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "amount":0.00
+               },
+               "resource":"quirks:fa_jin/kinetic_energy_resource"
             },
             {
-               "type":"origins:change_resource",
-               "resource":"quirks:fa_jin/explosive_release_charge",
-               "change":0,
-               "operation":"set"
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "amount":0.00
+               },
+               "resource":"quirks:fa_jin/explosive_release_charge"
             },
             {
-               "type":"origins:change_resource",
-               "resource":"quirks:fa_jin/explosive_release_resource",
-               "change":0,
-               "operation":"set"
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "amount":0.00
+               },
+               "resource":"quirks:fa_jin/explosive_release_resource"
             }
          ]
       },

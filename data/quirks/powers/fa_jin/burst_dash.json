@@ -3,10 +3,12 @@
    "energy_drain":{
       "type":"origins:action_over_time",
       "entity_action":{
-         "type":"origins:change_resource",
-         "resource":"quirks:fa_jin/kinetic_energy_resource",
-         "change":-1,
-         "operation":"add"
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"add_base_early",
+            "amount":-0.50
+         },
+         "resource":"quirks:fa_jin/kinetic_energy_resource"
       },
       "interval":20,
       "condition":{

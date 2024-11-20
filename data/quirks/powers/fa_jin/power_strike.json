@@ -25,10 +25,12 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:change_resource",
-                     "resource":"quirks:fa_jin/kinetic_energy_resource",
-                     "change":-10,
-                     "operation":"add"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:fa_jin/kinetic_energy_resource"
                   },
                   {
                      "type":"origins:add_velocity",
@@ -255,10 +257,12 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:change_resource",
-                     "resource":"quirks:fa_jin/kinetic_energy_resource",
-                     "change":-10,
-                     "operation":"add"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:fa_jin/kinetic_energy_resource"
                   },
                   {
                      "type":"origins:add_velocity",
@@ -485,10 +489,12 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:change_resource",
-                     "resource":"quirks:fa_jin/kinetic_energy_resource",
-                     "change":-10,
-                     "operation":"add"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:fa_jin/kinetic_energy_resource"
                   },
                   {
                      "type":"origins:add_velocity",
@@ -729,10 +735,12 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:change_resource",
-                     "resource":"quirks:fa_jin/kinetic_energy_resource",
-                     "change":-10,
-                     "operation":"add"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:fa_jin/kinetic_energy_resource"
                   },
                   {
                      "type":"origins:add_velocity",
@@ -973,10 +981,12 @@
                "type":"origins:and",
                "actions":[
                   {
-                     "type":"origins:change_resource",
-                     "resource":"quirks:fa_jin/kinetic_energy_resource",
-                     "change":-10,
-                     "operation":"add"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"add_base_early",
+                        "amount":-10.00
+                     },
+                     "resource":"quirks:fa_jin/kinetic_energy_resource"
                   },
                   {
                      "type":"origins:add_velocity",
