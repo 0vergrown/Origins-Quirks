@@ -108,6 +108,10 @@
                "type":"origins:and",
                "actions":[
                   {
+                     "type": "origins:swing_hand",
+                     "hand": "MAIN_HAND"
+                  },
+                  {
                      "type":"origins:play_sound",
                      "sound":"minecraft:item.crossbow.shoot",
                      "category": "players",

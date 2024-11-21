@@ -1,100 +1,139 @@
 {
-    "type": "origins:multiple",
-    "resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 1,
-        "hud_render": {
-            "should_render": false
-        },
-        "start_value": 0
+    "type":"origins:multiple",
+    "resource":{
+       "type":"origins:resource",
+       "min":0,
+       "max":1,
+       "hud_render":{
+          "should_render":false
+       },
+       "start_value":0
     },
-    "active": {
-        "type": "origins:action_over_time",
-        "rising_action": {
-            "type": "origins:change_resource",
-            "resource": "quirks:gigantification/frustration_surge_resource",
-            "change": 1,
-            "operation": "set"
-        },
-        "falling_action": {
-            "type": "origins:change_resource",
-            "resource": "quirks:gigantification/frustration_surge_resource",
-            "change": 0,
-            "operation": "set"
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:health",
-            "comparison": "<=",
-            "compare_to": 10
-        }
+    "active":{
+       "type":"origins:action_over_time",
+       "rising_action":{
+          "type":"origins:and",
+          "actions":[
+             {
+                "type":"origins:modify_resource",
+                "modifier":{
+                   "operation":"set_total",
+                   "amount":1.00
+                },
+                "resource":"quirks:gigantification/frustration_surge_resource"
+             },
+             {
+                "type":"origins:explode",
+                "power":6,
+                "destruction_type":"destroy_with_decay",
+                "damage_self":false,
+                "create_fire":false
+             }
+          ]
+       },
+       "falling_action":{
+          "type":"origins:modify_resource",
+          "modifier":{
+             "operation":"set_total",
+             "amount":0.00
+          },
+          "resource":"quirks:gigantification/frustration_surge_resource"
+       },
+       "interval":1,
+       "condition":{
+          "type":"origins:health",
+          "comparison":"<=",
+          "compare_to":10
+       }
     },
-    "attributes": {
-        "type": "origins:conditioned_attribute",
-        "modifiers": [
-            {
-                "attribute": "minecraft:player.block_interaction_range",
-                "operation": "add_value",
-                "amount": 30.0,
-                "id": "quirks:gigantification_frustration_surge_block_interaction_range"
-            },
-            {
-                "attribute": "minecraft:player.entity_interaction_range",
-                "operation": "add_value",
-                "amount": 30.0,
-                "id": "quirks:gigantification_frustration_surge_entity_interaction_range"
-            },
-            {
-                "attribute": "minecraft:generic.scale",
-                "operation": "add_value",
-                "amount": 16.00,
-                "id": "quirks:gigantification_frustration_surge_max_size"
-            },
-            {
-                "attribute": "minecraft:generic.step_height",
-                "operation": "add_value",
-                "amount": 8.00,
-                "id": "quirks:gigantification_frustration_surge_step_height"
-            },
-            {
-                "attribute": "minecraft:generic.jump_strength",
-                "operation": "add_value",
-                "amount": 2.00,
-                "id": "quirks:gigantification_frustration_surge_jump"
-            },
-            {
-                "attribute": "minecraft:generic.safe_fall_distance",
-                "operation": "add_value",
-                "amount": 16.0,
-                "id": "quirks:gigantification_frustration_surge_safe_fall_distance"
-            },
-            {
-                "attribute": "minecraft:generic.attack_damage",
-                "operation": "add_value",
-                "amount": 20.0,
-                "id": "quirks:gigantification_frustration_surge_damage_dealt"
-            },
-            {
-                "attribute": "minecraft:generic.knockback_resistance",
-                "operation": "add_value",
-                "amount": 2.00,
-                "id": "quirks:gigantification_frustration_surge_knockback_resistance"
-            },
-            {
-                "attribute": "minecraft:generic.movement_speed",
-                "operation": "add_multiplied_total",
-                "amount": 1.20,
-                "id": "quirks:gigantification_frustration_surge_movement_speed"
-            }
-        ],
-        "tick_rate": 1,
-        "update_health": false,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "quirks:gigantification/frustration_surge_resource",
-            "comparison": "==",
-            "compare_to": 1
-        }
+    "attributes":{
+       "type":"origins:conditioned_attribute",
+       "modifiers":[
+          {
+             "attribute":"minecraft:player.block_interaction_range",
+             "operation":"add_value",
+             "amount":30.0,
+             "id":"quirks:gigantification_frustration_surge_block_interaction_range"
+          },
+          {
+             "attribute":"minecraft:player.entity_interaction_range",
+             "operation":"add_value",
+             "amount":30.0,
+             "id":"quirks:gigantification_frustration_surge_entity_interaction_range"
+          },
+          {
+             "attribute":"minecraft:generic.scale",
+             "operation":"add_value",
+             "amount":16.00,
+             "id":"quirks:gigantification_frustration_surge_max_size"
+          },
+          {
+             "attribute":"minecraft:generic.step_height",
+             "operation":"add_value",
+             "amount":8.00,
+             "id":"quirks:gigantification_frustration_surge_step_height"
+          },
+          {
+             "attribute":"minecraft:generic.jump_strength",
+             "operation":"add_value",
+             "amount":2.00,
+             "id":"quirks:gigantification_frustration_surge_jump"
+          },
+          {
+             "attribute":"minecraft:generic.safe_fall_distance",
+             "operation":"add_value",
+             "amount":16.0,
+             "id":"quirks:gigantification_frustration_surge_safe_fall_distance"
+          },
+          {
+             "attribute":"minecraft:generic.attack_damage",
+             "operation":"add_value",
+             "amount":20.0,
+             "id":"quirks:gigantification_frustration_surge_damage_dealt"
+          },
+          {
+             "attribute":"minecraft:generic.knockback_resistance",
+             "operation":"add_value",
+             "amount":2.00,
+             "id":"quirks:gigantification_frustration_surge_knockback_resistance"
+          },
+          {
+             "attribute":"minecraft:generic.movement_speed",
+             "operation":"add_multiplied_total",
+             "amount":1.20,
+             "id":"quirks:gigantification_frustration_surge_movement_speed"
+          }
+       ],
+       "tick_rate":1,
+       "update_health":false,
+       "condition":{
+          "type":"origins:resource",
+          "resource":"quirks:gigantification/frustration_surge_resource",
+          "comparison":"==",
+          "compare_to":1
+       }
+    },
+    "reset_on_death":{
+       "type":"origins:action_on_death",
+       "bientity_action":{
+          "type":"origins:target_action",
+          "action":{
+             "type":"origins:modify_resource",
+             "modifier":{
+                "operation":"set_total",
+                "amount":0.00
+             },
+             "resource":"quirks:gigantification/frustration_surge_resource"
+          }
+       },
+       "bientity_condition":{
+          "type":"origins:target_condition",
+          "condition":{
+             "type":"origins:resource",
+             "resource":"quirks:gigantification/frustration_surge_resource",
+             "comparison":"==",
+             "compare_to":1
+          }
+       }
     }
 }

@@ -17,9 +17,9 @@
 - Larceny
 - Permeation
 - Power Reserve (Not Finished)
-- Severance (Not Finished)
-- Sloshed (Not Finished)
-- Smokescreen (In Progress)
+- Severance
+- Sloshed
+- Smokescreen
 
 ## Planned Quirks
 - Hardening

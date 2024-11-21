@@ -45,8 +45,9 @@
                   "entity":true,
                   "shape_type":"visual",
                   "fluid_handling":"any",
-                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.07,0.55,0.4],to_color:[0.08,0.53,0.56],scale:1} ~-0.39 ~ ~ 0 0 0 0.01 1 normal",
-                  "command_step":0.5
+                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.07,0.55,0.4],to_color:[0.08,0.53,0.56],scale:1} ~-0.39 ~ ~ 0 0 0 0.01 1 normal @a",
+                  "command_step":0.50,
+                  "command_along_ray_only_on_hit": true
                },
                {
                   "type":"origins:raycast",
@@ -55,8 +56,9 @@
                   "entity":true,
                   "shape_type":"visual",
                   "fluid_handling":"any",
-                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.0,0.0,0.0],to_color:[0.22,0.27,0.28],scale:1} ~ ~ ~ 0 0 0 0.01 1 normal",
-                  "command_step":0.5
+                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.0,0.0,0.0],to_color:[0.22,0.27,0.28],scale:1} ~ ~ ~ 0 0 0 0.01 1 normal @a",
+                  "command_step":0.50,
+                  "command_along_ray_only_on_hit": true
                },
                {
                   "type":"origins:raycast",
@@ -65,8 +67,9 @@
                   "entity":true,
                   "shape_type":"visual",
                   "fluid_handling":"any",
-                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.07,0.55,0.4],to_color:[0.08,0.53,0.56],scale:1} ~0.39 ~ ~ 0 0 0 0.01 1 normal",
-                  "command_step":0.5
+                  "command_along_ray":"particle minecraft:dust_color_transition{from_color:[0.07,0.55,0.4],to_color:[0.08,0.53,0.56],scale:1} ~0.39 ~ ~ 0 0 0 0.01 1 normal @a",
+                  "command_step":0.50,
+                  "command_along_ray_only_on_hit": true
                }
             ]
          },
