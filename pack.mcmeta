@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 18,
-    "description": "By Overgrown"
+    "pack_format": 15,
+    "supported_formats": [
+      15,
+      18
+    ],
+    "description": "Adds Quirks from My Hero Academia to Minecraft!"
   }
 }
