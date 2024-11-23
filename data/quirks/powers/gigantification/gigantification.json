@@ -20,16 +20,20 @@
             "compare_to":0
          },
          "if_action":{
-            "type":"origins:change_resource",
-            "resource":"quirks:gigantification/gigantification_resource",
-            "change":1,
-            "operation":"set"
+            "type": "origins:modify_resource",
+            "modifier": {
+               "operation": "set_total",
+               "amount": 1.00
+            },
+            "resource": "quirks:gigantification/gigantification_resource"
          },
          "else_action":{
-            "type":"origins:change_resource",
-            "resource":"quirks:gigantification/gigantification_resource",
-            "change":0,
-            "operation":"set"
+            "type": "origins:modify_resource",
+            "modifier": {
+               "operation": "set_total",
+               "amount": 0.00
+            },
+            "resource": "quirks:gigantification/gigantification_resource"
          }
       },
       "cooldown":1,

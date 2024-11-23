@@ -11,7 +11,7 @@
 - Acid
 - Blackwhip (In Progress)
 - Fa Jin
-- Gigantification (Not Finished)
+- Gigantification
 - Heal
 - Invisibility
 - Larceny
