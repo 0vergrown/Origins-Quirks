@@ -21,7 +21,7 @@
          },
          "resource":"quirks:fa_jin/energy_leap_if_on_ground"
       },
-      "interval":5,
+      "interval":1,
       "condition":{
          "type":"origins:on_block"
       }
@@ -70,7 +70,7 @@
                      },
                      {
                         "type":"origins:play_sound",
-                        "sound":"minecraft:entity.breeze.jump",
+                        "sound":"minecraft:entity.rabbit.jump",
                         "volume":1.00,
                         "pitch":1.00
                      },
@@ -206,7 +206,7 @@
                      },
                      {
                         "type":"origins:play_sound",
-                        "sound":"minecraft:entity.breeze.jump",
+                        "sound":"minecraft:entity.rabbit.jump",
                         "volume":1.00,
                         "pitch":1.00
                      },
@@ -342,7 +342,7 @@
                      },
                      {
                         "type":"origins:play_sound",
-                        "sound":"minecraft:entity.breeze.jump",
+                        "sound":"minecraft:entity.rabbit.jump",
                         "volume":1.00,
                         "pitch":1.00
                      },
@@ -478,7 +478,7 @@
                      },
                      {
                         "type":"origins:play_sound",
-                        "sound":"minecraft:entity.breeze.jump",
+                        "sound":"minecraft:entity.rabbit.jump",
                         "volume":1.00,
                         "pitch":1.00
                      },
@@ -614,7 +614,7 @@
                      },
                      {
                         "type":"origins:play_sound",
-                        "sound":"minecraft:entity.breeze.jump",
+                        "sound":"minecraft:entity.rabbit.jump",
                         "volume":1.00,
                         "pitch":1.00
                      },

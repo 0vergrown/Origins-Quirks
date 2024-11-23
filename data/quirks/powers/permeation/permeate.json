@@ -152,8 +152,8 @@
    "suffocate_invulnerability":{
       "type":"origins:invulnerability",
       "damage_condition":{
-         "type":"origins:type",
-         "damage_type":"minecraft:in_wall"
+         "type": "origins:name",
+         "name": "inWall"
       }
    },
    "slower_fall":{
@@ -347,7 +347,7 @@
          "type":"origins:drop_inventory",
          "inventory_type":"inventory",
          "item_condition":{
-            "type":"origins:equippable"
+            "type":"origins:is_equippable"
          },
          "slots":[
             "armor.head",
@@ -369,7 +369,7 @@
                ],
                "process_mode":"items",
                "item_condition":{
-                  "type":"origins:equippable"
+                  "type":"origins:is_equippable"
                },
                "slots":[
                   "armor.head",
