@@ -1,5 +1,41 @@
 {
    "type":"origins:multiple",
+   "hits_taken":{
+      "type":"origins:resource",
+      "min":0,
+      "max":5,
+      "hud_render":{
+         "should_render":false
+      },
+      "start_value":0
+   },
+   "hits_registered":{
+      "type":"origins:action_when_hit",
+      "bientity_action":{
+         "type":"origins:target_action",
+         "action":{
+            "type":"origins:if_else",
+            "condition":{
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":5
+            },
+            "if_action":{
+               "type": "origins:modify_resource",
+               "modifier": {
+                   "operation": "add_base_early",
+                   "value": 1.00
+               },
+               "resource": "quirks:power_reserve/endurance_enhancement_hits_taken"
+            },
+            "else_action":{
+               "type":"origins:heal",
+               "amount":6
+            }
+         }
+      }
+   },
    "absorption_level_1":{
       "type":"origins:conditioned_attribute",
       "modifier":{
@@ -18,6 +54,12 @@
                "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"==",
                "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":5
             },
             {
                "type":"origins:resource",
@@ -49,6 +91,12 @@
             },
             {
                "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":4
+            },
+            {
+               "type":"origins:resource",
                "resource":"quirks:power_reserve/move_selector_resource",
                "comparison":"==",
                "compare_to":3
@@ -74,6 +122,12 @@
                "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"==",
                "compare_to":2
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":3
             },
             {
                "type":"origins:resource",
@@ -105,6 +159,12 @@
             },
             {
                "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":2
+            },
+            {
+               "type":"origins:resource",
                "resource":"quirks:power_reserve/move_selector_resource",
                "comparison":"==",
                "compare_to":3
@@ -130,6 +190,12 @@
                "resource":"quirks:power_reserve/kinetic_charge_power_output",
                "comparison":"==",
                "compare_to":4
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:power_reserve/endurance_enhancement_hits_taken",
+               "comparison":"!=",
+               "compare_to":1
             },
             {
                "type":"origins:resource",
