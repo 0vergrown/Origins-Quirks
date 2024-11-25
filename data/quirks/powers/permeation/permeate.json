@@ -1,6 +1,6 @@
 {
-   "name": "Permeate",
-   "description": "Phase through solid matter, becoming completely intangible. [Primary]\n\nBe mindful of your position when deactivating to avoid sudden ejection due to overlapping mass laws.",
+   "name":"Permeate",
+   "description":"Phase through solid matter, becoming completely intangible. [Primary]\n\nBe mindful of your position when deactivating to avoid sudden ejection due to overlapping mass laws.",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",
@@ -152,8 +152,8 @@
    "suffocate_invulnerability":{
       "type":"origins:invulnerability",
       "damage_condition":{
-         "type": "origins:name",
-         "name": "inWall"
+         "type":"origins:name",
+         "name":"inWall"
       }
    },
    "slower_fall":{
@@ -362,24 +362,6 @@
       "condition":{
          "type":"origins:and",
          "conditions":[
-            {
-               "type":"origins:inventory",
-               "inventory_types":[
-                  "inventory"
-               ],
-               "process_mode":"items",
-               "item_condition":{
-                  "type":"origins:is_equippable"
-               },
-               "slots":[
-                  "armor.head",
-                  "armor.chest",
-                  "armor.legs",
-                  "armor.feet"
-               ],
-               "comparison":"!=",
-               "compare_to":0
-            },
             {
                "type":"origins:or",
                "conditions":[
