@@ -2,7 +2,8 @@
 	"powers": [
 		"quirks:invisibility/move_selector",
 		"quirks:invisibility/invisible",
-		"quirks:invisibility/warp_refraction"
+		"quirks:invisibility/warp_refraction",
+		"quirks:invisibility/light_scatter"
 	],
 	"icon":{
 		"id": "minecraft:glass"

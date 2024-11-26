@@ -7,7 +7,7 @@
       "hud_render":{
          "should_render":false
       },
-      "start_value":0
+      "start_amount":0
    },
    "active":{
       "type":"origins:action_on_hit",
@@ -44,7 +44,7 @@
                                     "type": "origins:modify_resource",
                                     "modifier": {
                                         "operation": "add_base_early",
-                                        "value": -10.00
+                                        "amount": -10.00
                                     },
                                     "resource": "quirks:power_reserve/kinetic_charge_energy"
                                  },
@@ -60,7 +60,7 @@
                                        "type": "origins:modify_resource",
                                        "modifier": {
                                            "operation": "add_base_early",
-                                           "value": 1.00
+                                           "amount": 1.00
                                        },
                                        "resource": "quirks:power_reserve/backlash_strain"
                                     }
@@ -88,7 +88,7 @@
                                              "type": "origins:modify_resource",
                                              "modifier": {
                                                  "operation": "add_base_early",
-                                                 "value": -1.00
+                                                 "amount": -1.00
                                              },
                                              "resource": "quirks:power_reserve/backlash_strain"
                                           },
@@ -98,7 +98,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 1.00
+                                                    "amount": 1.00
                                                 },
                                                 "resource": "quirks:power_reserve/power_boost_proficiency"
                                              },
@@ -110,7 +110,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 2.00
+                                                          "amount": 2.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -143,7 +143,7 @@
                                              "type": "origins:modify_resource",
                                              "modifier": {
                                                  "operation": "add_base_early",
-                                                 "value": -2.00
+                                                 "amount": -2.00
                                              },
                                              "resource": "quirks:power_reserve/backlash_strain"
                                           },
@@ -153,7 +153,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 1.00
+                                                    "amount": 1.00
                                                 },
                                                 "resource": "quirks:power_reserve/power_boost_proficiency"
                                              },
@@ -165,7 +165,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 1.00
+                                                          "amount": 1.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -292,7 +292,7 @@
                                     "type": "origins:modify_resource",
                                     "modifier": {
                                         "operation": "add_base_early",
-                                        "value": -20.00
+                                        "amount": -20.00
                                     },
                                     "resource": "quirks:power_reserve/kinetic_charge_energy"
                                  },
@@ -308,7 +308,7 @@
                                        "type": "origins:modify_resource",
                                        "modifier": {
                                            "operation": "add_base_early",
-                                           "value": 2.00
+                                           "amount": 2.00
                                        },
                                        "resource": "quirks:power_reserve/backlash_strain"
                                     }
@@ -336,7 +336,7 @@
                                              "type": "origins:modify_resource",
                                              "modifier": {
                                                  "operation": "add_base_early",
-                                                 "value": -2.00
+                                                 "amount": -2.00
                                              },
                                              "resource": "quirks:power_reserve/backlash_strain"
                                           },
@@ -346,7 +346,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 1.00
+                                                    "amount": 1.00
                                                 },
                                                 "resource": "quirks:power_reserve/power_boost_proficiency"
                                              },
@@ -358,7 +358,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 3.00
+                                                          "amount": 3.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -485,7 +485,7 @@
                                     "type": "origins:modify_resource",
                                     "modifier": {
                                         "operation": "add_base_early",
-                                        "value": -30.00
+                                        "amount": -30.00
                                     },
                                     "resource": "quirks:power_reserve/kinetic_charge_energy"
                                  },
@@ -501,7 +501,7 @@
                                        "type": "origins:modify_resource",
                                        "modifier": {
                                            "operation": "add_base_early",
-                                           "value": 3.00
+                                           "amount": 3.00
                                        },
                                        "resource": "quirks:power_reserve/backlash_strain"
                                     }
@@ -529,7 +529,7 @@
                                              "type": "origins:modify_resource",
                                              "modifier": {
                                                  "operation": "add_base_early",
-                                                 "value": -3.00
+                                                 "amount": -3.00
                                              },
                                              "resource": "quirks:power_reserve/backlash_strain"
                                           },
@@ -539,7 +539,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 1.00
+                                                    "amount": 1.00
                                                 },
                                                 "resource": "quirks:power_reserve/power_boost_proficiency"
                                              },
@@ -551,7 +551,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 3.00
+                                                          "amount": 3.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -678,7 +678,7 @@
                                     "type": "origins:modify_resource",
                                     "modifier": {
                                         "operation": "add_base_early",
-                                        "value": -40.00
+                                        "amount": -40.00
                                     },
                                     "resource": "quirks:power_reserve/kinetic_charge_energy"
                                  },
@@ -694,7 +694,7 @@
                                        "type": "origins:modify_resource",
                                        "modifier": {
                                            "operation": "add_base_early",
-                                           "value": 4.00
+                                           "amount": 4.00
                                        },
                                        "resource": "quirks:power_reserve/backlash_strain"
                                     }
@@ -727,7 +727,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 10.00
+                                                          "amount": 10.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -743,7 +743,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 5.00
+                                                    "amount": 5.00
                                                 },
                                                 "resource": "quirks:power_reserve/backlash_strain"
                                              }
@@ -757,7 +757,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 1.00
+                                                          "amount": 1.00
                                                       },
                                                       "resource": "quirks:power_reserve/power_boost_proficiency"
                                                    },
@@ -765,7 +765,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 10.00
+                                                          "amount": 10.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -784,7 +784,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 5.00
+                                                          "amount": 5.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -908,7 +908,7 @@
                                     "type": "origins:modify_resource",
                                     "modifier": {
                                         "operation": "add_base_early",
-                                        "value": -50.00
+                                        "amount": -50.00
                                     },
                                     "resource": "quirks:power_reserve/kinetic_charge_energy"
                                  },
@@ -924,7 +924,7 @@
                                        "type": "origins:modify_resource",
                                        "modifier": {
                                            "operation": "add_base_early",
-                                           "value": 5.00
+                                           "amount": 5.00
                                        },
                                        "resource": "quirks:power_reserve/backlash_strain"
                                     }
@@ -957,7 +957,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 10.00
+                                                          "amount": 10.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -973,7 +973,7 @@
                                                 "type": "origins:modify_resource",
                                                 "modifier": {
                                                     "operation": "add_base_early",
-                                                    "value": 5.00
+                                                    "amount": 5.00
                                                 },
                                                 "resource": "quirks:power_reserve/backlash_strain"
                                              }
@@ -987,7 +987,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 10.00
+                                                          "amount": 10.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },
@@ -1006,7 +1006,7 @@
                                                       "type": "origins:modify_resource",
                                                       "modifier": {
                                                           "operation": "add_base_early",
-                                                          "value": 5.00
+                                                          "amount": 5.00
                                                       },
                                                       "resource": "quirks:power_reserve/backlash_strain"
                                                    },

@@ -11,6 +11,7 @@
 - Acid
 - Blackwhip (In Progress)
 - Fa Jin
+- Frog (Not Finished)
 - Gigantification
 - Heal
 - Invisibility
