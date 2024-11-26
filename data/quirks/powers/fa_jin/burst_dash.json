@@ -1,6 +1,4 @@
 {
-   "name": "Burst Dash",
-   "description": "Release stored energy to boost your movement speed for a short period, propelling you forward at an incredible pace. Ideal for closing the distance quickly or dodging attacks. [Primary]",
    "type":"origins:multiple",
    "toggle":{
       "type": "origins:toggle",

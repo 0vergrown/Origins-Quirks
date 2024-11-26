@@ -1,6 +1,4 @@
 {
-   "name": "Phantom Menace",
-   "description": "Launch yourself at high speed by rapidly activating and deactivating Permeation. Bounce off walls, ceilings, and floors to confuse and strike enemies with increased momentum. [Secondary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

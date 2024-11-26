@@ -1,6 +1,4 @@
 {
-   "name":"Pinpoint Focus",
-   "description":"Launch a precise, high-velocity tendril toward a specific target, primarily as a striking attack. [Ternary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

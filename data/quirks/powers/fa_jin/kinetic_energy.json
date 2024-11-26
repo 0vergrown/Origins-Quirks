@@ -1,6 +1,4 @@
 {
-   "name": "Kinetic Energy",
-   "description": "Kinetic Energy is the primary resource associated with the Fa Jin Quirk. It represents the energy gathered through repetitive movements and is required to activate the Quirk's various abilities.\n\nThe kinetic energy resource is displayed as a bar with a maximum capacity of 50 units, with each Fa Jin move consuming a portion of this energy.\n\nOnce kinetic energy reaches 10 units, it begins to emit a red glow, growing brighter as more energy is accumulated.",
     "type":"origins:multiple",
     "resource":{
        "type":"origins:resource",

@@ -1,6 +1,4 @@
 {
-   "name":"Permeate",
-   "description":"Phase through solid matter, becoming completely intangible. [Primary]\n\nBe mindful of your position when deactivating to avoid sudden ejection due to overlapping mass laws.",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",

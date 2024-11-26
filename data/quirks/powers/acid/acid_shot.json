@@ -1,6 +1,4 @@
 {
-   "name":"Acid Shot",
-   "description":"Launch a barrage of acid in the form of bullet-like projectiles. These droplets rain down on the target and its surroundings, melting anything they touch. [Primary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

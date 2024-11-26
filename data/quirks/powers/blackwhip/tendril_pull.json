@@ -1,6 +1,4 @@
 {
-   "name":"Tendril Pull",
-   "description":"The user can pull objects or individuals toward them with Blackwhip. Alternatively, they can pull themselves toward any targeted anchor point, enabling quick, multi-directional movement or object retrieval. [Secondary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:if_else",
@@ -125,8 +123,8 @@
                      {
                         "type":"origins:add_velocity",
                         "x":0.00,
-                        "y":0.20,
-                        "z":0.40,
+                        "y":0.30,
+                        "z":0.50,
                         "space":"local",
                         "set":false
                      },

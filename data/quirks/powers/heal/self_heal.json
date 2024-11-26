@@ -1,6 +1,4 @@
 {
-   "name":"Self-Heal",
-   "description":"Using their own healing ability, the user restores their health, with the same principles applying. The more health the user needs to recover, the greater the stamina cost. The move sacrifices speed and strength temporarily to regain health, leaving the user with slowness and weakness proportional to the health restored. [Primary]\n\n- §lHealth Recovery§r: Based on user's current health.\n- §lStamina Cost§r: As with Healing Kiss, greater health recovery results in more severe stamina depletion. [Primary]",
     "type":"origins:active_self",
     "entity_action":{
        "type":"origins:and",

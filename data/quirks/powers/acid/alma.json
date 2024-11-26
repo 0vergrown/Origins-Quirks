@@ -1,6 +1,4 @@
 {
-   "name":"Alma",
-   "description":"Fling the mass of acid generated from Acidman at an opponent, turning their entire body into a projectile. [Quinary]",
    "type":"origins:active_self",
    "entity_action":{
       "type":"origins:and",

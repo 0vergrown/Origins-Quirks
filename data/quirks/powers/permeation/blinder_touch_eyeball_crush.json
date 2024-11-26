@@ -1,6 +1,4 @@
 {
-   "name": "Blinder Touch Eyeball Crush",
-   "description": "Pretend to jab at an opponent's eyes while intangible, distracting them long enough to land a powerful blow to a vital area. [Rick-Click On Entity]",
    "type":"origins:multiple",
    "poke_eyes":{
       "type":"origins:action_on_entity_use",

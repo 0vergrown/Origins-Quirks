@@ -1,6 +1,4 @@
 {
-    "name":"Whip-Swing",
-    "description":"Use Blackwhip's tendrils to grapple, slingshot, and swing off structures. [Primary]",
     "type":"origins:multiple",
     "callback":{
        "type":"origins:action_on_callback",

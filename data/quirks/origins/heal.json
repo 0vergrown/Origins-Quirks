@@ -10,7 +10,5 @@
 	"unchoosable": false,
 	"order": 10,
 	"impact": 1,
-	"loading_priority": 0,
-	"name":"Heal",
-	"description":"Quirk Type: Emitter\n\nThe Heal Quirk grants the user the ability to heal themselves and others, accelerating natural recovery processes. However, the greater the amount of health restored, the more stamina the user expends. The Quirk works both on living creatures and the user themselves, with a focus on rapid, targeted healing at a personal cost."
+	"loading_priority": 0
 }

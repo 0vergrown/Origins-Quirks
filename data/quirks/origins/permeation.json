@@ -11,7 +11,5 @@
 	"unchoosable": false,
 	"order": 10,
 	"impact": 2,
-	"loading_priority": 0,
-    "name": "Permeation",
-    "description": "Quirk Type: Transformation\n\nPermeation allows the user to phase their body through solid matter, becoming completely intangible. Activating this ability enables evasion of attacks, passing through obstacles, and strategic repositioning. However, while intangible, all senses are disabled, leaving the user blind, deaf, and unable to breathe. Deactivation must align the user's body with an open space to avoid dangerous ejection."
+	"loading_priority": 0
 }

@@ -1,6 +1,4 @@
 {
-    "name":"Light Scatter",
-    "description":"By focusing on a target, the user creates shimmering, refracted light waves around the target in different locations. [Secondary]\n\n- Effects: Blindness for 5 seconds, severe slowness\n- Conditions: Usable only in bright areas\n- Cooldown: 10 seconds",
     "type":"origins:active_self",
     "entity_action":{
        "type":"origins:raycast",

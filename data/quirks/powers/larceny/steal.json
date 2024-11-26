@@ -1,6 +1,4 @@
 {
-   "name": "Steal",
-   "description": "Disarm your target by taking the item from their main hand within a 16-block range. Requires clear line of sight to the target. [Primary]\n\n- Conditions: Only usable with line of sight\n- Cooldown: 20 seconds",
     "type":"origins:active_self",
     "entity_action":{
        "type":"origins:and",

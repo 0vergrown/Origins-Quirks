@@ -1,6 +1,4 @@
 {
-   "name": "Warp Refraction",
-   "description": "Unleash a dazzling burst of refracted light, blinding and slowing nearby enemies in a 7-block radius. This move is perfect for disrupting groups or escaping tight situations. [Primary]\n\n- Effects: Blindness for 5 seconds, severe slowness\n- Conditions: Usable only in bright areas\n- Cooldown: 10 seconds",
     "type":"origins:active_self",
     "entity_action":{
        "type":"origins:and",

@@ -14,7 +14,5 @@
 	"unchoosable": false,
 	"order": 10,
 	"impact": 3,
-	"loading_priority": 0,
-	"name":"Acid",
-	"description":"Quirk Type: Emitter\n\nThe Acid Quirk grants the user the ability to produce and manipulate a corrosive liquid from their body, allowing for a wide variety of offensive and defensive capabilities. This quirk is highly versatile, offering both ranged and close-combat options, as well as defensive shielding."
+	"loading_priority": 0
 }

@@ -1,6 +1,4 @@
 {
-   "name":"Corrosive Liquid",
-   "description":"Corrosive Liquid is the primary resource associated with the Acid Quirk. It represents the acid produced by the user and is necessary for activating and maintaining the Quirk's abilities.\n\nThe corrosive liquid the body can produce has a maximum capacity of 400 units, with the initial value starting at 0. The user passively generates corrosive liquid over time at a base rate of 2 units per second.\n\nHowever, this rate is influenced by certain conditions. If the user's food level falls to 3 or below, or if their health is reduced to 30% or less of the maximum, the generation rate slows to 0.5 units per second.\n\nThe user's skin color changes in relation to the current amount of corrosive liquid available.",
    "type": "origins:multiple",
    "resource": {
       "type": "origins:resource",
