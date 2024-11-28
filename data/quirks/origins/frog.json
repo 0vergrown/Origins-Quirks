@@ -1,5 +1,6 @@
 {
 	"powers":[
+		"quirks:frog/move_selector",
 	   "quirks:frog/amphibious",
 	   "quirks:frog/bouncy",
 	   "quirks:frog/camouflage",

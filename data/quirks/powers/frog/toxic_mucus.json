@@ -1,6 +1,4 @@
 {
-    "name": "Toxic Mucus",
-    "description": "Throw up your stomach acids on enemies. [Senary]",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",
@@ -10,12 +8,6 @@
                 "sound": "minecraft:entity.generic.extinguish_fire",
                 "volume": 1,
                 "pitch": 1
-            },
-            {
-                "type": "origins:change_resource",
-                "resource": "frog:stamina_resource",
-                "change": -30,
-                "operation": "add"
             },
             {
                 "type": "origins:raycast",
@@ -29,15 +21,16 @@
                     "action": {
                         "type": "origins:apply_effect",
                         "effect": {
-                            "effect": "poison",
+                            "id": "minecraft:poison",
                             "duration": 60,
                             "amplifier": 0,
+                            "ambient": false,
                             "show_particles": true,
                             "show_icon": true
                         }
                     }
                 },
-                "command_along_ray": "particle minecraft:dust 0.4 1 0 0.5 ~ ~ ~ 0.5 0.5 0.5 0 20 force"
+                "command_along_ray": "particle minecraft:dust{color:[0.4,1.0,0.0],scale:0.5} ~ ~ ~ 0.5 0.5 0.5 0 20 force @a"
             }
         ]
     },
@@ -48,13 +41,13 @@
         "bar_index": 24
     },
     "key": {
-        "key": "key.origins.senary_active",
+        "key": "key.origins.primary_active",
         "continuous": false
     },
     "condition": {
-        "type": "origins:resource",
-        "resource": "frog:stamina_resource",
-        "comparison": ">=",
-        "compare_to": 30
-    }
+        "type":"origins:resource",
+        "resource":"quirks:frog/move_selector_resource",
+        "comparison":"==",
+        "compare_to":3
+      }
 }

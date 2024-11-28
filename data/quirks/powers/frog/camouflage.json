@@ -1,6 +1,4 @@
 {
-   "name":"Camouflage",
-   "description":"Blend into your environment. [Quaternary]",
    "type":"origins:multiple",
    "resource":{
       "type":"origins:resource",
@@ -31,7 +29,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"frog:camouflage_resource",
+            "resource":"quirks:frog/camouflage_resource",
             "comparison":"==",
             "compare_to":0
          },
@@ -64,15 +62,17 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"frog:camouflage_fade_out"
+                  "power":"quirks:frog/camouflage_fade_out"
                },
                {
                   "type":"origins:delay",
                   "action":{
-                     "type":"origins:change_resource",
-                     "resource":"frog:camouflage_resource",
-                     "change":1,
-                     "operation":"set"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"set_total",
+                        "amount":1.00
+                     },
+                     "resource":"quirks:frog/camouflage_resource"
                   },
                   "ticks":19
                }
@@ -107,15 +107,17 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"frog:camouflage_fade_in"
+                  "power":"quirks:frog/camouflage_fade_in"
                },
                {
                   "type":"origins:delay",
                   "action":{
-                     "type":"origins:change_resource",
-                     "resource":"frog:camouflage_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"set_total",
+                        "amount":0.00
+                     },
+                     "resource":"quirks:frog/camouflage_resource"
                   },
                   "ticks":19
                }
@@ -127,14 +129,25 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.quaternary_active",
+         "key":"key.origins.primary_active", 
          "continuous":false
       },
       "condition":{
-         "type":"origins:resource",
-         "resource":"frog:camouflage_no_invisibility_when_hit",
-         "comparison":"==",
-         "compare_to":0
+         "type": "origins:all_of",
+         "conditions": [
+            {
+               "type":"origins:resource",
+               "resource":"quirks:frog/camouflage_no_invisibility_when_hit",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:frog/move_selector_resource",
+               "comparison":"==",
+               "compare_to":1
+            }
+         ]
       }
    },
    "fade_1":{
@@ -144,37 +157,37 @@
       "blue":1.0,
       "alpha":0.8,
       "condition":{
-         "type":"origins:or",
+         "type":"origins:any_of",
          "conditions":[
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":5
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":0
                   }
                ]
             },
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":20
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":15
                   }
@@ -190,37 +203,37 @@
       "blue":1.0,
       "alpha":0.6,
       "condition":{
-         "type":"origins:or",
+         "type":"origins:any_of",
          "conditions":[
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":10
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":5
                   }
                ]
             },
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":15
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":10
                   }
@@ -236,37 +249,37 @@
       "blue":1.0,
       "alpha":0.4,
       "condition":{
-         "type":"origins:or",
+         "type":"origins:any_of",
          "conditions":[
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":15
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":10
                   }
                ]
             },
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":10
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":5
                   }
@@ -282,37 +295,37 @@
       "blue":1.0,
       "alpha":0.2,
       "condition":{
-         "type":"origins:or",
+         "type":"origins:any_of",
          "conditions":[
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":20
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":15
                   }
                ]
             },
             {
-               "type":"origins:and",
+               "type":"origins:all_of",
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":5
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"frog:camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":0
                   }
@@ -322,20 +335,23 @@
       }
    },
    "invisibility":{
-      "type":"origins:invisibility",
-      "render_armor":false,
+      "type":"origins:model_color",
+      "red":1.0,
+      "green":1.0,
+      "blue":1.0,
+      "alpha":0.1,
       "condition":{
-         "type":"origins:and",
+         "type":"origins:all_of",
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"frog:camouflage_resource",
+               "resource":"quirks:frog/camouflage_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"frog:camouflage_fade_in",
+               "resource":"quirks:frog/camouflage_fade_in",
                "comparison":"==",
                "compare_to":0
             }
@@ -357,15 +373,17 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"frog:camouflage_fade_in"
+                  "power":"quirks:frog/camouflage_fade_in"
                },
                {
                   "type":"origins:delay",
                   "action":{
-                     "type":"origins:change_resource",
-                     "resource":"frog:camouflage_resource",
-                     "change":0,
-                     "operation":"set"
+                     "type":"origins:modify_resource",
+                     "modifier":{
+                        "operation":"set_total",
+                        "amount":0.00
+                     },
+                     "resource":"quirks:frog/camouflage_resource"
                   },
                   "ticks":19
                }
@@ -380,57 +398,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"frog:camouflage_resource",
-         "comparison":"==",
-         "compare_to":1
-      }
-   },
-   "stamina_drain":{
-      "type":"origins:action_over_time",
-      "entity_action":{
-         "type": "origins:if_else",
-         "condition": {
-            "type":"origins:resource",
-            "resource":"frog:stamina_resource",
-            "comparison":">=",
-            "compare_to":2
-         },
-         "if_action": {
-            "type":"origins:change_resource",
-            "resource":"frog:stamina_resource",
-            "change":-2,
-            "operation":"add"
-         },
-         "else_action": {
-            "type":"origins:and",
-            "actions":[
-               {
-                  "type":"origins:play_sound",
-                  "sound":"minecraft:entity.frog.ambient",
-                  "volume":1.00,
-                  "pitch":1.00
-               },
-               {
-                  "type":"origins:trigger_cooldown",
-                  "power":"frog:camouflage_fade_in"
-               },
-               {
-                  "type":"origins:delay",
-                  "action":{
-                     "type":"origins:change_resource",
-                     "resource":"frog:camouflage_resource",
-                     "change":0,
-                     "operation":"set"
-                  },
-                  "ticks":19
-               }
-            ]
-         }
-      },
-      "interval":20,
-      "condition":{
-         "type":"origins:resource",
-         "resource":"frog:camouflage_resource",
+         "resource":"quirks:frog/camouflage_resource",
          "comparison":"==",
          "compare_to":1
       }

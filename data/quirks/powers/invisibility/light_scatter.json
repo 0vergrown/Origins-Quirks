@@ -107,18 +107,18 @@
                                   "type":"origins:apply_effect",
                                   "effects":[
                                      {
-                                        "effect":"minecraft:blindness",
+                                        "id":"minecraft:blindness",
                                         "duration":100,
                                         "amplifier":0,
-                                        "is_ambient":false,
+                                        "ambient":false,
                                         "show_particles":true,
                                         "show_icon":true
                                      },
                                      {
-                                        "effect":"minecraft:slowness",
+                                        "id":"minecraft:slowness",
                                         "duration":100,
                                         "amplifier":10,
-                                        "is_ambient":false,
+                                        "ambient":false,
                                         "show_particles":true,
                                         "show_icon":true
                                      }
@@ -227,18 +227,18 @@
                                      "type":"origins:apply_effect",
                                      "effects":[
                                         {
-                                           "effect":"minecraft:blindness",
+                                           "id":"minecraft:blindness",
                                            "duration":100,
                                            "amplifier":0,
-                                           "is_ambient":false,
+                                           "ambient":false,
                                            "show_particles":true,
                                            "show_icon":true
                                         },
                                         {
-                                           "effect":"minecraft:slowness",
+                                           "id":"minecraft:slowness",
                                            "duration":100,
                                            "amplifier":10,
-                                           "is_ambient":false,
+                                           "ambient":false,
                                            "show_particles":true,
                                            "show_icon":true
                                         }
@@ -349,18 +349,18 @@
                                      "type":"origins:apply_effect",
                                      "effects":[
                                         {
-                                           "effect":"minecraft:blindness",
+                                           "id":"minecraft:blindness",
                                            "duration":100,
                                            "amplifier":0,
-                                           "is_ambient":false,
+                                           "ambient":false,
                                            "show_particles":true,
                                            "show_icon":true
                                         },
                                         {
-                                           "effect":"minecraft:slowness",
+                                           "id":"minecraft:slowness",
                                            "duration":100,
                                            "amplifier":10,
-                                           "is_ambient":false,
+                                           "ambient":false,
                                            "show_particles":true,
                                            "show_icon":true
                                         }
