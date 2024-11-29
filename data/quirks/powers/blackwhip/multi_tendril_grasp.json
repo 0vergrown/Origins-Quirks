@@ -156,7 +156,7 @@
           "actions":[
              {
                 "type":"origins:execute_command",
-                "command":"execute as @s at @n[type=minecraft:armor_stand,limit=1,tag=blackwhip.multi_tendril_grasp_target] run teleport @e[distance=0] ~ ~ ~ facing entity @s"
+                "command":"execute as @n[type=minecraft:armor_stand,limit=1,tag=blackwhip.multi_tendril_grasp_target] at @s anchored eyes facing entity @p eyes run tp @s ~ ~ ~ ~ ~"
              },
              {
                 "type":"origins:action_on_entity_set",
