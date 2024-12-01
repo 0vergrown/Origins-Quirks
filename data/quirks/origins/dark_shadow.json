@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"quirks:dark_shadow/dark_summoning"
+	],
+	"icon":{
+		"id": "minecraft:black_wool"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}
