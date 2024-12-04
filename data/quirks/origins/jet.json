@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"quirks:jet/updraft",
+		"quirks:jet/dash",
+		"quirks:jet/winded_uppercut",
+		"quirks:jet/wind_rush",
+		"quirks:jet/air_step"
+	],
+	"icon":"minecraft:yellow_wool",
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}

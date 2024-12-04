@@ -344,9 +344,6 @@
       "entity_action":{
          "type":"origins:drop_inventory",
          "inventory_type":"inventory",
-         "item_condition":{
-            "type":"origins:is_equippable"
-         },
          "slots":[
             "armor.head",
             "armor.chest",
