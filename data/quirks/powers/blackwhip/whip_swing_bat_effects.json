@@ -94,7 +94,7 @@
                      "type":"origins:remove_from_entity_set",
                      "set":"quirks:blackwhip/whip_swing_actor_set"
                   },
-                  "limit":0,
+                  "limit":1,
                   "reverse":false
                }
             ]

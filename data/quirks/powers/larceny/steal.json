@@ -82,7 +82,7 @@
                                  },
                                  "slot":"weapon.mainhand",
                                  "process_mode":"stacks",
-                                 "limit":0
+                                 "limit":1
                               },
                               "ticks":1
                            },

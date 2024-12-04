@@ -33,7 +33,7 @@
                "type":"origins:remove_from_entity_set",
                "set":"quirks:sloshed/targeted_slosh_target_list"
             },
-            "limit":0,
+            "limit":1,
             "reverse":false
          },
          "else_action":{
@@ -131,7 +131,7 @@
             "comparison":"<=",
             "compare_to":15
          },
-         "limit":0,
+         "limit":1,
          "reverse":false
       },
       "interval":20,

@@ -128,7 +128,7 @@
                       "type":"origins:remove_from_entity_set",
                       "set":"quirks:blackwhip/multi_tendril_grasp_actor_set"
                    },
-                   "limit":0,
+                   "limit":1,
                    "reverse":false
                 }
              ]
@@ -342,7 +342,7 @@
                                   "type":"origins:remove_from_entity_set",
                                   "set":"quirks:blackwhip/multi_tendril_grasp_actor_set"
                                },
-                               "limit":0,
+                               "limit":1,
                                "reverse":false
                             }
                          ]

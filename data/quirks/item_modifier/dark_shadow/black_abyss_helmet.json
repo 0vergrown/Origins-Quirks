@@ -1,0 +1,40 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "translate": "item_modifier.quirks.dark_shadow.black_abyss_helmet.name",
+        "color": "yellow",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      "target": "custom_name"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "translate": "item_modifier.quirks.dark_shadow.black_abyss_helmet.lore",
+          "color": "dark_purple",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{quirks:dark_shadow_black_abyss_helmet}"
+    },
+    {
+      "function": "minecraft:set_custom_model_data",
+      "value": 381740
+    }
+]

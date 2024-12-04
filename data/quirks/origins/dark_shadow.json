@@ -1,6 +1,8 @@
 {
 	"powers": [
-		"quirks:dark_shadow/dark_summoning"
+		"quirks:dark_shadow/move_selector",
+		"quirks:dark_shadow/dark_summoning",
+		"quirks:dark_shadow/piercing_twilight_claws"
 	],
 	"icon":{
 		"id": "minecraft:black_wool"

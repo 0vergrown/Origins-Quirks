@@ -60,7 +60,7 @@
                      "type":"origins:remove_from_entity_set",
                      "set":"quirks:sloshed/hide_in_plain_sight_set"
                   },
-                  "limit":0,
+                  "limit":1,
                   "reverse":false
                }
             ]

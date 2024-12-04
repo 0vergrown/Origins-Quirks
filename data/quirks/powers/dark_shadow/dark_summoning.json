@@ -67,7 +67,7 @@
                 "type":"origins:remove_from_entity_set",
                 "set":"quirks:dark_shadow/dark_summoning_actor_set"
              },
-             "limit":0,
+             "limit":1,
              "reverse":false
           }
        },
@@ -78,30 +78,35 @@
        "key":{
           "key":"key.origins.primary_active",
           "continuous":false
-       }
+       },
+       "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:dark_shadow/move_selector_resource",
+         "comparison":"==",
+         "compare_to":0
+      }
     },
     "position":{
        "type":"origins:action_over_time",
        "entity_action":{
-          "type":"origins:action_on_entity_set",
-          "set":"quirks:dark_shadow/dark_summoning_actor_set",
-          "bientity_action":{
-             "type":"origins:actor_action",
-             "action":{
-                "type":"origins:and",
-                "actions":[
-                   {
-                      "type":"origins:execute_command",
-                      "command":"tp @n[type=minecraft:armor_stand] @s"
-                   },
-                   {
-                      "type":"origins:execute_command",
-                      "command":"data modify entity @n[type=minecraft:armor_stand,limit=1] Rotation set from entity @s Rotation"
-                   }
-                ]
-             }
-          }
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"tp @n[type=minecraft:armor_stand] @s"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"data modify entity @n[type=minecraft:armor_stand,limit=1] Rotation set from entity @s Rotation"
+            }
+         ]
        },
-       "interval":1
+       "interval":1,
+       "condition":{
+         "type":"origins:entity_set_size",
+         "set":"quirks:dark_shadow/dark_summoning_actor_set",
+         "comparison":"==",
+         "compare_to":1
+      }
     }
 }
