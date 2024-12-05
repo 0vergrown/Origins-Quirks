@@ -35,7 +35,7 @@
        "function":"apoli:add_power",
        "power":"quirks:support_item/impact_absorbing_boots",
        "slot":"feet",
-       "hidden":false,
+       "hidden":true,
        "negative":false
     }
 ]
