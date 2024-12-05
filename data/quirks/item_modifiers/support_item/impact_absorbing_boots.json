@@ -1,0 +1,41 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "translate": "item_modifier.quirks.support_item.impact_absorbing_boots.name",
+        "color": "yellow",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "translate": "item_modifier.quirks.support_item.impact_absorbing_boots.lore",
+          "color": "white",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{CustomModelData:647916,Trim:{material:\"minecraft:netherite\",pattern:\"minecraft:wild\"},display:{color:16579836}}"
+    },
+    {
+       "function":"apoli:add_power",
+       "power":"quirks:support_item/impact_absorbing_boots",
+       "slot":"feet",
+       "hidden":false,
+       "negative":false
+    }
+]
