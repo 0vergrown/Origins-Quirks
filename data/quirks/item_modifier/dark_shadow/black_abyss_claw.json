@@ -1,40 +1,57 @@
 [
-    {
-      "function": "minecraft:set_name",
-      "entity": "this",
-      "name": {
-        "translate": "item_modifier.quirks.dark_shadow.black_abyss_claw.name",
-        "color": "yellow",
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "translate": "item_modifier.quirks.dark_shadow.black_abyss_claw.name",
+      "color": "yellow",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "target": "custom_name"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item_modifier.quirks.dark_shadow.black_abyss_claw.lore",
+        "color": "dark_purple",
         "bold": false,
         "italic": false,
         "underlined": false,
         "strikethrough": false,
         "obfuscated": false
-      },
-      "target": "custom_name"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        {
-          "translate": "item_modifier.quirks.dark_shadow.black_abyss_claw.lore",
-          "color": "dark_purple",
-          "bold": false,
-          "italic": false,
-          "underlined": false,
-          "strikethrough": false,
-          "obfuscated": false
-        }
-      ],
-      "mode": "replace_all"
-    },
-    {
-      "function": "minecraft:set_custom_data",
-      "tag": "{quirks:dark_shadow_black_abyss_claw}"
-    },
-    {
-      "function": "minecraft:set_custom_model_data",
-      "value": 538367
+      }
+    ],
+    "mode": "replace_all"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{quirks:dark_shadow_black_abyss_claw}"
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "value": 538367
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      }
     }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:knockback": 2,
+      "minecraft:sweeping_edge": 1,
+      "minecraft:vanishing_curse": 1
+    },
+    "add": true
+  }
 ]
