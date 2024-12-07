@@ -52,6 +52,6 @@
       "minecraft:sweeping_edge": 1,
       "minecraft:vanishing_curse": 1
     },
-    "add": true
+    "add": false
   }
 ]
