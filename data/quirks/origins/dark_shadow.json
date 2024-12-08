@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"quirks:dark_shadow/dark_summoning",
+		"quirks:dark_shadow/piercing_twilight_claws",
+		"quirks:dark_shadow/black_abyss",
+		"quirks:dark_shadow/black_fallen_angel"
+	],
+	"icon":"minecraft:black_wool",
+	"unchoosable": false,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}

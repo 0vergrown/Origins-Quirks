@@ -1,0 +1,102 @@
+{
+    "type":"origins:multiple",
+    "callback":{
+      "type":"origins:action_on_callback",
+      "entity_action_gained":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"tag @s add quirks.dark_shadow_user"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"scoreboard objectives add Dark_ShadowUUID dummy"
+            },
+            {
+               "type":"origins:delay",
+               "action":{
+                  "type":"origins:execute_command",
+                  "command":"execute store result score @s Dark_ShadowUUID run data get entity @s UUID[0]"
+               },
+               "ticks":1
+            }
+         ]
+      },
+      "entity_action_lost":{
+         "type":"origins:execute_command",
+         "command":"tag @s remove quirks.dark_shadow_user"
+      }
+   },
+   "spawn":{
+      "type":"origins:active_self",
+      "entity_action":{
+         "type":"origins:if_else",
+         "condition":{
+            "type":"origins:command",
+            "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID",
+            "comparison":">",
+            "compare_to":0
+         },
+         "if_action":{
+            "type":"origins:execute_command",
+            "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID run kill @s"
+         },
+         "else_action":{
+            "type":"origins:and",
+            "actions":[
+               {
+                  "type": "origins:spawn_entity",
+                  "entity_type": "minecraft:armor_stand",
+                  "tag": "{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
+               },
+               {
+                  "type": "origins:delay",
+                  "action": {
+                     "type": "origins:execute_command",
+                     "command": "execute store result score @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Dark_ShadowUUID run data get entity @s UUID[0]"
+                  },
+                  "ticks": 1
+               },
+               {
+                  "type":"origins:play_sound",
+                  "sound":"minecraft:entity.wither.spawn",
+                  "volume":0.50,
+                  "pitch":2.00
+               }
+            ]
+         }
+      },
+      "cooldown":1,
+      "hud_render":{
+         "should_render":false
+      },
+      "key":{
+         "key":"key.origins.primary_active",
+         "continuous":false
+      }
+   },
+    "position":{
+       "type":"origins:action_over_time",
+       "entity_action":{
+         "type": "origins:and",
+         "actions": [
+             {
+                 "type":"origins:execute_command",
+                 "command":"teleport @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] @s"
+              },
+              {
+                 "type":"origins:execute_command",
+                 "command":"data modify entity @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Rotation set from entity @s Rotation"
+              }
+         ]
+       },
+       "interval":1,
+       "condition":{
+         "type":"origins:command",
+         "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID",
+         "comparison":">",
+         "compare_to":0
+      }
+    }
+}

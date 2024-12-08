@@ -1,0 +1,43 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "translate": "item_modifier.quirks.dark_shadow.black_abyss_helmet.name",
+      "color": "yellow",
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item_modifier.quirks.dark_shadow.black_abyss_helmet.lore",
+        "color": "dark_purple",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      }
+    ],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:binding_curse": 1,
+      "minecraft:vanishing_curse": 1
+    },
+    "add": false
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{HideFlags:1,CustomModelData:381740}"
+  }
+]
