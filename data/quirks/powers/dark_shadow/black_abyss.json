@@ -42,51 +42,97 @@
             "type":"origins:and",
             "actions":[
                {
-                  "type": "origins:modify_resource",
-                  "modifier": {
-                      "operation": "set_total",
-                      "value": 1.00
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":1.00
                   },
-                  "resource": "quirks:dark_shadow/black_abyss_resource"
+                  "resource":"quirks:dark_shadow/black_abyss_resource"
                },
                {
-                  "type":"origins:replace_inventory",
-                  "inventory_type":"inventory",
-                  "item_action":{
-                     "type":"origins:modify",
-                     "modifier":"quirks:dark_shadow/black_abyss_helmet"
-                  },
-                  "slot":"armor.head",
-                  "stack":{
-                     "item":"minecraft:carved_pumpkin"
-                  },
-                  "merge_nbt":false
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"head",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "item_action":{
+                              "type":"origins:modify",
+                              "modifier":"quirks:dark_shadow/black_abyss_helmet"
+                           },
+                           "slot":"armor.head",
+                           "stack":{
+                              "item":"minecraft:carved_pumpkin"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
                },
                {
-                  "type":"origins:drop_inventory",
-                  "inventory_type":"inventory",
-                  "slots":[
-                     "weapon.mainhand",
-                     "weapon.offhand"
-                  ],
-                  "throw_randomly":false,
-                  "retain_ownership":true
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"mainhand",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "item_action":{
+                              "type":"origins:modify",
+                              "modifier":"quirks:dark_shadow/black_abyss_claw"
+                           },
+                           "slots":[
+                              "weapon.mainhand"
+                           ],
+                           "stack":{
+                              "item":"minecraft:netherite_sword"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
                },
                {
-                  "type":"origins:replace_inventory",
-                  "inventory_type":"inventory",
-                  "item_action":{
-                     "type":"origins:modify",
-                     "modifier":"quirks:dark_shadow/black_abyss_claw"
-                  },
-                  "slots":[
-                     "weapon.mainhand",
-                     "weapon.offhand"
-                  ],
-                  "stack":{
-                     "item":"minecraft:netherite_sword"
-                  },
-                  "merge_nbt":false
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"offhand",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "item_action":{
+                              "type":"origins:modify",
+                              "modifier":"quirks:dark_shadow/black_abyss_claw"
+                           },
+                           "slots":[
+                              "weapon.offhand"
+                           ],
+                           "stack":{
+                              "item":"minecraft:netherite_sword"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
                }
             ]
          },
@@ -94,16 +140,16 @@
             "type":"origins:and",
             "actions":[
                {
-                  "type": "origins:modify_resource",
-                  "modifier": {
-                      "operation": "set_total",
-                      "value": 0.00
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":0.00
                   },
-                  "resource": "quirks:dark_shadow/black_abyss_resource"
+                  "resource":"quirks:dark_shadow/black_abyss_resource"
                },
                {
                   "type":"origins:modify_inventory",
-                  "inventory_type": "inventory",
+                  "inventory_type":"inventory",
                   "item_action":{
                      "type":"origins:consume",
                      "amount":1
@@ -124,12 +170,12 @@
                      ]
                   },
                   "slot":"armor.head",
-                  "process_mode": "items",
-                  "limit": 1
+                  "process_mode":"items",
+                  "limit":0
                },
                {
                   "type":"origins:modify_inventory",
-                  "inventory_type": "inventory",
+                  "inventory_type":"inventory",
                   "item_action":{
                      "type":"origins:consume",
                      "amount":1
@@ -149,12 +195,12 @@
                         }
                      ]
                   },
-                  "process_mode": "stacks",
-                  "limit": 1
+                  "process_mode":"items",
+                  "limit":0
                },
                {
                   "type":"origins:modify_inventory",
-                  "inventory_type": "inventory",
+                  "inventory_type":"inventory",
                   "item_action":{
                      "type":"origins:consume",
                      "amount":1
@@ -174,9 +220,9 @@
                         }
                      ]
                   },
-                  "slot": "weapon.offhand",
-                  "process_mode": "stacks",
-                  "limit": 1
+                  "slot":"weapon.offhand",
+                  "process_mode":"items",
+                  "limit":0
                }
             ]
          }
@@ -215,27 +261,38 @@
          "compare_to":1
       }
    },
+   "elytra":{
+      "type":"origins:elytra_flight",
+      "render_elytra":true,
+      "texture_location":"quirks:textures/entity/black_fallen_angel_wings.png",
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:dark_shadow/black_abyss_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   },
    "equip_and_unequip_armor":{
       "type":"origins:action_over_time",
       "rising_action":{
          "type":"origins:execute_command",
          "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID run kill @s"
       },
-      "falling_action": {
+      "falling_action":{
          "type":"origins:and",
          "actions":[
             {
-               "type": "origins:spawn_entity",
-               "entity_type": "minecraft:armor_stand",
-               "tag": "{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
+               "type":"origins:spawn_entity",
+               "entity_type":"minecraft:armor_stand",
+               "tag":"{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
             },
             {
-               "type": "origins:delay",
-               "action": {
-                  "type": "origins:execute_command",
-                  "command": "execute store result score @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Dark_ShadowUUID run data get entity @s UUID[0]"
+               "type":"origins:delay",
+               "action":{
+                  "type":"origins:execute_command",
+                  "command":"execute store result score @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Dark_ShadowUUID run data get entity @s UUID[0]"
                },
-               "ticks": 1
+               "ticks":1
             },
             {
                "type":"origins:play_sound",

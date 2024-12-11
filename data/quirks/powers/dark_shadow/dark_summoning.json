@@ -1,14 +1,10 @@
 {
-    "type":"origins:multiple",
-    "callback":{
+   "type":"origins:multiple",
+   "callback":{
       "type":"origins:action_on_callback",
-      "entity_action_gained":{
+      "entity_action_chosen":{
          "type":"origins:and",
          "actions":[
-            {
-               "type":"origins:execute_command",
-               "command":"tag @s add quirks.dark_shadow_user"
-            },
             {
                "type":"origins:execute_command",
                "command":"scoreboard objectives add Dark_ShadowUUID dummy"
@@ -20,13 +16,116 @@
                   "command":"execute store result score @s Dark_ShadowUUID run data get entity @s UUID[0]"
                },
                "ticks":1
+            },
+            {
+               "type":"origins:delay",
+               "action":{
+                  "type":"origins:and",
+                  "actions":[
+                     {
+                        "type":"origins:execute_command",
+                        "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID run kill @s"
+                     },
+                     {
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"set_total",
+                           "value":0.00
+                        },
+                        "resource":"quirks:dark_shadow/black_abyss_resource"
+                     },
+                     {
+                        "type":"origins:modify_resource",
+                        "modifier":{
+                           "operation":"set_total",
+                           "value":0.00
+                        },
+                        "resource":"quirks:dark_shadow/womb_resource"
+                     },
+                     {
+                        "type":"origins:modify_inventory",
+                        "inventory_type":"inventory",
+                        "item_action":{
+                           "type":"origins:consume",
+                           "amount":1
+                        },
+                        "item_condition":{
+                           "type":"origins:and",
+                           "conditions":[
+                              {
+                                 "type":"origins:ingredient",
+                                 "ingredient":{
+                                    "item":"minecraft:carved_pumpkin"
+                                 }
+                              },
+                              {
+                                 "type":"origins:nbt",
+                                 "nbt":"{CustomModelData:381740}"
+                              }
+                           ]
+                        },
+                        "slot":"armor.head",
+                        "process_mode":"items",
+                        "limit":0
+                     },
+                     {
+                        "type":"origins:modify_inventory",
+                        "inventory_type":"inventory",
+                        "item_action":{
+                           "type":"origins:consume",
+                           "amount":1
+                        },
+                        "item_condition":{
+                           "type":"origins:and",
+                           "conditions":[
+                              {
+                                 "type":"origins:ingredient",
+                                 "ingredient":{
+                                    "item":"minecraft:netherite_sword"
+                                 }
+                              },
+                              {
+                                 "type":"origins:nbt",
+                                 "nbt":"{CustomModelData:538367}"
+                              }
+                           ]
+                        },
+                        "process_mode":"items",
+                        "limit":0
+                     },
+                     {
+                        "type":"origins:modify_inventory",
+                        "inventory_type":"inventory",
+                        "item_action":{
+                           "type":"origins:consume",
+                           "amount":1
+                        },
+                        "item_condition":{
+                           "type":"origins:and",
+                           "conditions":[
+                              {
+                                 "type":"origins:ingredient",
+                                 "ingredient":{
+                                    "item":"minecraft:netherite_sword"
+                                 }
+                              },
+                              {
+                                 "type":"origins:nbt",
+                                 "nbt":"{CustomModelData:538367}"
+                              }
+                           ]
+                        },
+                        "slot":"weapon.offhand",
+                        "process_mode":"items",
+                        "limit":0
+                     }
+                  ]
+               },
+               "ticks":2
             }
          ]
       },
-      "entity_action_lost":{
-         "type":"origins:execute_command",
-         "command":"tag @s remove quirks.dark_shadow_user"
-      }
+      "execute_chosen_when_orb":true
    },
    "spawn":{
       "type":"origins:active_self",
@@ -39,24 +138,65 @@
             "compare_to":0
          },
          "if_action":{
-            "type":"origins:execute_command",
-            "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID run kill @s"
+            "type":"origins:and",
+            "actions":[
+               {
+                  "type":"origins:spawn_particles",
+                  "particle":{
+                     "type":"minecraft:dust_color_transition",
+                     "params":"0 0 0 1 0.36 0.11 0.41"
+                  },
+                  "count":50,
+                  "speed":0.15,
+                  "force":true,
+                  "spread":{
+                     "x":0.40,
+                     "y":0.40,
+                     "z":0.40
+                  },
+                  "offset_y":0.50
+               },
+               {
+                  "type":"origins:delay",
+                  "action":{
+                     "type":"origins:execute_command",
+                     "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID run kill @s"
+                  },
+                  "ticks":1
+               }
+            ]
          },
          "else_action":{
             "type":"origins:and",
             "actions":[
                {
-                  "type": "origins:spawn_entity",
-                  "entity_type": "minecraft:armor_stand",
-                  "tag": "{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
+                  "type":"origins:spawn_particles",
+                  "particle":{
+                     "type":"minecraft:dust_color_transition",
+                     "params":"0 0 0 1 0.36 0.11 0.41"
+                  },
+                  "count":50,
+                  "speed":0.15,
+                  "force":true,
+                  "spread":{
+                     "x":0.40,
+                     "y":0.40,
+                     "z":0.40
+                  },
+                  "offset_y":0.50
                },
                {
-                  "type": "origins:delay",
-                  "action": {
-                     "type": "origins:execute_command",
-                     "command": "execute store result score @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Dark_ShadowUUID run data get entity @s UUID[0]"
+                  "type":"origins:spawn_entity",
+                  "entity_type":"minecraft:armor_stand",
+                  "tag":"{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
+               },
+               {
+                  "type":"origins:delay",
+                  "action":{
+                     "type":"origins:execute_command",
+                     "command":"execute store result score @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Dark_ShadowUUID run data get entity @s UUID[0]"
                   },
-                  "ticks": 1
+                  "ticks":1
                },
                {
                   "type":"origins:play_sound",
@@ -74,29 +214,63 @@
       "key":{
          "key":"key.origins.primary_active",
          "continuous":false
+      },
+      "condition":{
+         "type": "origins:and",
+         "conditions": [
+            {
+               "type":"origins:resource",
+               "resource":"quirks:dark_shadow/black_abyss_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:dark_shadow/womb_resource",
+               "comparison":"==",
+               "compare_to":0
+            }
+         ]
       }
    },
-    "position":{
-       "type":"origins:action_over_time",
-       "entity_action":{
-         "type": "origins:and",
-         "actions": [
-             {
-                 "type":"origins:execute_command",
-                 "command":"teleport @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] @s"
-              },
-              {
-                 "type":"origins:execute_command",
-                 "command":"data modify entity @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Rotation set from entity @s Rotation"
-              }
+   "position":{
+      "type":"origins:action_over_time",
+      "entity_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"teleport @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] @s"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"data modify entity @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] Rotation set from entity @s Rotation"
+            }
          ]
-       },
-       "interval":1,
-       "condition":{
-         "type":"origins:command",
-         "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID",
-         "comparison":">",
-         "compare_to":0
+      },
+      "interval":1,
+      "condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:command",
+               "command":"execute as @e[type=minecraft:armor_stand,nbt={Tags:['dark_shadow_target']},sort=nearest,limit=1] if score @s Dark_ShadowUUID = @p[distance=0] Dark_ShadowUUID",
+               "comparison":">",
+               "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:dark_shadow/black_abyss_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:dark_shadow/womb_resource",
+               "comparison": "==",
+               "compare_to": 0
+            }
+         ]
       }
-    }
+   }
 }

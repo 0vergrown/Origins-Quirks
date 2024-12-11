@@ -39,6 +39,6 @@
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{HideFlags:5,Unbreakable:1b,CustomModelData:538367}"
+    "tag": "{HideFlags:5,Unbreakable:1b,CustomModelData:538367,Age:1000,PickupDelay:32767}"
   }
 ]

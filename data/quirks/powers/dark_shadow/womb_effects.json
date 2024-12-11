@@ -1,0 +1,8 @@
+{
+    "type":"origins:action_over_time",
+    "entity_action":{
+       "type":"origins:execute_command",
+       "command":"execute at @s positioned ~ ~0.9 ~ run function quirks:dark_shadow/womb_particles"
+    },
+    "interval":1
+ }

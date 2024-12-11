@@ -3,7 +3,9 @@
 		"quirks:dark_shadow/dark_summoning",
 		"quirks:dark_shadow/piercing_twilight_claws",
 		"quirks:dark_shadow/black_abyss",
-		"quirks:dark_shadow/black_fallen_angel"
+		"quirks:dark_shadow/black_fallen_angel",
+		"quirks:dark_shadow/sabbath",
+		"quirks:dark_shadow/womb"
 	],
 	"icon":"minecraft:black_wool",
 	"unchoosable": false,
