@@ -47,10 +47,20 @@
       },
       "interval":20,
       "condition": {
-         "type":"origins:resource",
-         "resource":"quirks:fa_jin/kinetic_energy_resource",
-         "comparison":"!=",
-         "compare_to":50
+         "type": "origins:and",
+         "conditions": [
+            {
+               "type":"origins:resource",
+               "resource":"quirks:fa_jin/kinetic_energy_resource",
+               "comparison":"!=",
+               "compare_to":50
+            },
+            {
+               "type":"origins:power_active",
+               "power":"quirks:fa_jin/burst_dash_toggle",
+               "inverted": true
+            }
+         ]
       }
    },
    "gain_from_shifting":{
