@@ -1,6 +1,6 @@
 {
     "type": "origins:multiple",
-    "invis": {
+    "invisibility": {
         "type": "origins:invisibility",
         "render_armor": false,
         "render_outline": false

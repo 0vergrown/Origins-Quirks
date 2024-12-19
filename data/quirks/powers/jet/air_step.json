@@ -1,34 +1,176 @@
 {
-    "type": "origins:multiple",
+    "type":"origins:multiple",
     "toggle":{
-        "type": "origins:toggle",
-        "key": {
-            "key": "key.origins.quinary_active",
-            "continuous": false
-        },
-        "active_by_default": false,
-        "retain_state": true
+       "type":"origins:toggle",
+       "key":{
+          "key":"key.origins.quinary_active",
+          "continuous":false
+       },
+       "active_by_default":false,
+       "retain_state":true
     },
-    "jump":{
-        "type": "origins:modify_jump",
-        "modifier": {
-            "operation": "addition",
-            "value": 0.10
-        },
-        "condition": {
-            "type": "origins:power_active",
-            "power": "quirks:jet/air_step_toggle"
-        }
+    "number_of_jumps":{
+       "type":"origins:resource",
+       "min":0,
+       "max":1,
+       "hud_render":{
+          "should_render":false
+       },
+       "start_value":0
     },
-    "fall_damage_immunity":{
-        "type":"origins:invulnerability",
-        "damage_condition":{
-           "type":"origins:name",
-           "name":"fall"
+    "jump_reset":{
+       "type":"origins:action_over_time",
+       "entity_action":{
+          "type":"origins:modify_resource",
+          "modifier":{
+             "operation":"set_total",
+             "value":1.00
+          },
+          "resource":"quirks:jet/air_step_number_of_jumps"
+       },
+       "interval":1,
+       "condition":{
+          "type":"origins:on_block"
+       }
+    },
+    "active":{
+       "type":"origins:active_self",
+       "entity_action":{
+          "type":"origins:and",
+          "actions":[
+            {
+                "type":"origins:spawn_particles",
+                "particle":"minecraft:cloud",
+                "count":16,
+                "speed":0.01,
+                "force":true,
+                "spread":{
+                   "x":0.30,
+                   "y":0.30,
+                   "z":0.30
+                },
+                "offset_y":0.00
+             },
+             {
+                "type":"origins:if_else",
+                "condition":{
+                   "type":"origins:moving"
+                },
+                "if_action":{
+                   "type":"origins:add_velocity",
+                   "x":0.00,
+                   "y":0.45,
+                   "z":0.35,
+                   "space":"local_horizontal",
+                   "set":false
+                },
+                "else_action":{
+                   "type":"origins:add_velocity",
+                   "x":0.00,
+                   "y":0.50,
+                   "z":0.00,
+                   "space":"local_horizontal",
+                   "set":false
+                }
+             },
+             {
+                "type":"origins:modify_resource",
+                "modifier":{
+                   "operation":"set_total",
+                   "value":0.00
+                },
+                "resource":"quirks:jet/air_step_number_of_jumps"
+             }
+          ]
+       },
+       "cooldown":1,
+       "hud_render":{
+          "should_render":false
+       },
+       "key":{
+          "key":"key.jump",
+          "continuous":false
+       },
+       "condition":{
+          "type":"origins:and",
+          "conditions":[
+             {
+                "type":"origins:power_active",
+                "power":"quirks:jet/air_step_toggle"
+             },
+             {
+                "type":"origins:on_block",
+                "inverted":true
+             },
+             {
+                "type":"origins:resource",
+                "resource":"quirks:jet/air_step_number_of_jumps",
+                "comparison":">",
+                "compare_to":0
+             },
+             {
+                "type":"origins:fluid_height",
+                "fluid":"minecraft:water",
+                "comparison":"==",
+                "compare_to":0
+             },
+             {
+                "type":"origins:fluid_height",
+                "fluid":"minecraft:lava",
+                "comparison":"==",
+                "compare_to":0
+             }
+          ]
+       }
+    },
+    "sneak_to_reset_fall_damage":{
+        "type":"origins:active_self",
+        "entity_action":{
+           "type":"origins:and",
+           "actions":[
+              {
+                 "type":"origins:set_fall_distance",
+                 "fall_distance":0
+              },
+              {
+                 "type":"origins:spawn_particles",
+                 "particle":"minecraft:cloud",
+                 "count":16,
+                 "speed":0.01,
+                 "force":true,
+                 "spread":{
+                    "x":0.30,
+                    "y":0.30,
+                    "z":0.30
+                 },
+                 "offset_y":0.00
+              },
+              {
+                 "type":"origins:play_sound",
+                 "sound":"minecraft:entity.player.attack.sweep",
+                 "volume":1.00,
+                 "pitch":0.50
+              },
+              {
+                 "type":"origins:play_sound",
+                 "sound":"minecraft:entity.player.attack.sweep",
+                 "volume":1.00,
+                 "pitch":2.00
+              }
+           ]
+        },
+        "cooldown":10,
+        "hud_render":{
+           "should_render":false
+        },
+        "key":{
+           "key":"key.sneak",
+           "continuous":false
         },
         "condition":{
-            "type": "origins:power_active",
-            "power": "quirks:jet/air_step_toggle"
+           "type":"origins:fall_distance",
+           "comparison":">=",
+           "compare_to":2
         }
     }
 }
