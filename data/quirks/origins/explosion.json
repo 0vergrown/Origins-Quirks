@@ -3,7 +3,8 @@
 	   "quirks:explosion/nitro_sweat_secretion",
 	   "quirks:explosion/explosive_speed",
 	   "quirks:explosion/stun_grenade",
-	   "quirks:explosion/howitzer_impact"
+	   "quirks:explosion/howitzer_impact",
+	   "quirks:explosion/ap_shot"
 	],
 	"icon":{
 	   "item":"minecraft:player_head",

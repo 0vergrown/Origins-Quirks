@@ -83,15 +83,22 @@
          "compare_to":0
       }
    },
+   "pose":{
+      "type": "eggolib:pose",
+      "pose":"spin_attack",
+      "priority":0,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"quirks:explosion/howitzer_impact_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   },
    "spin_animation":{
       "type":"origins:action_over_time",
       "entity_action":{
          "type":"origins:and",
          "actions":[
-            {
-               "type":"origins:execute_command",
-               "command":"tp @s ~ ~ ~ ~48 ~"
-            },
             {
                "type":"origins:execute_command",
                "command":"particle minecraft:explosion ^-0.5 ^0.5 ^ 0 0 0 0 10"

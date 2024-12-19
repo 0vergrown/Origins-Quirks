@@ -21,6 +21,14 @@
             "type":"origins:and",
             "actions":[
                {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"add_base_early",
+                     "value":-15.00
+                  },
+                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
+               },
+               {
                   "type":"origins:add_velocity",
                   "x":0.00,
                   "y":0.40,
@@ -218,6 +226,14 @@
             "type":"origins:and",
             "actions":[
                {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"add_base_early",
+                     "value":-15.00
+                  },
+                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
+               },
+               {
                   "type":"origins:swing_hand",
                   "hand":"MAIN_HAND"
                },
@@ -228,14 +244,6 @@
                   "z":0.00,
                   "space":"local_horizontal_normalized",
                   "set":false
-               },
-               {
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "value":-15.00
-                  },
-                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                },
                {
                   "type":"origins:execute_command",
@@ -375,20 +383,20 @@
             "type":"origins:and",
             "actions":[
                {
-                  "type":"origins:add_velocity",
-                  "x":0.00,
-                  "y":0.50,
-                  "z":-0.50,
-                  "space":"local_horizontal_normalized",
-                  "set":false
-               },
-               {
                   "type":"origins:modify_resource",
                   "modifier":{
                      "operation":"add_base_early",
                      "value":-15.00
                   },
                   "resource":"quirks:explosion/nitro_sweat_secretion_resource"
+               },
+               {
+                  "type":"origins:add_velocity",
+                  "x":0.00,
+                  "y":0.50,
+                  "z":-0.50,
+                  "space":"local_horizontal_normalized",
+                  "set":false
                },
                {
                   "type":"origins:execute_command",
@@ -572,6 +580,14 @@
             "type":"origins:and",
             "actions":[
                {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"add_base_early",
+                     "value":-15.00
+                  },
+                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
+               },
+               {
                   "type":"origins:swing_hand",
                   "hand":"OFF_HAND"
                },
@@ -582,14 +598,6 @@
                   "z":0.00,
                   "space":"local_horizontal_normalized",
                   "set":false
-               },
-               {
-                  "type":"origins:modify_resource",
-                  "modifier":{
-                     "operation":"add_base_early",
-                     "value":-15.00
-                  },
-                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                },
                {
                   "type":"origins:execute_command",
