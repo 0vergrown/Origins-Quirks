@@ -6,7 +6,8 @@
 		"quirks:power_reserve/speed_burst",
 		"quirks:power_reserve/endurance_enhancement",
 		"quirks:power_reserve/awakening",
-		"quirks:power_reserve/backlash"
+		"quirks:power_reserve/backlash",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 		"id": "minecraft:respawn_anchor"

@@ -91,6 +91,12 @@
                "resource":"quirks:acid/corrosive_liquid_resource",
                "comparison":"!=",
                "compare_to":0
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:universal/quirk_erased",
+               "comparison": "==",
+               "compare_to": 0
             }
          ]
       }
@@ -151,14 +157,14 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.origins.quaternary_active",
          "continuous":false
       },
       "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":3
+         "type": "origins:resource",
+         "resource": "quirks:universal/quirk_erased",
+         "comparison": "==",
+         "compare_to": 0
       }
    },
    "head_particles":{

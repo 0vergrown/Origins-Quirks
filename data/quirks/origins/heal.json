@@ -2,7 +2,8 @@
 	"powers": [
 		"quirks:heal/move_selector",
 		"quirks:heal/healing_kiss",
-		"quirks:heal/self_heal"
+		"quirks:heal/self_heal",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:player_head",

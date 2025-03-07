@@ -3,7 +3,8 @@
 		"quirks:permeation/move_selector",
 		"quirks:permeation/permeate",
 		"quirks:permeation/phantom_menace",
-		"quirks:permeation/blinder_touch_eyeball_crush"
+		"quirks:permeation/blinder_touch_eyeball_crush",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:player_head",

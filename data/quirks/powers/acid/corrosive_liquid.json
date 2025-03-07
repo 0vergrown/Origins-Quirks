@@ -55,10 +55,21 @@
       },
       "interval": 20,
       "condition": {
-         "type": "origins:resource",
-         "resource": "quirks:acid/corrosive_liquid_resource",
-         "comparison": "<",
-         "compare_to": 400
+         "type": "origins:all_of",
+         "conditions": [
+            {
+               "type": "origins:resource",
+               "resource": "quirks:acid/corrosive_liquid_resource",
+               "comparison": "<",
+               "compare_to": 400
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:universal/quirk_erased",
+               "comparison": "==",
+               "compare_to": 0
+            }
+         ]
       }
    },
    "lightest_skin": {

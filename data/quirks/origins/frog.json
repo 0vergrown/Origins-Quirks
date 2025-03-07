@@ -6,7 +6,8 @@
 	   "quirks:frog/camouflage",
 	   "quirks:frog/sticky_hands",
 	   "quirks:frog/tongue_grapple",
-	   "quirks:frog/toxic_mucus"
+	   "quirks:frog/toxic_mucus",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 	   "id":"minecraft:player_head",

@@ -129,9 +129,9 @@
       "continuous":true
    },
    "condition":{
-      "type":"origins:resource",
-      "resource":"quirks:acid/move_selector_resource",
-      "comparison":"==",
-      "compare_to":0
+      "type": "origins:resource",
+      "resource": "quirks:universal/quirk_erased",
+      "comparison": "==",
+      "compare_to": 0
    }
 }

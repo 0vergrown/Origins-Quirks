@@ -5,7 +5,8 @@
 		"quirks:severance/cleave",
 		"quirks:severance/rend",
 		"quirks:severance/severing_barrage",
-		"quirks:severance/razor"
+		"quirks:severance/razor",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:player_head",

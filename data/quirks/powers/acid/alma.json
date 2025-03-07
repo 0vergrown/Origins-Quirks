@@ -105,13 +105,13 @@
       "should_render":false
    },
    "key":{
-      "key":"key.origins.primary_active",
+      "key":"key.origins.quinary_active",
       "continuous":false
    },
    "condition":{
-      "type":"origins:resource",
-      "resource":"quirks:acid/move_selector_resource",
-      "comparison":"==",
-      "compare_to":4
+      "type": "origins:resource",
+      "resource": "quirks:universal/quirk_erased",
+      "comparison": "==",
+      "compare_to": 0
    }
 }

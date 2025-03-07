@@ -2,8 +2,10 @@
   "order":10,
   "origins":[
      "quirks:acid",
+     "quirks:all_for_one",
      "quirks:blackwhip",
      "quirks:dark_shadow",
+     "quirks:erasure",
      "quirks:fa_jin",
      "quirks:frog",
      "quirks:gigantification",

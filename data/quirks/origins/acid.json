@@ -7,7 +7,7 @@
       "quirks:acid/acid_layback",
       "quirks:acid/acidman",
       "quirks:acid/alma",
-      "quirks:acid/awakening"
+	   "quirks:universal/quirk_erased"
    ],
    "icon":{
       "id":"minecraft:player_head",

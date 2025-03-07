@@ -4,7 +4,8 @@
 		"quirks:blackwhip/whip_swing",
 		"quirks:blackwhip/tendril_pull",
 		"quirks:blackwhip/pinpoint_focus",
-		"quirks:blackwhip/multi_tendril_grasp"
+		"quirks:blackwhip/multi_tendril_grasp",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 		"id": "minecraft:green_dye"

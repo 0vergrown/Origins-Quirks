@@ -3,7 +3,8 @@
 		"quirks:invisibility/move_selector",
 		"quirks:invisibility/invisible",
 		"quirks:invisibility/warp_refraction",
-		"quirks:invisibility/light_scatter"
+		"quirks:invisibility/light_scatter",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 		"id": "minecraft:glass"

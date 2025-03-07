@@ -4,7 +4,8 @@
 		"quirks:gigantification/gigantification",
 		"quirks:gigantification/giant_slam",
 		"quirks:gigantification/throw",
-		"quirks:gigantification/frustration_surge"
+		"quirks:gigantification/frustration_surge",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:player_head",

@@ -98,11 +98,7 @@
             "block_action":{
                "type":"origins:spawn_entity",
                "entity_type":"minecraft:bat",
-               "tag":"{Silent:1b,Invulnerable:1b,NoAI:1b}",
-               "entity_action":{
-                  "type":"origins:execute_command",
-                  "command":"tag @s add blackwhip.whip_swing_target"
-               }
+               "tag":"{Silent:1b,Invulnerable:1b,NoAI:1b,Tags:[\"blackwhip.whip_swing_target\"]}"
             },
             "hit_action":{
                "type":"origins:and",

@@ -3,7 +3,8 @@
 		"quirks:sloshed/move_selector",
 		"quirks:sloshed/sloshed_aura",
 		"quirks:sloshed/targeted_slosh",
-		"quirks:sloshed/hide_in_plain_sight"
+		"quirks:sloshed/hide_in_plain_sight",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:potion",

@@ -68,6 +68,14 @@
             ]
          }
       },
+      "falling_action": {
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"set_total",
+            "amount":0.00
+         },
+         "resource":"quirks:acid/acid_layback_resource"
+      },
       "interval":20,
       "condition":{
          "type":"origins:all_of",
@@ -83,6 +91,12 @@
                "resource":"quirks:acid/corrosive_liquid_resource",
                "comparison":"!=",
                "compare_to":0
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:universal/quirk_erased",
+               "comparison": "==",
+               "compare_to": 0
             }
          ]
       }
@@ -119,14 +133,14 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.origins.ternary_active",
          "continuous":false
       },
       "condition":{
-         "type":"origins:resource",
-         "resource":"quirks:acid/move_selector_resource",
-         "comparison":"==",
-         "compare_to":2
+         "type": "origins:resource",
+         "resource": "quirks:universal/quirk_erased",
+         "comparison": "==",
+         "compare_to": 0
       }
    },
    "jump":{

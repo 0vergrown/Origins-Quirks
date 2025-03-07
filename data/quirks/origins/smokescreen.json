@@ -5,7 +5,8 @@
 		"quirks:smokescreen/concealment_veil",
 		"quirks:smokescreen/smoke_trail",
 		"quirks:smokescreen/breath_weapon",
-		"quirks:smokescreen/vanish"
+		"quirks:smokescreen/vanish",
+	   "quirks:universal/quirk_erased"
 	],
     "icon":{
         "id":"minecraft:player_head",
