@@ -1,0 +1,66 @@
+{
+    "name": "Blinded",
+    "description": "This is a status effect from invisibility",
+    "hidden": true,
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 40,
+        "start_value": 40,
+        "min_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "power remove @s powert:mha/invisibility/blinded"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "stopsound @s player quirks:invisibility.blinded"
+                }
+            ]
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "playsound quirks:invisibility.blinded player @s ~ ~ ~ 1 1"
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "autoremove": {
+        "type": "origins:action_over_time",
+        "interval": 4,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar {\"text\":\"ʙʟɪɴᴅᴇᴅ\",\"color\":\"#cec0e5\",\"bold\":true}"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "powert:mha/invisibility/blinded_resource",
+                    "change": -2,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"ʙʟɪɴᴅᴇᴅ\",\"color\":\"#cec0e5\",\"bold\":true}"
+                }
+            ]
+        }
+    },
+    "overlay": {
+        "type": "origins:overlay",
+        "texture": "powert:textures/overlay/sprites/vision/invisibility/blinded.png",
+        "hide_with_hud": false,
+        "draw_mode": "nausea",
+        "draw_phase": "above_hud",
+        "visible_in_third_person": true,
+        "red": 0.631,
+        "green": 0.569,
+        "blue": 0.729
+    }
+}

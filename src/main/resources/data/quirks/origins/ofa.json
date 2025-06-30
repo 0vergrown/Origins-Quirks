@@ -1,0 +1,19 @@
+{
+    "powers": [
+        "powert:mha/ofa/fullcowling",
+        "powert:mha/ofa/detroit_smash",
+        "powert:mha/ofa/quirk",
+        "powert:mha/ofa/extra/blackwhip",
+        "powert:mha/ofa/airforce",
+        "powert:mha/ofa/ussmash",
+        "powert:mha/ofa/extra/dangersense",
+        "powert:allpowers/staminabar",
+        "powert:mha/ofa/removegearshift",
+        "powert:mha/universal/quirk_erased",
+        "powert:allpowers/health"
+    ],
+    "icon": "minecraft:emerald",
+    "unchoosable": true,
+    "order": 10,
+    "impact": 3
+}

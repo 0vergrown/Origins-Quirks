@@ -1,0 +1,116 @@
+{
+   "type":"origins:multiple",
+   "passive_gain":{
+      "type":"origins:action_over_time",
+      "entity_action":{
+         "type":"origins:if_else_list",
+         "actions":[
+            {
+               "condition":{
+                  "type":"origins:and",
+                  "conditions":[
+                     {
+                        "type":"origins:moving",
+                        "horizontally":true,
+                        "vertically":false
+                     },
+                     {
+                        "type":"origins:sprinting",
+                        "inverted":true
+                     }
+                  ]
+               },
+               "action":{
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"add_base_early",
+                     "value":1.00
+                  },
+                  "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+               }
+            },
+            {
+               "condition":{
+                  "type":"origins:sprinting",
+                  "inverted":false
+               },
+               "action":{
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"add_base_early",
+                     "value":2.00
+                  },
+                  "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+               }
+            }
+         ]
+      },
+      "interval":20,
+      "condition": {
+         "type": "origins:and",
+         "conditions": [
+            {
+               "type":"origins:resource",
+               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "comparison":"!=",
+               "compare_to":50
+            },
+            {
+               "type":"origins:power_active",
+               "power":"powert:mha/fa_jin/burst_dash_toggle",
+               "inverted": true
+            }
+         ]
+      }
+   },
+   "gain_from_shifting":{
+      "type":"origins:active_self",
+      "entity_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"add_base_early",
+                  "value":3.00
+               },
+               "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+            },
+            {
+               "type":"origins:play_sound",
+               "sound":"minecraft:entity.player.attack.nodamage",
+               "volume":1.00,
+               "pitch":0.50
+            }
+         ]
+      },
+      "cooldown":5,
+      "hud_render":{
+         "should_render":false
+      },
+      "key":{
+         "key":"key.sneak",
+         "continuous":false
+      },
+      "condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type":"origins:resource",
+               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "comparison":"!=",
+               "compare_to":50
+            },
+            {
+               "type":"origins:on_block"
+            },
+            {
+               "type": "origins:resource",
+               "resource": "powert:mha/universal/quirk_erased",
+               "comparison": "==",
+               "compare_to": 0
+            }
+         ]
+      }
+   }
+}

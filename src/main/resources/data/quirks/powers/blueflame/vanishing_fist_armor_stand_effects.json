@@ -1,0 +1,238 @@
+{
+    "type":"origins:action_over_time",
+    "entity_action":{
+        "type": "origins:if_else",
+        "condition":{
+            "type":"origins:or",
+            "conditions":[
+               {
+                  "type":"origins:collided_horizontally"
+               },
+               {
+                  "type":"origins:block_collision",
+                  "offset_x":0.01,
+                  "offset_z":0.01,
+                  "offset_y":0
+               },
+               {
+                  "type":"origins:block_collision",
+                  "offset_x":-0.01,
+                  "offset_z":-0.01,
+                  "offset_y":0
+               }
+            ]
+        },
+        "if_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type":"origins:choice",
+                    "actions":[
+                       {
+                          "element":{
+                             "type":"origins:play_sound",
+                             "sound":"minecraft:entity.generic.explode",
+                             "volume":1.00,
+                             "pitch":0.50
+                          },
+                          "weight":20
+                       },
+                       {
+                          "element":{
+                             "type":"origins:play_sound",
+                             "sound":"minecraft:entity.generic.explode",
+                             "volume":1.00,
+                             "pitch":1.00
+                          },
+                          "weight":20
+                       },
+                       {
+                          "element":{
+                             "type":"origins:play_sound",
+                             "sound":"minecraft:entity.generic.explode",
+                             "volume":1.00,
+                             "pitch":2.00
+                          },
+                          "weight":20
+                       }
+                    ]
+                },
+                {
+                    "type": "origins:explode",
+                    "power": 3,
+                    "destruction_type": "none",
+                    "damage_self": false,
+                    "create_fire": true
+                },
+                {
+                    "type":"origins:spawn_particles",
+                    "particle":"powert:blueflame",
+                    "count":300,
+                    "speed":0.08,
+                    "force":true,
+                    "spread":{
+                       "x":3.00,
+                       "y":3.00,
+                       "z":3.00
+                    },
+                    "offset_y":0.00
+                },
+                {
+                    "type":"origins:spawn_particles",
+                    "particle":"minecraft:explosion_emitter",
+                    "count":1,
+                    "speed":0.08,
+                    "force":true,
+                    "spread":{
+                       "x":0.00,
+                       "y":0.00,
+                       "z":0.00
+                    },
+                    "offset_y":0.00
+                },
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 2.00,
+                    "shape": "cube",
+                    "bientity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 10,
+                                "damage_type": "minecraft:on_fire"
+                            },
+                            {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:set_on_fire",
+                                    "duration": 5
+                                }
+                            }
+                        ]
+                    },
+                    "bientity_condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:living"
+                                },
+                                {
+                                    "type":"origins:origin",
+                                    "origin":"powert:mha/blueflame",
+                                    "layer":"origins:powers",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    },
+                    "include_target": false
+                },
+                {
+                    "type":"origins:delay",
+                    "action":{
+                       "type":"origins:execute_command",
+                       "command":"kill @s"
+                    },
+                    "ticks":1
+                }
+            ]
+        },
+        "else_action": {
+            "type":"origins:and",
+            "actions":[
+               {
+                "type": "origins:add_velocity",
+                "x": 0.00,
+                "y": 0.00,
+                "z": 0.50,
+                "space": "local",
+                "set": false
+               },
+               {
+                  "type":"origins:play_sound",
+                  "sound":"minecraft:block.fire.extinguish",
+                  "volume":1.00,
+                  "pitch":0.50
+               },
+               {
+                  "type":"origins:spawn_particles",
+                  "particle":"powert:blueflame",
+                  "count":100,
+                  "speed":0.20,
+                  "force":false,
+                  "spread":{
+                     "x":1.00,
+                     "y":0.90,
+                     "z":3.00
+                  },
+                  "offset_y":0.00
+               },
+               {
+                  "type":"origins:spawn_particles",
+                  "particle":"minecraft:large_smoke",
+                  "count":20,
+                  "speed":0.20,
+                  "force":false,
+                  "spread":{
+                     "x":1.00,
+                     "y":1.00,
+                     "z":1.00
+                  },
+                  "offset_y":0.01
+               },
+               {
+                  "type":"origins:area_of_effect",
+                  "radius":2.00,
+                  "shape":"cube",
+                  "bientity_action":{
+                     "type":"origins:and",
+                     "actions":[
+                        {
+                           "type":"origins:damage",
+                           "amount":10,
+                           "damage_type":"minecraft:on_fire"
+                        },
+                        {
+                           "type":"origins:target_action",
+                           "action":{
+                              "type":"origins:set_on_fire",
+                              "duration":5
+                           }
+                        }
+                     ]
+                  },
+                  "bientity_condition":{
+                     "type":"origins:target_condition",
+                     "condition":{
+                        "type":"origins:and",
+                        "conditions":[
+                           {
+                              "type":"origins:living"
+                           },
+                           {
+                              "type":"origins:origin",
+                              "origin":"powert:mha/blueflame",
+                              "layer":"origins:powers",
+                              "inverted":true
+                           }
+                        ]
+                     }
+                  },
+                  "include_target":false
+               }
+            ]
+        }
+    },
+    "rising_action":{
+       "type":"origins:delay",
+       "action":{
+          "type":"origins:execute_command",
+          "command":"kill @s"
+       },
+       "ticks":66
+    },
+    "interval":2
+}

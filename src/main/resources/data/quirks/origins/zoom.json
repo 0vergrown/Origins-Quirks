@@ -1,0 +1,15 @@
+{
+    "powers":[
+       "powert:mha/zoom/zoomify",
+       "powert:mha/zoom/magnify_mark",
+       "powert:mha/zoom/night_scope",
+       "powert:mha/zoom/hawk_panorama",
+       "powert:mha/zoom/craft_permeation_gear",
+       "powert:mha/universal/quirk_erased",
+       "powert:allpowers/health"
+    ],
+    "icon":"minecraft:spyglass",
+    "unchoosable":true,
+    "order":20,
+    "impact":1
+}

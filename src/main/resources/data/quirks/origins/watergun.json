@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "powert:mha/watergun/trident",
+        "powert:mha/watergun/travel",
+        "powert:mha/watergun/blast",
+        "powert:mha/watergun/bullet",
+        "powert:mha/watergun/rise",
+        "powert:mha/watergun/rain",
+        "powert:allpowers/staminabar",
+        "powert:mha/universal/quirk_erased",
+        "powert:allpowers/health"
+    ],
+    "icon": "minecraft:water_bucket",
+    "unchoosable": true,
+    "order": 20,
+    "impact": 3
+}

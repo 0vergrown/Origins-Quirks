@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"powert:mha/life_force/double_lifespan",
+		"powert:mha/universal/quirk_erased"
+	],
+	"icon":"minecraft:green_stained_glass",
+	"unchoosable": true,
+	"order": 10,
+	"impact": 1,
+	"loading_priority": 0
+}

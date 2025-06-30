@@ -1,0 +1,127 @@
+{
+   "type":"origins:multiple",
+   "resource":{
+      "type":"origins:resource",
+      "min":0,
+      "max":1,
+      "hud_render":{
+         "should_render":false
+      },
+      "start_value":0
+   },
+   "apply_body_armor":{
+      "type":"origins:active_self",
+      "entity_action":{
+         "type":"origins:if_else",
+         "condition":{
+            "type":"origins:and",
+            "conditions":[
+               {
+                  "type": "origins:resource",
+                  "resource":"powert:mha/dark_shadow/dark_summoning_resource",
+                  "comparison": "==",
+                  "compare_to": 1
+               },
+               {
+                  "type":"origins:resource",
+                  "resource":"powert:mha/dark_shadow/black_abyss_resource",
+                  "comparison":"==",
+                  "compare_to":0
+               }
+            ]
+         },
+         "if_action":{
+            "type":"origins:and",
+            "actions":[
+               {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":0.00
+                  },
+                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+               },
+               {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":1.00
+                  },
+                  "resource":"powert:mha/dark_shadow/black_abyss_resource"
+               }
+            ]
+         },
+         "else_action":{
+            "type":"origins:and",
+            "actions":[
+               {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":1.00
+                  },
+                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+               },
+               {
+                  "type":"origins:modify_resource",
+                  "modifier":{
+                     "operation":"set_total",
+                     "value":0.00
+                  },
+                  "resource":"powert:mha/dark_shadow/black_abyss_resource"
+               }
+            ]
+         }
+      },
+      "cooldown":20,
+      "hud_render":{
+         "should_render":false
+      },
+      "key":{
+         "key":"key.origins.ternary_active",
+         "continuous":false
+      },
+      "condition": {
+         "type": "origins:resource",
+         "resource": "powert:mha/universal/quirk_erased",
+         "comparison": "==",
+         "compare_to": 0
+      }
+   },
+   "attributes_when_armor_on":{
+      "type":"origins:conditioned_attribute",
+      "modifiers":[
+         {
+            "attribute":"minecraft:generic.movement_speed",
+            "operation":"multiply_total",
+            "value":0.40,
+            "name":"Increased Sprinting Speed"
+         },
+         {
+            "attribute":"minecraft:generic.armor",
+            "operation":"addition",
+            "value":3.00,
+            "name":"Increased Protection"
+         }
+      ],
+      "tick_rate":1,
+      "update_health":false,
+      "condition":{
+         "type":"origins:resource",
+         "resource":"powert:mha/dark_shadow/black_abyss_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   },
+   "elytra":{
+      "type":"origins:elytra_flight",
+      "render_elytra":true,
+      "texture_location":"powert:textures/entity/black_fallen_angel_wings.png",
+      "condition":{
+         "type":"origins:resource",
+         "resource":"powert:mha/dark_shadow/black_abyss_resource",
+         "comparison":"==",
+         "compare_to":1
+      }
+   }
+}

@@ -1,0 +1,401 @@
+{
+    "name": "Glacial Shard",
+    "description": "Throw out a shard of ice, slowing the entity hit.",
+    "type": "origins:multiple",
+    "stand": {
+        "type": "apugli:custom_projectile",
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 5,
+            "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png"
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        },
+        "allow_conditional_cancelling": false,
+        "speed": 2.5,
+        "count": 1,
+        "divergence": 0,
+        "tag": "{NoGravity:1b}",
+        "cooldown": 40,
+        "texture_location": "selenivee:textures/entity/quirk/frost/shard.png",
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:resource",
+                            "compare_to": 0,
+                            "comparison": "==",
+                            "resource": "powert:mha/frost/cooldown/shardcd_one"
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 0,
+                            "comparison": ">="
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 2,
+                            "comparison": "<="
+                        },
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:resource",
+                            "compare_to": 0,
+                            "comparison": "==",
+                            "resource": "powert:mha/frost/cooldown/shardcd_two"
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 3,
+                            "comparison": ">="
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 4,
+                            "comparison": "<="
+                        },
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:resource",
+                            "compare_to": 0,
+                            "comparison": "==",
+                            "resource": "powert:mha/frost/cooldown/shardcd_three"
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 5,
+                            "comparison": ">="
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 6,
+                            "comparison": "<="
+                        },
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:resource",
+                            "compare_to": 0,
+                            "comparison": "==",
+                            "resource": "powert:mha/frost/cooldown/shardcd_four"
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "compare_to": 7,
+                            "comparison": "=="
+                        },
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "entity_action_before_firing": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound selenivee:quirk.frost.shard player @a[distance=..5] ~ ~ ~ 1 1"
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": { 
+                                "type": "origins:resource",
+                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "compare_to": 2,
+                                "comparison": "<="
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_one"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 3,
+                                        "comparison": "=="
+                                    },
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 4,
+                                        "comparison": "=="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_two"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 5,
+                                        "comparison": "=="
+                                    },
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 6,
+                                        "comparison": "=="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_three"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:resource",
+                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "compare_to": 7,
+                                "comparison": "=="
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_four"
+                                },
+                                "ticks": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "owner_target_bientity_action_on_hit": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "change": 1,
+                        "operation": "add"
+                    }
+                },
+                {
+                    "type": "origins:if_else_list",
+                    "actions": [
+                        {
+                            "condition": { 
+                                "type": "origins:resource",
+                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "compare_to": 2,
+                                "comparison": "<="
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_one"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 3,
+                                        "comparison": "=="
+                                    },
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 4,
+                                        "comparison": "=="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_two"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 5,
+                                        "comparison": "=="
+                                    },
+                                    {
+                                        "type": "origins:resource",
+                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "compare_to": 6,
+                                        "comparison": "=="
+                                    }
+                                ]
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_three"
+                                },
+                                "ticks": 10
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "origins:resource",
+                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "compare_to": 7,
+                                "comparison": "=="
+                            },
+                            "action": {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "powert:mha/frost/cooldown/shardcd_four"
+                                },
+                                "ticks": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "bientity_action_on_miss": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "particle snowflake ^ ^ ^ 0.3 0.3 0.3 0.2 6 normal"
+            }
+        },
+        "bientity_action_on_hit": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "power grant @s powert:mha/frost/frostbite"
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "change": 80,
+                        "operation": "set",
+                        "resource": "powert:mha/frost/frostbite_resource"
+                    }
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 6,
+                    "source": {
+                        "name": "frost.player",
+                        "unblockable": true
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "particle snowflake ^ ^ ^ 0.3 0.3 0.3 0.2 6 normal"
+                    }
+                }
+            ]
+        },
+        "tick_bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "particle snowflake ^ ^ ^ 0.15 0.15 0.15 0.04 4 normal"
+            }
+        },
+        "bientity_action_after_firing": {
+            "type": "origins:delay",
+            "ticks": 400,
+            "action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "kill @s"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "type": "origins:multiple",
+    "invis": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "render_outline": false
+    },
+    "loop": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:command",
+                "command": "execute as @a[nbt={Tags:['quirks.whip_swing_user']},distance=..27.5] if score @s BlackwhipUUID = @e[distance=0,limit=1] BlackwhipUUID",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @a[nbt={Tags:['quirks.whip_swing_user']},distance=..27.5] if score @s BlackwhipUUID = @e[distance=0,limit=1] BlackwhipUUID run teleport @e[distance=0] ~ ~ ~ facing entity @s"
+                    },
+                    {
+                        "type":"origins:raycast",
+                        "distance":27.50,
+                        "block":false,
+                        "entity":true,
+                        "shape_type":"visual",
+                        "fluid_handling":"any",
+                        "command_along_ray":"particle minecraft:dust_color_transition 0.07 0.55 0.4 1 0.08 0.53 0.56 ~-0.39 ~ ~ 0 0 0 0.01 1 normal @a",
+                        "command_step":0.50,
+                        "command_along_ray_only_on_hit": true
+                     },
+                     {
+                        "type":"origins:raycast",
+                        "distance":27.50,
+                        "block":false,
+                        "entity":true,
+                        "shape_type":"visual",
+                        "fluid_handling":"any",
+                        "command_along_ray":"particle minecraft:dust_color_transition 0 0 0 1 0.22 0.27 0.28 ~ ~ ~ 0 0 0 0.01 1 normal @a",
+                        "command_step":0.50,
+                        "command_along_ray_only_on_hit": true
+                     },
+                     {
+                        "type":"origins:raycast",
+                        "distance":27.50,
+                        "block":false,
+                        "entity":true,
+                        "shape_type":"visual",
+                        "fluid_handling":"any",
+                        "command_along_ray":"particle minecraft:dust_color_transition 0.07 0.55 0.4 1 0.08 0.53 0.56 ~0.39 ~ ~ 0 0 0 0.01 1 normal @a",
+                        "command_step":0.50,
+                        "command_along_ray_only_on_hit": true
+                     }
+                ]
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @a[nbt={Tags:['quirks.whip_swing_user']},distance=..50] if score @s BlackwhipUUID = @e[distance=0,limit=1] BlackwhipUUID run execute at @s run playsound minecraft:block.tripwire.detach master @a[distance=..16] ~ ~ ~ 1 1.6"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "function powert:mha/blackwhip/whip_swing_hook_kill"
+                    }
+                ]
+            }
+        },
+        "interval": 2
+    }
+}

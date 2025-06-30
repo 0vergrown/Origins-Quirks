@@ -1,0 +1,13 @@
+{
+    "powers":[
+       "powert:mha/zero_gravity/floating",
+       "powert:mha/zero_gravity/gunhead_martial_arts",
+       "powert:mha/zero_gravity/meteor_storm",
+       "powert:mha/universal/quirk_erased",
+       "powert:allpowers/health"
+    ],
+    "icon":"minecraft:pink_dye",
+    "unchoosable":true,
+    "order":20,
+    "impact":1
+}

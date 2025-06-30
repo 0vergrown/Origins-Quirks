@@ -1,0 +1,60 @@
+{
+    "name": "Visibility",
+    "description": "This power allows you to view any entity that has Drowsy or Dreaming",
+    "hidden": true,
+    "type": "origins:multiple",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "powert:mha/universal/quirk_erased",
+        "compare_to": 0,
+        "comparison": "=="
+    },
+    "drowsy": {
+        "type": "origins:entity_glow",
+        "red": 0.949,
+        "green": 0.886,
+        "blue": 1,
+        "use_teams": false,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:distance",
+                    "compare_to": 10,
+                    "comparison": "<="
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:power",
+                        "power": "powert:mha/somnambulist/drowsy"
+                    }
+                }
+            ] 
+        }
+    },
+    "dreaming": {
+        "type": "origins:entity_glow",
+        "red": 1,
+        "green": 0.769,
+        "blue": 0.98,
+        "use_teams": false,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:distance",
+                    "compare_to": 10,
+                    "comparison": "<="
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:power",
+                        "power": "powert:mha/somnambulist/dreaming"
+                    }
+                }
+            ] 
+        }
+    }
+}

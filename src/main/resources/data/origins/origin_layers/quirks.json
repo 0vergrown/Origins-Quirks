@@ -1,0 +1,19 @@
+{
+  "order":10,
+  "origins": [
+    "quirks:acid"
+  ],
+  "enabled":true,
+  "replace":false,
+  "gui_title": {
+    "choose_origin": "quirks.gui.choose_quirk.title",
+    "view_origin": "quirks.gui.view_quirk.title"
+  },
+  "missing_name":"quirks.gui.missing_quirk.name",
+  "missing_description": "quirks.gui.missing_quirk.description",
+  "allow_random":true,
+  "allow_random_unchoosable":true,
+  "auto_choose":false,
+  "hidden":false,
+  "loading_priority":10
+}

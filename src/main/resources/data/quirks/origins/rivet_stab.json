@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"powert:mha/rivet_stab/rivet_lance",
+		"powert:mha/rivet_stab/hellfire_chain",
+		"powert:mha/universal/quirk_erased"
+	],
+	"icon":"minecraft:red_glazed_terracotta",
+	"unchoosable": true,
+	"order": 10,
+	"impact": 2,
+	"loading_priority": 0
+}

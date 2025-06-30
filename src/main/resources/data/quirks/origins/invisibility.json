@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"powert:mha/invisibility/stealth",
+		"powert:mha/invisibility/refract",
+		"powert:mha/invisibility/redirect",
+		"powert:mha/universal/quirk_erased",
+		"powert:allpowers/health"
+	],
+	"icon":"minecraft:white_stained_glass",
+	"unchoosable": true,
+	"order": 10,
+	"impact": 1,
+	"loading_priority": 0
+}

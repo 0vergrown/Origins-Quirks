@@ -1,0 +1,99 @@
+{
+    "name": "Glacial Shard Cooldowns",
+    "description": "If you are seeing this, something is wrong. This contains the cooldown scaling for Glacial Shard.",
+    "hidden": true,
+    "type": "origins:multiple",
+    "one": {
+        "type": "origins:cooldown",
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5,
+            "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 0,
+                        "comparison": ">="
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 2,
+                        "comparison": "<="
+                    }
+                ]
+            }
+        },
+        "cooldown": 180
+    },
+    "two": {
+        "type": "origins:cooldown",
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5,
+            "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 3,
+                        "comparison": ">="
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 4,
+                        "comparison": "<="
+                    }
+                ]
+            }
+        },
+        "cooldown": 120
+    },
+    "three": {
+        "type": "origins:cooldown",
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5,
+            "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 5,
+                        "comparison": ">="
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "compare_to": 6,
+                        "comparison": "<="
+                    }
+                ]
+            }
+        },
+        "cooldown": 90
+    },
+    "four": {
+        "type": "origins:cooldown",
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5,
+            "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "condition": {
+                "type": "origins:resource",
+                "comparison": "==",
+                "compare_to": 7,
+                "resource": "powert:mha/frost/hypothermia_resource"
+            }
+        },
+        "cooldown": 60
+    }
+}

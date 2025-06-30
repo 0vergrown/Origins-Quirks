@@ -1,0 +1,13 @@
+{
+    "name": "§b§lFrost",
+    "powers": [
+        "powert:mha/frost/shard",
+        "powert:mha/frost/hypothermia",
+        "powert:mha/frost/cooldown/shardcd"
+    ],
+    "icon": "minecraft:blue_ice",
+    "unchoosable": true,
+	"order": 10,
+	"impact": 3,
+	"loading_priority": 0
+}

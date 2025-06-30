@@ -1,0 +1,75 @@
+{
+    "name": "Perfume Blast",
+    "description": "Release mist from your palms, blasting a short distance in front of you.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Secondary %s"
+        }
+    ],
+    "condition": {
+        "type": "origins:resource",
+        "resource": "powert:mha/universal/quirk_erased",
+        "compare_to": 0,
+        "comparison": "=="
+    },
+    "type": "origins:active_self",
+    "cooldown": 120,
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 25,
+        "block": true,
+        "entity": false,
+        "shape_type": "collider",
+        "fluid_handling": "any",
+        "command_along_ray_only_on_hit": false,
+        "command_along_ray": "function powert:mha/somnambulist/beam",
+        "command_step": 1,
+        "before_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:swing_hand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound quirks:somnambulist.mist player @a[distance=..5] ~ ~ ~ 0.6 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tag @s add somnambulist"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove somnambulist"
+                    },
+                    "ticks": 5
+                }
+            ]
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove somnambulist"
+                    }
+                }
+            ]
+        }
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "powert:textures/gui/sprites/somnambulist/resource_bar_01.png",
+        "bar_index": 0
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    }
+}
