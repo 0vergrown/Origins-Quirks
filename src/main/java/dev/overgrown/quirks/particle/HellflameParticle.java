@@ -11,10 +11,6 @@ import net.minecraft.util.math.MathHelper;
 public class HellflameParticle extends AbstractSlowingParticle {
     HellflameParticle(ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
         super(clientWorld, d, e, f, g, h, i);
-        // Set hellish red/orange color (R=1.0, G=0.3, B=0.1)
-        this.red = 1.0F;
-        this.green = 0.3F;
-        this.blue = 0.1F;
     }
 
     @Override

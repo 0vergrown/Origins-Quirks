@@ -8,8 +8,11 @@
             "hand":"MAIN_HAND"
          },
          {
-            "type": "origins:execute_command",
-            "command": "playsound quirks:acid.acid_shot_fired player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
+            "type":"origins:play_sound",
+            "sound":"quirks:acid_shot_fired",
+            "category":"players",
+            "volume":1.00,
+            "pitch":1.00
          },
          {
             "type":"origins:if_else",
@@ -98,8 +101,11 @@
                               "damage_type":"quirks:acid/acid_corrosion"
                            },
                            {
-                              "type": "origins:execute_command",
-                              "command": "playsound quirks:acid.acid_shot_hit ambient @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
+                              "type":"origins:play_sound",
+                              "sound":"quirks:acid_shot_hit",
+                              "category":"players",
+                              "volume":1.00,
+                              "pitch":1.00
                            }
                         ]
                      }

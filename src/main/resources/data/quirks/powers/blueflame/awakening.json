@@ -101,12 +101,12 @@
                 {
                     "type":"origins:origin",
                     "origin":"quirks:hellflame",
-                    "layer":"origins:powers"
+                    "layer":"origins:quirks"
                 },
                 {
                     "type":"origins:origin",
                     "origin":"quirks:half_cold_half_hot",
-                    "layer":"origins:powers"
+                    "layer":"origins:quirks"
                 }
             ]
           }

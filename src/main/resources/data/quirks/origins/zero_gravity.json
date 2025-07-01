@@ -6,7 +6,7 @@
        "quirks:universal/quirk_erased"
     ],
     "icon":"minecraft:pink_dye",
-    "unchoosable":true,
+    "unchoosable":false,
     "order":20,
     "impact":1
 }

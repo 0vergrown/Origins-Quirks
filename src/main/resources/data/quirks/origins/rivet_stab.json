@@ -5,7 +5,7 @@
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:red_glazed_terracotta",
-	"unchoosable": true,
+	"unchoosable": false,
 	"order": 10,
 	"impact": 2,
 	"loading_priority": 0

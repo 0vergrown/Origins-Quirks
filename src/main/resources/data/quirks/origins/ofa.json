@@ -11,7 +11,7 @@
         "quirks:universal/quirk_erased"
     ],
     "icon": "minecraft:emerald",
-    "unchoosable": true,
+    "unchoosable": false,
     "order": 10,
     "impact": 3
 }

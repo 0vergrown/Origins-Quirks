@@ -11,10 +11,6 @@ import net.minecraft.util.math.MathHelper;
 public class BlueflameParticle extends AbstractSlowingParticle {
     BlueflameParticle(ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
         super(clientWorld, d, e, f, g, h, i);
-        // Set blue color (R=0.2, G=0.4, B=1.0)
-        this.red = 0.2F;
-        this.green = 0.4F;
-        this.blue = 1.0F;
     }
 
     @Override

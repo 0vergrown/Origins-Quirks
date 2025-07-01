@@ -6,7 +6,7 @@
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:white_stained_glass",
-	"unchoosable": true,
+	"unchoosable": false,
 	"order": 10,
 	"impact": 1,
 	"loading_priority": 0

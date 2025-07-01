@@ -2,7 +2,7 @@
     "powers": [
 	],
 	"icon":"minecraft:barrier",
-	"unchoosable": true,
+	"unchoosable": false,
 	"order": 10,
 	"impact": 0,
 	"loading_priority": 0

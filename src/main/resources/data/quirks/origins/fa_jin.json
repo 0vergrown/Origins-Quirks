@@ -9,7 +9,7 @@
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:redstone",
-	"unchoosable": true,
+	"unchoosable": false,
 	"order": 10,
 	"impact": 3,
 	"loading_priority": 0

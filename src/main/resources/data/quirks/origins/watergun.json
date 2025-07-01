@@ -9,7 +9,7 @@
         "quirks:universal/quirk_erased"
     ],
     "icon": "minecraft:water_bucket",
-    "unchoosable": true,
+    "unchoosable": false,
     "order": 20,
     "impact": 3
 }

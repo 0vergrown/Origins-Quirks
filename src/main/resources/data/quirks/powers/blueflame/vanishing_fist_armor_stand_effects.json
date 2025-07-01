@@ -122,7 +122,7 @@
                                 {
                                     "type":"origins:origin",
                                     "origin":"quirks:blueflame",
-                                    "layer":"origins:powers",
+                                    "layer":"origins:quirks",
                                     "inverted": true
                                 }
                             ]
@@ -215,7 +215,7 @@
                            {
                               "type":"origins:origin",
                               "origin":"quirks:blueflame",
-                              "layer":"origins:powers",
+                              "layer":"origins:quirks",
                               "inverted":true
                            }
                         ]

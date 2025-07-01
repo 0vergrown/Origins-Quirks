@@ -69,8 +69,11 @@
             }
          },
          {
-            "type":"origins:execute_command",
-            "command":"playsound quirks:acid.alma player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
+            "type":"origins:play_sound",
+            "sound":"quirks:alma",
+            "category":"players",
+            "volume":1.00,
+            "pitch":1.00
          },
          {
             "type":"origins:spawn_entity",

@@ -54,7 +54,7 @@
     },
     "overlay": {
         "type": "origins:overlay",
-        "texture": "powert:textures/overlay/sprites/vision/invisibility/blinded.png",
+        "texture": "quirks:textures/overlay/sprites/vision/invisibility/blinded.png",
         "hide_with_hud": false,
         "draw_mode": "nausea",
         "draw_phase": "above_hud",

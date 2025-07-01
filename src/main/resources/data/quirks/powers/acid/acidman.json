@@ -123,8 +123,11 @@
                   "resource":"quirks:acid/acidman_resource"
                },
                {
-                  "type": "origins:execute_command",
-                  "command": "playsound quirks:acid.acidman_activate player @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
+                  "type":"origins:play_sound",
+                  "sound":"quirks:acidman_activate",
+                  "category":"players",
+                  "volume":1.00,
+                  "pitch":1.00
                }
             ]
          },
@@ -140,8 +143,11 @@
                   "resource":"quirks:acid/acidman_resource"
                },
                {
-                  "type": "origins:execute_command",
-                  "command": "playsound quirks:acid.acidman_activate player @a[distance=0..16] ~ ~ ~ 1.00 0.50 1.00"
+                  "type":"origins:play_sound",
+                  "sound":"quirks:acidman_activate",
+                  "category":"players",
+                  "volume":1.00,
+                  "pitch":1.00
                }
             ]
          }

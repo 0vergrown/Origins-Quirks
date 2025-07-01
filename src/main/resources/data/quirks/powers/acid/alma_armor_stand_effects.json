@@ -112,8 +112,11 @@
                                  "command":"kill @s"
                               },
                               {
-                              "type": "origins:execute_command",
-                              "command": "playsound quirks:acid.acid_shot_hit master @a[distance=0..16] ~ ~ ~ 1.00 1.00 1.00"
+                                 "type":"origins:play_sound",
+                                 "sound":"quirks:acid_shot_hit",
+                                 "category":"players",
+                                 "volume":1.00,
+                                 "pitch":1.00
                               }
                            ]
                         }
@@ -140,8 +143,8 @@
                                     },
                                     {
                                        "type":"origins:origin",
-                                       "origin":"powert:mha/acid",
-                                       "layer":"origins:powert",
+                                       "origin":"quirks:acid",
+                                       "layer":"origins:quirks",
                                        "inverted":true
                                     }
                                  ]

@@ -1,7 +1,7 @@
 {
   "textures": [
-    "quirks:particle/blueflame_1",
-    "quirks:particle/blueflame_2",
-    "quirks:particle/blueflame_3"
+    "quirks:blueflame_1",
+    "quirks:blueflame_2",
+    "quirks:blueflame_3"
   ]
 }
