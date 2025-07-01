@@ -42,13 +42,13 @@
              },
              {
                 "type":"origins:execute_command",
-                "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse1"
+                "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse1"
              },
              {
                 "type":"origins:delay",
                 "action":{
                    "type":"origins:execute_command",
-                   "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse2"
+                   "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse2"
                 },
                 "ticks":1
              },
@@ -56,7 +56,7 @@
                 "type":"origins:delay",
                 "action":{
                    "type":"origins:execute_command",
-                   "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse3"
+                   "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse3"
                 },
                 "ticks":2
              },
@@ -67,7 +67,7 @@
                    "actions":[
                       {
                          "type":"origins:execute_command",
-                         "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse4"
+                         "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse4"
                       },
                       {
                          "type":"origins:area_of_effect",
@@ -110,7 +110,7 @@
              },
              {
                 "type":"origins:execute_command",
-                "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse2"
+                "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse2"
              },
              {
                 "type":"origins:play_sound",
@@ -152,7 +152,7 @@
                    "destruction_type":"none",
                    "create_fire":false
                 },
-                "command_at_hit":"execute positioned ^ ^1 ^ run function powert:mha/blazing_hair/pulse4",
+                "command_at_hit":"execute positioned ^ ^1 ^ run function quirks:blazing_hair/pulse4",
                 "command_along_ray":"particle minecraft:dust_color_transition 0.698 0.949 0.502 2 0.839 1.000 0.867 ~ ~ ~ 0.25 0.25 0.25 1 2 normal @a",
                 "command_step":0.50,
                 "command_along_ray_only_on_hit":false
@@ -173,7 +173,7 @@
     },
     "condition": {
       "type": "origins:resource",
-      "resource": "powert:mha/universal/quirk_erased",
+      "resource": "quirks:universal/quirk_erased",
       "comparison": "==",
       "compare_to": 0
     }

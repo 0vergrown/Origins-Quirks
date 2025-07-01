@@ -1,9 +1,8 @@
 {
 	"powers": [
-		"powert:mha/heal/healing_kiss",
-		"powert:mha/heal/self_heal",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:heal/healing_kiss",
+		"quirks:heal/self_heal",
+		"quirks:universal/quirk_erased"
 	],
     "icon":{
         "item":"minecraft:player_head",

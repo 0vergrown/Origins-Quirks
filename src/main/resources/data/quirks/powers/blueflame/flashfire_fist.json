@@ -40,7 +40,7 @@
                "type":"origins:if_else",
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/blueflame/awakening_resource",
+                  "resource":"quirks:blueflame/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -50,7 +50,7 @@
                      "operation":"add_base_early",
                      "value":10.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                },
                "else_action":{
                   "type":"origins:modify_resource",
@@ -58,7 +58,7 @@
                      "operation":"add_base_early",
                      "value":15.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                }
             },
             {
@@ -67,7 +67,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":500
                      },
@@ -75,7 +75,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -129,7 +129,7 @@
                                                    },
                                                    {
                                                       "type":"origins:origin",
-                                                      "origin":"powert:mha/blueflame",
+                                                      "origin":"quirks:blueflame",
                                                       "layer":"origins:powers",
                                                       "inverted":true
                                                    }
@@ -201,7 +201,7 @@
                                                    },
                                                    {
                                                       "type":"origins:origin",
-                                                      "origin":"powert:mha/blueflame",
+                                                      "origin":"quirks:blueflame",
                                                       "layer":"origins:powers",
                                                       "inverted":true
                                                    }
@@ -228,7 +228,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":250
                      },
@@ -236,7 +236,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -290,7 +290,7 @@
                                                    },
                                                    {
                                                       "type":"origins:origin",
-                                                      "origin":"powert:mha/blueflame",
+                                                      "origin":"quirks:blueflame",
                                                       "layer":"origins:powers",
                                                       "inverted":true
                                                    }
@@ -362,7 +362,7 @@
                                                    },
                                                    {
                                                       "type":"origins:origin",
-                                                      "origin":"powert:mha/blueflame",
+                                                      "origin":"quirks:blueflame",
                                                       "layer":"origins:powers",
                                                       "inverted":true
                                                    }
@@ -389,7 +389,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":"<",
                         "compare_to":250
                      },
@@ -443,7 +443,7 @@
                                                 },
                                                 {
                                                    "type":"origins:origin",
-                                                   "origin":"powert:mha/blueflame",
+                                                   "origin":"quirks:blueflame",
                                                    "layer":"origins:powers",
                                                    "inverted":true
                                                 }
@@ -482,7 +482,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/flashfire_fist_five_hearts_or_less_cooldown",
+                              "resource":"quirks:blueflame/flashfire_fist_five_hearts_or_less_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -490,7 +490,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/flashfire_fist_five_hearts_or_less_cooldown"
+                        "power":"quirks:blueflame/flashfire_fist_five_hearts_or_less_cooldown"
                      }
                   },
                   {
@@ -509,7 +509,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/flashfire_fist_half_health_cooldown",
+                              "resource":"quirks:blueflame/flashfire_fist_half_health_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -517,7 +517,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/flashfire_fist_half_health_cooldown"
+                        "power":"quirks:blueflame/flashfire_fist_half_health_cooldown"
                      }
                   },
                   {
@@ -531,7 +531,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/flashfire_fist_full_health_cooldown",
+                              "resource":"quirks:blueflame/flashfire_fist_full_health_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -539,7 +539,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/flashfire_fist_full_health_cooldown"
+                        "power":"quirks:blueflame/flashfire_fist_full_health_cooldown"
                      }
                   }
                ]
@@ -558,11 +558,11 @@
             },
             {
                "type":"origins:execute_command",
-               "command":"execute positioned ^ ^ ^3 run execute positioned ~ ~1.8 ~ rotated ~65 ~45 run function powert:mha/blueflame/flashfire_fist_attack_particles"
+               "command":"execute positioned ^ ^ ^3 run execute positioned ~ ~1.8 ~ rotated ~65 ~45 run function quirks:blueflame/flashfire_fist_attack_particles"
             },
             {
                "type":"origins:execute_command",
-               "command":"execute positioned ^ ^ ^3 run execute positioned ~ ~1.8 ~ rotated ~-65 ~45 run function powert:mha/blueflame/flashfire_fist_attack_particles"
+               "command":"execute positioned ^ ^ ^3 run execute positioned ~ ~1.8 ~ rotated ~-65 ~45 run function quirks:blueflame/flashfire_fist_attack_particles"
             }
          ]
       },
@@ -579,25 +579,25 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/flashfire_fist_full_health_cooldown",
+               "resource":"quirks:blueflame/flashfire_fist_full_health_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/flashfire_fist_half_health_cooldown",
+               "resource":"quirks:blueflame/flashfire_fist_half_health_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/flashfire_fist_five_hearts_or_less_cooldown",
+               "resource":"quirks:blueflame/flashfire_fist_five_hearts_or_less_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }

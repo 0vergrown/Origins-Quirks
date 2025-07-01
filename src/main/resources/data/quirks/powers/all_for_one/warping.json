@@ -84,15 +84,15 @@
                   "actions":[
                      {
                         "type":"origins:grant_power",
-                        "power":"powert:mha/all_for_one/warping_target_effects",
-                        "source":"powert:mha/all_for_one/warping_target_effects"
+                        "power":"quirks:all_for_one/warping_target_effects",
+                        "source":"quirks:all_for_one/warping_target_effects"
                      },
                      {
                         "type":"origins:delay",
                         "action":{
                            "type":"origins:revoke_power",
-                           "power":"powert:mha/all_for_one/warping_target_effects",
-                           "source":"powert:mha/all_for_one/warping_target_effects"
+                           "power":"quirks:all_for_one/warping_target_effects",
+                           "source":"quirks:all_for_one/warping_target_effects"
                         },
                         "ticks":65
                      }
@@ -108,7 +108,7 @@
                         "operation":"add_base_early",
                         "value":-150.00
                      },
-                     "resource":"powert:mha/all_for_one/stamina_resource"
+                     "resource":"quirks:all_for_one/stamina_resource"
                   },
                   {
                      "type":"origins:modify_resource",
@@ -116,7 +116,7 @@
                         "operation":"set_total",
                         "value":1.00
                      },
-                     "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate"
+                     "resource":"quirks:all_for_one/warping_open_actor_to_target_gate"
                   },
                   {
                      "type":"origins:play_sound",
@@ -155,7 +155,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate"
+                        "resource":"quirks:all_for_one/warping_open_actor_to_target_gate"
                      },
                      "ticks":12
                   }
@@ -199,15 +199,15 @@
                   "actions":[
                      {
                         "type":"origins:grant_power",
-                        "power":"powert:mha/all_for_one/warping_teleport_target_to_actor",
-                        "source":"powert:mha/all_for_one/warping_teleport_target_to_actor"
+                        "power":"quirks:all_for_one/warping_teleport_target_to_actor",
+                        "source":"quirks:all_for_one/warping_teleport_target_to_actor"
                      },
                      {
                         "type":"origins:delay",
                         "action":{
                            "type":"origins:revoke_power",
-                           "power":"powert:mha/all_for_one/warping_teleport_target_to_actor",
-                           "source":"powert:mha/all_for_one/warping_teleport_target_to_actor"
+                           "power":"quirks:all_for_one/warping_teleport_target_to_actor",
+                           "source":"quirks:all_for_one/warping_teleport_target_to_actor"
                         },
                         "ticks":65
                      }
@@ -223,7 +223,7 @@
                         "operation":"add_base_early",
                         "value":-150.00
                      },
-                     "resource":"powert:mha/all_for_one/stamina_resource"
+                     "resource":"quirks:all_for_one/stamina_resource"
                   },
                   {
                      "type":"origins:modify_resource",
@@ -231,7 +231,7 @@
                         "operation":"set_total",
                         "value":1.00
                      },
-                     "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate"
+                     "resource":"quirks:all_for_one/warping_open_target_to_actor_gate"
                   },
                   {
                      "type":"origins:delay",
@@ -241,7 +241,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate"
+                        "resource":"quirks:all_for_one/warping_open_target_to_actor_gate"
                      },
                      "ticks":65
                   }
@@ -281,25 +281,25 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/stamina_resource",
+               "resource":"quirks:all_for_one/stamina_resource",
                "comparison":">=",
                "compare_to":150
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+               "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -322,13 +322,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+               "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
                "comparison":"==",
                "compare_to":0
             }
@@ -349,13 +349,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_phase_resource",
+               "resource":"quirks:all_for_one/warping_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -366,13 +366,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_phase_resource",
+               "resource":"quirks:all_for_one/warping_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -464,7 +464,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/all_for_one/warping_phase_resource"
+                  "resource":"quirks:all_for_one/warping_phase_resource"
                }
             ]
          },
@@ -477,7 +477,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/all_for_one/warping_phase_resource"
+                  "resource":"quirks:all_for_one/warping_phase_resource"
                },
                {
                   "type": "origins:clear_effect",
@@ -509,13 +509,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:power_active",
-               "power":"powert:mha/all_for_one/air_walk_toggle",
+               "power":"quirks:all_for_one/air_walk_toggle",
                "inverted": true
             }
          ]
@@ -530,7 +530,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":1
             },
@@ -563,13 +563,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+                     "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                      "comparison":"==",
                      "compare_to":1
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/all_for_one/warping_phase_resource",
+                     "resource":"quirks:all_for_one/warping_phase_resource",
                      "comparison":"==",
                      "compare_to":1
                   }
@@ -603,13 +603,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_actor_to_target_gate",
+               "resource":"quirks:all_for_one/warping_open_actor_to_target_gate",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+               "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
                "comparison":"==",
                "compare_to":1
             }
@@ -628,7 +628,7 @@
       "update_health":false,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+         "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
          "comparison":"==",
          "compare_to":1
       }
@@ -641,7 +641,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+         "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
          "comparison":"==",
          "compare_to":1
       }
@@ -654,7 +654,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+         "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
          "comparison":"==",
          "compare_to":1
       }
@@ -667,7 +667,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+         "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
          "comparison":"==",
          "compare_to":1
       }
@@ -676,7 +676,7 @@
       "type":"origins:prevent_entity_collision",
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_open_target_to_actor_gate",
+         "resource":"quirks:all_for_one/warping_open_target_to_actor_gate",
          "comparison":"==",
          "compare_to":1
       }

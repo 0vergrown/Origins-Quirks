@@ -5,7 +5,7 @@
     "type": "origins:multiple",
     "condition": {
         "type": "origins:resource",
-        "resource": "powert:mha/universal/quirk_erased",
+        "resource": "quirks:universal/quirk_erased",
         "compare_to": 0,
         "comparison": "=="
     },
@@ -27,7 +27,7 @@
                     "type": "origins:target_condition",
                     "condition": {
                         "type": "origins:power",
-                        "power": "powert:mha/somnambulist/drowsy"
+                        "power": "quirks:somnambulist/drowsy"
                     }
                 }
             ] 
@@ -51,7 +51,7 @@
                     "type": "origins:target_condition",
                     "condition": {
                         "type": "origins:power",
-                        "power": "powert:mha/somnambulist/dreaming"
+                        "power": "quirks:somnambulist/dreaming"
                     }
                 }
             ] 

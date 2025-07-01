@@ -1,13 +1,12 @@
 {
 	"powers":[
-	   "powert:mha/dark_shadow/dark_summoning",
-	   "powert:mha/dark_shadow/piercing_twilight_claws",
-	   "powert:mha/dark_shadow/black_abyss",
-	   "powert:mha/dark_shadow/black_fallen_angel",
-	   "powert:mha/dark_shadow/sabbath",
-	   "powert:mha/dark_shadow/womb",
-	   "powert:mha/universal/quirk_erased",
-	   "powert:allpowers/health"
+	   "quirks:dark_shadow/dark_summoning",
+	   "quirks:dark_shadow/piercing_twilight_claws",
+	   "quirks:dark_shadow/black_abyss",
+	   "quirks:dark_shadow/black_fallen_angel",
+	   "quirks:dark_shadow/sabbath",
+	   "quirks:dark_shadow/womb",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 	   "item":"minecraft:player_head",

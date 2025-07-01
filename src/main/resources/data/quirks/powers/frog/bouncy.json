@@ -8,7 +8,7 @@
       },
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -21,7 +21,7 @@
       },
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -171,7 +171,7 @@
       },
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }

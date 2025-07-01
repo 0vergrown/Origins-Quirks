@@ -10,7 +10,7 @@
         "start_value": 120,
         "min_action": {
             "type": "origins:execute_command",
-            "command": "power remove @s powert:mha/somnambulist/drowsy"
+            "command": "power remove @s quirks:somnambulist/drowsy"
         },
         "hud_render": {
             "should_render": false
@@ -26,12 +26,12 @@
             "actions": [
                 {
                     "type": "origins:grant_power",
-                    "power": "powert:mha/somnambulist/dreaming",
-                    "source": "powert:mha/somnambulist/drowsy"
+                    "power": "quirks:somnambulist/dreaming",
+                    "source": "quirks:somnambulist/drowsy"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/somnambulist/drowsy"
+                    "command": "power remove @s quirks:somnambulist/drowsy"
                 }
             ]
         }
@@ -41,13 +41,13 @@
         "interval": 10,
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/drowsy_resource",
+            "resource": "quirks:somnambulist/drowsy_resource",
             "compare_to": 1,
             "comparison": ">="
         },
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "powert:mha/somnambulist/drowsy_resource",
+            "resource": "quirks:somnambulist/drowsy_resource",
             "change": -5,
             "operation": "add"
         }
@@ -59,13 +59,13 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/somnambulist/drowsy_resource",
+                    "resource": "quirks:somnambulist/drowsy_resource",
                     "compare_to": 95,
                     "comparison": "<="
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/somnambulist/drowsy_resource",
+                    "resource": "quirks:somnambulist/drowsy_resource",
                     "compare_to": 40,
                     "comparison": ">"
                 }
@@ -127,7 +127,7 @@
         "type": "origins:action_over_time",
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/drowsy_resource",
+            "resource": "quirks:somnambulist/drowsy_resource",
             "compare_to": 20,
             "comparison": ">="
         },

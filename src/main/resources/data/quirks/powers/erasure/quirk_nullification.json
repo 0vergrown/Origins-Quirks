@@ -51,7 +51,7 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -83,7 +83,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/erasure/quirk_nullification_resource",
+            "resource":"quirks:erasure/quirk_nullification_resource",
             "comparison":"==",
             "compare_to":0
          },
@@ -102,7 +102,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/erasure/quirk_nullification_resource"
+                  "resource":"quirks:erasure/quirk_nullification_resource"
                }
             ]
          },
@@ -112,7 +112,7 @@
                "operation":"set_total",
                "value":0.00
             },
-            "resource":"powert:mha/erasure/quirk_nullification_resource"
+            "resource":"quirks:erasure/quirk_nullification_resource"
          }
       },
       "cooldown":10,
@@ -125,7 +125,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/universal/quirk_erased",
+         "resource":"quirks:universal/quirk_erased",
          "comparison":"==",
          "compare_to":0
       }
@@ -149,7 +149,7 @@
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/universal/quirk_erased",
+                     "resource":"quirks:universal/quirk_erased",
                      "comparison":"==",
                      "compare_to":0
                   }
@@ -164,7 +164,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/universal/quirk_erased"
+               "resource":"quirks:universal/quirk_erased"
             }
          },
          "command_step":1.00,
@@ -182,7 +182,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/universal/quirk_erased"
+               "resource":"quirks:universal/quirk_erased"
             }
          },
          "bientity_condition":{
@@ -195,7 +195,7 @@
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/universal/quirk_erased",
+                     "resource":"quirks:universal/quirk_erased",
                      "comparison":"==",
                      "compare_to":1
                   }
@@ -207,7 +207,7 @@
       "interval": 1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/erasure/quirk_nullification_resource",
+         "resource":"quirks:erasure/quirk_nullification_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -226,7 +226,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/universal/quirk_erased"
+               "resource":"quirks:universal/quirk_erased"
             }
          },
          "bientity_condition":{
@@ -248,7 +248,7 @@
                         },
                         {
                            "type":"origins:resource",
-                           "resource":"powert:mha/universal/quirk_erased",
+                           "resource":"quirks:universal/quirk_erased",
                            "comparison":"==",
                            "compare_to":1
                         }
@@ -262,7 +262,7 @@
       "interval": 1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/erasure/quirk_nullification_resource",
+         "resource":"quirks:erasure/quirk_nullification_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -286,7 +286,7 @@
       "visible_while_invisible":false,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/erasure/quirk_nullification_resource",
+         "resource":"quirks:erasure/quirk_nullification_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -304,7 +304,7 @@
       "visible_in_third_person":true,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/erasure/quirk_nullification_resource",
+         "resource":"quirks:erasure/quirk_nullification_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -320,13 +320,13 @@
                   "conditions":[
                      {
                         "type":"origins:resource",
-                        "resource":"powert:mha/erasure/quirk_nullification_resource",
+                        "resource":"quirks:erasure/quirk_nullification_resource",
                         "comparison":"==",
                         "compare_to":1
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"powert:mha/erasure/quirk_nullification_damage",
+                        "resource":"quirks:erasure/quirk_nullification_damage",
                         "comparison":"!=",
                         "compare_to":0
                      }
@@ -338,7 +338,7 @@
                      "operation":"add_base_early",
                      "value":-1.00
                   },
-                  "resource":"powert:mha/erasure/quirk_nullification_damage"
+                  "resource":"quirks:erasure/quirk_nullification_damage"
                }
             },
             {
@@ -347,13 +347,13 @@
                   "conditions":[
                      {
                         "type":"origins:resource",
-                        "resource":"powert:mha/erasure/quirk_nullification_resource",
+                        "resource":"quirks:erasure/quirk_nullification_resource",
                         "comparison":"==",
                         "compare_to":0
                      },
                      {
                         "type":"origins:resource",
-                        "resource":"powert:mha/erasure/quirk_nullification_damage",
+                        "resource":"quirks:erasure/quirk_nullification_damage",
                         "comparison":"!=",
                         "compare_to":200
                      }
@@ -365,7 +365,7 @@
                      "operation":"add_base_early",
                      "value":1.00
                   },
-                  "resource":"powert:mha/erasure/quirk_nullification_damage"
+                  "resource":"quirks:erasure/quirk_nullification_damage"
                }
             }
          ]
@@ -385,7 +385,7 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/erasure/quirk_nullification_damage",
+               "resource":"quirks:erasure/quirk_nullification_damage",
                "comparison":"==",
                "compare_to":0
             },
@@ -413,7 +413,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/erasure/quirk_nullification_resource"
+               "resource":"quirks:erasure/quirk_nullification_resource"
             },
             {
                "type":"origins:area_of_effect",
@@ -427,7 +427,7 @@
                         "operation":"set_total",
                         "value":0.00
                      },
-                     "resource":"powert:mha/universal/quirk_erased"
+                     "resource":"quirks:universal/quirk_erased"
                   }
                },
                "bientity_condition":{
@@ -440,7 +440,7 @@
                         },
                         {
                            "type":"origins:resource",
-                           "resource":"powert:mha/universal/quirk_erased",
+                           "resource":"quirks:universal/quirk_erased",
                            "comparison":"==",
                            "compare_to":1
                         }

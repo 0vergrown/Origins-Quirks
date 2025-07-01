@@ -4,7 +4,7 @@
     "type": "origins:multiple",
     "condition": {
         "type": "origins:resource",
-        "resource": "powert:mha/universal/quirk_erased",
+        "resource": "quirks:universal/quirk_erased",
         "compare_to": 0,
         "comparison": "=="
     },
@@ -35,7 +35,7 @@
         "type": "origins:action_over_time",
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/mist_resource",
+            "resource": "quirks:somnambulist/mist_resource",
             "compare_to": 1,
             "comparison": ">="
         },
@@ -50,7 +50,7 @@
         "interval": 2,
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/universal/quirk_erased",
+            "resource": "quirks:universal/quirk_erased",
             "compare_to": 0,
             "comparison": "=="
         },
@@ -60,7 +60,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "powert:mha/somnambulist/mist_resource",
+                        "resource": "quirks:somnambulist/mist_resource",
                         "compare_to": 1,
                         "comparison": "=="
                     },
@@ -78,20 +78,20 @@
                                         "actions": [
                                             {
                                                 "type": "origins:grant_power",
-                                                "power": "powert:mha/somnambulist/drowsy",
-                                                "source": "powert:mha/somnambulist/mist"
+                                                "power": "quirks:somnambulist/drowsy",
+                                                "source": "quirks:somnambulist/mist"
                                             },
                                             {
                                                 "type": "origins:if_else",
                                                 "condition": {
                                                     "type": "origins:power_active",
-                                                    "power": "powert:mha/somnambulist/drowsy"
+                                                    "power": "quirks:somnambulist/drowsy"
                                                 },
                                                 "if_action": {
                                                     "type": "origins:change_resource",
                                                     "change": 80,
                                                     "operation": "set",
-                                                    "resource": "powert:mha/somnambulist/drowsy_resource"
+                                                    "resource": "quirks:somnambulist/drowsy_resource"
                                                 },
                                                 "else_action": {
                                                     "type": "origins:nothing"
@@ -111,7 +111,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "powert:mha/somnambulist/mist_resource",
+                        "resource": "quirks:somnambulist/mist_resource",
                         "compare_to": 2,
                         "comparison": "=="
                     },
@@ -129,20 +129,20 @@
                                         "actions": [
                                             {
                                                 "type": "origins:grant_power",
-                                                "power": "powert:mha/somnambulist/drowsy",
-                                                "source": "powert:mha/somnambulist/mist"
+                                                "power": "quirks:somnambulist/drowsy",
+                                                "source": "quirks:somnambulist/mist"
                                             },
                                             {
                                                 "type": "origins:if_else",
                                                 "condition": {
                                                     "type": "origins:power_active",
-                                                    "power": "powert:mha/somnambulist/drowsy"
+                                                    "power": "quirks:somnambulist/drowsy"
                                                 },
                                                 "if_action": {
                                                     "type": "origins:change_resource",
                                                     "change": 80,
                                                     "operation": "set",
-                                                    "resource": "powert:mha/somnambulist/drowsy_resource"
+                                                    "resource": "quirks:somnambulist/drowsy_resource"
                                                 },
                                                 "else_action": {
                                                     "type": "origins:nothing"
@@ -162,7 +162,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "powert:mha/somnambulist/mist_resource",
+                        "resource": "quirks:somnambulist/mist_resource",
                         "compare_to": 3,
                         "comparison": "=="
                     },
@@ -180,20 +180,20 @@
                                         "actions": [
                                             {
                                                 "type": "origins:grant_power",
-                                                "power": "powert:mha/somnambulist/drowsy",
-                                                "source": "powert:mha/somnambulist/mist"
+                                                "power": "quirks:somnambulist/drowsy",
+                                                "source": "quirks:somnambulist/mist"
                                             },
                                             {
                                                 "type": "origins:if_else",
                                                 "condition": {
                                                     "type": "origins:power_active",
-                                                    "power": "powert:mha/somnambulist/drowsy"
+                                                    "power": "quirks:somnambulist/drowsy"
                                                 },
                                                 "if_action": {
                                                     "type": "origins:change_resource",
                                                     "change": 80,
                                                     "operation": "set",
-                                                    "resource": "powert:mha/somnambulist/drowsy_resource"
+                                                    "resource": "quirks:somnambulist/drowsy_resource"
                                                 },
                                                 "else_action": {
                                                     "type": "origins:nothing"
@@ -213,7 +213,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "powert:mha/somnambulist/mist_resource",
+                        "resource": "quirks:somnambulist/mist_resource",
                         "compare_to": 4,
                         "comparison": "=="
                     },
@@ -231,20 +231,20 @@
                                         "actions": [
                                             {
                                                 "type": "origins:grant_power",
-                                                "power": "powert:mha/somnambulist/drowsy",
-                                                "source": "powert:mha/somnambulist/mist"
+                                                "power": "quirks:somnambulist/drowsy",
+                                                "source": "quirks:somnambulist/mist"
                                             },
                                             {
                                                 "type": "origins:if_else",
                                                 "condition": {
                                                     "type": "origins:power_active",
-                                                    "power": "powert:mha/somnambulist/drowsy"
+                                                    "power": "quirks:somnambulist/drowsy"
                                                 },
                                                 "if_action": {
                                                     "type": "origins:change_resource",
                                                     "change": 80,
                                                     "operation": "set",
-                                                    "resource": "powert:mha/somnambulist/drowsy_resource"
+                                                    "resource": "quirks:somnambulist/drowsy_resource"
                                                 },
                                                 "else_action": {
                                                     "type": "origins:nothing"
@@ -264,7 +264,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "powert:mha/somnambulist/mist_resource",
+                        "resource": "quirks:somnambulist/mist_resource",
                         "compare_to": 5,
                         "comparison": "=="
                     },
@@ -282,20 +282,20 @@
                                         "actions": [
                                             {
                                                 "type": "origins:grant_power",
-                                                "power": "powert:mha/somnambulist/drowsy",
-                                                "source": "powert:mha/somnambulist/mist"
+                                                "power": "quirks:somnambulist/drowsy",
+                                                "source": "quirks:somnambulist/mist"
                                             },
                                             {
                                                 "type": "origins:if_else",
                                                 "condition": {
                                                     "type": "origins:power_active",
-                                                    "power": "powert:mha/somnambulist/drowsy"
+                                                    "power": "quirks:somnambulist/drowsy"
                                                 },
                                                 "if_action": {
                                                     "type": "origins:change_resource",
                                                     "change": 80,
                                                     "operation": "set",
-                                                    "resource": "powert:mha/somnambulist/drowsy_resource"
+                                                    "resource": "quirks:somnambulist/drowsy_resource"
                                                 },
                                                 "else_action": {
                                                     "type": "origins:nothing"
@@ -335,13 +335,13 @@
                 "type": "origins:change_resource",
                 "change": 1,
                 "operation": "add",
-                "resource": "powert:mha/somnambulist/mist_resource"
+                "resource": "quirks:somnambulist/mist_resource"
             },
             "else_action": {
                 "type": "origins:change_resource",
                 "change": -1,
                 "operation": "add",
-                "resource": "powert:mha/somnambulist/mist_resource"
+                "resource": "quirks:somnambulist/mist_resource"
             }
         }
     },
@@ -353,7 +353,7 @@
                 "type": "origins:resource",
                 "compare_to": 0,
                 "comparison": ">",
-                "resource": "powert:mha/somnambulist/mist_resource"
+                "resource": "quirks:somnambulist/mist_resource"
             }
         }
     }

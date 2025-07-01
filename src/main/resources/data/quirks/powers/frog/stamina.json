@@ -15,7 +15,7 @@
        "type":"origins:action_over_time",
        "entity_action":{
           "type":"origins:change_resource",
-          "resource":"powert:mha/frog/stamina_resource",
+          "resource":"quirks:frog/stamina_resource",
           "change":5,
           "operation":"add"
        },
@@ -25,13 +25,13 @@
           "conditions":[
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/frog/stamina_resource",
+                "resource":"quirks:frog/stamina_resource",
                 "comparison":"!=",
                 "compare_to":400
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/frog/camouflage_resource",
+                "resource":"quirks:frog/camouflage_resource",
                 "comparison":"==",
                 "compare_to":0
              },
@@ -42,7 +42,7 @@
              },
              {
                 "type":"origins:power_active",
-                "power":"powert:mha/frog/sticky_hands_toggle",
+                "power":"quirks:frog/sticky_hands_toggle",
                 "inverted": true
              }
           ]

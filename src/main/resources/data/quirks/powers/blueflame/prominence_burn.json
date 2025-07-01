@@ -47,7 +47,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/blueflame/prominence_burn_resource"
+               "resource":"quirks:blueflame/prominence_burn_resource"
             },
             {
                "type":"origins:delay",
@@ -57,7 +57,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/blueflame/prominence_burn_resource"
+                  "resource":"quirks:blueflame/prominence_burn_resource"
                },
                "ticks":75
             },
@@ -75,7 +75,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/prominence_burn_five_hearts_or_less_cooldown",
+                              "resource":"quirks:blueflame/prominence_burn_five_hearts_or_less_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -83,7 +83,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/prominence_burn_five_hearts_or_less_cooldown"
+                        "power":"quirks:blueflame/prominence_burn_five_hearts_or_less_cooldown"
                      }
                   },
                   {
@@ -102,7 +102,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/prominence_burn_half_health_cooldown",
+                              "resource":"quirks:blueflame/prominence_burn_half_health_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -110,7 +110,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/prominence_burn_half_health_cooldown"
+                        "power":"quirks:blueflame/prominence_burn_half_health_cooldown"
                      }
                   },
                   {
@@ -124,7 +124,7 @@
                            },
                            {
                               "type":"origins:resource",
-                              "resource":"powert:mha/blueflame/prominence_burn_full_health_cooldown",
+                              "resource":"quirks:blueflame/prominence_burn_full_health_cooldown",
                               "comparison":"==",
                               "compare_to":0
                            }
@@ -132,7 +132,7 @@
                      },
                      "action":{
                         "type":"origins:trigger_cooldown",
-                        "power":"powert:mha/blueflame/prominence_burn_full_health_cooldown"
+                        "power":"quirks:blueflame/prominence_burn_full_health_cooldown"
                      }
                   }
                ]
@@ -145,7 +145,7 @@
             },
             {
                "type":"origins:spawn_particles",
-               "particle":"powert:blueflame",
+               "particle":"quirks:blueflame",
                "count":100,
                "speed":0.01,
                "force":false,
@@ -171,25 +171,25 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/prominence_burn_full_health_cooldown",
+               "resource":"quirks:blueflame/prominence_burn_full_health_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/prominence_burn_half_health_cooldown",
+               "resource":"quirks:blueflame/prominence_burn_half_health_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/prominence_burn_five_hearts_or_less_cooldown",
+               "resource":"quirks:blueflame/prominence_burn_five_hearts_or_less_cooldown",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -213,7 +213,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":500
                      },
@@ -221,7 +221,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -240,7 +240,7 @@
                                  "entity":true,
                                  "shape_type":"collider",
                                  "fluid_handling":"any",
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -300,7 +300,7 @@
                                     "damage_self":false,
                                     "create_fire":true
                                  },
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -332,7 +332,7 @@
                                  "entity":true,
                                  "shape_type":"collider",
                                  "fluid_handling":"any",
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -392,7 +392,7 @@
                                     "damage_self":false,
                                     "create_fire":true
                                  },
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -414,7 +414,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":250
                      },
@@ -422,7 +422,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -441,7 +441,7 @@
                                  "entity":true,
                                  "shape_type":"collider",
                                  "fluid_handling":"any",
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -501,7 +501,7 @@
                                     "damage_self":false,
                                     "create_fire":true
                                  },
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -533,7 +533,7 @@
                                  "entity":true,
                                  "shape_type":"collider",
                                  "fluid_handling":"any",
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -593,7 +593,7 @@
                                     "damage_self":false,
                                     "create_fire":true
                                  },
-                                 "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
+                                 "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
                                  "command_step":1.00,
                                  "command_along_ray_only_on_hit":false
                               },
@@ -615,7 +615,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":"<",
                         "compare_to":250
                      },
@@ -634,7 +634,7 @@
                               "entity":true,
                               "shape_type":"collider",
                               "fluid_handling":"any",
-                              "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
+                              "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 0 50 force @a",
                               "command_step":1.00,
                               "command_along_ray_only_on_hit":false
                            },
@@ -694,7 +694,7 @@
                                  "damage_self":false,
                                  "create_fire":true
                               },
-                              "command_along_ray":"particle powert:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
+                              "command_along_ray":"particle quirks:blueflame ~ ~-0.5 ~ 0.2 0.2 0.2 00.1 50 force @a",
                               "command_step":1.00,
                               "command_along_ray_only_on_hit":false
                            },
@@ -719,7 +719,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/blueflame/prominence_burn_resource",
+         "resource":"quirks:blueflame/prominence_burn_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -733,7 +733,7 @@
                "type":"origins:if_else",
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/blueflame/awakening_resource",
+                  "resource":"quirks:blueflame/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -743,7 +743,7 @@
                      "operation":"add_base_early",
                      "value":20.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                },
                "else_action":{
                   "type":"origins:modify_resource",
@@ -751,7 +751,7 @@
                      "operation":"add_base_early",
                      "value":27.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                }
             },
             {
@@ -760,7 +760,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":500
                      },
@@ -768,7 +768,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -787,7 +787,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":">=",
                         "compare_to":250
                      },
@@ -795,7 +795,7 @@
                         "type":"origins:if_else",
                         "condition":{
                            "type":"origins:resource",
-                           "resource":"powert:mha/blueflame/awakening_resource",
+                           "resource":"quirks:blueflame/awakening_resource",
                            "comparison":"==",
                            "compare_to":0
                         },
@@ -814,7 +814,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                        "resource":"quirks:blueflame/heat_gauge_temperature",
                         "comparison":"<",
                         "compare_to":250
                      },
@@ -831,7 +831,7 @@
       "interval":40,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/blueflame/prominence_burn_resource",
+         "resource":"quirks:blueflame/prominence_burn_resource",
          "comparison":"==",
          "compare_to":1
       }

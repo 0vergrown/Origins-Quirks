@@ -13,8 +13,8 @@
          "actions":[
             {
                "type":"origins:revoke_power",
-               "power":"powert:mha/dark_shadow/womb_effects",
-               "source":"powert:mha/dark_shadow/womb_effects"
+               "power":"quirks:dark_shadow/womb_effects",
+               "source":"quirks:dark_shadow/womb_effects"
             },
             {
                "type":"origins:play_sound",
@@ -38,7 +38,7 @@
          "actions":[
             {
                "type":"origins:execute_command",
-               "command":"execute at @s positioned ~ ~0.9 ~ run function powert:mha/dark_shadow/womb_particles"
+               "command":"execute at @s positioned ~ ~0.9 ~ run function quirks:dark_shadow/womb_particles"
             },
             {
                "type":"origins:modify_resource",
@@ -46,7 +46,7 @@
                   "operation":"add_base_early",
                   "value":-1.00
                },
-               "resource":"powert:mha/dark_shadow/womb_effects_timer"
+               "resource":"quirks:dark_shadow/womb_effects_timer"
             },
             {
                "type": "origins:execute_command",
@@ -120,7 +120,7 @@
                   "operation":"add_base_early",
                   "value":-4.00
                },
-               "resource":"powert:mha/dark_shadow/womb_effects_timer"
+               "resource":"quirks:dark_shadow/womb_effects_timer"
             },
             {
                "type":"origins:play_sound",

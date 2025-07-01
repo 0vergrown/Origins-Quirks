@@ -1,5 +1,7 @@
 package dev.overgrown.quirks;
 
+import dev.overgrown.quirks.item.ModItems;
+import dev.overgrown.quirks.particle.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -18,5 +20,8 @@ public class Quirks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Origins: Quirks mod initialized!");
+
+		ModItems.registerItems();
+		ModParticles.registerParticles();
 	}
 }

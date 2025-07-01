@@ -10,7 +10,7 @@
     ],
     "condition": {
         "type": "origins:resource",
-        "resource": "powert:mha/universal/quirk_erased",
+        "resource": "quirks:universal/quirk_erased",
         "compare_to": 0,
         "comparison": "=="
     },
@@ -24,7 +24,7 @@
         "shape_type": "collider",
         "fluid_handling": "any",
         "command_along_ray_only_on_hit": false,
-        "command_along_ray": "function powert:mha/somnambulist/beam",
+        "command_along_ray": "function quirks:somnambulist/beam",
         "command_step": 1,
         "before_action": {
             "type": "origins:and",

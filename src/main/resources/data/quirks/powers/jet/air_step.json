@@ -29,7 +29,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/jet/air_step_attack_triggered"
+               "resource":"quirks:jet/air_step_attack_triggered"
             },
             {
                "type":"origins:modify_resource",
@@ -37,7 +37,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/jet/air_step_slam_attack_triggered"
+               "resource":"quirks:jet/air_step_slam_attack_triggered"
             }
          ]
       },
@@ -53,13 +53,13 @@
                "conditions": [
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/jet/air_step_attack_triggered",
+                     "resource":"quirks:jet/air_step_attack_triggered",
                      "comparison":"==",
                      "compare_to":1
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/jet/air_step_slam_attack_triggered",
+                     "resource":"quirks:jet/air_step_slam_attack_triggered",
                      "comparison":"==",
                      "compare_to":1
                   }
@@ -137,7 +137,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/jet/air_step_attack_triggered"
+                  "resource":"quirks:jet/air_step_attack_triggered"
                },
                {
                   "type": "origins:add_velocity",
@@ -163,13 +163,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -189,7 +189,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/jet/air_step_double_tap_forward",
+            "resource":"quirks:jet/air_step_double_tap_forward",
             "comparison":"!=",
             "compare_to":0
          },
@@ -202,7 +202,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/jet/air_step_attack_triggered"
+                  "resource":"quirks:jet/air_step_attack_triggered"
                },
                {
                   "type":"origins:add_velocity",
@@ -243,7 +243,7 @@
          },
          "else_action":{
             "type":"origins:trigger_cooldown",
-            "power":"powert:mha/jet/air_step_double_tap_forward"
+            "power":"quirks:jet/air_step_double_tap_forward"
          }
       },
       "cooldown":1,
@@ -259,13 +259,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -285,7 +285,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/jet/air_step_double_tap_left",
+            "resource":"quirks:jet/air_step_double_tap_left",
             "comparison":"!=",
             "compare_to":0
          },
@@ -298,7 +298,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/jet/air_step_attack_triggered"
+                  "resource":"quirks:jet/air_step_attack_triggered"
                },
                {
                   "type":"origins:add_velocity",
@@ -339,7 +339,7 @@
          },
          "else_action":{
             "type":"origins:trigger_cooldown",
-            "power":"powert:mha/jet/air_step_double_tap_left"
+            "power":"quirks:jet/air_step_double_tap_left"
          }
       },
       "cooldown":1,
@@ -355,13 +355,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -381,7 +381,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/jet/air_step_double_tap_back",
+            "resource":"quirks:jet/air_step_double_tap_back",
             "comparison":"!=",
             "compare_to":0
          },
@@ -394,7 +394,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/jet/air_step_attack_triggered"
+                  "resource":"quirks:jet/air_step_attack_triggered"
                },
                {
                   "type":"origins:add_velocity",
@@ -435,7 +435,7 @@
          },
          "else_action":{
             "type":"origins:trigger_cooldown",
-            "power":"powert:mha/jet/air_step_double_tap_back"
+            "power":"quirks:jet/air_step_double_tap_back"
          }
       },
       "cooldown":1,
@@ -451,13 +451,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -477,7 +477,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/jet/air_step_double_tap_right",
+            "resource":"quirks:jet/air_step_double_tap_right",
             "comparison":"!=",
             "compare_to":0
          },
@@ -490,7 +490,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/jet/air_step_attack_triggered"
+                  "resource":"quirks:jet/air_step_attack_triggered"
                },
                {
                   "type":"origins:add_velocity",
@@ -531,7 +531,7 @@
          },
          "else_action":{
             "type":"origins:trigger_cooldown",
-            "power":"powert:mha/jet/air_step_double_tap_right"
+            "power":"quirks:jet/air_step_double_tap_right"
          }
       },
       "cooldown":1,
@@ -547,13 +547,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -571,7 +571,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/jet/air_step_slam_attack_triggered"
+               "resource":"quirks:jet/air_step_slam_attack_triggered"
             },
             {
                "type":"origins:add_velocity",
@@ -623,13 +623,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -652,7 +652,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/jet/air_step_attack_triggered"
+                        "resource":"quirks:jet/air_step_attack_triggered"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -660,7 +660,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/jet/air_step_slam_attack_triggered"
+                        "resource":"quirks:jet/air_step_slam_attack_triggered"
                      }
                   ]
                },
@@ -742,19 +742,19 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_attack_triggered",
+               "resource":"quirks:jet/air_step_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/air_step_slam_attack_triggered",
+               "resource":"quirks:jet/air_step_slam_attack_triggered",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -769,7 +769,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/jet/air_step_slam_attack_triggered",
+         "resource":"quirks:jet/air_step_slam_attack_triggered",
          "comparison":"==",
          "compare_to":1
       }

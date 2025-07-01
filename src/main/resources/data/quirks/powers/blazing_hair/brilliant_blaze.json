@@ -11,7 +11,7 @@
           "order":3,
           "condition":{
              "type":"origins:resource",
-             "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle",
+             "resource":"quirks:blazing_hair/brilliant_blaze_toggle",
              "comparison":"==",
              "compare_to":1
           }
@@ -39,7 +39,7 @@
           "type":"origins:if_else",
           "condition":{
              "type":"origins:resource",
-             "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle",
+             "resource":"quirks:blazing_hair/brilliant_blaze_toggle",
              "comparison":"==",
              "compare_to":1
           },
@@ -52,7 +52,7 @@
                       "operation":"set_total",
                       "value":0.00
                    },
-                   "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle"
+                   "resource":"quirks:blazing_hair/brilliant_blaze_toggle"
                 },
                 {
                    "type":"origins:modify_resource",
@@ -60,7 +60,7 @@
                       "operation":"set_total",
                       "value":0.00
                    },
-                   "resource":"powert:mha/blazing_hair/brilliant_blaze_resource"
+                   "resource":"quirks:blazing_hair/brilliant_blaze_resource"
                 }
              ]
           },
@@ -73,7 +73,7 @@
                       "operation":"set_total",
                       "value":1.00
                    },
-                   "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle"
+                   "resource":"quirks:blazing_hair/brilliant_blaze_toggle"
                 },
                 {
                    "type":"origins:modify_resource",
@@ -81,7 +81,7 @@
                       "operation":"set_total",
                       "value":0.00
                    },
-                   "resource":"powert:mha/blazing_hair/brilliant_blaze_resource"
+                   "resource":"quirks:blazing_hair/brilliant_blaze_resource"
                 }
              ]
           }
@@ -96,7 +96,7 @@
        },
        "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
        }
@@ -112,13 +112,13 @@
                 "conditions":[
                    {
                       "type":"origins:resource",
-                      "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle",
+                      "resource":"quirks:blazing_hair/brilliant_blaze_toggle",
                       "comparison":"==",
                       "compare_to":1
                    },
                    {
                       "type":"origins:resource",
-                      "resource":"powert:mha/blazing_hair/brilliant_blaze_resource",
+                      "resource":"quirks:blazing_hair/brilliant_blaze_resource",
                       "comparison":"==",
                       "compare_to":2
                    }
@@ -139,7 +139,7 @@
                          },
                          {
                             "type":"origins:execute_command",
-                            "command":"execute at @s positioned ~ ~1 ~ run function powert:mha/blazing_hair/pulse2"
+                            "command":"execute at @s positioned ~ ~1 ~ run function quirks:blazing_hair/pulse2"
                          },
                          {
                             "type":"origins:damage",
@@ -164,7 +164,7 @@
                                "operation":"set_total",
                                "value":0.00
                             },
-                            "resource":"powert:mha/blazing_hair/brilliant_blaze_resource"
+                            "resource":"quirks:blazing_hair/brilliant_blaze_resource"
                          },
                          {
                             "type":"origins:play_sound",
@@ -185,7 +185,7 @@
                    "operation":"add_base_early",
                    "value":1.00
                 },
-                "resource":"powert:mha/blazing_hair/brilliant_blaze_resource"
+                "resource":"quirks:blazing_hair/brilliant_blaze_resource"
              }
           }
        }
@@ -201,7 +201,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blazing_hair/brilliant_blaze_toggle"
+               "resource":"quirks:blazing_hair/brilliant_blaze_toggle"
             },
             {
                "type":"origins:modify_resource",
@@ -209,14 +209,14 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blazing_hair/brilliant_blaze_resource"
+               "resource":"quirks:blazing_hair/brilliant_blaze_resource"
             }
          ]
       },
       "interval": 5,
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "!=",
          "compare_to": 0
       }

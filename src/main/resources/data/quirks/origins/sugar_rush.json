@@ -1,11 +1,10 @@
 {
 	"powers": [
-		"powert:mha/sugar_rush/hypoglycemia",
-		"powert:mha/sugar_rush/sugar_boost",
-		"powert:mha/sugar_rush/sugar_flurry",
-		"powert:mha/sugar_rush/candy_crush",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:sugar_rush/hypoglycemia",
+		"quirks:sugar_rush/sugar_boost",
+		"quirks:sugar_rush/sugar_flurry",
+		"quirks:sugar_rush/candy_crush",
+		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:sugar",
 	"unchoosable": true,

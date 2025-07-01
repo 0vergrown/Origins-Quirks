@@ -17,7 +17,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/permeation/blinder_touch_eyeball_crush_resource",
+         "resource":"quirks:permeation/blinder_touch_eyeball_crush_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -26,7 +26,7 @@
       "type": "origins:prevent_entity_collision",
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/permeation/blinder_touch_eyeball_crush_resource",
+         "resource":"quirks:permeation/blinder_touch_eyeball_crush_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -136,47 +136,47 @@
                                        "operation":"set_total",
                                        "value":0.00
                                     },
-                                    "resource":"powert:mha/permeation/blinder_touch_eyeball_crush_resource"
+                                    "resource":"quirks:permeation/blinder_touch_eyeball_crush_resource"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  },
                                  {
                                     "type":"origins:execute_command",
-                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/permeation/fist"
+                                    "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:permeation/fist"
                                  }
                               ]
                            }
@@ -204,7 +204,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/permeation/blinder_touch_eyeball_crush_resource"
+                  "resource":"quirks:permeation/blinder_touch_eyeball_crush_resource"
                }
             ]
          },
@@ -224,13 +224,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/blinder_touch_eyeball_crush_resource",
+               "resource":"quirks:permeation/blinder_touch_eyeball_crush_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }

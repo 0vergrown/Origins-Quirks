@@ -10,7 +10,7 @@
          "bar_index":17,
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/permeation/permeate_resource",
+            "resource":"quirks:permeation/permeate_resource",
             "comparison":"==",
             "compare_to":1
          }
@@ -30,7 +30,7 @@
             "conditions":[
                {
                   "type":"origins:resource",
-                  "resource":"powert:mha/permeation/permeate_resource",
+                  "resource":"quirks:permeation/permeate_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -58,7 +58,7 @@
             "conditions":[
                {
                   "type":"origins:resource",
-                  "resource":"powert:mha/permeation/permeate_bar",
+                  "resource":"quirks:permeation/permeate_bar",
                   "comparison":"<",
                   "compare_to":200
                },
@@ -67,7 +67,7 @@
                   "conditions":[
                      {
                         "type":"origins:resource",
-                        "resource":"powert:mha/permeation/permeate_bar",
+                        "resource":"quirks:permeation/permeate_bar",
                         "comparison":"==",
                         "compare_to":200
                      },
@@ -101,7 +101,7 @@
                "operation":"add_base_early",
                "value":2.00
             },
-            "resource":"powert:mha/permeation/permeate_bar"
+            "resource":"quirks:permeation/permeate_bar"
          },
          "else_action":{
             "type":"origins:and",
@@ -112,7 +112,7 @@
                      "operation":"add_base_early",
                      "value":-1.00
                   },
-                  "resource":"powert:mha/permeation/permeate_bar"
+                  "resource":"quirks:permeation/permeate_bar"
                },
                {
                   "type":"origins:exhaust",
@@ -126,7 +126,7 @@
          "type":"origins:in_block",
          "block_condition":{
             "type":"origins:in_tag",
-            "tag":"powert:mha/permeation/safe_blocks",
+            "tag":"quirks:permeation/safe_blocks",
             "inverted":true
          }
       }
@@ -137,19 +137,19 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/permeation/permeate_resource",
+            "resource":"quirks:permeation/permeate_resource",
             "comparison":"==",
             "compare_to":0
          },
          "if_action":{
             "type":"origins:change_resource",
-            "resource":"powert:mha/permeation/permeate_resource",
+            "resource":"quirks:permeation/permeate_resource",
             "change":1,
             "operation":"set"
          },
          "else_action":{
             "type":"origins:change_resource",
-            "resource":"powert:mha/permeation/permeate_resource",
+            "resource":"quirks:permeation/permeate_resource",
             "change":0,
             "operation":"set"
          }
@@ -164,7 +164,7 @@
       },
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -183,13 +183,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/permeate_resource",
+               "resource":"quirks:permeation/permeate_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/permeate_phase_resource",
+               "resource":"quirks:permeation/permeate_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -200,13 +200,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/permeate_resource",
+               "resource":"quirks:permeation/permeate_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/permeate_phase_resource",
+               "resource":"quirks:permeation/permeate_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -227,7 +227,7 @@
                   },
                   {
                      "type":"origins:in_tag",
-                     "tag":"powert:mha/permeation/safe_blocks",
+                     "tag":"quirks:permeation/safe_blocks",
                      "inverted":true
                   }
                ]
@@ -253,7 +253,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/permeation/permeate_phase_resource"
+                  "resource":"quirks:permeation/permeate_phase_resource"
                }
             ]
          },
@@ -263,13 +263,13 @@
                "operation":"set_total",
                "value":0.00
             },
-            "resource":"powert:mha/permeation/permeate_phase_resource"
+            "resource":"quirks:permeation/permeate_phase_resource"
          }
       },
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/permeation/permeate_resource",
+         "resource":"quirks:permeation/permeate_resource",
          "comparison":"==",
          "compare_to":0
       }
@@ -283,7 +283,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/permeation/permeate_resource",
+               "resource":"quirks:permeation/permeate_resource",
                "comparison":"==",
                "compare_to":1
             },
@@ -297,7 +297,7 @@
                      },
                      {
                         "type":"origins:in_tag",
-                        "tag":"powert:mha/permeation/safe_blocks",
+                        "tag":"quirks:permeation/safe_blocks",
                         "inverted":true
                      }
                   ]
@@ -315,7 +315,7 @@
       "damage_type":"apoli:damage_over_time",
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/permeation/permeate_bar",
+         "resource":"quirks:permeation/permeate_bar",
          "comparison":">",
          "compare_to":0,
          "inverted":true
@@ -332,25 +332,25 @@
                {
                   "type": "origins:ingredient",
                   "ingredient": {
-                      "item": "powert:support_item/lemilliosuit_lemilliomet_helmet"
+                      "item": "quirks:lemilliomet"
                   }
                },
                {
                   "type": "origins:ingredient",
                   "ingredient": {
-                      "item": "powert:support_item/lemilliosuit_chestplate"
+                      "item": "quirks:lemilliosuit_chestplate"
                   }
                },
                {
                   "type": "origins:ingredient",
                   "ingredient": {
-                      "item": "powert:support_item/lemilliosuit_leggings"
+                      "item": "quirks:lemilliosuit_leggings"
                   }
                },
                {
                   "type": "origins:ingredient",
                   "ingredient": {
-                      "item": "powert:support_item/lemilliosuit_boots"
+                      "item": "quirks:lemilliosuit_boots"
                   }
                }
             ],
@@ -374,13 +374,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/permeation/permeate_resource",
+                     "resource":"quirks:permeation/permeate_resource",
                      "comparison":"==",
                      "compare_to":1
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/permeation/permeate_phase_resource",
+                     "resource":"quirks:permeation/permeate_phase_resource",
                      "comparison":"==",
                      "compare_to":1
                   }
@@ -409,19 +409,19 @@
          "actions":[
             {
                "type":"origins:change_resource",
-               "resource":"powert:mha/permeation/permeate_bar",
+               "resource":"quirks:permeation/permeate_bar",
                "change":200,
                "operation":"set"
             },
             {
                "type":"origins:change_resource",
-               "resource":"powert:mha/permeation/permeate_phase_resource",
+               "resource":"quirks:permeation/permeate_phase_resource",
                "change":0,
                "operation":"set"
             },
             {
                "type":"origins:change_resource",
-               "resource":"powert:mha/permeation/permeate_resource",
+               "resource":"quirks:permeation/permeate_resource",
                "change":0,
                "operation":"set"
             }

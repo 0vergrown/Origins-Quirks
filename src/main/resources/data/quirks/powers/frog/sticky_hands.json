@@ -10,7 +10,7 @@
        "retain_state":false,
        "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
        }
@@ -45,14 +45,14 @@
           "conditions":[
              {
                 "type":"origins:power_active",
-                "power":"powert:mha/frog/sticky_hands_toggle"
+                "power":"quirks:frog/sticky_hands_toggle"
              },
              {
                 "type":"origins:collided_horizontally"
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/frog/stamina_resource",
+                "resource":"quirks:frog/stamina_resource",
                 "comparison":">=",
                 "compare_to":5
              }
@@ -65,13 +65,13 @@
           "type":"origins:if_else",
           "condition":{
              "type":"origins:resource",
-             "resource":"powert:mha/frog/stamina_resource",
+             "resource":"quirks:frog/stamina_resource",
              "comparison":">=",
              "compare_to":5
           },
           "if_action":{
              "type":"origins:change_resource",
-             "resource":"powert:mha/frog/stamina_resource",
+             "resource":"quirks:frog/stamina_resource",
              "change":-5,
              "operation":"add"
           },
@@ -86,7 +86,7 @@
                 },
                 {
                    "type":"origins:toggle",
-                   "power":"powert:mha/frog/sticky_hands_toggle"
+                   "power":"quirks:frog/sticky_hands_toggle"
                 }
              ]
           }
@@ -97,7 +97,7 @@
           "conditions":[
              {
                 "type":"origins:power_active",
-                "power":"powert:mha/frog/sticky_hands_toggle"
+                "power":"quirks:frog/sticky_hands_toggle"
              },
              {
                 "type":"origins:or",

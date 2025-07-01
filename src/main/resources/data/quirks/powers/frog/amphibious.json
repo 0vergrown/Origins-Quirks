@@ -8,7 +8,7 @@
 	   },
 	   "condition": {
 		"type": "origins:resource",
-		"resource": "powert:mha/universal/quirk_erased",
+		"resource": "quirks:universal/quirk_erased",
 		"comparison": "==",
 		"compare_to": 0
 	   }
@@ -34,7 +34,7 @@
 			 },
 			 {
 				"type": "origins:resource",
-				"resource": "powert:mha/universal/quirk_erased",
+				"resource": "quirks:universal/quirk_erased",
 				"comparison": "==",
 				"compare_to": 0
 			 }
@@ -62,7 +62,7 @@
 			 },
 			 {
 				"type": "origins:resource",
-				"resource": "powert:mha/universal/quirk_erased",
+				"resource": "quirks:universal/quirk_erased",
 				"comparison": "==",
 				"compare_to": 0
 			 }
@@ -80,7 +80,7 @@
 				},
 				{
 					"type":"origins:change_resource",
-					"resource":"powert:mha/frog/stamina_resource",
+					"resource":"quirks:frog/stamina_resource",
 					"change":-1,
 					"operation":"add"
 				}
@@ -92,13 +92,13 @@
 			"conditions": [
 				{
 					"type": "origins:resource",
-					"resource": "powert:mha/frog/stamina_resource",
+					"resource": "quirks:frog/stamina_resource",
 					"comparison": "!=",
 					"compare_to": 0
 				},
 				{
 					"type": "origins:resource",
-					"resource": "powert:mha/universal/quirk_erased",
+					"resource": "quirks:universal/quirk_erased",
 					"comparison": "==",
 					"compare_to": 0
 				}

@@ -20,7 +20,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+               "resource":"quirks:fa_jin/energy_leap_if_on_ground"
             },
             {
                "type": "origins:delay",
@@ -41,7 +41,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+               "resource":"quirks:fa_jin/energy_leap_if_on_ground"
             },
             {
                "type": "origins:delay",
@@ -62,13 +62,13 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/fa_jin/energy_leap_if_on_ground",
+               "resource": "quirks:fa_jin/energy_leap_if_on_ground",
                "comparison": "==",
                "compare_to": 1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -83,7 +83,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                  "resource":"quirks:fa_jin/kinetic_energy_power_output",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -96,7 +96,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                        "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -104,7 +104,7 @@
                            "operation":"add_base_early",
                            "value":-10.00
                         },
-                        "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                        "resource":"quirks:fa_jin/kinetic_energy_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -200,7 +200,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                  "resource":"quirks:fa_jin/kinetic_energy_power_output",
                   "comparison":"==",
                   "compare_to":2
                },
@@ -213,7 +213,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                        "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -221,7 +221,7 @@
                            "operation":"add_base_early",
                            "value":-10.00
                         },
-                        "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                        "resource":"quirks:fa_jin/kinetic_energy_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -317,7 +317,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                  "resource":"quirks:fa_jin/kinetic_energy_power_output",
                   "comparison":"==",
                   "compare_to":3
                },
@@ -330,7 +330,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                        "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -338,7 +338,7 @@
                            "operation":"add_base_early",
                            "value":-10.00
                         },
-                        "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                        "resource":"quirks:fa_jin/kinetic_energy_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -434,7 +434,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                  "resource":"quirks:fa_jin/kinetic_energy_power_output",
                   "comparison":"==",
                   "compare_to":4
                },
@@ -447,7 +447,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                        "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -455,7 +455,7 @@
                            "operation":"add_base_early",
                            "value":-10.00
                         },
-                        "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                        "resource":"quirks:fa_jin/kinetic_energy_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -551,7 +551,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                  "resource":"quirks:fa_jin/kinetic_energy_power_output",
                   "comparison":"==",
                   "compare_to":5
                },
@@ -564,7 +564,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                        "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -572,7 +572,7 @@
                            "operation":"add_base_early",
                            "value":-10.00
                         },
-                        "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                        "resource":"quirks:fa_jin/kinetic_energy_resource"
                      },
                      {
                         "type":"origins:play_sound",
@@ -683,19 +683,19 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "resource":"quirks:fa_jin/kinetic_energy_resource",
                "comparison":"!=",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+               "resource":"quirks:fa_jin/kinetic_energy_power_output",
                "comparison":"!=",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -710,7 +710,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/fa_jin/energy_leap_if_on_ground",
+         "resource":"quirks:fa_jin/energy_leap_if_on_ground",
          "comparison":"==",
          "compare_to":1
       }
@@ -728,7 +728,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/fa_jin/energy_leap_if_on_ground"
+                  "resource":"quirks:fa_jin/energy_leap_if_on_ground"
                },
                "ticks":1
             },
@@ -811,7 +811,7 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/energy_leap_if_on_ground",
+               "resource":"quirks:fa_jin/energy_leap_if_on_ground",
                "comparison":"==",
                "compare_to":1
             },
@@ -822,7 +822,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

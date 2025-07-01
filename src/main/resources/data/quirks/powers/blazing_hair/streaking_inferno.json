@@ -20,7 +20,7 @@
                    "operation":"set_total",
                    "value":20.00
                 },
-                "resource":"powert:mha/blazing_hair/streaking_inferno_timer"
+                "resource":"quirks:blazing_hair/streaking_inferno_timer"
              },
              {
                 "type":"origins:add_velocity",
@@ -133,7 +133,7 @@
        },
        "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -149,11 +149,11 @@
                    "operation":"add_base_early",
                    "value":-2.00
                 },
-                "resource":"powert:mha/blazing_hair/streaking_inferno_timer"
+                "resource":"quirks:blazing_hair/streaking_inferno_timer"
              },
              {
                 "type":"origins:execute_command",
-                "command":"execute at @s positioned ~ ~1 ~ rotated ~ ~2 facing ^ ^ ^1 run function powert:mha/blazing_hair/streaking_inferno_particles"
+                "command":"execute at @s positioned ~ ~1 ~ rotated ~ ~2 facing ^ ^ ^1 run function quirks:blazing_hair/streaking_inferno_particles"
              },
              {
                 "type":"origins:play_sound",
@@ -166,7 +166,7 @@
        "interval":1,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/blazing_hair/streaking_inferno_timer",
+          "resource":"quirks:blazing_hair/streaking_inferno_timer",
           "comparison":">=",
           "compare_to":1
        }

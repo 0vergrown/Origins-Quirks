@@ -26,7 +26,7 @@
                      "operation":"add_base_early",
                      "value":1.00
                   },
-                  "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                  "resource":"quirks:fa_jin/kinetic_energy_resource"
                }
             },
             {
@@ -40,7 +40,7 @@
                      "operation":"add_base_early",
                      "value":2.00
                   },
-                  "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+                  "resource":"quirks:fa_jin/kinetic_energy_resource"
                }
             }
          ]
@@ -51,13 +51,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "resource":"quirks:fa_jin/kinetic_energy_resource",
                "comparison":"!=",
                "compare_to":50
             },
             {
                "type":"origins:power_active",
-               "power":"powert:mha/fa_jin/burst_dash_toggle",
+               "power":"quirks:fa_jin/burst_dash_toggle",
                "inverted": true
             }
          ]
@@ -74,7 +74,7 @@
                   "operation":"add_base_early",
                   "value":3.00
                },
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+               "resource":"quirks:fa_jin/kinetic_energy_resource"
             },
             {
                "type":"origins:play_sound",
@@ -97,7 +97,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "resource":"quirks:fa_jin/kinetic_energy_resource",
                "comparison":"!=",
                "compare_to":50
             },
@@ -106,7 +106,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

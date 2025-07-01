@@ -66,7 +66,7 @@
                                },
                                {
                                 "type":"origins:origin",
-                                "origin":"powert:mha/zero_gravity",
+                                "origin":"quirks:zero_gravity",
                                 "layer":"origins:powers",
                                 "inverted": true
                                }
@@ -88,7 +88,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/zero_gravity/meteor_storm_armor_stand_if_on_ground"
+                        "resource":"quirks:zero_gravity/meteor_storm_armor_stand_if_on_ground"
                     },
                     "ticks": 30
                 },
@@ -313,7 +313,7 @@
         },
         "condition": {
             "type":"origins:resource",
-            "resource":"powert:mha/zero_gravity/meteor_storm_armor_stand_if_on_ground",
+            "resource":"quirks:zero_gravity/meteor_storm_armor_stand_if_on_ground",
             "comparison":"==",
             "compare_to":1
         }

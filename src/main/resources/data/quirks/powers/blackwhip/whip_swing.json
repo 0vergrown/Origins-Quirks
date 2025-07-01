@@ -32,7 +32,7 @@
             },
             {
                "type":"origins:execute_command",
-               "command":"power revokeall @s powert:mha/blackwhip"
+               "command":"power revokeall @s quirks:blackwhip"
             }
          ]
        }
@@ -49,7 +49,7 @@
           },
           "if_action":{
              "type":"origins:execute_command",
-             "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function powert:mha/blackwhip/whip_swing_hook_kill"
+             "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function quirks:blackwhip/whip_swing_hook_kill"
           },
           "else_action":{
              "type":"origins:raycast",
@@ -81,7 +81,7 @@
                    }
                 ]
              },
-             "command_at_hit":"function powert:mha/blackwhip/whip_swing_hook_spawn",
+             "command_at_hit":"function quirks:blackwhip/whip_swing_hook_spawn",
              "command_hit_offset":0.5
           }
        },
@@ -95,7 +95,7 @@
        },
        "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
        }
@@ -159,7 +159,7 @@
        },
        "falling_action": {
          "type":"origins:execute_command",
-         "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function powert:mha/blackwhip/whip_swing_hook_kill"
+         "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function quirks:blackwhip/whip_swing_hook_kill"
        },
        "interval":1,
        "condition":{
@@ -173,7 +173,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

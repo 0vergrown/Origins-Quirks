@@ -70,7 +70,7 @@
                           "operation": "set_total",
                           "value": 1.00
                       },
-                      "resource": "powert:mha/sugar_rush/candy_crush_if_on_ground"
+                      "resource": "quirks:sugar_rush/candy_crush_if_on_ground"
                    },
                    "recursive":true
                 },
@@ -106,8 +106,8 @@
                 "type":"origins:delay",
                 "action":{
                    "type":"origins:revoke_power",
-                   "power":"powert:mha/sugar_rush/candy_crush_target",
-                   "source":"powert:mha/sugar_rush/candy_crush_target"
+                   "power":"quirks:sugar_rush/candy_crush_target",
+                   "source":"quirks:sugar_rush/candy_crush_target"
                 },
                 "ticks":5
              }
@@ -122,7 +122,7 @@
               "operation": "set_total",
               "value": 1.00
           },
-          "resource": "powert:mha/sugar_rush/candy_crush_target_on_ground"
+          "resource": "quirks:sugar_rush/candy_crush_target_on_ground"
        },
        "interval":1,
        "condition":{
@@ -135,7 +135,7 @@
        "take_fall_damage":false,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/candy_crush_target_on_ground",
+          "resource":"quirks:sugar_rush/candy_crush_target_on_ground",
           "comparison":"==",
           "compare_to":0
        }

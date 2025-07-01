@@ -1,14 +1,13 @@
 {
 	"powers": [
-		"powert:mha/frog/stamina",
-		"powert:mha/frog/amphibious",
-		"powert:mha/frog/bouncy",
-		"powert:mha/frog/tongue_grapple",
-		"powert:mha/frog/camouflage",
-		"powert:mha/frog/sticky_hands",
-		"powert:mha/frog/toxic_mucus",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:frog/stamina",
+		"quirks:frog/amphibious",
+		"quirks:frog/bouncy",
+		"quirks:frog/tongue_grapple",
+		"quirks:frog/camouflage",
+		"quirks:frog/sticky_hands",
+		"quirks:frog/toxic_mucus",
+		"quirks:universal/quirk_erased"
 	],
 	"icon": {
 		"item": "minecraft:player_head",

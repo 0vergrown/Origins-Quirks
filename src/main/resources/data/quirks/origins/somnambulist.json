@@ -1,11 +1,10 @@
 {
    "name": "§d§lSomnambulist",
    "powers": [
-      "powert:mha/somnambulist/mist",
-      "powert:mha/somnambulist/glow",
-      "powert:mha/somnambulist/beam",
-      "powert:allpowers/health",
-      "powert:mha/universal/quirk_erased"
+      "quirks:somnambulist/mist",
+      "quirks:somnambulist/glow",
+      "quirks:somnambulist/beam",
+      "quirks:universal/quirk_erased"
    ],
    "icon": {
       "item": "minecraft:potion",

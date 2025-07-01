@@ -7,7 +7,7 @@
             "type":"origins:if_else",
             "condition":{
                "type":"origins:resource",
-               "resource":"powert:mha/blueflame/awakening_resource",
+               "resource":"quirks:blueflame/awakening_resource",
                "comparison":"==",
                "compare_to":0
             },
@@ -17,7 +17,7 @@
                   "operation":"add_base_early",
                   "value":5.00
                },
-               "resource":"powert:mha/blueflame/heat_gauge_temperature"
+               "resource":"quirks:blueflame/heat_gauge_temperature"
             },
             "else_action":{
                "type":"origins:modify_resource",
@@ -25,7 +25,7 @@
                   "operation":"add_base_early",
                   "value":7.00
                },
-               "resource":"powert:mha/blueflame/heat_gauge_temperature"
+               "resource":"quirks:blueflame/heat_gauge_temperature"
             }
          },
          {
@@ -42,83 +42,83 @@
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:execute_command",
-            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function powert:mha/blueflame/hell_spider_particles"
+            "command":"execute positioned ^ ^ ^8 run execute positioned ~ ~0.9 ~ rotated ~65 ~45 run function quirks:blueflame/hell_spider_particles"
          },
          {
             "type":"origins:if_else_list",
@@ -126,7 +126,7 @@
                {
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                     "resource":"quirks:blueflame/heat_gauge_temperature",
                      "comparison":">=",
                      "compare_to":500
                   },
@@ -134,7 +134,7 @@
                      "type":"origins:if_else",
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/awakening_resource",
+                        "resource":"quirks:blueflame/awakening_resource",
                         "comparison":"==",
                         "compare_to":0
                      },
@@ -188,7 +188,7 @@
                                                 },
                                                 {
                                                    "type":"origins:origin",
-                                                   "origin":"powert:mha/blueflame",
+                                                   "origin":"quirks:blueflame",
                                                    "layer":"origins:powers",
                                                    "inverted":true
                                                 }
@@ -260,7 +260,7 @@
                                                 },
                                                 {
                                                    "type":"origins:origin",
-                                                   "origin":"powert:mha/blueflame",
+                                                   "origin":"quirks:blueflame",
                                                    "layer":"origins:powers",
                                                    "inverted":true
                                                 }
@@ -287,7 +287,7 @@
                {
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                     "resource":"quirks:blueflame/heat_gauge_temperature",
                      "comparison":">=",
                      "compare_to":250
                   },
@@ -295,7 +295,7 @@
                      "type":"origins:if_else",
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/blueflame/awakening_resource",
+                        "resource":"quirks:blueflame/awakening_resource",
                         "comparison":"==",
                         "compare_to":0
                      },
@@ -349,7 +349,7 @@
                                                 },
                                                 {
                                                    "type":"origins:origin",
-                                                   "origin":"powert:mha/blueflame",
+                                                   "origin":"quirks:blueflame",
                                                    "layer":"origins:powers",
                                                    "inverted":true
                                                 }
@@ -421,7 +421,7 @@
                                                 },
                                                 {
                                                    "type":"origins:origin",
-                                                   "origin":"powert:mha/blueflame",
+                                                   "origin":"quirks:blueflame",
                                                    "layer":"origins:powers",
                                                    "inverted":true
                                                 }
@@ -448,7 +448,7 @@
                {
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                     "resource":"quirks:blueflame/heat_gauge_temperature",
                      "comparison":"<",
                      "compare_to":250
                   },
@@ -502,7 +502,7 @@
                                              },
                                              {
                                                 "type":"origins:origin",
-                                                "origin":"powert:mha/blueflame",
+                                                "origin":"quirks:blueflame",
                                                 "layer":"origins:powers",
                                                 "inverted":true
                                              }
@@ -539,7 +539,7 @@
    },
    "condition":{
       "type":"origins:resource",
-      "resource":"powert:mha/universal/quirk_erased",
+      "resource":"quirks:universal/quirk_erased",
       "comparison":"==",
       "compare_to":0
    }

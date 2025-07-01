@@ -23,19 +23,19 @@
                       "operation":"set_total",
                       "value":1.00
                    },
-                   "resource":"powert:mha/blueflame/awakening_resource"
+                   "resource":"quirks:blueflame/awakening_resource"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "particle powert:blueflame ~ ~ ~ 2.5 4 2.5 0 800"
+                    "command": "particle quirks:blueflame ~ ~ ~ 2.5 4 2.5 0 800"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "particle powert:blueflame ~ ~ ~ 2.5 4 2.5 0.3 1000"
+                    "command": "particle quirks:blueflame ~ ~ ~ 2.5 4 2.5 0.3 1000"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "particle powert:blueflame ~ ~ ~ 2.5 0.2 2.5 0 800"
+                    "command": "particle quirks:blueflame ~ ~ ~ 2.5 0.2 2.5 0 800"
                 },
                 {
                     "type": "origins:explode",
@@ -53,13 +53,13 @@
           "conditions":[
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/awakening_resource",
+                "resource":"quirks:blueflame/awakening_resource",
                 "comparison":"==",
                 "compare_to":0
              },
              {
                 "type": "origins:resource",
-                "resource": "powert:mha/universal/quirk_erased",
+                "resource": "quirks:universal/quirk_erased",
                 "comparison": "==",
                 "compare_to": 0
              },
@@ -100,12 +100,12 @@
             "conditions": [
                 {
                     "type":"origins:origin",
-                    "origin":"powert:mha/hellflame",
+                    "origin":"quirks:hellflame",
                     "layer":"origins:powers"
                 },
                 {
                     "type":"origins:origin",
-                    "origin":"powert:mha/half_cold_half_hot",
+                    "origin":"quirks:half_cold_half_hot",
                     "layer":"origins:powers"
                 }
             ]
@@ -122,19 +122,19 @@
                        "operation":"set_total",
                        "value":1.00
                     },
-                    "resource":"powert:mha/blueflame/awakening_resource"
+                    "resource":"quirks:blueflame/awakening_resource"
                  },
                  {
                      "type": "origins:execute_command",
-                     "command": "particle powert:blueflame ~ ~ ~ 2.5 4 2.5 0 800"
+                     "command": "particle quirks:blueflame ~ ~ ~ 2.5 4 2.5 0 800"
                  },
                  {
                      "type": "origins:execute_command",
-                     "command": "particle powert:blueflame ~ ~ ~ 2.5 4 2.5 0.3 1000"
+                     "command": "particle quirks:blueflame ~ ~ ~ 2.5 4 2.5 0.3 1000"
                  },
                  {
                      "type": "origins:execute_command",
-                     "command": "particle powert:blueflame ~ ~ ~ 2.5 0.2 2.5 0 800"
+                     "command": "particle quirks:blueflame ~ ~ ~ 2.5 0.2 2.5 0 800"
                  },
                  {
                      "type": "origins:explode",
@@ -152,13 +152,13 @@
           "conditions": [
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/awakening_resource",
+                "resource":"quirks:blueflame/awakening_resource",
                 "comparison":"==",
                 "compare_to":0
              },
              {
                 "type": "origins:resource",
-                "resource": "powert:mha/universal/quirk_erased",
+                "resource": "quirks:universal/quirk_erased",
                 "comparison": "==",
                 "compare_to": 0
              }

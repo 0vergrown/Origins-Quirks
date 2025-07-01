@@ -22,7 +22,7 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -37,11 +37,11 @@
          "conditions":[
             {
                "type":"origins:power_active",
-               "power":"powert:mha/zoom/night_scope_toggle"
+               "power":"quirks:zoom/night_scope_toggle"
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }

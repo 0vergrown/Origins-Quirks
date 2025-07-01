@@ -19,7 +19,7 @@
             "operation":"add_base_early",
             "value":4.00
          },
-         "resource":"powert:mha/all_for_one/stamina_resource"
+         "resource":"quirks:all_for_one/stamina_resource"
       },
       "interval":5,
       "condition":{
@@ -27,18 +27,18 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/stamina_resource",
+               "resource":"quirks:all_for_one/stamina_resource",
                "comparison":"!=",
                "compare_to":1000
             },
             {
                "type":"origins:power_active",
-               "power":"powert:mha/all_for_one/ultimate_combination_toggle",
+               "power":"quirks:all_for_one/ultimate_combination_toggle",
                "inverted":true
             },
             {
                "type":"origins:power_active",
-               "power":"powert:mha/all_for_one/air_walk_toggle",
+               "power":"quirks:all_for_one/air_walk_toggle",
                "inverted":true
             }
          ]
@@ -52,7 +52,7 @@
             "operation":"add_base_early",
             "value":200.00
          },
-         "resource":"powert:mha/all_for_one/stamina_resource"
+         "resource":"quirks:all_for_one/stamina_resource"
       },
       "item_condition":{
          "type":"origins:and",
@@ -73,7 +73,7 @@
       "priority":0,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/stamina_resource",
+         "resource":"quirks:all_for_one/stamina_resource",
          "comparison":"!=",
          "compare_to":1000
       }
@@ -86,7 +86,7 @@
             "operation":"set_total",
             "value":1000.00
          },
-         "resource":"powert:mha/all_for_one/stamina_resource"
+         "resource":"quirks:all_for_one/stamina_resource"
       },
       "execute_chosen_when_orb":false
    }

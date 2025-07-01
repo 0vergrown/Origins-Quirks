@@ -31,13 +31,13 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/universal/quirk_erased",
+                    "resource": "quirks:universal/quirk_erased",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -48,7 +48,7 @@
         "type": "origins:action_over_time",
         "condition": {
             "type": "origins:power_active",
-            "power": "powert:mha/invisibility/stealth_toggle"
+            "power": "quirks:invisibility/stealth_toggle"
         },
         "interval": 1,
         "rising_action": {
@@ -68,7 +68,7 @@
             "type": "origins:if_else",
             "condition": {
                 "type": "origins:resource",
-                "resource": "powert:mha/invisibility/stealth_cooldown",
+                "resource": "quirks:invisibility/stealth_cooldown",
                 "compare_to": 0,
                 "comparison": "=="
             },
@@ -105,11 +105,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -142,11 +142,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -179,11 +179,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": ">=",
                     "compare_to": 1,
                     "inverted": true
@@ -207,11 +207,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -225,11 +225,11 @@
                 "actions": [
                     {
                         "type": "origins:trigger_cooldown",
-                        "power": "powert:mha/invisibility/stealth_cooldown"
+                        "power": "quirks:invisibility/stealth_cooldown"
                     },
                     {
                         "type": "origins:toggle",
-                        "power": "powert:mha/invisibility/stealth_resource"
+                        "power": "quirks:invisibility/stealth_resource"
                     },
                     {
                         "type": "origins:execute_command",
@@ -246,11 +246,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -274,11 +274,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -292,11 +292,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "powert:mha/invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/stealth_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "powert:mha/invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/stealth_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }

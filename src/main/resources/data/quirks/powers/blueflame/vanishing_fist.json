@@ -40,7 +40,7 @@
                 "type":"origins:if_else",
                 "condition":{
                    "type":"origins:resource",
-                   "resource":"powert:mha/blueflame/awakening_resource",
+                   "resource":"quirks:blueflame/awakening_resource",
                    "comparison":"==",
                    "compare_to":0
                 },
@@ -50,7 +50,7 @@
                       "operation":"add_base_early",
                       "value":7.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 },
                 "else_action":{
                    "type":"origins:modify_resource",
@@ -58,7 +58,7 @@
                       "operation":"add_base_early",
                       "value":10.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 }
              },
              {
@@ -75,7 +75,7 @@
                             },
                             {
                                "type":"origins:resource",
-                               "resource":"powert:mha/blueflame/vanishing_fist_five_hearts_or_less_cooldown",
+                               "resource":"quirks:blueflame/vanishing_fist_five_hearts_or_less_cooldown",
                                "comparison":"==",
                                "compare_to":0
                             }
@@ -83,7 +83,7 @@
                       },
                       "action":{
                          "type":"origins:trigger_cooldown",
-                         "power":"powert:mha/blueflame/vanishing_fist_five_hearts_or_less_cooldown"
+                         "power":"quirks:blueflame/vanishing_fist_five_hearts_or_less_cooldown"
                       }
                    },
                    {
@@ -102,7 +102,7 @@
                             },
                             {
                                "type":"origins:resource",
-                               "resource":"powert:mha/blueflame/vanishing_fist_half_health_cooldown",
+                               "resource":"quirks:blueflame/vanishing_fist_half_health_cooldown",
                                "comparison":"==",
                                "compare_to":0
                             }
@@ -110,7 +110,7 @@
                       },
                       "action":{
                          "type":"origins:trigger_cooldown",
-                         "power":"powert:mha/blueflame/vanishing_fist_half_health_cooldown"
+                         "power":"quirks:blueflame/vanishing_fist_half_health_cooldown"
                       }
                    },
                    {
@@ -124,7 +124,7 @@
                             },
                             {
                                "type":"origins:resource",
-                               "resource":"powert:mha/blueflame/vanishing_fist_full_health_cooldown",
+                               "resource":"quirks:blueflame/vanishing_fist_full_health_cooldown",
                                "comparison":"==",
                                "compare_to":0
                             }
@@ -132,7 +132,7 @@
                       },
                       "action":{
                          "type":"origins:trigger_cooldown",
-                         "power":"powert:mha/blueflame/vanishing_fist_full_health_cooldown"
+                         "power":"quirks:blueflame/vanishing_fist_full_health_cooldown"
                       }
                    }
                 ]
@@ -143,7 +143,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                         "resource":"quirks:blueflame/heat_gauge_temperature",
                          "comparison":">=",
                          "compare_to":500
                       },
@@ -151,7 +151,7 @@
                          "type":"origins:if_else",
                          "condition":{
                             "type":"origins:resource",
-                            "resource":"powert:mha/blueflame/awakening_resource",
+                            "resource":"quirks:blueflame/awakening_resource",
                             "comparison":"==",
                             "compare_to":0
                          },
@@ -170,7 +170,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                         "resource":"quirks:blueflame/heat_gauge_temperature",
                          "comparison":">=",
                          "compare_to":250
                       },
@@ -178,7 +178,7 @@
                          "type":"origins:if_else",
                          "condition":{
                             "type":"origins:resource",
-                            "resource":"powert:mha/blueflame/awakening_resource",
+                            "resource":"quirks:blueflame/awakening_resource",
                             "comparison":"==",
                             "compare_to":0
                          },
@@ -197,7 +197,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/blueflame/heat_gauge_temperature",
+                         "resource":"quirks:blueflame/heat_gauge_temperature",
                          "comparison":"<",
                          "compare_to":250
                       },
@@ -252,8 +252,8 @@
                 "tag":"{Silent:1b,Invulnerable:1b,Invisible:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:618825}}]}",
                 "entity_action":{
                    "type":"origins:grant_power",
-                   "power":"powert:mha/blueflame/vanishing_fist_armor_stand_effects",
-                   "source":"powert:mha/blueflame/vanishing_fist_armor_stand_effects"
+                   "power":"quirks:blueflame/vanishing_fist_armor_stand_effects",
+                   "source":"quirks:blueflame/vanishing_fist_armor_stand_effects"
                 }
              }
           ]
@@ -271,31 +271,31 @@
           "conditions":[
             {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/awakening_resource",
+                "resource":"quirks:blueflame/awakening_resource",
                 "comparison":"==",
                 "compare_to":1
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/vanishing_fist_full_health_cooldown",
+                "resource":"quirks:blueflame/vanishing_fist_full_health_cooldown",
                 "comparison":"==",
                 "compare_to":0
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/vanishing_fist_half_health_cooldown",
+                "resource":"quirks:blueflame/vanishing_fist_half_health_cooldown",
                 "comparison":"==",
                 "compare_to":0
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/vanishing_fist_five_hearts_or_less_cooldown",
+                "resource":"quirks:blueflame/vanishing_fist_five_hearts_or_less_cooldown",
                 "comparison":"==",
                 "compare_to":0
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/universal/quirk_erased",
+                "resource":"quirks:universal/quirk_erased",
                 "comparison":"==",
                 "compare_to":0
              }

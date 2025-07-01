@@ -15,7 +15,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+               "resource":"quirks:dark_shadow/dark_summoning_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -23,7 +23,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/black_abyss_resource"
+               "resource":"quirks:dark_shadow/black_abyss_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -31,13 +31,13 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/womb_resource"
+               "resource":"quirks:dark_shadow/womb_resource"
             }
          ]
       },
       "entity_action_lost": {
          "type":"origins:execute_command",
-         "command":"power revokeall @s powert:mha/dark_shadow"
+         "command":"power revokeall @s quirks:dark_shadow"
       },
       "entity_action_removed":{
          "type":"origins:and",
@@ -48,7 +48,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+               "resource":"quirks:dark_shadow/dark_summoning_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -56,7 +56,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/black_abyss_resource"
+               "resource":"quirks:dark_shadow/black_abyss_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -64,7 +64,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/womb_resource"
+               "resource":"quirks:dark_shadow/womb_resource"
             }
          ]
       },
@@ -81,7 +81,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+               "resource":"quirks:dark_shadow/dark_summoning_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -89,7 +89,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/black_abyss_resource"
+               "resource":"quirks:dark_shadow/black_abyss_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -97,7 +97,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/dark_shadow/womb_resource"
+               "resource":"quirks:dark_shadow/womb_resource"
             }
          ]
       },
@@ -118,7 +118,7 @@
          "type":"origins:if_else",
          "condition":{
             "type": "origins:resource",
-            "resource":"powert:mha/dark_shadow/dark_summoning_resource",
+            "resource":"quirks:dark_shadow/dark_summoning_resource",
             "comparison": "==",
             "compare_to": 1
          },
@@ -147,7 +147,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+                  "resource":"quirks:dark_shadow/dark_summoning_resource"
                }
             ]
          },
@@ -160,7 +160,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+                  "resource":"quirks:dark_shadow/dark_summoning_resource"
                },
                {
                   "type":"origins:spawn_particles",
@@ -200,19 +200,19 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/dark_shadow/black_abyss_resource",
+               "resource":"quirks:dark_shadow/black_abyss_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/dark_shadow/womb_resource",
+               "resource":"quirks:dark_shadow/womb_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

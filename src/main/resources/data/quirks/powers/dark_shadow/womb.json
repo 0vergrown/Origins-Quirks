@@ -31,8 +31,8 @@
                "actions":[
                   {
                      "type":"origins:grant_power",
-                     "power":"powert:mha/dark_shadow/womb_effects",
-                     "source":"powert:mha/dark_shadow/womb_effects"
+                     "power":"quirks:dark_shadow/womb_effects",
+                     "source":"quirks:dark_shadow/womb_effects"
                   },
                   {
                      "type":"origins:execute_command",
@@ -58,7 +58,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/dark_shadow/womb_resource"
+                  "resource":"quirks:dark_shadow/womb_resource"
                },
                {
                   "type":"origins:swing_hand",
@@ -94,7 +94,7 @@
                         "operation":"set_total",
                         "value":0.00
                      },
-                     "resource":"powert:mha/dark_shadow/womb_resource"
+                     "resource":"quirks:dark_shadow/womb_resource"
                   },
                   "ticks":100
                }
@@ -116,19 +116,19 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/dark_shadow/dark_summoning_resource",
+               "resource":"quirks:dark_shadow/dark_summoning_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/dark_shadow/black_abyss_resource",
+               "resource":"quirks:dark_shadow/black_abyss_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

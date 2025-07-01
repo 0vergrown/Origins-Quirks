@@ -34,15 +34,15 @@
                       "actions":[
                          {
                             "type":"origins:grant_power",
-                            "power":"powert:mha/sugar_rush/sugar_flurry_target_effect",
-                            "source":"powert:mha/sugar_rush/sugar_flurry_target_effect"
+                            "power":"quirks:sugar_rush/sugar_flurry_target_effect",
+                            "source":"quirks:sugar_rush/sugar_flurry_target_effect"
                          },
                          {
                             "type":"origins:delay",
                             "action":{
                                "type":"origins:revoke_power",
-                               "power":"powert:mha/sugar_rush/sugar_flurry_target_effect",
-                               "source":"powert:mha/sugar_rush/sugar_flurry_target_effect"
+                               "power":"quirks:sugar_rush/sugar_flurry_target_effect",
+                               "source":"quirks:sugar_rush/sugar_flurry_target_effect"
                             },
                             "ticks":50
                          }
@@ -123,7 +123,7 @@
                      "operation":"add_base_early",
                      "value": -5
                   },
-                  "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+                  "resource":"quirks:sugar_rush/hypoglycemia_level"
                },
                 {
                    "type":"origins:modify_resource",
@@ -131,7 +131,7 @@
                       "operation":"set_total",
                       "value":1.00
                    },
-                   "resource":"powert:mha/sugar_rush/sugar_flurry_resource"
+                   "resource":"quirks:sugar_rush/sugar_flurry_resource"
                 },
                 {
                    "type":"origins:delay",
@@ -141,7 +141,7 @@
                          "operation":"set_total",
                          "value":0.00
                       },
-                      "resource":"powert:mha/sugar_rush/sugar_flurry_resource"
+                      "resource":"quirks:sugar_rush/sugar_flurry_resource"
                    },
                    "ticks":50
                 }
@@ -165,19 +165,19 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+               "resource":"quirks:sugar_rush/hypoglycemia_level",
                "comparison":"!=",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/sugar_rush/sugar_flurry_resource",
+               "resource":"quirks:sugar_rush/sugar_flurry_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -205,154 +205,154 @@
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^ ^1 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^0.2 ^1.2 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^0.2 ^1.2 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.2 ^1.4 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^-0.2 ^1.4 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.5 ^1.6 ^2 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-0.5 ^1.6 ^2 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^0.5 ^1.1 ^2 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^0.5 ^1.1 ^2 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1.7 ^1.3 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^ ^1.7 ^1.3 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^0.2 ^1.5 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^0.2 ^1.5 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^2 ^1.6 ^1.7 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^2 ^1.6 ^1.7 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-1 ^1.5 ^1.6 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-1 ^1.5 ^1.6 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1.3 ^1.6 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^ ^1.3 ^1.6 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-1.5 ^1.3 ^1.3 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-1.5 ^1.3 ^1.3 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^2 ^2 ^1.2 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^2 ^2 ^1.2 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.2 ^1.4 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-0.2 ^1.4 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^ ^1 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^1.8 ^2 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^1.8 ^2 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-1.8 ^2 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^-1.8 ^2 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1.7 ^1.3 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^ ^1.7 ^1.3 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^0.2 ^1.5 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^0.2 ^1.5 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_1"
+                         "command":"execute as @s at @s positioned ^-0.4 ^1.3 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_1"
                       },
                       "weight":20
                    },
                    {
                       "element":{
                          "type":"origins:execute_command",
-                         "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/sugar_rush/sugar_flurry_fist_particles_2"
+                         "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:sugar_rush/sugar_flurry_fist_particles_2"
                       },
                       "weight":20
                    }
@@ -363,7 +363,7 @@
        "interval":2,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/sugar_flurry_resource",
+          "resource":"quirks:sugar_rush/sugar_flurry_resource",
           "comparison":"==",
           "compare_to":1
        }
@@ -380,7 +380,7 @@
        "update_health":false,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/sugar_flurry_resource",
+          "resource":"quirks:sugar_rush/sugar_flurry_resource",
           "comparison":"==",
           "compare_to":1
        }
@@ -393,7 +393,7 @@
        },
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/sugar_flurry_resource",
+          "resource":"quirks:sugar_rush/sugar_flurry_resource",
           "comparison":"==",
           "compare_to":1
        }
@@ -406,7 +406,7 @@
              "operation":"set_total",
              "value":0.00
           },
-          "resource":"powert:mha/sugar_rush/sugar_flurry_resource"
+          "resource":"quirks:sugar_rush/sugar_flurry_resource"
        },
        "execute_chosen_when_orb":false
     }

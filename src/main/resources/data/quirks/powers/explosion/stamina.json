@@ -39,7 +39,7 @@
                 "operation":"add_base_early",
                 "value":5.00
              },
-             "resource":"powert:mha/explosion/stamina_resource"
+             "resource":"quirks:explosion/stamina_resource"
           },
           "else_action":{
              "type":"origins:modify_resource",
@@ -47,7 +47,7 @@
                 "operation":"add_base_early",
                 "value":2.00
              },
-             "resource":"powert:mha/explosion/stamina_resource"
+             "resource":"quirks:explosion/stamina_resource"
           }
        },
        "interval":10,
@@ -60,7 +60,7 @@
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/explosion/stamina_resource",
+                "resource":"quirks:explosion/stamina_resource",
                 "comparison":"!=",
                 "compare_to":5000
              }
@@ -75,7 +75,7 @@
              "operation":"add_base_early",
              "value":200.00
           },
-          "resource":"powert:mha/explosion/stamina_resource"
+          "resource":"quirks:explosion/stamina_resource"
        },
        "item_condition":{
           "type":"origins:and",
@@ -96,7 +96,7 @@
        "priority":0,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/explosion/stamina_resource",
+          "resource":"quirks:explosion/stamina_resource",
           "comparison":"!=",
           "compare_to":5000
        }

@@ -13,13 +13,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/stamina_resource",
+               "resource":"quirks:all_for_one/stamina_resource",
                "comparison":">=",
                "compare_to":10
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -45,7 +45,7 @@
       "visible_while_invisible":false,
       "condition":{
          "type":"origins:power_active",
-         "power":"powert:mha/all_for_one/ultimate_combination_toggle"
+         "power":"quirks:all_for_one/ultimate_combination_toggle"
       }
     },
     "jump_boost":{
@@ -56,7 +56,7 @@
        },
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/all_for_one/ultimate_combination_toggle"
+          "power":"quirks:all_for_one/ultimate_combination_toggle"
        }
     },
     "strength_and_speed":{
@@ -79,7 +79,7 @@
        "update_health":false,
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/all_for_one/ultimate_combination_toggle"
+          "power":"quirks:all_for_one/ultimate_combination_toggle"
        }
     },
     "stamina_drain":{
@@ -90,12 +90,12 @@
              "operation":"add_base_early",
              "value":-10.00
           },
-          "resource":"powert:mha/all_for_one/stamina_resource"
+          "resource":"quirks:all_for_one/stamina_resource"
        },
        "interval":20,
        "condition":{
         "type":"origins:power_active",
-        "power":"powert:mha/all_for_one/ultimate_combination_toggle"
+        "power":"quirks:all_for_one/ultimate_combination_toggle"
        }
     }
 }

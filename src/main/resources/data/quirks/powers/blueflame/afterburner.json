@@ -36,7 +36,7 @@
       "retain_state":false,
       "condition": {
          "type":"origins:resource",
-         "resource":"powert:mha/universal/quirk_erased",
+         "resource":"quirks:universal/quirk_erased",
          "comparison":"==",
          "compare_to":0
       }
@@ -45,7 +45,7 @@
 		"type": "origins:action_over_time",
 		"entity_action": {
 			"type": "origins:execute_command",
-			"command": "particle powert:blueflame ~ ~-0.5 ~ 0.3 0.3 0.3 0.01 20 normal @a"
+			"command": "particle quirks:blueflame ~ ~-0.5 ~ 0.3 0.3 0.3 0.01 20 normal @a"
 		},
       "interval": 5,
 		"condition": {
@@ -53,7 +53,7 @@
 			"conditions": [
             {
                "type":"origins:power_active",
-               "power":"powert:mha/blueflame/afterburner_toggle",
+               "power":"quirks:blueflame/afterburner_toggle",
                "inverted":false
             },
 				{
@@ -80,7 +80,7 @@
          "conditions":[
             {
                "type":"origins:power_active",
-               "power":"powert:mha/blueflame/afterburner_toggle",
+               "power":"quirks:blueflame/afterburner_toggle",
                "inverted":false
             },
             {
@@ -117,7 +117,7 @@
          "conditions":[
             {
                "type":"origins:power_active",
-               "power":"powert:mha/blueflame/afterburner_toggle",
+               "power":"quirks:blueflame/afterburner_toggle",
                "inverted":false
             },
             {
@@ -158,7 +158,7 @@
          "conditions":[
             {
                "type":"origins:power_active",
-               "power":"powert:mha/blueflame/afterburner_toggle",
+               "power":"quirks:blueflame/afterburner_toggle",
                "inverted":false
             },
             {
@@ -188,7 +188,7 @@
                "type":"origins:if_else",
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/blueflame/awakening_resource",
+                  "resource":"quirks:blueflame/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -198,7 +198,7 @@
                      "operation":"add_base_early",
                      "value":1.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                },
                "else_action":{
                   "type":"origins:modify_resource",
@@ -206,7 +206,7 @@
                      "operation":"add_base_early",
                      "value":2.00
                   },
-                  "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                  "resource":"quirks:blueflame/heat_gauge_temperature"
                }
             },
             {
@@ -219,7 +219,7 @@
             },
             {
                "type":"origins:execute_command",
-               "command":"particle powert:blueflame ~ ~0.5 ~-0.7 0.5 0.6 0.5 0.01 20 force @a"
+               "command":"particle quirks:blueflame ~ ~0.5 ~-0.7 0.5 0.6 0.5 0.01 20 force @a"
             },
             {
                "type":"origins:play_sound",
@@ -242,7 +242,7 @@
          "conditions":[
             {
                "type":"origins:power_active",
-               "power":"powert:mha/blueflame/afterburner_toggle",
+               "power":"quirks:blueflame/afterburner_toggle",
                "inverted":false
             },
             {

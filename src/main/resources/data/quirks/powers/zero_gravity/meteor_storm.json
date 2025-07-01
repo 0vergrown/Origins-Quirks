@@ -16,8 +16,8 @@
                         },
                         {
                             "type": "origins:grant_power",
-                            "power": "powert:mha/zero_gravity/meteor_storm_armor_stand",
-                            "source": "powert:mha/zero_gravity/meteor_storm_armor_stand"
+                            "power": "quirks:zero_gravity/meteor_storm_armor_stand",
+                            "source": "quirks:zero_gravity/meteor_storm_armor_stand"
                         }
                     ]
                 }
@@ -35,8 +35,8 @@
                         },
                         {
                             "type": "origins:grant_power",
-                            "power": "powert:mha/zero_gravity/meteor_storm_armor_stand",
-                            "source": "powert:mha/zero_gravity/meteor_storm_armor_stand"
+                            "power": "quirks:zero_gravity/meteor_storm_armor_stand",
+                            "source": "quirks:zero_gravity/meteor_storm_armor_stand"
                         }
                     ]
                 }
@@ -54,8 +54,8 @@
                         },
                         {
                             "type": "origins:grant_power",
-                            "power": "powert:mha/zero_gravity/meteor_storm_armor_stand",
-                            "source": "powert:mha/zero_gravity/meteor_storm_armor_stand"
+                            "power": "quirks:zero_gravity/meteor_storm_armor_stand",
+                            "source": "quirks:zero_gravity/meteor_storm_armor_stand"
                         }
                     ]
                 }
@@ -73,8 +73,8 @@
                         },
                         {
                             "type": "origins:grant_power",
-                            "power": "powert:mha/zero_gravity/meteor_storm_armor_stand",
-                            "source": "powert:mha/zero_gravity/meteor_storm_armor_stand"
+                            "power": "quirks:zero_gravity/meteor_storm_armor_stand",
+                            "source": "quirks:zero_gravity/meteor_storm_armor_stand"
                         }
                     ]
                 }
@@ -92,8 +92,8 @@
                         },
                         {
                             "type": "origins:grant_power",
-                            "power": "powert:mha/zero_gravity/meteor_storm_armor_stand",
-                            "source": "powert:mha/zero_gravity/meteor_storm_armor_stand"
+                            "power": "quirks:zero_gravity/meteor_storm_armor_stand",
+                            "source": "quirks:zero_gravity/meteor_storm_armor_stand"
                         }
                     ]
                 }

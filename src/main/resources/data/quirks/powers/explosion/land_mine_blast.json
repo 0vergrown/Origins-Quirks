@@ -20,7 +20,7 @@
                   "operation":"add_base_early",
                   "value":20.00
                },
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -28,7 +28,7 @@
                   "operation":"add_base_early",
                   "value":-20.00
                },
-               "resource":"powert:mha/explosion/stamina_resource"
+               "resource":"quirks:explosion/stamina_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -36,7 +36,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/explosion/land_mine_blast_resource"
+               "resource":"quirks:explosion/land_mine_blast_resource"
             },
             {
                "type":"origins:execute_command",
@@ -85,7 +85,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/explosion/land_mine_blast_resource"
+                        "resource":"quirks:explosion/land_mine_blast_resource"
                      },
                      {
                         "type":"origins:spawn_entity",
@@ -378,25 +378,25 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/land_mine_blast_resource",
+               "resource":"quirks:explosion/land_mine_blast_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":20
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":20
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -430,7 +430,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/explosion/land_mine_blast_resource",
+         "resource":"quirks:explosion/land_mine_blast_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -446,7 +446,7 @@
       "tick_rate":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/explosion/land_mine_blast_resource",
+         "resource":"quirks:explosion/land_mine_blast_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -459,7 +459,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/explosion/land_mine_blast_resource",
+         "resource":"quirks:explosion/land_mine_blast_resource",
          "comparison":"==",
          "compare_to":1
       }

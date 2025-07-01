@@ -18,13 +18,13 @@
             "conditions":[
                {
                   "type": "origins:resource",
-                  "resource":"powert:mha/dark_shadow/dark_summoning_resource",
+                  "resource":"quirks:dark_shadow/dark_summoning_resource",
                   "comparison": "==",
                   "compare_to": 1
                },
                {
                   "type":"origins:resource",
-                  "resource":"powert:mha/dark_shadow/black_abyss_resource",
+                  "resource":"quirks:dark_shadow/black_abyss_resource",
                   "comparison":"==",
                   "compare_to":0
                }
@@ -39,7 +39,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+                  "resource":"quirks:dark_shadow/dark_summoning_resource"
                },
                {
                   "type":"origins:modify_resource",
@@ -47,7 +47,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/dark_shadow/black_abyss_resource"
+                  "resource":"quirks:dark_shadow/black_abyss_resource"
                }
             ]
          },
@@ -60,7 +60,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/dark_shadow/dark_summoning_resource"
+                  "resource":"quirks:dark_shadow/dark_summoning_resource"
                },
                {
                   "type":"origins:modify_resource",
@@ -68,7 +68,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/dark_shadow/black_abyss_resource"
+                  "resource":"quirks:dark_shadow/black_abyss_resource"
                }
             ]
          }
@@ -83,7 +83,7 @@
       },
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -108,7 +108,7 @@
       "update_health":false,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/dark_shadow/black_abyss_resource",
+         "resource":"quirks:dark_shadow/black_abyss_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -119,7 +119,7 @@
       "texture_location":"powert:textures/entity/black_fallen_angel_wings.png",
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/dark_shadow/black_abyss_resource",
+         "resource":"quirks:dark_shadow/black_abyss_resource",
          "comparison":"==",
          "compare_to":1
       }

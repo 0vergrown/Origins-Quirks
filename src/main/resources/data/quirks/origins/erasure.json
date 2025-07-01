@@ -1,8 +1,7 @@
 {
 	"powers": [
-		"powert:mha/erasure/quirk_nullification",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:erasure/quirk_nullification",
+		"quirks:universal/quirk_erased"
 	],
     "icon":{
       "item": "minecraft:player_head",

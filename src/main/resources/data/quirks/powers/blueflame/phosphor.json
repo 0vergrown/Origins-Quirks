@@ -12,13 +12,13 @@
           "conditions":[
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blueflame/awakening_resource",
+                "resource":"quirks:blueflame/awakening_resource",
                 "comparison":"==",
                 "compare_to":1
              },
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/universal/quirk_erased",
+                "resource":"quirks:universal/quirk_erased",
                 "comparison":"==",
                 "compare_to":0
              }
@@ -27,7 +27,7 @@
     },
     "main_active_particles":{
       "type": "origins:particle",
-      "particle":"powert:blueflame",
+      "particle":"quirks:blueflame",
       "frequency":1,
       "count":5,
       "speed":0.00,
@@ -41,7 +41,7 @@
       "visible_while_invisible":false,
       "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/blueflame/phosphor_toggle"
+          "power":"quirks:blueflame/phosphor_toggle"
       }
     },
     "secondary_active_particles":{
@@ -63,7 +63,7 @@
       "visible_while_invisible":false,
       "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/blueflame/phosphor_toggle"
+          "power":"quirks:blueflame/phosphor_toggle"
       }
     },
     "jump_boost":{
@@ -74,7 +74,7 @@
        },
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/blueflame/phosphor_toggle"
+          "power":"quirks:blueflame/phosphor_toggle"
        }
     },
     "speed":{
@@ -89,7 +89,7 @@
        "update_health":false,
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/blueflame/phosphor_toggle"
+          "power":"quirks:blueflame/phosphor_toggle"
        }
     },
     "heat_buildup":{
@@ -100,12 +100,12 @@
              "operation":"add_base_early",
              "value":2.00
           },
-          "resource":"powert:mha/blueflame/heat_gauge_temperature"
+          "resource":"quirks:blueflame/heat_gauge_temperature"
        },
        "interval":20,
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/blueflame/phosphor_toggle"
+          "power":"quirks:blueflame/phosphor_toggle"
        }
     }
 }

@@ -26,7 +26,7 @@
              "operation":"set_total",
              "value":1.00
           },
-          "resource":"powert:mha/zoom/magnify_mark_resource"
+          "resource":"quirks:zoom/magnify_mark_resource"
        },
        "cooldown":1,
        "hud_render":{
@@ -41,13 +41,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/zoom/magnify_mark_resource",
+               "resource":"quirks:zoom/magnify_mark_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -65,7 +65,7 @@
                    "operation":"add_base_early",
                    "value":1.00
                 },
-                "resource":"powert:mha/zoom/magnify_mark_charge"
+                "resource":"quirks:zoom/magnify_mark_charge"
              },
              {
                 "type":"origins:if_else_list",
@@ -73,7 +73,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/zoom/magnify_mark_resource",
+                         "resource":"quirks:zoom/magnify_mark_resource",
                          "comparison":"==",
                          "compare_to":1
                       },
@@ -87,7 +87,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/zoom/magnify_mark_resource",
+                         "resource":"quirks:zoom/magnify_mark_resource",
                          "comparison":"==",
                          "compare_to":2
                       },
@@ -101,7 +101,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/zoom/magnify_mark_resource",
+                         "resource":"quirks:zoom/magnify_mark_resource",
                          "comparison":"==",
                          "compare_to":3
                       },
@@ -115,7 +115,7 @@
                    {
                       "condition":{
                          "type":"origins:resource",
-                         "resource":"powert:mha/zoom/magnify_mark_resource",
+                         "resource":"quirks:zoom/magnify_mark_resource",
                          "comparison":"==",
                          "compare_to":4
                       },
@@ -139,7 +139,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/zoom/magnify_mark_charge"
+               "resource":"quirks:zoom/magnify_mark_charge"
             },
             {
                "type":"origins:modify_resource",
@@ -147,7 +147,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/zoom/magnify_mark_resource"
+               "resource":"quirks:zoom/magnify_mark_resource"
             }
          ]
        },
@@ -157,13 +157,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/zoom/magnify_mark_resource",
+               "resource":"quirks:zoom/magnify_mark_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/universal/quirk_erased",
+               "resource":"quirks:universal/quirk_erased",
                "comparison":"==",
                "compare_to":0
             }
@@ -181,7 +181,7 @@
                    "operation":"set_total",
                    "value":0.00
                 },
-                "resource":"powert:mha/zoom/magnify_mark_charge"
+                "resource":"quirks:zoom/magnify_mark_charge"
              },
              {
                 "type":"origins:modify_resource",
@@ -189,7 +189,7 @@
                    "operation":"set_total",
                    "value":0.00
                 },
-                "resource":"powert:mha/zoom/magnify_mark_resource"
+                "resource":"quirks:zoom/magnify_mark_resource"
              },
              {
                 "type":"origins:raycast",
@@ -202,8 +202,8 @@
                    "type":"origins:target_condition",
                    "condition":{
                       "type":"origins:power",
-                      "power":"powert:mha/zoom/magnify_mark_target_glow",
-                      "source":"powert:mha/zoom/magnify_mark_target_glow"
+                      "power":"quirks:zoom/magnify_mark_target_glow",
+                      "source":"quirks:zoom/magnify_mark_target_glow"
                    },
                    "inverted":true
                 },
@@ -214,15 +214,15 @@
                       "actions":[
                          {
                             "type":"origins:grant_power",
-                            "power":"powert:mha/zoom/magnify_mark_target_glow",
-                            "source":"powert:mha/zoom/magnify_mark_target_glow"
+                            "power":"quirks:zoom/magnify_mark_target_glow",
+                            "source":"quirks:zoom/magnify_mark_target_glow"
                          },
                          {
                             "type":"origins:delay",
                             "action":{
                                "type":"origins:revoke_power",
-                               "power":"powert:mha/zoom/magnify_mark_target_glow",
-                               "source":"powert:mha/zoom/magnify_mark_target_glow"
+                               "power":"quirks:zoom/magnify_mark_target_glow",
+                               "source":"quirks:zoom/magnify_mark_target_glow"
                             },
                             "ticks":1200
                          }
@@ -237,7 +237,7 @@
        "interval":1,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/zoom/magnify_mark_charge",
+          "resource":"quirks:zoom/magnify_mark_charge",
           "comparison":"==",
           "compare_to":4
        }
@@ -251,7 +251,7 @@
        "change_divisor":1.00,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/zoom/magnify_mark_charge",
+          "resource":"quirks:zoom/magnify_mark_charge",
           "comparison":"==",
           "compare_to":1
        }
@@ -265,7 +265,7 @@
        "change_divisor":2.00,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/zoom/magnify_mark_charge",
+          "resource":"quirks:zoom/magnify_mark_charge",
           "comparison":"==",
           "compare_to":2
        }
@@ -279,7 +279,7 @@
        "change_divisor":3.00,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/zoom/magnify_mark_charge",
+          "resource":"quirks:zoom/magnify_mark_charge",
           "comparison":"==",
           "compare_to":3
        }

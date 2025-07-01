@@ -38,7 +38,7 @@
                            "operation":"set_total",
                            "value":1.00
                         },
-                        "resource":"powert:mha/permeation/has_hair_been_cut_resource"
+                        "resource":"quirks:permeation/has_hair_been_cut_resource"
                      }
                   ]
                }
@@ -57,12 +57,12 @@
             "conditions":[
                {
                   "type":"origins:origin",
-                  "origin":"powert:mha/permeation",
+                  "origin":"quirks:permeation",
                   "layer":"origins:powers"
                },
                {
                   "type":"origins:resource",
-                  "resource":"powert:mha/permeation/has_hair_been_cut_resource",
+                  "resource":"quirks:permeation/has_hair_been_cut_resource",
                   "comparison":"==",
                   "compare_to":0
                }

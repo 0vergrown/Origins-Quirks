@@ -10,7 +10,7 @@
         "start_value": 100,
         "min_action": {
             "type": "origins:execute_command",
-            "command": "power remove @s powert:mha/somnambulist/dreaming"
+            "command": "power remove @s quirks:somnambulist/dreaming"
         },
         "hud_render": {
             "should_render": false
@@ -21,7 +21,7 @@
         "interval": 10,
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/dreaming_resource",
+            "resource": "quirks:somnambulist/dreaming_resource",
             "compare_to": 1,
             "comparison": ">="
         },
@@ -30,13 +30,13 @@
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "resource": "powert:mha/somnambulist/dreaming_resource",
+                    "resource": "quirks:somnambulist/dreaming_resource",
                     "change": -5,
                     "operation": "add"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/somnambulist/drowsy"
+                    "command": "power remove @s quirks:somnambulist/drowsy"
                 }
             ]
         },
@@ -49,7 +49,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/somnambulist/drowsy"
+                    "command": "power remove @s quirks:somnambulist/drowsy"
                 }
             ]
         }
@@ -58,7 +58,7 @@
         "type": "origins:stacking_status_effect",
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/dreaming_resource",
+            "resource": "quirks:somnambulist/dreaming_resource",
             "compare_to": 45,
             "comparison": ">"
         },
@@ -119,7 +119,7 @@
         "type": "origins:action_over_time",
         "condition": {
             "type": "origins:resource",
-            "resource": "powert:mha/somnambulist/dreaming_resource",
+            "resource": "quirks:somnambulist/dreaming_resource",
             "compare_to": 20,
             "comparison": ">="
         },
@@ -144,11 +144,11 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/somnambulist/dreaming"
+                    "command": "power remove @s quirks:somnambulist/dreaming"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/somnambulist/drowsy"
+                    "command": "power remove @s quirks:somnambulist/drowsy"
                 }
             ]
         }

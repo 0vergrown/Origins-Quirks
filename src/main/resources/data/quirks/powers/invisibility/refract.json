@@ -43,7 +43,7 @@
             "type": "origins:delay",
             "action": {
                "type": "origins:execute_command",
-               "command": "execute as @s positioned ~ ~1 ~ run function powert:mha/invisibility/warp_refraction"
+               "command": "execute as @s positioned ~ ~1 ~ run function quirks:invisibility/warp_refraction"
             },
             "ticks": 12
          },
@@ -76,8 +76,8 @@
                            "type": "origins:target_action",
                            "action": {
                               "type": "origins:grant_power",
-                              "power": "powert:mha/invisibility/blinded",
-                              "source": "powert:mha/invisibility/refract"
+                              "power": "quirks:invisibility/blinded",
+                              "source": "quirks:invisibility/refract"
                            }
                         },
                         {
@@ -97,8 +97,8 @@
                            "type": "origins:target_action",
                            "action": {
                               "type": "origins:grant_power",
-                              "power": "powert:mha/invisibility/blinded",
-                              "source": "powert:mha/invisibility/refract"
+                              "power": "quirks:invisibility/blinded",
+                              "source": "quirks:invisibility/refract"
                            }
                         },
                         {
@@ -157,11 +157,11 @@
       "conditions": [
          {
             "type": "origins:power_active",
-            "power": "powert:mha/invisibility/stealth_toggle"
+            "power": "quirks:invisibility/stealth_toggle"
          },
          {
             "type": "origins:resource",
-            "resource": "powert:mha/universal/quirk_erased",
+            "resource": "quirks:universal/quirk_erased",
             "comparison": "==",
             "compare_to": 0
          }

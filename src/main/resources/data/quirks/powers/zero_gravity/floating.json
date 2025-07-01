@@ -59,7 +59,7 @@
        "interval":20,
        "condition":{
           "type":"origins:power_active",
-          "power":"powert:mha/zero_gravity/floating_toggle",
+          "power":"quirks:zero_gravity/floating_toggle",
           "inverted":false
        }
     }

@@ -1,17 +1,16 @@
 {
 	"powers": [
-		"powert:mha/blueflame/heat_gauge",
-		"powert:mha/blueflame/afterburner",
-		"powert:mha/blueflame/flashfire_fist",
-		"powert:mha/blueflame/jet_burn",
-		"powert:mha/blueflame/prominence_burn",
-		"powert:mha/blueflame/hell_spider",
-		"powert:mha/blueflame/phosphor",
-		"powert:mha/blueflame/hell_minefield",
-		"powert:mha/blueflame/vanishing_fist",
-		"powert:mha/blueflame/awakening",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:blueflame/heat_gauge",
+		"quirks:blueflame/afterburner",
+		"quirks:blueflame/flashfire_fist",
+		"quirks:blueflame/jet_burn",
+		"quirks:blueflame/prominence_burn",
+		"quirks:blueflame/hell_spider",
+		"quirks:blueflame/phosphor",
+		"quirks:blueflame/hell_minefield",
+		"quirks:blueflame/vanishing_fist",
+		"quirks:blueflame/awakening",
+		"quirks:universal/quirk_erased"
 	],
 	"icon": {
 		"item": "minecraft:player_head",

@@ -26,7 +26,7 @@
                       "operation":"add_base_early",
                       "value":-1.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 }
              },
              {
@@ -42,7 +42,7 @@
                       "operation":"add_base_early",
                       "value":-2.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 }
              },
              {
@@ -56,13 +56,13 @@
                       "operation":"add_base_early",
                       "value":-3.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 }
              },
              {
                 "condition":{
                     "type": "origins:predicate",
-                    "predicate": "powert:mha/blueflame/in_cold_biomes"
+                    "predicate": "quirks:blueflame/in_cold_biomes"
                 },
                 "action":{
                    "type":"origins:modify_resource",
@@ -70,7 +70,7 @@
                       "operation":"add_base_early",
                       "value":-4.00
                    },
-                   "resource":"powert:mha/blueflame/heat_gauge_temperature"
+                   "resource":"quirks:blueflame/heat_gauge_temperature"
                 }
              }
           ]
@@ -78,7 +78,7 @@
        "interval":20,
        "condition": {
         "type": "origins:resource",
-        "resource": "powert:mha/blueflame/heat_gauge_temperature",
+        "resource": "quirks:blueflame/heat_gauge_temperature",
         "comparison": "!=",
         "compare_to": 0
        }
@@ -94,7 +94,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blueflame/heat_gauge_temperature"
+               "resource":"quirks:blueflame/heat_gauge_temperature"
             },
             {
                "type":"origins:modify_resource",
@@ -102,7 +102,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blueflame/prominence_burn_resource"
+               "resource":"quirks:blueflame/prominence_burn_resource"
             }
          ]
        },

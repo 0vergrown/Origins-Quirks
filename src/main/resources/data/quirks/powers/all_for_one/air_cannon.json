@@ -9,7 +9,7 @@
                 "operation":"add_base_early",
                 "value":-150.00
              },
-             "resource":"powert:mha/all_for_one/stamina_resource"
+             "resource":"quirks:all_for_one/stamina_resource"
           },
           {
              "type":"origins:play_sound",
@@ -25,7 +25,7 @@
           },
           {
              "type":"origins:execute_command",
-             "command":"execute positioned ~ ~1.8 ~ positioned ^ ^ ^2 run function powert:mha/all_for_one/air_cannon_particles"
+             "command":"execute positioned ~ ~1.8 ~ positioned ^ ^ ^2 run function quirks:all_for_one/air_cannon_particles"
           },
           {
              "type":"origins:raycast",
@@ -90,7 +90,7 @@
                                   },
                                   {
                                      "type":"origins:origin",
-                                     "origin":"powert:mha/all_for_one",
+                                     "origin":"quirks:all_for_one",
                                      "layer":"origins:powers",
                                      "inverted":true
                                   }
@@ -152,13 +152,13 @@
       "conditions": [
          {
             "type":"origins:resource",
-            "resource":"powert:mha/all_for_one/stamina_resource",
+            "resource":"quirks:all_for_one/stamina_resource",
             "comparison":">=",
             "compare_to":150
          },
          {
             "type": "origins:resource",
-            "resource": "powert:mha/universal/quirk_erased",
+            "resource": "quirks:universal/quirk_erased",
             "comparison": "==",
             "compare_to": 0
          }

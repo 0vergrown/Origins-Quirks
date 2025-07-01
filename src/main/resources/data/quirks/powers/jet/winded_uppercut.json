@@ -19,7 +19,7 @@
          "bar_index":9,
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/jet/winded_uppercut_cooldown",
+            "resource":"quirks:jet/winded_uppercut_cooldown",
             "comparison":"<",
             "compare_to":300
          }
@@ -30,7 +30,7 @@
       "type":"origins:action_over_time",
       "entity_action":{
          "type":"origins:change_resource",
-         "resource":"powert:mha/jet/winded_uppercut_cooldown",
+         "resource":"quirks:jet/winded_uppercut_cooldown",
          "change":1,
          "operation":"add"
       },
@@ -49,7 +49,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/jet/winded_uppercut_resource"
+               "resource":"quirks:jet/winded_uppercut_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -57,14 +57,14 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/jet/winded_uppercut_cooldown"
+               "resource":"quirks:jet/winded_uppercut_cooldown"
             }
          ]
       },
       "interval":1,
       "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -80,7 +80,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/jet/winded_uppercut_resource"
+               "resource":"quirks:jet/winded_uppercut_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -88,7 +88,7 @@
                   "operation":"add_base_early",
                   "value":-150.00
                },
-               "resource":"powert:mha/jet/winded_uppercut_cooldown"
+               "resource":"quirks:jet/winded_uppercut_cooldown"
             },
             {
                "type":"origins:play_sound",
@@ -119,7 +119,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/jet/winded_uppercut_resource"
+                        "resource":"quirks:jet/winded_uppercut_resource"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -127,7 +127,7 @@
                            "operation":"set_total",
                            "value":0.00
                         },
-                        "resource":"powert:mha/jet/winded_uppercut_cooldown"
+                        "resource":"quirks:jet/winded_uppercut_cooldown"
                      }
                   ]
                },
@@ -148,19 +148,19 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/winded_uppercut_cooldown",
+               "resource":"quirks:jet/winded_uppercut_cooldown",
                "comparison":"==",
                "compare_to":300
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/jet/winded_uppercut_resource",
+               "resource":"quirks:jet/winded_uppercut_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -210,7 +210,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/jet/winded_uppercut_resource",
+         "resource":"quirks:jet/winded_uppercut_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -219,7 +219,7 @@
       "type":"origins:action_on_callback",
       "entity_action_respawned":{
          "type":"origins:change_resource",
-         "resource":"powert:mha/jet/winded_uppercut_resource",
+         "resource":"quirks:jet/winded_uppercut_resource",
          "change":-1,
          "operation":"add"
       },

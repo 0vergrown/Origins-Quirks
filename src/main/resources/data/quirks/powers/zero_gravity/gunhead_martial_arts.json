@@ -32,7 +32,7 @@
          "type":"apoli:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource",
+            "resource":"quirks:zero_gravity/gunhead_martial_arts_resource",
             "comparison":"==",
             "compare_to":0
          },
@@ -42,7 +42,7 @@
                "operation":"set_total",
                "value":1
             },
-            "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource"
+            "resource":"quirks:zero_gravity/gunhead_martial_arts_resource"
          },
          "else_action":{
             "type":"apoli:modify_resource",
@@ -50,7 +50,7 @@
                "operation":"set_total",
                "value":0
             },
-            "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource"
+            "resource":"quirks:zero_gravity/gunhead_martial_arts_resource"
          }
       },
       "cooldown":1,
@@ -71,7 +71,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource",
+         "resource":"quirks:zero_gravity/gunhead_martial_arts_resource",
          "comparison":"==",
          "compare_to":0
       }
@@ -85,7 +85,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource",
+         "resource":"quirks:zero_gravity/gunhead_martial_arts_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -146,43 +146,43 @@
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                },
                {
                   "type":"origins:execute_command",
-                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function powert:mha/zero_gravity/gunhead_martial_arts"
+                  "command":"execute as @s at @s positioned ^ ^1.2 ^1.5 run function quirks:zero_gravity/gunhead_martial_arts"
                }
             ]
          },
@@ -201,7 +201,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource",
+         "resource":"quirks:zero_gravity/gunhead_martial_arts_resource",
          "comparison":"==",
          "compare_to":0
       }
@@ -294,7 +294,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/zero_gravity/gunhead_martial_arts_resource",
+         "resource":"quirks:zero_gravity/gunhead_martial_arts_resource",
          "comparison":"==",
          "compare_to":1
       }

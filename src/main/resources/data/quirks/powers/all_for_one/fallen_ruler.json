@@ -9,7 +9,7 @@
                "operation":"add_base_early",
                "value":-300.00
             },
-            "resource":"powert:mha/all_for_one/stamina_resource"
+            "resource":"quirks:all_for_one/stamina_resource"
          },
          {
             "type":"origins:add_velocity",
@@ -46,7 +46,7 @@
                   },
                   {
                      "type":"origins:execute_command",
-                     "command":"execute at @s positioned ~ ~ ~ run function powert:mha/all_for_one/fallen_ruler_particles"
+                     "command":"execute at @s positioned ~ ~ ~ run function quirks:all_for_one/fallen_ruler_particles"
                   },
                   {
                      "type":"origins:execute_command",
@@ -124,13 +124,13 @@
       "conditions": [
          {
             "type":"origins:resource",
-            "resource":"powert:mha/all_for_one/stamina_resource",
+            "resource":"quirks:all_for_one/stamina_resource",
             "comparison":">=",
             "compare_to":300
          },
          {
             "type": "origins:resource",
-            "resource": "powert:mha/universal/quirk_erased",
+            "resource": "quirks:universal/quirk_erased",
             "comparison": "==",
             "compare_to": 0
          }

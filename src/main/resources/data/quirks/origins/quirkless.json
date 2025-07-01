@@ -1,6 +1,5 @@
 {
     "powers": [
-        "powert:allpowers/health"
 	],
 	"icon":"minecraft:barrier",
 	"unchoosable": true,

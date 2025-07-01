@@ -1,13 +1,12 @@
 {
 	"powers": [
-		"powert:mha/fa_jin/kinetic_energy",
-		"powert:mha/fa_jin/kinetic_charge",
-		"powert:mha/fa_jin/burst_dash",
-		"powert:mha/fa_jin/energy_leap",
-		"powert:mha/fa_jin/power_strike",
-		"powert:mha/fa_jin/explosive_release",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:fa_jin/kinetic_energy",
+		"quirks:fa_jin/kinetic_charge",
+		"quirks:fa_jin/burst_dash",
+		"quirks:fa_jin/energy_leap",
+		"quirks:fa_jin/power_strike",
+		"quirks:fa_jin/explosive_release",
+		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:redstone",
 	"unchoosable": true,

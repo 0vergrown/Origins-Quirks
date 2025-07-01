@@ -3,7 +3,7 @@
    "type": "origins:self_glow",
    "entity_condition":{
       "type":"origins:origin",
-      "origin":"powert:mha/zoom",
+      "origin":"quirks:zoom",
       "layer":"origins:powers"
    },
    "use_teams":false,

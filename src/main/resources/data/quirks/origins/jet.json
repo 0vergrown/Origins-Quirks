@@ -1,12 +1,11 @@
 {
 	"powers": [
-		"powert:mha/jet/updraft",
-		"powert:mha/jet/dash",
-		"powert:mha/jet/winded_uppercut",
-		"powert:mha/jet/wind_rush",
-		"powert:mha/jet/air_step",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:jet/updraft",
+		"quirks:jet/dash",
+		"quirks:jet/winded_uppercut",
+		"quirks:jet/wind_rush",
+		"quirks:jet/air_step",
+		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:yellow_wool",
 	"unchoosable": true,

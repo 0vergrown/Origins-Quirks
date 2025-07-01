@@ -50,7 +50,7 @@
           "type":"origins:if_else",
           "condition":{
              "type":"origins:resource",
-             "resource":"powert:mha/blazing_hair/rising_dawn_toggle",
+             "resource":"quirks:blazing_hair/rising_dawn_toggle",
              "comparison":"==",
              "compare_to":1
           },
@@ -63,7 +63,7 @@
                       "operation":"set_total",
                       "value":0.00
                    },
-                   "resource":"powert:mha/blazing_hair/rising_dawn_toggle"
+                   "resource":"quirks:blazing_hair/rising_dawn_toggle"
                 },
                 {
                    "type":"origins:execute_command",
@@ -79,7 +79,7 @@
                       "operation":"set_total",
                       "value":0.00
                    },
-                   "resource":"powert:mha/blazing_hair/rising_dawn_timer"
+                   "resource":"quirks:blazing_hair/rising_dawn_timer"
                 },
                 {
                    "type":"origins:set_fall_distance",
@@ -96,7 +96,7 @@
                       "operation":"set_total",
                       "value":1.00
                    },
-                   "resource":"powert:mha/blazing_hair/rising_dawn_toggle"
+                   "resource":"quirks:blazing_hair/rising_dawn_toggle"
                 },
                 {
                    "type":"origins:execute_command",
@@ -115,7 +115,7 @@
        },
        "condition": {
          "type": "origins:resource",
-         "resource": "powert:mha/universal/quirk_erased",
+         "resource": "quirks:universal/quirk_erased",
          "comparison": "==",
          "compare_to": 0
       }
@@ -142,7 +142,7 @@
                    "operation":"set_total",
                    "value":16.00
                 },
-                "resource":"powert:mha/blazing_hair/rising_dawn_timer"
+                "resource":"quirks:blazing_hair/rising_dawn_timer"
              },
              {
                 "type":"origins:delay",
@@ -170,7 +170,7 @@
           "conditions":[
              {
                 "type":"origins:resource",
-                "resource":"powert:mha/blazing_hair/rising_dawn_toggle",
+                "resource":"quirks:blazing_hair/rising_dawn_toggle",
                 "comparison":"==",
                 "compare_to":1
              },
@@ -188,7 +188,7 @@
              },
              {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
              }
@@ -202,7 +202,7 @@
           "actions":[
              {
                 "type":"origins:change_resource",
-                "resource":"powert:mha/blazing_hair/rising_dawn_timer",
+                "resource":"quirks:blazing_hair/rising_dawn_timer",
                 "change":-2,
                 "operation":"add"
              },
@@ -214,7 +214,7 @@
              },
              {
                 "type":"origins:execute_command",
-                "command":"execute at @s anchored feet rotated ~ 0 run function powert:mha/blazing_hair/rising_dawn_particles"
+                "command":"execute at @s anchored feet rotated ~ 0 run function quirks:blazing_hair/rising_dawn_particles"
              }
           ]
        },
@@ -227,7 +227,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blazing_hair/rising_dawn_toggle"
+               "resource":"quirks:blazing_hair/rising_dawn_toggle"
             },
             {
                "type":"origins:execute_command",
@@ -243,7 +243,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/blazing_hair/rising_dawn_timer"
+               "resource":"quirks:blazing_hair/rising_dawn_timer"
             },
             {
                "type":"origins:set_fall_distance",
@@ -257,13 +257,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/blazing_hair/rising_dawn_timer",
+               "resource":"quirks:blazing_hair/rising_dawn_timer",
                "comparison":">=",
                "compare_to":1
             },
             {
               "type": "origins:resource",
-              "resource": "powert:mha/universal/quirk_erased",
+              "resource": "quirks:universal/quirk_erased",
               "comparison": "==",
               "compare_to": 0
             }

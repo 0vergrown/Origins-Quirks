@@ -9,7 +9,7 @@
                    "operation":"add_base_early",
                    "value":-5.00
                 },
-                "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+                "resource":"quirks:sugar_rush/hypoglycemia_level"
             },
             {
                 "type":"origins:apply_effect",
@@ -57,13 +57,13 @@
        "conditions":[
           {
             "type":"origins:resource",
-            "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+            "resource":"quirks:sugar_rush/hypoglycemia_level",
             "comparison":"!=",
             "compare_to":0
           },
           {
              "type": "origins:resource",
-             "resource": "powert:mha/universal/quirk_erased",
+             "resource": "quirks:universal/quirk_erased",
              "comparison": "==",
              "compare_to": 0
           }

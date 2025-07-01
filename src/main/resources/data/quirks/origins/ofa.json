@@ -1,16 +1,14 @@
 {
     "powers": [
-        "powert:mha/ofa/fullcowling",
-        "powert:mha/ofa/detroit_smash",
-        "powert:mha/ofa/quirk",
-        "powert:mha/ofa/extra/blackwhip",
-        "powert:mha/ofa/airforce",
-        "powert:mha/ofa/ussmash",
-        "powert:mha/ofa/extra/dangersense",
-        "powert:allpowers/staminabar",
-        "powert:mha/ofa/removegearshift",
-        "powert:mha/universal/quirk_erased",
-        "powert:allpowers/health"
+        "quirks:ofa/fullcowling",
+        "quirks:ofa/detroit_smash",
+        "quirks:ofa/quirk",
+        "quirks:ofa/extra/blackwhip",
+        "quirks:ofa/airforce",
+        "quirks:ofa/ussmash",
+        "quirks:ofa/extra/dangersense",
+        "quirks:ofa/removegearshift",
+        "quirks:universal/quirk_erased"
     ],
     "icon": "minecraft:emerald",
     "unchoosable": true,

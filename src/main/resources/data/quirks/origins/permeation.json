@@ -1,12 +1,11 @@
 {
 	"powers": [
-		"powert:mha/permeation/permeate",
-		"powert:mha/permeation/phantom_menace",
-		"powert:mha/permeation/blinder_touch_eyeball_crush",
-		"powert:mha/permeation/phantom_snare",
-		"powert:mha/permeation/has_hair_been_cut",
-		"powert:mha/universal/quirk_erased",
-		"powert:allpowers/health"
+		"quirks:permeation/permeate",
+		"quirks:permeation/phantom_menace",
+		"quirks:permeation/blinder_touch_eyeball_crush",
+		"quirks:permeation/phantom_snare",
+		"quirks:permeation/has_hair_been_cut",
+		"quirks:universal/quirk_erased"
 	],
     "icon":{
         "item":"minecraft:player_head",

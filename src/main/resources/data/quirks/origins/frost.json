@@ -1,9 +1,9 @@
 {
     "name": "§b§lFrost",
     "powers": [
-        "powert:mha/frost/shard",
-        "powert:mha/frost/hypothermia",
-        "powert:mha/frost/cooldown/shardcd"
+        "quirks:frost/shard",
+        "quirks:frost/hypothermia",
+        "quirks:frost/cooldown/shardcd"
     ],
     "icon": "minecraft:blue_ice",
     "unchoosable": true,

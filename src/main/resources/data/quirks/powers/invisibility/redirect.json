@@ -16,11 +16,11 @@
          "conditions": [
             {
                "type": "origins:power_active",
-               "power": "powert:mha/invisibility/stealth_toggle"
+               "power": "quirks:invisibility/stealth_toggle"
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "compare_to": 0,
                "comparison": "=="
             },
@@ -28,7 +28,7 @@
                "type": "origins:resource",
                "compare_to": 0,
                "comparison": "==",
-               "resource": "powert:mha/invisibility/redirect_cooldown"
+               "resource": "quirks:invisibility/redirect_cooldown"
             }
          ]
       },
@@ -48,8 +48,8 @@
                         "type": "origins:target_action",
                         "action": {
                            "type": "origins:grant_power",
-                           "power": "powert:mha/invisibility/blinded",
-                           "source": "powert:mha/invisibility/redirect"
+                           "power": "quirks:invisibility/blinded",
+                           "source": "quirks:invisibility/redirect"
                         }
                      }
                   ]
@@ -68,13 +68,13 @@
                "fluid_handling": "none",
                "block": true,
                "entity": true,
-               "command_along_ray": "function powert:mha/invisibility/redirect",
+               "command_along_ray": "function quirks:invisibility/redirect",
                "command_along_ray_only_on_hit": false,
                "command_step": 0.5
             },
             {
                "type": "origins:change_resource",
-               "resource": "powert:mha/invisibility/redirect_count",
+               "resource": "quirks:invisibility/redirect_count",
                "change": 1,
                "operation": "add"
             }
@@ -97,7 +97,7 @@
             "type": "origins:resource",
             "compare_to": 0,
             "comparison": "==",
-            "resource": "powert:mha/invisibility/redirect_cooldown"
+            "resource": "quirks:invisibility/redirect_cooldown"
          }
       },
       "max_action": {
@@ -105,13 +105,13 @@
          "actions": [
             {
                "type": "origins:trigger_cooldown",
-               "power": "powert:mha/invisibility/redirect_cooldown"
+               "power": "quirks:invisibility/redirect_cooldown"
             },
             {
                "type": "origins:change_resource",
                "change": 0,
                "operation": "set",
-               "resource": "powert:mha/invisibility/redirect_count"
+               "resource": "quirks:invisibility/redirect_count"
             }
          ]
       }

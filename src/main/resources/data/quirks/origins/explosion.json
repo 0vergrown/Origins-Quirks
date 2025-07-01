@@ -1,16 +1,15 @@
 {
 	"powers":[
-	   "powert:mha/explosion/nitro_sweat_secretion",
-	   "powert:mha/explosion/stamina",
-	   "powert:mha/explosion/explosive_speed",
-	   "powert:mha/explosion/stun_grenade",
-	   "powert:mha/explosion/howitzer_impact",
-	   "powert:mha/explosion/ap_shot",
-	   "powert:mha/explosion/land_mine_blast",
-	   "powert:mha/explosion/cluster",
-	   "powert:mha/explosion/awakening",
-	   "powert:mha/universal/quirk_erased",
-       "powert:allpowers/health"
+	   "quirks:explosion/nitro_sweat_secretion",
+	   "quirks:explosion/stamina",
+	   "quirks:explosion/explosive_speed",
+	   "quirks:explosion/stun_grenade",
+	   "quirks:explosion/howitzer_impact",
+	   "quirks:explosion/ap_shot",
+	   "quirks:explosion/land_mine_blast",
+	   "quirks:explosion/cluster",
+	   "quirks:explosion/awakening",
+	   "quirks:universal/quirk_erased"
 	],
 	"icon":{
 	   "item":"minecraft:player_head",

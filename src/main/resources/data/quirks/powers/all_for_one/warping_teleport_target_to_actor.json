@@ -37,7 +37,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource"
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource"
             },
             {
                "type":"origins:play_sound",
@@ -76,7 +76,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource"
+                  "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource"
                },
                "ticks":12
             }
@@ -98,13 +98,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource",
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_phase_resource",
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -115,13 +115,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource",
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_phase_resource",
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_phase_resource",
                "comparison":"==",
                "compare_to":1
             }
@@ -173,7 +173,7 @@
                      "operation":"set_total",
                      "value":1.00
                   },
-                  "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_phase_resource"
+                  "resource":"quirks:all_for_one/warping_teleport_target_to_actor_phase_resource"
                }
             ]
          },
@@ -186,7 +186,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_phase_resource"
+                  "resource":"quirks:all_for_one/warping_teleport_target_to_actor_phase_resource"
                },
                {
                   "type": "origins:clear_effect",
@@ -215,7 +215,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource",
+         "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource",
          "comparison":"==",
          "compare_to":0
       }
@@ -229,7 +229,7 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/all_for_one/warping_teleport_target_to_actor_resource",
+               "resource":"quirks:all_for_one/warping_teleport_target_to_actor_resource",
                "comparison":"==",
                "compare_to":1
             },

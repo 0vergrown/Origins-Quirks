@@ -29,7 +29,7 @@
                   "operation":"set_total",
                   "value":1.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_resource"
+               "resource":"quirks:fa_jin/explosive_release_resource"
             },
             {
                "type":"origins:play_sound",
@@ -52,25 +52,25 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+               "resource":"quirks:fa_jin/kinetic_energy_power_output",
                "comparison":"!=",
                "compare_to":0
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource",
+               "resource":"quirks:fa_jin/kinetic_energy_resource",
                "comparison":"==",
                "compare_to":50
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/explosive_release_resource",
+               "resource":"quirks:fa_jin/explosive_release_resource",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -88,7 +88,7 @@
                   "operation":"add_base_early",
                   "value":1.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_charge"
+               "resource":"quirks:fa_jin/explosive_release_charge"
             },
             {
                "type":"origins:play_sound",
@@ -98,7 +98,7 @@
             },
             {
                "type":"origins:execute_command",
-               "command":"function powert:mha/fa_jin/explosive_release_particles"
+               "command":"function quirks:fa_jin/explosive_release_particles"
             }
          ]
       },
@@ -108,13 +108,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/explosive_release_resource",
+               "resource":"quirks:fa_jin/explosive_release_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/explosive_release_charge",
+               "resource":"quirks:fa_jin/explosive_release_charge",
                "comparison":"!=",
                "compare_to":1
             }
@@ -132,7 +132,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                        "resource":"quirks:fa_jin/kinetic_energy_power_output",
                         "comparison":"==",
                         "compare_to":1
                      },
@@ -147,7 +147,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                        "resource":"quirks:fa_jin/kinetic_energy_power_output",
                         "comparison":"==",
                         "compare_to":2
                      },
@@ -162,7 +162,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                        "resource":"quirks:fa_jin/kinetic_energy_power_output",
                         "comparison":"==",
                         "compare_to":3
                      },
@@ -177,7 +177,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                        "resource":"quirks:fa_jin/kinetic_energy_power_output",
                         "comparison":"==",
                         "compare_to":4
                      },
@@ -192,7 +192,7 @@
                   {
                      "condition":{
                         "type":"origins:resource",
-                        "resource":"powert:mha/fa_jin/kinetic_energy_power_output",
+                        "resource":"quirks:fa_jin/kinetic_energy_power_output",
                         "comparison":"==",
                         "compare_to":5
                      },
@@ -248,7 +248,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+               "resource":"quirks:fa_jin/kinetic_energy_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -256,7 +256,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_charge"
+               "resource":"quirks:fa_jin/explosive_release_charge"
             },
             {
                "type":"origins:modify_resource",
@@ -264,7 +264,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_resource"
+               "resource":"quirks:fa_jin/explosive_release_resource"
             }
          ]
       },
@@ -277,7 +277,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/kinetic_energy_resource"
+               "resource":"quirks:fa_jin/kinetic_energy_resource"
             },
             {
                "type":"origins:modify_resource",
@@ -285,7 +285,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_charge"
+               "resource":"quirks:fa_jin/explosive_release_charge"
             },
             {
                "type":"origins:modify_resource",
@@ -293,7 +293,7 @@
                   "operation":"set_total",
                   "value":0.00
                },
-               "resource":"powert:mha/fa_jin/explosive_release_resource"
+               "resource":"quirks:fa_jin/explosive_release_resource"
             }
          ]
       },
@@ -303,13 +303,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/fa_jin/explosive_release_charge",
+               "resource":"quirks:fa_jin/explosive_release_charge",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -327,7 +327,7 @@
       "tick_rate":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/fa_jin/explosive_release_resource",
+         "resource":"quirks:fa_jin/explosive_release_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -340,7 +340,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/fa_jin/explosive_release_resource",
+         "resource":"quirks:fa_jin/explosive_release_resource",
          "comparison":"==",
          "compare_to":1
       }

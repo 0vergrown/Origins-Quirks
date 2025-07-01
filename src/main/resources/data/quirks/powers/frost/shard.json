@@ -30,17 +30,17 @@
                             "type": "origins:resource",
                             "compare_to": 0,
                             "comparison": "==",
-                            "resource": "powert:mha/frost/cooldown/shardcd_one"
+                            "resource": "quirks:frost/cooldown/shardcd_one"
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 0,
                             "comparison": ">="
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 2,
                             "comparison": "<="
                         },
@@ -57,17 +57,17 @@
                             "type": "origins:resource",
                             "compare_to": 0,
                             "comparison": "==",
-                            "resource": "powert:mha/frost/cooldown/shardcd_two"
+                            "resource": "quirks:frost/cooldown/shardcd_two"
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 3,
                             "comparison": ">="
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 4,
                             "comparison": "<="
                         },
@@ -84,17 +84,17 @@
                             "type": "origins:resource",
                             "compare_to": 0,
                             "comparison": "==",
-                            "resource": "powert:mha/frost/cooldown/shardcd_three"
+                            "resource": "quirks:frost/cooldown/shardcd_three"
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 5,
                             "comparison": ">="
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 6,
                             "comparison": "<="
                         },
@@ -111,11 +111,11 @@
                             "type": "origins:resource",
                             "compare_to": 0,
                             "comparison": "==",
-                            "resource": "powert:mha/frost/cooldown/shardcd_four"
+                            "resource": "quirks:frost/cooldown/shardcd_four"
                         },
                         {
                             "type": "origins:resource",
-                            "resource": "powert:mha/frost/hypothermia_resource",
+                            "resource": "quirks:frost/hypothermia_resource",
                             "compare_to": 7,
                             "comparison": "=="
                         },
@@ -144,7 +144,7 @@
                         {
                             "condition": { 
                                 "type": "origins:resource",
-                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "resource": "quirks:frost/hypothermia_resource",
                                 "compare_to": 2,
                                 "comparison": "<="
                             },
@@ -152,7 +152,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_one"
+                                    "power": "quirks:frost/cooldown/shardcd_one"
                                 },
                                 "ticks": 10
                             }
@@ -163,13 +163,13 @@
                                 "conditions": [
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 3,
                                         "comparison": "=="
                                     },
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 4,
                                         "comparison": "=="
                                     }
@@ -179,7 +179,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_two"
+                                    "power": "quirks:frost/cooldown/shardcd_two"
                                 },
                                 "ticks": 10
                             }
@@ -190,13 +190,13 @@
                                 "conditions": [
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 5,
                                         "comparison": "=="
                                     },
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 6,
                                         "comparison": "=="
                                     }
@@ -206,7 +206,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_three"
+                                    "power": "quirks:frost/cooldown/shardcd_three"
                                 },
                                 "ticks": 10
                             }
@@ -214,7 +214,7 @@
                         {
                             "condition": {
                                 "type": "origins:resource",
-                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "resource": "quirks:frost/hypothermia_resource",
                                 "compare_to": 7,
                                 "comparison": "=="
                             },
@@ -222,7 +222,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_four"
+                                    "power": "quirks:frost/cooldown/shardcd_four"
                                 },
                                 "ticks": 10
                             }
@@ -238,7 +238,7 @@
                     "type": "origins:actor_action",
                     "action": {
                         "type": "origins:change_resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
+                        "resource": "quirks:frost/hypothermia_resource",
                         "change": 1,
                         "operation": "add"
                     }
@@ -249,7 +249,7 @@
                         {
                             "condition": { 
                                 "type": "origins:resource",
-                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "resource": "quirks:frost/hypothermia_resource",
                                 "compare_to": 2,
                                 "comparison": "<="
                             },
@@ -257,7 +257,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_one"
+                                    "power": "quirks:frost/cooldown/shardcd_one"
                                 },
                                 "ticks": 10
                             }
@@ -268,13 +268,13 @@
                                 "conditions": [
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 3,
                                         "comparison": "=="
                                     },
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 4,
                                         "comparison": "=="
                                     }
@@ -284,7 +284,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_two"
+                                    "power": "quirks:frost/cooldown/shardcd_two"
                                 },
                                 "ticks": 10
                             }
@@ -295,13 +295,13 @@
                                 "conditions": [
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 5,
                                         "comparison": "=="
                                     },
                                     {
                                         "type": "origins:resource",
-                                        "resource": "powert:mha/frost/hypothermia_resource",
+                                        "resource": "quirks:frost/hypothermia_resource",
                                         "compare_to": 6,
                                         "comparison": "=="
                                     }
@@ -311,7 +311,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_three"
+                                    "power": "quirks:frost/cooldown/shardcd_three"
                                 },
                                 "ticks": 10
                             }
@@ -319,7 +319,7 @@
                         {
                             "condition": {
                                 "type": "origins:resource",
-                                "resource": "powert:mha/frost/hypothermia_resource",
+                                "resource": "quirks:frost/hypothermia_resource",
                                 "compare_to": 7,
                                 "comparison": "=="
                             },
@@ -327,7 +327,7 @@
                                 "type": "origins:delay",
                                 "action": {
                                     "type": "origins:trigger_cooldown",
-                                    "power": "powert:mha/frost/cooldown/shardcd_four"
+                                    "power": "quirks:frost/cooldown/shardcd_four"
                                 },
                                 "ticks": 10
                             }
@@ -350,7 +350,7 @@
                     "type": "origins:target_action",
                     "action": {
                         "type": "origins:execute_command",
-                        "command": "power grant @s powert:mha/frost/frostbite"
+                        "command": "power grant @s quirks:frost/frostbite"
                     }
                 },
                 {
@@ -359,7 +359,7 @@
                         "type": "origins:change_resource",
                         "change": 80,
                         "operation": "set",
-                        "resource": "powert:mha/frost/frostbite_resource"
+                        "resource": "quirks:frost/frostbite_resource"
                     }
                 },
                 {

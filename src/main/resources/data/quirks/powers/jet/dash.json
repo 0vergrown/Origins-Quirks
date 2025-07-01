@@ -9,7 +9,7 @@
                "operation":"set_total",
                "value":1.00
             },
-            "resource":"powert:mha/jet/air_step_number_of_jumps"
+            "resource":"quirks:jet/air_step_number_of_jumps"
          },
          {
             "type":"origins:play_sound",
@@ -88,7 +88,7 @@
    },
    "condition": {
       "type": "origins:resource",
-      "resource": "powert:mha/universal/quirk_erased",
+      "resource": "quirks:universal/quirk_erased",
       "comparison": "==",
       "compare_to": 0
    }

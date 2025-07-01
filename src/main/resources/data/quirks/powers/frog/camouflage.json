@@ -29,7 +29,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/frog/camouflage_resource",
+            "resource":"quirks:frog/camouflage_resource",
             "comparison":"==",
             "compare_to":0
          },
@@ -62,13 +62,13 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"powert:mha/frog/camouflage_fade_out"
+                  "power":"quirks:frog/camouflage_fade_out"
                },
                {
                   "type":"origins:delay",
                   "action":{
                      "type":"origins:change_resource",
-                     "resource":"powert:mha/frog/camouflage_resource",
+                     "resource":"quirks:frog/camouflage_resource",
                      "change":1,
                      "operation":"set"
                   },
@@ -105,13 +105,13 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"powert:mha/frog/camouflage_fade_in"
+                  "power":"quirks:frog/camouflage_fade_in"
                },
                {
                   "type":"origins:delay",
                   "action":{
                      "type":"origins:change_resource",
-                     "resource":"powert:mha/frog/camouflage_resource",
+                     "resource":"quirks:frog/camouflage_resource",
                      "change":0,
                      "operation":"set"
                   },
@@ -133,13 +133,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/frog/camouflage_no_invisibility_when_hit",
+               "resource":"quirks:frog/camouflage_no_invisibility_when_hit",
                "comparison":"==",
                "compare_to":0
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -160,13 +160,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":5
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":0
                   }
@@ -177,13 +177,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":20
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":15
                   }
@@ -206,13 +206,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":10
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":5
                   }
@@ -223,13 +223,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":15
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":10
                   }
@@ -252,13 +252,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":15
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":10
                   }
@@ -269,13 +269,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":10
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":5
                   }
@@ -298,13 +298,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":"<=",
                      "compare_to":20
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_in",
+                     "resource":"quirks:frog/camouflage_fade_in",
                      "comparison":">",
                      "compare_to":15
                   }
@@ -315,13 +315,13 @@
                "conditions":[
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":"<=",
                      "compare_to":5
                   },
                   {
                      "type":"origins:resource",
-                     "resource":"powert:mha/frog/camouflage_fade_out",
+                     "resource":"quirks:frog/camouflage_fade_out",
                      "comparison":">",
                      "compare_to":0
                   }
@@ -339,13 +339,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/frog/camouflage_resource",
+               "resource":"quirks:frog/camouflage_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/frog/camouflage_fade_in",
+               "resource":"quirks:frog/camouflage_fade_in",
                "comparison":"==",
                "compare_to":0
             }
@@ -367,13 +367,13 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"powert:mha/frog/camouflage_fade_in"
+                  "power":"quirks:frog/camouflage_fade_in"
                },
                {
                   "type":"origins:delay",
                   "action":{
                      "type":"origins:change_resource",
-                     "resource":"powert:mha/frog/camouflage_resource",
+                     "resource":"quirks:frog/camouflage_resource",
                      "change":0,
                      "operation":"set"
                   },
@@ -390,7 +390,7 @@
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/frog/camouflage_resource",
+         "resource":"quirks:frog/camouflage_resource",
          "comparison":"==",
          "compare_to":1
       }
@@ -401,13 +401,13 @@
          "type": "origins:if_else",
          "condition": {
             "type":"origins:resource",
-            "resource":"powert:mha/frog/stamina_resource",
+            "resource":"quirks:frog/stamina_resource",
             "comparison":">=",
             "compare_to":2
          },
          "if_action": {
             "type":"origins:change_resource",
-            "resource":"powert:mha/frog/stamina_resource",
+            "resource":"quirks:frog/stamina_resource",
             "change":-2,
             "operation":"add"
          },
@@ -422,13 +422,13 @@
                },
                {
                   "type":"origins:trigger_cooldown",
-                  "power":"powert:mha/frog/camouflage_fade_in"
+                  "power":"quirks:frog/camouflage_fade_in"
                },
                {
                   "type":"origins:delay",
                   "action":{
                      "type":"origins:change_resource",
-                     "resource":"powert:mha/frog/camouflage_resource",
+                     "resource":"quirks:frog/camouflage_resource",
                      "change":0,
                      "operation":"set"
                   },
@@ -448,13 +448,13 @@
             },
             {
                "type":"origins:trigger_cooldown",
-               "power":"powert:mha/frog/camouflage_fade_in"
+               "power":"quirks:frog/camouflage_fade_in"
             },
             {
                "type":"origins:delay",
                "action":{
                   "type":"origins:change_resource",
-                  "resource":"powert:mha/frog/camouflage_resource",
+                  "resource":"quirks:frog/camouflage_resource",
                   "change":0,
                   "operation":"set"
                },
@@ -468,13 +468,13 @@
          "conditions": [
             {
                "type":"origins:resource",
-               "resource":"powert:mha/frog/camouflage_resource",
+               "resource":"quirks:frog/camouflage_resource",
                "comparison":"==",
                "compare_to":1
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }

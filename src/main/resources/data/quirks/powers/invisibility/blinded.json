@@ -13,7 +13,7 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "power remove @s powert:mha/invisibility/blinded"
+                    "command": "power remove @s quirks:invisibility/blinded"
                 },
                 {
                     "type": "origins:execute_command",
@@ -41,7 +41,7 @@
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "resource": "powert:mha/invisibility/blinded_resource",
+                    "resource": "quirks:invisibility/blinded_resource",
                     "change": -2,
                     "operation": "add"
                 },

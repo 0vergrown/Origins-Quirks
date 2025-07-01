@@ -16,7 +16,7 @@
       "item_condition":{
          "type":"origins:ingredient",
          "ingredient":{
-            "tag":"powert:mha/sugar_rush/high_sugar_consumable_sweets"
+            "tag":"quirks:sugar_rush/high_sugar_consumable_sweets"
          }
       },
       "food_component":{
@@ -34,11 +34,11 @@
             "operation":"add_base_early",
             "value":5
          },
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+         "resource":"quirks:sugar_rush/hypoglycemia_level"
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+         "resource":"quirks:sugar_rush/hypoglycemia_level",
          "comparison":"!=",
          "compare_to":100
       }
@@ -48,7 +48,7 @@
       "item_condition":{
          "type":"origins:ingredient",
          "ingredient":{
-            "tag":"powert:mha/sugar_rush/medium_sugar_consumable_sweets"
+            "tag":"quirks:sugar_rush/medium_sugar_consumable_sweets"
          }
       },
       "food_component":{
@@ -66,11 +66,11 @@
             "operation":"add_base_early",
             "value":4
          },
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+         "resource":"quirks:sugar_rush/hypoglycemia_level"
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+         "resource":"quirks:sugar_rush/hypoglycemia_level",
          "comparison":"!=",
          "compare_to":100
       }
@@ -80,7 +80,7 @@
       "item_condition":{
          "type":"origins:ingredient",
          "ingredient":{
-            "tag":"powert:mha/sugar_rush/low_sugar_consumable_sweets"
+            "tag":"quirks:sugar_rush/low_sugar_consumable_sweets"
          }
       },
       "food_component":{
@@ -98,11 +98,11 @@
             "operation":"add_base_early",
             "value":3
          },
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+         "resource":"quirks:sugar_rush/hypoglycemia_level"
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+         "resource":"quirks:sugar_rush/hypoglycemia_level",
          "comparison":"!=",
          "compare_to":30
       }
@@ -130,11 +130,11 @@
             "operation":"add_base_early",
             "value":1
          },
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+         "resource":"quirks:sugar_rush/hypoglycemia_level"
       },
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+         "resource":"quirks:sugar_rush/hypoglycemia_level",
          "comparison":"!=",
          "compare_to":30
       }
@@ -178,7 +178,7 @@
                "operation":"set_total",
                "value":5.00
             },
-            "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+            "resource":"quirks:sugar_rush/hypoglycemia_level"
          },
          "ticks": 200
        },
@@ -202,7 +202,7 @@
        "interval": 20,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -220,7 +220,7 @@
        "visible_in_third_person":true,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -238,7 +238,7 @@
        "visible_in_third_person":true,
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -251,7 +251,7 @@
        },
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -260,7 +260,7 @@
        "type":"origins:prevent_elytra_flight",
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -269,7 +269,7 @@
        "type":"origins:prevent_sprinting",
        "condition":{
           "type":"origins:resource",
-          "resource":"powert:mha/sugar_rush/hypoglycemia_level",
+          "resource":"quirks:sugar_rush/hypoglycemia_level",
           "comparison":"==",
           "compare_to":0
        }
@@ -282,7 +282,7 @@
                "operation":"set_total",
                "value":50.00
             },
-            "resource":"powert:mha/sugar_rush/hypoglycemia_level"
+            "resource":"quirks:sugar_rush/hypoglycemia_level"
         },
         "execute_chosen_when_orb": false
      }

@@ -52,7 +52,7 @@
             "operation":"set_total",
             "value":2.00
          },
-         "resource":"powert:mha/explosion/explosive_speed_number_of_jumps"
+         "resource":"quirks:explosion/explosive_speed_number_of_jumps"
       },
       "interval":1,
       "condition":{
@@ -74,7 +74,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -82,7 +82,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_forward",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_forward",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -127,7 +127,7 @@
                               "operation":"add_base_early",
                               "value":5.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -135,7 +135,7 @@
                               "operation":"add_base_early",
                               "value":-5.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:add_velocity",
@@ -280,14 +280,14 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_forward"
+                     "power":"quirks:explosion/explosive_speed_double_tap_forward"
                   }
                }
             },
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -295,7 +295,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_forward",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_forward",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -340,7 +340,7 @@
                               "operation":"add_base_early",
                               "value":8.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -348,7 +348,7 @@
                               "operation":"add_base_early",
                               "value":-3.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:add_velocity",
@@ -493,7 +493,7 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_forward"
+                     "power":"quirks:explosion/explosive_speed_double_tap_forward"
                   }
                }
             }
@@ -512,13 +512,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":15
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":15
             },
@@ -539,7 +539,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -561,7 +561,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -569,7 +569,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_left",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_left",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -614,7 +614,7 @@
                               "operation":"add_base_early",
                               "value":5.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -622,7 +622,7 @@
                               "operation":"add_base_early",
                               "value":-5.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:swing_hand",
@@ -731,14 +731,14 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_left"
+                     "power":"quirks:explosion/explosive_speed_double_tap_left"
                   }
                }
             },
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -746,7 +746,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_left",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_left",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -791,7 +791,7 @@
                               "operation":"add_base_early",
                               "value":8.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -799,7 +799,7 @@
                               "operation":"add_base_early",
                               "value":-3.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:swing_hand",
@@ -908,7 +908,7 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_left"
+                     "power":"quirks:explosion/explosive_speed_double_tap_left"
                   }
                }
             }
@@ -927,13 +927,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":15
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":15
             },
@@ -954,7 +954,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -976,7 +976,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -984,7 +984,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_back",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_back",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -1029,7 +1029,7 @@
                               "operation":"add_base_early",
                               "value":5.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -1037,7 +1037,7 @@
                               "operation":"add_base_early",
                               "value":-5.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:add_velocity",
@@ -1182,14 +1182,14 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_back"
+                     "power":"quirks:explosion/explosive_speed_double_tap_back"
                   }
                }
             },
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -1197,7 +1197,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_back",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_back",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -1242,7 +1242,7 @@
                               "operation":"add_base_early",
                               "value":8.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -1250,7 +1250,7 @@
                               "operation":"add_base_early",
                               "value":-3.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:add_velocity",
@@ -1395,7 +1395,7 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_back"
+                     "power":"quirks:explosion/explosive_speed_double_tap_back"
                   }
                }
             }
@@ -1414,13 +1414,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":15
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":15
             },
@@ -1441,7 +1441,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -1463,7 +1463,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -1471,7 +1471,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_right",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_right",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -1516,7 +1516,7 @@
                               "operation":"add_base_early",
                               "value":5.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -1524,7 +1524,7 @@
                               "operation":"add_base_early",
                               "value":-5.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:swing_hand",
@@ -1621,14 +1621,14 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_right"
+                     "power":"quirks:explosion/explosive_speed_double_tap_right"
                   }
                }
             },
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -1636,7 +1636,7 @@
                   "type":"origins:if_else",
                   "condition":{
                      "type":"origins:resource",
-                     "resource":"powert:mha/explosion/explosive_speed_double_tap_right",
+                     "resource":"quirks:explosion/explosive_speed_double_tap_right",
                      "comparison":"!=",
                      "compare_to":0
                   },
@@ -1681,7 +1681,7 @@
                               "operation":"add_base_early",
                               "value":8.00
                            },
-                           "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                           "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                         },
                         {
                            "type":"origins:modify_resource",
@@ -1689,7 +1689,7 @@
                               "operation":"add_base_early",
                               "value":-3.00
                            },
-                           "resource":"powert:mha/explosion/stamina_resource"
+                           "resource":"quirks:explosion/stamina_resource"
                         },
                         {
                            "type":"origins:swing_hand",
@@ -1786,7 +1786,7 @@
                   },
                   "else_action":{
                      "type":"origins:trigger_cooldown",
-                     "power":"powert:mha/explosion/explosive_speed_double_tap_right"
+                     "power":"quirks:explosion/explosive_speed_double_tap_right"
                   }
                }
             }
@@ -1805,13 +1805,13 @@
          "conditions":[
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":15
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":15
             },
@@ -1832,7 +1832,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
@@ -1847,7 +1847,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":0
                },
@@ -1892,7 +1892,7 @@
                            "operation":"add_base_early",
                            "value":-1.00
                         },
-                        "resource":"powert:mha/explosion/explosive_speed_number_of_jumps"
+                        "resource":"quirks:explosion/explosive_speed_number_of_jumps"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -1900,7 +1900,7 @@
                            "operation":"add_base_early",
                            "value":5.00
                         },
-                        "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                        "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -1908,7 +1908,7 @@
                            "operation":"add_base_early",
                            "value":-5.00
                         },
-                        "resource":"powert:mha/explosion/stamina_resource"
+                        "resource":"quirks:explosion/stamina_resource"
                      },
                      {
                         "type":"origins:if_else",
@@ -2036,7 +2036,7 @@
             {
                "condition":{
                   "type":"origins:resource",
-                  "resource":"powert:mha/explosion/awakening_resource",
+                  "resource":"quirks:explosion/awakening_resource",
                   "comparison":"==",
                   "compare_to":1
                },
@@ -2081,7 +2081,7 @@
                            "operation":"add_base_early",
                            "value":-1.00
                         },
-                        "resource":"powert:mha/explosion/explosive_speed_number_of_jumps"
+                        "resource":"quirks:explosion/explosive_speed_number_of_jumps"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -2089,7 +2089,7 @@
                            "operation":"add_base_early",
                            "value":8.00
                         },
-                        "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                        "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                      },
                      {
                         "type":"origins:modify_resource",
@@ -2097,7 +2097,7 @@
                            "operation":"add_base_early",
                            "value":-3.00
                         },
-                        "resource":"powert:mha/explosion/stamina_resource"
+                        "resource":"quirks:explosion/stamina_resource"
                      },
                      {
                         "type":"origins:if_else",
@@ -2241,7 +2241,7 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/explosive_speed_number_of_jumps",
+               "resource":"quirks:explosion/explosive_speed_number_of_jumps",
                "comparison":">",
                "compare_to":0
             },
@@ -2253,13 +2253,13 @@
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":15
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/stamina_resource",
+               "resource":"quirks:explosion/stamina_resource",
                "comparison":">=",
                "compare_to":15
             },
@@ -2286,7 +2286,7 @@
             },
             {
                "type": "origins:resource",
-               "resource": "powert:mha/universal/quirk_erased",
+               "resource": "quirks:universal/quirk_erased",
                "comparison": "==",
                "compare_to": 0
             }
