@@ -210,7 +210,7 @@
       "should_render":false
    },
    "key":{
-      "key":"key.origins.secondary_active",
+      "key":"key.quirks.secondary",
       "continuous":true
    },
    "condition": {

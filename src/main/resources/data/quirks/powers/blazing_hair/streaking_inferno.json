@@ -128,7 +128,7 @@
           "order":4
        },
        "key":{
-          "key":"key.origins.ternary_active",
+          "key":"key.quirks.ternary",
           "continuous":false
        },
        "condition": {

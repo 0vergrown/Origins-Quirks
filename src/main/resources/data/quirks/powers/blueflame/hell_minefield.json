@@ -261,7 +261,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.septenary_active",
+         "key":"key.quirks.septenary",
          "continuous":false
       },
       "condition":{

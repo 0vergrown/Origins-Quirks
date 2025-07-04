@@ -7,7 +7,7 @@
             "translate":"badge.quirks.erasure.quirk_nullification_toggle",
             "with":[
                {
-                  "keybind":"key.origins.primary_active"
+                  "keybind":"key.quirks.primary"
                }
             ]
          }
@@ -120,7 +120,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.quirks.primary",
          "continuous":false
       },
       "condition":{

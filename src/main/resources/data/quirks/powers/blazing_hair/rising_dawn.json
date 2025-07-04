@@ -7,7 +7,7 @@
              "translate":"badge.quirks.blazing_hair.rising_dawn_toggle",
              "with":[
                 {
-                   "keybind":"key.origins.quaternary_active"
+                   "keybind":"key.quirks.quaternary"
                 }
              ]
           }
@@ -110,7 +110,7 @@
           "should_render":false
        },
        "key":{
-          "key":"key.origins.quaternary_active",
+          "key":"key.quirks.quaternary",
           "continuous":false
        },
        "condition": {

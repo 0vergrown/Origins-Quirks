@@ -101,7 +101,7 @@
         "bar_index": 10
     },
     "key": {
-        "key": "key.origins.quaternary_active",
+        "key": "key.quirks.quaternary",
         "continuous": false
     }
 }

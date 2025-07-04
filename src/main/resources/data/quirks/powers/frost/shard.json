@@ -10,7 +10,7 @@
             "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png"
         },
         "key": {
-            "key": "key.origins.primary_active",
+            "key": "key.quirks.primary",
             "continuous": true
         },
         "allow_conditional_cancelling": false,

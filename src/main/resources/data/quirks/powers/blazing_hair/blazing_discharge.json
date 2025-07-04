@@ -7,7 +7,7 @@
                "translate":"badge.quirks.blazing_hair.blazing_discharge_keybind",
                "with":[
                 {
-                   "keybind":"key.origins.primary_active"
+                   "keybind":"key.quirks.primary"
                 }
              ]
             }
@@ -168,7 +168,7 @@
        "order":5
     },
     "key":{
-       "key":"key.origins.primary_active",
+       "key":"key.quirks.primary",
        "continuous":false
     },
     "condition": {

@@ -163,7 +163,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.quaternary_active",
+         "key":"key.quirks.quaternary",
          "continuous":false
       },
       "condition":{

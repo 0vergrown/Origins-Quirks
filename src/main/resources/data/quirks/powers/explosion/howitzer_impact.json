@@ -162,7 +162,7 @@
          "bar_index":15
       },
       "key":{
-         "key":"key.origins.secondary_active",
+         "key":"key.quirks.secondary",
          "continuous":false
       },
       "condition":{

@@ -116,7 +116,7 @@
       "bar_index":8
    },
    "key":{
-      "key":"key.origins.senary_active",
+      "key":"key.quirks.senary",
       "continuous":false
    },
    "condition":{

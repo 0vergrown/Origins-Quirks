@@ -7,7 +7,7 @@
             "translate":"badge.quirks.all_for_one.air_walk_toggle",
             "with":[
                {
-                  "keybind":"key.origins.quinary_active"
+                  "keybind":"key.quirks.quinary"
                }
             ]
          }
@@ -33,7 +33,7 @@
        "type":"origins:toggle",
        "active_by_default":false,
        "key":{
-          "key":"key.origins.quinary_active",
+          "key":"key.quirks.quinary",
           "continuous":false
        },
        "retain_state":false,

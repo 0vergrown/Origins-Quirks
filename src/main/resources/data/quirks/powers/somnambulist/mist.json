@@ -322,7 +322,7 @@
             "should_render": false
         },
         "key": {
-            "key": "key.origins.primary_active",
+            "key": "key.quirks.primary",
             "continuous": true
         },
         "entity_action": {

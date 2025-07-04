@@ -7,10 +7,10 @@
             "translate":"badge.quirks.zero_gravity.gunhead_martial_arts",
             "with":[
                {
-                  "keybind":"key.origins.primary_active"
+                  "keybind":"key.quirks.primary"
                },
                {
-                  "keybind":"key.origins.ternary_active"
+                  "keybind":"key.quirks.ternary"
                }
             ]
          }
@@ -58,7 +58,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.quirks.primary",
          "continuous":false
       }
    },
@@ -196,7 +196,7 @@
          "bar_index": 15
       },
       "key":{
-         "key":"key.origins.ternary_active",
+         "key":"key.quirks.ternary",
          "continuous":false
       },
       "condition":{
@@ -289,7 +289,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.ternary_active",
+         "key":"key.quirks.ternary",
          "continuous":false
       },
       "condition":{

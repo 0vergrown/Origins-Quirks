@@ -4,7 +4,7 @@
        "type":"origins:toggle",
        "active_by_default":false,
        "key":{
-          "key":"key.origins.quaternary_active",
+          "key":"key.quirks.quaternary",
           "continuous":false
        },
        "retain_state":false,

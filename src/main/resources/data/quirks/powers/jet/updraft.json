@@ -47,7 +47,7 @@
       "bar_index":4
    },
    "key":{
-      "key":"key.origins.primary_active",
+      "key":"key.quirks.primary",
       "continuous":false
    },
    "condition": {

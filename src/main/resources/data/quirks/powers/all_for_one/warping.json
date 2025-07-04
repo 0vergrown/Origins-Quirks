@@ -7,7 +7,7 @@
             "translate":"badge.quirks.all_for_one.warping_not_sneaking",
             "with":[
                {
-                  "keybind":"key.origins.secondary_active"
+                  "keybind":"key.quirks.secondary"
                }
             ]
          }
@@ -22,7 +22,7 @@
                   "keybind":"key.sneak"
                },
                {
-                  "keybind":"key.origins.secondary_active"
+                  "keybind":"key.quirks.secondary"
                }
             ]
          }
@@ -273,7 +273,7 @@
          "bar_index":19
       },
       "key":{
-         "key":"key.origins.secondary_active",
+         "key":"key.quirks.secondary",
          "continuous":false
       },
       "condition":{

@@ -13,7 +13,7 @@
                   "keybind":"key.loadToolbarActivator"
                },
                {
-                  "keybind":"key.origins.ternary_active"
+                  "keybind":"key.quirks.ternary"
                }
             ]
          }

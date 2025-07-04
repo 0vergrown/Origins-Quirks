@@ -350,7 +350,7 @@
          "bar_index": 20
       },
       "key":{
-         "key":"key.origins.quaternary_active",
+         "key":"key.quirks.quaternary",
          "continuous":false
       },
       "condition":{

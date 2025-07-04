@@ -81,7 +81,7 @@
          ]
       },
       "key": {
-         "key": "key.origins.ternary_active",
+         "key": "key.quirks.ternary",
          "continuous": true
       }
    },

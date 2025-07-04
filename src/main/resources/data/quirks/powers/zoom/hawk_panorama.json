@@ -3,7 +3,7 @@
    "toggle":{
       "type":"origins:toggle",
       "key":{
-         "key":"key.origins.quaternary_active",
+         "key":"key.quirks.quaternary",
          "continuous":false
       },
       "active_by_default":false,

@@ -55,6 +55,10 @@ dependencies {
 
 	// Origins dependency
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+
+	// Apoli dependency
+	modApi "com.github.apace100:apoli:${project.apoli_version}"
+	include "com.github.apace100:apoli:${project.apoli_version}"
 	
 }
 

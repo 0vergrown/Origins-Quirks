@@ -1,5 +1,6 @@
 package dev.overgrown.quirks;
 
+import dev.overgrown.quirks.client.keybind.PowerKeybinds;
 import dev.overgrown.quirks.particle.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -10,11 +11,12 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 public class QuirksClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        // Register Blueflame particles
+        // Register keybinds
+        PowerKeybinds.register();
+
+        // Register particles
         ParticleFactoryRegistry.getInstance().register(ModParticles.BLUEFLAME, BlueflameParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.SMALL_BLUEFLAME, BlueflameParticle.SmallFactory::new);
-
-        // Register Hellflame particles
         ParticleFactoryRegistry.getInstance().register(ModParticles.HELLFLAME, HellflameParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.SMALL_HELLFLAME, HellflameParticle.SmallFactory::new);
     }

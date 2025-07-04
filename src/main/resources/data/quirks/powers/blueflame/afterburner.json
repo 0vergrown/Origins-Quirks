@@ -7,7 +7,7 @@
             "translate":"badge.quirks.blueflame.afterburner_toggle",
             "with":[
                {
-                  "keybind":"key.origins.primary_active"
+                  "keybind":"key.quirks.primary"
                }
             ]
          }
@@ -30,7 +30,7 @@
       "type":"origins:toggle",
       "active_by_default":false,
       "key":{
-         "key":"key.origins.primary_active",
+         "key":"key.quirks.primary",
          "continuous":false
       },
       "retain_state":false,

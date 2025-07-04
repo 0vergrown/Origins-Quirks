@@ -108,7 +108,7 @@
          "should_render":false
       },
       "key":{
-         "key":"key.origins.senary_active",
+         "key":"key.quirks.senary",
          "continuous":false
       },
       "condition":{

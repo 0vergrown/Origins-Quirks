@@ -263,7 +263,7 @@
           "should_render":false
        },
        "key":{
-          "key":"key.origins.octonary_active",
+          "key":"key.quirks.octonary",
           "continuous":false
        },
        "condition":{

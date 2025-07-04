@@ -240,7 +240,7 @@
         "should_render": false
     },
     "key": {
-        "key": "key.origins.quinary_active",
+        "key": "key.quirks.quinary",
         "continuous": true
     },
     "condition": {
