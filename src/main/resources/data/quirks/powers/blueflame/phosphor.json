@@ -27,7 +27,10 @@
     },
     "main_active_particles":{
       "type": "origins:particle",
-      "particle":"quirks:blueflame",
+      "particle":{
+        "type":"quirks:blueflame",
+        "params":"0.5"
+      },
       "frequency":1,
       "count":5,
       "speed":0.00,

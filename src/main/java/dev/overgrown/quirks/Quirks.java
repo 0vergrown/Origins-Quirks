@@ -2,7 +2,7 @@ package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.sound.ModSounds;
 import dev.overgrown.quirks.item.ModItems;
-import dev.overgrown.quirks.particle.ModParticles;
+import dev.overgrown.quirks.particle.registry.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;

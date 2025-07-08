@@ -1,16 +1,21 @@
-package dev.overgrown.quirks.particle;
+package dev.overgrown.quirks.particle.blueflame;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
-import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.util.math.MathHelper;
 
 @Environment(EnvType.CLIENT)
 public class BlueflameParticle extends AbstractSlowingParticle {
-    BlueflameParticle(ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
+    private final SpriteProvider spriteProvider;
+
+    BlueflameParticle(ClientWorld clientWorld, double d, double e, double f,
+                      double g, double h, double i, float scale, SpriteProvider spriteProvider) {
         super(clientWorld, d, e, f, g, h, i);
+        this.spriteProvider = spriteProvider;
+        this.scale = scale;
+        this.setSpriteForAge(spriteProvider);
     }
 
     @Override
@@ -44,33 +49,25 @@ public class BlueflameParticle extends AbstractSlowingParticle {
         return j | k << 16;
     }
 
+    @Override
+    public void tick() {
+        super.tick();
+        this.setSpriteForAge(this.spriteProvider);
+    }
+
     @Environment(EnvType.CLIENT)
-    public static class Factory implements ParticleFactory<DefaultParticleType> {
+    public static class Factory implements ParticleFactory<BlueflameParticleEffect> {
         private final SpriteProvider spriteProvider;
 
         public Factory(SpriteProvider spriteProvider) {
             this.spriteProvider = spriteProvider;
         }
 
-        public Particle createParticle(DefaultParticleType defaultParticleType, ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
-            BlueflameParticle particle = new BlueflameParticle(clientWorld, d, e, f, g, h, i);
+        public Particle createParticle(BlueflameParticleEffect parameters, ClientWorld clientWorld,
+                                       double d, double e, double f, double g, double h, double i) {
+            BlueflameParticle particle = new BlueflameParticle(clientWorld, d, e, f, g, h, i,
+                    parameters.getScale(), this.spriteProvider);
             particle.setSprite(this.spriteProvider);
-            return particle;
-        }
-    }
-
-    @Environment(EnvType.CLIENT)
-    public static class SmallFactory implements ParticleFactory<DefaultParticleType> {
-        private final SpriteProvider spriteProvider;
-
-        public SmallFactory(SpriteProvider spriteProvider) {
-            this.spriteProvider = spriteProvider;
-        }
-
-        public Particle createParticle(DefaultParticleType defaultParticleType, ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
-            BlueflameParticle particle = new BlueflameParticle(clientWorld, d, e, f, g, h, i);
-            particle.setSprite(this.spriteProvider);
-            particle.scale(0.5F);
             return particle;
         }
     }

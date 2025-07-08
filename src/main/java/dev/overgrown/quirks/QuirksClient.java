@@ -1,7 +1,10 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
-import dev.overgrown.quirks.particle.*;
+import dev.overgrown.quirks.particle.blueflame.BlueflameParticle;
+import dev.overgrown.quirks.particle.hellflame.HellflameParticle;
+import dev.overgrown.quirks.particle.physical_charged.ChargedStrikeParticle;
+import dev.overgrown.quirks.particle.registry.ModParticles;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -15,9 +18,17 @@ public class QuirksClient implements ClientModInitializer {
         PowerKeybinds.register();
 
         // Register particles
-        ParticleFactoryRegistry.getInstance().register(ModParticles.BLUEFLAME, BlueflameParticle.Factory::new);
-        ParticleFactoryRegistry.getInstance().register(ModParticles.SMALL_BLUEFLAME, BlueflameParticle.SmallFactory::new);
-        ParticleFactoryRegistry.getInstance().register(ModParticles.HELLFLAME, HellflameParticle.Factory::new);
-        ParticleFactoryRegistry.getInstance().register(ModParticles.SMALL_HELLFLAME, HellflameParticle.SmallFactory::new);
+        ParticleFactoryRegistry.getInstance().register(
+                ModParticles.BLUEFLAME,
+                BlueflameParticle.Factory::new
+        );
+        ParticleFactoryRegistry.getInstance().register(
+                ModParticles.HELLFLAME,
+                HellflameParticle.Factory::new
+        );
+        ParticleFactoryRegistry.getInstance().register(
+                ModParticles.CHARGED_STRIKE,
+                ChargedStrikeParticle.Factory::new
+        );
     }
 }

@@ -66,7 +66,10 @@
                 },
                 {
                     "type":"origins:spawn_particles",
-                    "particle":"quirks:blueflame",
+                  "particle":{
+                    "type":"quirks:blueflame",
+                    "params":"0.5"
+                  },
                     "count":300,
                     "speed":0.08,
                     "force":true,

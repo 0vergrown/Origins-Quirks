@@ -302,6 +302,9 @@
     "actionbar.quirks.permeation.hair_has_not_been_cut":"You has grown back, could be time to cut it?",
     "actionbar.quirks.permeation.hair_was_cut":"Your hair has been cut! I wonder what it could be used for?",
 
+    "origin.quirks.physical_charged.name":"§c§lPhysical Charged",
+    "origin.quirks.physical_charged.description":"Quirk Type: Emitter\n\nPhysical Charged allows the user to generate, store, and release kinetic energy within their body. Energy is built up through muscle flexing, taking damage, or consuming high-energy substances (like energy drinks). This energy can be used to enhance strength, speed, and durability, or be released as kinetic projectiles and explosive bursts. The user can also transfer energy to allies to give them a temporary boost. However, overuse causes strain or self-injury, especially when unleashing large-scale attacks like the “Final Discharge.",
+
     "origin.quirks.quirkless.name":"§f§lQuirkless",
     "origin.quirks.quirkless.description":"Unlike 80% of the population, Quirkless individuals are those who possess absolutely no Quirk, particularly unique features, or anything that would put them under the classification of being superhuman.",
 

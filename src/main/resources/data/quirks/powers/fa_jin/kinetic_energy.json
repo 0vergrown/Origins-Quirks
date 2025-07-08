@@ -23,7 +23,7 @@
       "max":50,
       "hud_render":{
          "should_render":true,
-         "sprite_location":"powert:textures/gui/sprites/fa_jin/resource_bar_01.png",
+         "sprite_location":"quirks:textures/gui/sprites/fa_jin/resource_bar_01.png",
          "bar_index":0
       },
       "start_value":0
