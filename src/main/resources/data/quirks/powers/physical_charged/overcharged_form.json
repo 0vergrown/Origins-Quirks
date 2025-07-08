@@ -81,6 +81,12 @@
       "conditions":[
         {
           "type": "origins:resource",
+          "resource": "quirks:physical_charged/overcharged_form_resource",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
           "resource": "quirks:physical_charged/charged_bar",
           "comparison": ">=",
           "compare_to": 50
@@ -139,19 +145,6 @@
       "value": 0.50,
       "name": "Give Naturual Resistance II When Overcharged Form Is Active"
     },
-    "condition": {
-      "type": "origins:resource",
-      "resource": "quirks:physical_charged/overcharged_form_resource",
-      "comparison": "==",
-      "compare_to": 1
-    }
-  },
-  "model_color": {
-    "type": "origins:model_color",
-    "red": 1.00,
-    "green": 0.00,
-    "blue": 0.00,
-    "alpha": 0.00,
     "condition": {
       "type": "origins:resource",
       "resource": "quirks:physical_charged/overcharged_form_resource",
