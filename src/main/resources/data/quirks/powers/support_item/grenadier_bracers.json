@@ -9,7 +9,7 @@
       },
       "start_value":0
    },
-   "selected_mode_auto_cannon_message":{
+   "bracer_full_message":{
       "type":"origins:action_over_time",
       "rising_action":{
          "type":"origins:execute_command",
@@ -18,7 +18,7 @@
       "interval":1,
       "condition":{
          "type":"origins:resource",
-         "resource":"powert:mha/support_item/grenadier_bracers_resource",
+         "resource":"quirks:support_item/grenadier_bracers_resource",
          "comparison":"==",
          "compare_to":100
       }
@@ -29,7 +29,7 @@
          "type":"origins:if_else",
          "condition":{
             "type":"origins:resource",
-            "resource":"powert:mha/support_item/grenadier_bracers_resource",
+            "resource":"quirks:support_item/grenadier_bracers_resource",
             "comparison":"==",
             "compare_to":100
          },
@@ -42,7 +42,7 @@
                      "operation":"set_total",
                      "value":0.00
                   },
-                  "resource":"powert:mha/support_item/grenadier_bracers_resource"
+                  "resource":"quirks:support_item/grenadier_bracers_resource"
                },
                {
                   "type":"origins:swing_hand",
@@ -1184,7 +1184,7 @@
                      "operation":"add_base_early",
                      "value":10.00
                   },
-                  "resource":"powert:mha/support_item/grenadier_bracers_resource"
+                  "resource":"quirks:support_item/grenadier_bracers_resource"
                },
                {
                   "type":"origins:modify_resource",
@@ -1192,7 +1192,7 @@
                      "operation":"add_base_early",
                      "value":-10.00
                   },
-                  "resource":"powert:mha/explosion/nitro_sweat_secretion_resource"
+                  "resource":"quirks:explosion/nitro_sweat_secretion_resource"
                }
             ]
          }
@@ -1210,12 +1210,12 @@
          "conditions":[
             {
                "type":"origins:origin",
-               "origin":"powert:mha/explosion",
-               "layer":"origins:powers"
+               "origin":"quirks:explosion",
+               "layer":"origins:quirks"
             },
             {
                "type":"origins:resource",
-               "resource":"powert:mha/explosion/nitro_sweat_secretion_resource",
+               "resource":"quirks:explosion/nitro_sweat_secretion_resource",
                "comparison":">=",
                "compare_to":10
             }

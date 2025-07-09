@@ -1,6 +1,7 @@
 package dev.overgrown.quirks.item;
 
 import dev.overgrown.quirks.Quirks;
+import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -13,7 +14,14 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("lemilliosuit_chestplate"), LEMILLIOSUIT_CHESTPLATE);
         Registry.register(Registries.ITEM, Quirks.identifier("lemilliosuit_leggings"), LEMILLIOSUIT_LEGGINGS);
         Registry.register(Registries.ITEM, Quirks.identifier("lemilliosuit_boots"), LEMILLIOSUIT_BOOTS);
+        Registry.register(Registries.ITEM, Quirks.identifier("grenadier_bracer"), GRENADIER_BRACER);
     }
+
+    public static final Item GRENADIER_BRACER = new GrenadierBracer(
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.UNCOMMON)
+    );
 
     public static final ArmorItem LEMILLIOMET = new ArmorItem(
             ModArmorMaterials.LEMILLIOSUIT,

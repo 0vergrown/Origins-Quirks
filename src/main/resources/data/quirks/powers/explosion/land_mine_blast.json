@@ -362,7 +362,7 @@
                "item_condition":{
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"powert:support_item/grenadier_bracers"
+                     "item":"quirks:grenadier_bracer"
                   }
                }
             },
@@ -372,7 +372,7 @@
                "item_condition":{
                   "type":"origins:ingredient",
                   "ingredient":{
-                     "item":"powert:support_item/grenadier_bracers"
+                     "item":"quirks:grenadier_bracer"
                   }
                }
             },
