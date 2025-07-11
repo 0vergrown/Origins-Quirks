@@ -29,7 +29,7 @@
             "type":"origins:spawn_particles",
             "particle":{
               "type":"quirks:blueflame",
-              "params":"0.5"
+              "params":"0.3"
             },
             "count":800,
             "speed":0,
@@ -132,7 +132,7 @@
             "type":"origins:spawn_particles",
             "particle":{
               "type":"quirks:blueflame",
-              "params":"0.5"
+              "params":"0.3"
             },
             "count":800,
             "speed":0,

@@ -247,14 +247,11 @@
                 "set": false
              },
              {
-                "type":"origins:spawn_entity",
-                "entity_type":"minecraft:armor_stand",
-                "tag":"{Silent:1b,Invulnerable:1b,Invisible:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:618825}}]}",
-                "entity_action":{
-                   "type":"origins:grant_power",
-                   "power":"quirks:blueflame/vanishing_fist_armor_stand_effects",
-                   "source":"quirks:blueflame/vanishing_fist_armor_stand_effects"
-                }
+                "type": "origins:fire_projectile",
+                "entity_type": "quirks:vanishing_fist",
+                "divergence": 1.00,
+                "speed": 3.00,
+                "count": 1
              }
           ]
        },
