@@ -1,7 +1,7 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.sound.ModSounds;
-import dev.overgrown.quirks.effect.BlindedStatusEffect;
+import dev.overgrown.quirks.effect.invisibility.blinded.BlindedStatusEffect;
 import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.item.ModItems;
 import dev.overgrown.quirks.particle.registry.ModParticles;

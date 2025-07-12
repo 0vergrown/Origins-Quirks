@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.client;
+package dev.overgrown.quirks.effect.invisibility.blinded;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.client.sound.ModSounds;

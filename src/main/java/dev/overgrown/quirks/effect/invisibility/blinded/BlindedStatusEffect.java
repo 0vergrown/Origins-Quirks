@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.effect;
+package dev.overgrown.quirks.effect.invisibility.blinded;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;

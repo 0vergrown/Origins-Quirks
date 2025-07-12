@@ -1,8 +1,7 @@
 package dev.overgrown.quirks;
 
-import dev.overgrown.quirks.client.BlindedEffectHandler;
+import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
-import dev.overgrown.quirks.client.sound.ModSounds;
 import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.entity.client.ClientModels;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistModel;

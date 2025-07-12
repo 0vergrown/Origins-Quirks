@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.client.render;
+package dev.overgrown.quirks.effect.invisibility.blinded.render;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import dev.overgrown.quirks.Quirks;
