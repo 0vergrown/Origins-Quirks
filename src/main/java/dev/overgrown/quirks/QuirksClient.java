@@ -1,6 +1,8 @@
 package dev.overgrown.quirks;
 
+import dev.overgrown.quirks.client.BlindedEffectHandler;
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
+import dev.overgrown.quirks.client.sound.ModSounds;
 import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.entity.client.ClientModels;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistModel;
@@ -48,5 +50,8 @@ public class QuirksClient implements ClientModInitializer {
                 ModEntities.VANISHING_FIST,
                 VanishingFistRenderer::new
         );
+
+        // Initialize blinded effect handler
+        BlindedEffectHandler.initialize();
     }
 }

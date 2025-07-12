@@ -34,8 +34,10 @@
          {
             "type": "origins:delay",
             "action": {
-               "type": "origins:execute_command",
-               "command": "playsound quirks:invisibility.combat player @a[distance=..8] ~ ~ ~ 1 0"
+               "type": "origins:play_sound",
+               "sound": "minecraft:quirks:invisibility_combat",
+               "volume": 1.00,
+               "pitch": 1.00
             },
             "ticks": 11
          },
@@ -75,9 +77,15 @@
                         {
                            "type": "origins:target_action",
                            "action": {
-                              "type": "origins:grant_power",
-                              "power": "quirks:invisibility/blinded",
-                              "source": "quirks:invisibility/refract"
+                              "type": "origins:apply_effect",
+                              "effect": {
+                                 "effect": "quirks:blinded",
+                                 "duration": 100,
+                                 "amplifier": 0,
+                                 "is_ambient": false,
+                                 "show_particles": false,
+                                 "show_icon": true
+                              }
                            }
                         },
                         {
@@ -96,9 +104,15 @@
                         {
                            "type": "origins:target_action",
                            "action": {
-                              "type": "origins:grant_power",
-                              "power": "quirks:invisibility/blinded",
-                              "source": "quirks:invisibility/refract"
+                              "type": "origins:apply_effect",
+                              "effect": {
+                                 "effect": "quirks:blinded",
+                                 "duration": 100,
+                                 "amplifier": 0,
+                                 "is_ambient": false,
+                                 "show_particles": false,
+                                 "show_icon": true
+                              }
                            }
                         },
                         {
@@ -145,7 +159,7 @@
    "cooldown": 260,
    "hud_render": {
       "should_render": true,
-      "sprite_location": "powert:textures/gui/sprites/invisibility/resource_bar_01.png",
+      "sprite_location": "quirks:textures/gui/sprites/invisibility/resource_bar_01.png",
       "bar_index": 2
    },
    "key": {

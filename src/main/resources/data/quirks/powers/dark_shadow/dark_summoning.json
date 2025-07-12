@@ -6,10 +6,6 @@
          "type":"origins:and",
          "actions":[
             {
-               "type": "origins:execute_command",
-               "command": "superpower add powert:dark_shadow_display @s"
-            },
-            {
                "type":"origins:modify_resource",
                "modifier":{
                   "operation":"set_total",
@@ -34,10 +30,6 @@
                "resource":"quirks:dark_shadow/womb_resource"
             }
          ]
-      },
-      "entity_action_lost": {
-         "type":"origins:execute_command",
-         "command":"power revokeall @s quirks:dark_shadow"
       },
       "entity_action_removed":{
          "type":"origins:and",
@@ -71,10 +63,6 @@
       "entity_action_respawned":{
          "type":"origins:and",
          "actions":[
-            {
-               "type": "origins:execute_command",
-               "command": "superpower add powert:dark_shadow_display @s"
-            },
             {
                "type":"origins:modify_resource",
                "modifier":{

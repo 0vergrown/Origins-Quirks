@@ -254,6 +254,7 @@
     "power.quirks.invisibility/warp_refraction.description":"Draw in the light nearby, refracting it in a small radius near you and blinding nearby people. [Secondary]",
     "power.quirks.invisibility/light_scatter.name":"Light Scatter",
     "power.quirks.invisibility/light_scatter.description":"By focusing on a target, the user creates shimmering, refracted light waves around the target in different locations. [Ternary]\n\n- Effects: Blindness for 5 seconds, severe slowness\n- Conditions: Usable only in bright areas\n- Cooldown: 10 seconds",
+    "effect.quirks.blinded": "Blinded",
 
     "origin.quirks.jet.name":"§e§lJet",
     "origin.quirks.jet.description":"Quirk Type: Mutant\n\nJet grants the user propulsion abilities through specialized air vents located on the soles of their feet. These vents allow the user to expel highly pressurized air from their lungs, enabling bursts of speed, agility, and short-duration flight. By controlling the direction and intensity of air expelled, the user can perform precise aerial maneuvers, enhance their physical strikes with momentum, and evade attacks with blinding speed. This Quirk relies heavily on the user's respiratory capacity, making stamina and breathing techniques vital for prolonged use.",

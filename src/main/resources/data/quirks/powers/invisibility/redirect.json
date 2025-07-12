@@ -47,9 +47,15 @@
                      {
                         "type": "origins:target_action",
                         "action": {
-                           "type": "origins:grant_power",
-                           "power": "quirks:invisibility/blinded",
-                           "source": "quirks:invisibility/redirect"
+                           "type": "origins:apply_effect",
+                           "effect": {
+                              "effect": "quirks:blinded",
+                              "duration": 100,
+                              "amplifier": 0,
+                              "is_ambient": false,
+                              "show_particles": false,
+                              "show_icon": true
+                           }
                         }
                      }
                   ]
@@ -91,7 +97,7 @@
       "max": 5,
       "hud_render": {
          "should_render": true,
-         "sprite_location": "powert:textures/gui/sprites/invisibility/resource_bar_01.png",
+         "sprite_location": "quirks:textures/gui/sprites/invisibility/resource_bar_01.png",
          "bar_index": 0,
          "condition": {
             "type": "origins:resource",
@@ -119,7 +125,7 @@
    "cooldown": {
       "type": "origins:cooldown",
       "hud_render": {
-         "sprite_location": "powert:textures/gui/sprites/invisibility/resource_bar_01.png",
+         "sprite_location": "quirks:textures/gui/sprites/invisibility/resource_bar_01.png",
          "bar_index": 1,
          "inverted": true
       },
