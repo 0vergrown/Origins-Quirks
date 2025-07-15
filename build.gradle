@@ -59,6 +59,9 @@ dependencies {
 	// Apoli dependency
 	modApi "com.github.apace100:apoli:${project.apoli_version}"
 	include "com.github.apace100:apoli:${project.apoli_version}"
+
+	// Trinkets dependency (Optional)
+	modCompileOnly "dev.emi:trinkets:${trinkets_version}"
 	
 }
 

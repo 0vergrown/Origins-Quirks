@@ -1,11 +1,13 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.sound.ModSounds;
+import dev.overgrown.quirks.compat.trinkets.TrinketsIntegration;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedStatusEffect;
 import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.item.ModItems;
 import dev.overgrown.quirks.particle.registry.ModParticles;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -35,5 +37,10 @@ public class Quirks implements ModInitializer {
 		ModParticles.registerParticles();
 		ModEntities.registerEntities();
 		ModSounds.initialize();
+
+		// Load Trinkets integration if available
+		if (FabricLoader.getInstance().isModLoaded("trinkets")) {
+			TrinketsIntegration.init();
+		}
 	}
 }
