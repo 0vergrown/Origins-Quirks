@@ -12,8 +12,9 @@ import net.minecraft.registry.Registry;
 public class ModEntities {
     public static final EntityType<VanishingFistEntity> VANISHING_FIST =
             FabricEntityTypeBuilder.<VanishingFistEntity>create(SpawnGroup.MISC, VanishingFistEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5F, 0.5F))
-                    .trackRangeBlocks(4).trackedUpdateRate(10)
+                    .dimensions(EntityDimensions.fixed(0.25f, 0.25f))
+                    .trackRangeBlocks(4)
+                    .trackedUpdateRate(10)
                     .build();
 
     public static void registerEntities() {

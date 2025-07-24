@@ -5,43 +5,37 @@ import dev.overgrown.quirks.particle.blueflame.BlueflameParticleEffect;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.entity.projectile.thrown.ThrownEntity;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class VanishingFistEntity extends PersistentProjectileEntity {
+public class VanishingFistEntity extends ThrownEntity {
     private static final float DAMAGE = 8.0F;
     private final ParticleEffect particleEffect = new BlueflameParticleEffect(0.3f);
     private int maxLife = 100; // 5 second lifetime
 
     public VanishingFistEntity(EntityType<? extends VanishingFistEntity> entityType, World world) {
         super(entityType, world);
-        this.setNoGravity(true);
     }
 
     public VanishingFistEntity(World world, LivingEntity owner) {
         super(ModEntities.VANISHING_FIST, owner, world);
-        Vec3d lookVec = owner.getRotationVec(1.0F).multiply(3.0);
-        this.setVelocity(lookVec);
+        Vec3d lookVec = owner.getRotationVec(1.0F);
+        this.setVelocity(lookVec.x, lookVec.y, lookVec.z, 1.5F, 1.0F); // Snowball-like velocity
         this.setPosition(owner.getX(), owner.getEyeY() - 0.1, owner.getZ());
-        this.setNoGravity(true);
+    }
+
+    @Override
+    protected void initDataTracker() {
+        // No special data tracking needed
     }
 
     @Override
     public void tick() {
         super.tick();
-
-        // Cancel drag effect applied by superclass (0.99 in air / 0.6 in water)
-        if (!this.isRemoved()) {
-            float dragFactor = this.isTouchingWater() ? 0.6F : 0.99F;
-            Vec3d velocity = this.getVelocity();
-            this.setVelocity(velocity.multiply(1.0 / dragFactor));
-        }
 
         // Despawn after timeout
         if (this.age >= maxLife) {
@@ -96,7 +90,7 @@ public class VanishingFistEntity extends PersistentProjectileEntity {
     }
 
     @Override
-    protected ItemStack asItemStack() {
-        return new ItemStack(Items.AIR);
+    protected float getGravity() {
+        return 0.03F; // Same as snowball gravity
     }
 }
