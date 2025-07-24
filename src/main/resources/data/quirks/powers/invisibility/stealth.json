@@ -55,7 +55,7 @@
                 },
                 {
                     "type": "origins:play_sound",
-                    "sound": "minecraft:quirks:invisibility_cloak",
+                    "sound": "quirks:invisibility_cloak",
                     "volume": 1.00,
                     "pitch": 1.00
                 }
@@ -78,7 +78,7 @@
                     },
                     {
                         "type": "origins:play_sound",
-                        "sound": "minecraft:quirks:invisibility_cloak",
+                        "sound": "quirks:invisibility_cloak",
                         "volume": 1.00,
                         "pitch": 1.00
                     }

@@ -9,6 +9,14 @@
       },
       "start_value":0
    },
+   "restrict_head_armor":{
+      "type":"origins:restrict_armor",
+      "head":{
+         "type":"origins:armor_value",
+         "comparison":">",
+         "compare_to":1
+      }
+   },
    "apply_body_armor":{
       "type":"origins:active_self",
       "entity_action":{
@@ -48,6 +56,79 @@
                      "value":1.00
                   },
                   "resource":"quirks:dark_shadow/black_abyss_resource"
+               },
+               {
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"head",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "slot":"armor.head",
+                           "stack":{
+                              "item":"quirks:dark_shadow_head"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
+               },
+               {
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"mainhand",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "slots":[
+                              "weapon.mainhand"
+                           ],
+                           "stack":{
+                              "item":"quirks:dark_shadow_claw"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
+               },
+               {
+                  "type":"origins:if_else_list",
+                  "actions":[
+                     {
+                        "condition":{
+                           "type":"origins:equipped_item",
+                           "equipment_slot":"offhand",
+                           "item_condition":{
+                              "type":"origins:empty"
+                           }
+                        },
+                        "action":{
+                           "type":"origins:replace_inventory",
+                           "inventory_type":"inventory",
+                           "slots":[
+                              "weapon.offhand"
+                           ],
+                           "stack":{
+                              "item":"quirks:dark_shadow_claw"
+                           },
+                           "merge_nbt":false
+                        }
+                     }
+                  ]
                }
             ]
          },
@@ -69,6 +150,56 @@
                      "value":0.00
                   },
                   "resource":"quirks:dark_shadow/black_abyss_resource"
+               },
+               {
+                  "type":"origins:modify_inventory",
+                  "inventory_type":"inventory",
+                  "item_action":{
+                     "type":"origins:consume",
+                     "amount":1
+                  },
+                  "item_condition": {
+                     "type":"origins:ingredient",
+                     "ingredient":{
+                        "item":"quirks:dark_shadow_head"
+                     }
+                  },
+                  "slot":"armor.head",
+                  "process_mode":"items",
+                  "limit":0
+               },
+               {
+                  "type":"origins:modify_inventory",
+                  "inventory_type":"inventory",
+                  "item_action":{
+                     "type":"origins:consume",
+                     "amount":1
+                  },
+                  "item_condition": {
+                     "type":"origins:ingredient",
+                     "ingredient":{
+                        "item":"quirks:dark_shadow_claw"
+                     }
+                  },
+                  "process_mode":"items",
+                  "limit":0
+               },
+               {
+                  "type":"origins:modify_inventory",
+                  "inventory_type":"inventory",
+                  "item_action":{
+                     "type":"origins:consume",
+                     "amount":1
+                  },
+                  "item_condition": {
+                     "type":"origins:ingredient",
+                     "ingredient":{
+                        "item":"quirks:dark_shadow_claw"
+                     }
+                  },
+                  "slot":"weapon.offhand",
+                  "process_mode":"items",
+                  "limit":0
                }
             ]
          }
@@ -116,12 +247,109 @@
    "elytra":{
       "type":"origins:elytra_flight",
       "render_elytra":true,
-      "texture_location":"powert:textures/entity/black_fallen_angel_wings.png",
+      "texture_location":"quirks:textures/entity/dark_shadow/black_fallen_angel_wings.png",
       "condition":{
          "type":"origins:resource",
          "resource":"quirks:dark_shadow/black_abyss_resource",
          "comparison":"==",
          "compare_to":1
+      }
+   },
+   "equip_and_unequip_armor":{
+      "type":"origins:action_over_time",
+      "falling_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "value":0.00
+               },
+               "resource":"quirks:dark_shadow/dark_summoning_resource"
+            },
+            {
+               "type":"origins:modify_resource",
+               "modifier":{
+                  "operation":"set_total",
+                  "value":0.00
+               },
+               "resource":"quirks:dark_shadow/black_abyss_resource"
+            },
+            {
+               "type":"origins:spawn_particles",
+               "particle":{
+                  "type":"minecraft:dust_color_transition",
+                  "params":"0 0 0 1 0.36 0.11 0.41"
+               },
+               "count":50,
+               "speed":0.15,
+               "force":true,
+               "spread":{
+                  "x":0.40,
+                  "y":0.40,
+                  "z":0.40
+               },
+               "offset_y":0.50
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_head"
+                  }
+               },
+               "slot":"armor.head",
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "slot":"weapon.offhand",
+               "process_mode":"items",
+               "limit":0
+            }
+         ]
+      },
+      "interval":1,
+      "condition":{
+         "type": "origins:resource",
+         "resource": "quirks:universal/quirk_erased",
+         "comparison": "==",
+         "compare_to": 0
       }
    }
 }

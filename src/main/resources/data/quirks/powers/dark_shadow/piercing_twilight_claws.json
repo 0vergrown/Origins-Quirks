@@ -33,7 +33,7 @@
                                  "equipment_slot":"head",
                                  "action":{
                                     "type":"origins:modify",
-                                    "modifier":"powert:dark_shadow/set_to_attack_model"
+                                    "modifier":"quirks:dark_shadow/set_to_attack_model"
                                  }
                               },
                               {
@@ -43,7 +43,7 @@
                                     "equipment_slot":"head",
                                     "action":{
                                        "type":"origins:modify",
-                                       "modifier":"powert:dark_shadow/set_to_idle_model"
+                                       "modifier":"quirks:dark_shadow/set_to_idle_model"
                                     }
                                  },
                                  "ticks":5

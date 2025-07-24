@@ -35,7 +35,7 @@
             "type": "origins:delay",
             "action": {
                "type": "origins:play_sound",
-               "sound": "minecraft:quirks:invisibility_combat",
+               "sound": "quirks:invisibility_combat",
                "volume": 1.00,
                "pitch": 1.00
             },

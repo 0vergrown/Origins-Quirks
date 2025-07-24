@@ -196,7 +196,7 @@
       }
    },
    "pose":{
-      "type":"eggolib:pose",
+      "type":"sync:pose",
       "pose":"spin_attack",
       "priority":0,
       "condition":{

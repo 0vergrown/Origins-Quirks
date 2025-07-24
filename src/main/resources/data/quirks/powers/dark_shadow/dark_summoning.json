@@ -28,6 +28,56 @@
                   "value":0.00
                },
                "resource":"quirks:dark_shadow/womb_resource"
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_head"
+                  }
+               },
+               "slot":"armor.head",
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "slot":"weapon.offhand",
+               "process_mode":"items",
+               "limit":0
             }
          ]
       },
@@ -57,6 +107,56 @@
                   "value":0.00
                },
                "resource":"quirks:dark_shadow/womb_resource"
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_head"
+                  }
+               },
+               "slot":"armor.head",
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "slot":"weapon.offhand",
+               "process_mode":"items",
+               "limit":0
             }
          ]
       },
@@ -86,6 +186,56 @@
                   "value":0.00
                },
                "resource":"quirks:dark_shadow/womb_resource"
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_head"
+                  }
+               },
+               "slot":"armor.head",
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "process_mode":"items",
+               "limit":0
+            },
+            {
+               "type":"origins:modify_inventory",
+               "inventory_type":"inventory",
+               "item_action":{
+                  "type":"origins:consume",
+                  "amount":1
+               },
+               "item_condition": {
+                  "type":"origins:ingredient",
+                  "ingredient":{
+                     "item":"quirks:dark_shadow_claw"
+                  }
+               },
+               "slot":"weapon.offhand",
+               "process_mode":"items",
+               "limit":0
             }
          ]
       },
@@ -96,10 +246,19 @@
       "min": 0,
       "max": 1,
       "hud_render": {
-          "should_render": false
+         "should_render": false
       },
-      "start_value": 0
-  },
+      "start_value": 0,
+      "min_action": {
+         "type":"origins:execute_command",
+         "command":"execute as @e[type=minecraft:armor_stand,tag=dark_shadow_target,sort=nearest,limit=1] run kill @s"
+      },
+      "max_action": {
+         "type":"origins:spawn_entity",
+         "entity_type":"minecraft:armor_stand",
+         "tag":"{Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"dark_shadow_target\"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b,tag:{CustomModelData:385957}}]}"
+      }
+   },
    "spawn":{
       "type":"origins:active_self",
       "entity_action":{
@@ -205,6 +364,70 @@
                "compare_to": 0
             }
          ]
+      }
+   },
+   "position":{
+      "type":"origins:action_over_time",
+      "entity_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:execute_command",
+               "command":"teleport @e[type=minecraft:armor_stand,tag=dark_shadow_target,sort=nearest,limit=1] @s"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"data modify entity @e[type=minecraft:armor_stand,tag=dark_shadow_target,sort=nearest,limit=1] Rotation set from entity @s Rotation"
+            }
+         ]
+      },
+      "interval":1,
+      "condition":{
+         "type":"origins:and",
+         "conditions":[
+            {
+               "type": "origins:resource",
+               "resource":"quirks:dark_shadow/dark_summoning_resource",
+               "comparison": "==",
+               "compare_to": 1
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:dark_shadow/black_abyss_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
+               "type":"origins:resource",
+               "resource":"quirks:dark_shadow/womb_resource",
+               "comparison":"==",
+               "compare_to":0
+            },
+            {
+               "type": "origins:resource",
+               "resource": "quirks:universal/quirk_erased",
+               "comparison": "==",
+               "compare_to": 0
+            }
+         ]
+      }
+   },
+   "quirk_erased_reset":{
+      "type":"origins:action_over_time",
+      "rising_action":{
+         "type":"origins:modify_resource",
+         "modifier":{
+            "operation":"set_total",
+            "value":0.00
+         },
+         "resource":"quirks:dark_shadow/dark_summoning_resource"
+      },
+      "interval":1,
+      "condition":{
+         "type": "origins:resource",
+         "resource": "quirks:universal/quirk_erased",
+         "comparison": "==",
+         "compare_to": 1
       }
    }
 }

@@ -1,6 +1,7 @@
 package dev.overgrown.quirks.item;
 
 import dev.overgrown.quirks.Quirks;
+import dev.overgrown.quirks.item.dark_shadow.DarkShadowClaw;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowHead;
 import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
 import net.minecraft.item.*;
@@ -32,7 +33,7 @@ public class ModItems {
                     .rarity(Rarity.UNCOMMON)
     );
 
-    public static final Item DARK_SHADOW_CLAW = new SwordItem(
+    public static final Item DARK_SHADOW_CLAW = new DarkShadowClaw(
             ToolMaterials.NETHERITE,
             3,
             -2.4F,
