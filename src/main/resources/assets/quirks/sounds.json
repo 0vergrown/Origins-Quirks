@@ -83,6 +83,24 @@
     ],
     "subtitle":"subtitles.quirks.invisibility_combat"
   },
+  "jet_tailwind":{
+    "sounds":[
+      "quirks:jet/tailwind"
+    ],
+    "subtitle":"subtitles.quirks.jet_tailwind"
+  },
+  "jet_updraft":{
+    "sounds":[
+      "quirks:jet/updraft"
+    ],
+    "subtitle":"subtitles.quirks.jet_updraft"
+  },
+  "jet_gust_of_air":{
+    "sounds":[
+      "quirks:jet/gust_of_air"
+    ],
+    "subtitle":"subtitles.quirks.jet_gust_of_air"
+  },
   "move_selector_click":{
     "sounds":[
       "quirks:move_selector/click"

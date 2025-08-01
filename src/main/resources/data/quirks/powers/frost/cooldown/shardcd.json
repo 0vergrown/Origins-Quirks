@@ -5,95 +5,95 @@
     "type": "origins:multiple",
     "one": {
         "type": "origins:cooldown",
+        "cooldown": 180,
         "hud_render": {
             "should_render": true,
-            "bar_index": 5,
             "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "bar_index": 5,
             "condition": {
                 "type": "origins:and",
                 "conditions": [
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 0,
-                        "comparison": ">="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": ">=",
+                        "compare_to": 0
                     },
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 2,
-                        "comparison": "<="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": "<=",
+                        "compare_to": 2
                     }
                 ]
             }
-        },
-        "cooldown": 180
+        }
     },
     "two": {
         "type": "origins:cooldown",
+        "cooldown": 120,
         "hud_render": {
             "should_render": true,
-            "bar_index": 5,
             "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "bar_index": 5,
             "condition": {
                 "type": "origins:and",
                 "conditions": [
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 3,
-                        "comparison": ">="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": ">=",
+                        "compare_to": 3
                     },
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 4,
-                        "comparison": "<="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": "<=",
+                        "compare_to": 4
                     }
                 ]
             }
-        },
-        "cooldown": 120
+        }
     },
     "three": {
         "type": "origins:cooldown",
+        "cooldown": 90,
         "hud_render": {
             "should_render": true,
-            "bar_index": 5,
             "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "bar_index": 5,
             "condition": {
                 "type": "origins:and",
                 "conditions": [
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 5,
-                        "comparison": ">="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": ">=",
+                        "compare_to": 5
                     },
                     {
                         "type": "origins:resource",
-                        "resource": "powert:mha/frost/hypothermia_resource",
-                        "compare_to": 6,
-                        "comparison": "<="
+                        "resource": "quirks:frost/hypothermia_resource",
+                        "comparison": "<=",
+                        "compare_to": 6
                     }
                 ]
             }
-        },
-        "cooldown": 90
+        }
     },
     "four": {
         "type": "origins:cooldown",
+        "cooldown": 60,
         "hud_render": {
             "should_render": true,
-            "bar_index": 5,
             "sprite_location": "selenivee:textures/gui/community/selenivee/resource_bar_02.png",
+            "bar_index": 5,
             "condition": {
                 "type": "origins:resource",
+                "resource": "quirks:frost/hypothermia_resource",
                 "comparison": "==",
-                "compare_to": 7,
-                "resource": "powert:mha/frost/hypothermia_resource"
+                "compare_to": 7
             }
-        },
-        "cooldown": 60
+        }
     }
 }

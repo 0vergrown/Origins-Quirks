@@ -17,6 +17,13 @@ public enum ModArmorMaterials implements ArmorMaterial {
                     ModItems.LEMILLIOSUIT_LEGGINGS,
                     ModItems.LEMILLIOSUIT_BOOTS
             )
+    ),
+
+    HOLED_BOOTS("holed_boots", 5, new int[] { 0, 0, 0, 1 }, 15,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f, 0f, () ->
+            Ingredient.ofItems(
+                    ModItems.HOLED_BOOTS
+            )
     );
 
     private final String name;
@@ -44,12 +51,12 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getDurability(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal()] * this.durabilityMultiplier;
+        return BASE_DURABILITY[type.getEquipmentSlot().getEntitySlotId()] * this.durabilityMultiplier;
     }
 
     @Override
     public int getProtection(ArmorItem.Type type) {
-        return protectionAmounts[type.ordinal()];
+        return protectionAmounts[type.getEquipmentSlot().getEntitySlotId()];
     }
 
     @Override

@@ -1,10 +1,11 @@
 {
 	"powers": [
-		"quirks:jet/updraft",
-		"quirks:jet/dash",
-		"quirks:jet/winded_uppercut",
-		"quirks:jet/wind_rush",
-		"quirks:jet/air_step",
+		"quirks:jet/hyperpnea",
+		"quirks:jet/pressure_burst",
+		"quirks:jet/crash_strike",
+		"quirks:jet/triple_hop",
+		"quirks:jet/air_pivot",
+		"quirks:jet/glide_sweep",
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:yellow_wool",

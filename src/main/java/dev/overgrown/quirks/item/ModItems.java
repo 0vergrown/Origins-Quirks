@@ -19,6 +19,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("grenadier_bracer"), GRENADIER_BRACER);
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_head"), DARK_SHADOW_HEAD);
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_claw"), DARK_SHADOW_CLAW);
+        Registry.register(Registries.ITEM, Quirks.identifier("holed_boots"), HOLED_BOOTS);
     }
 
     public static final Item GRENADIER_BRACER = new GrenadierBracer(
@@ -71,5 +72,12 @@ public class ModItems {
             new Item.Settings()
                     .maxCount(1)
                     .rarity(Rarity.UNCOMMON)
+    );
+
+    public static final ArmorItem HOLED_BOOTS = new ArmorItem(
+            ModArmorMaterials.HOLED_BOOTS,
+            ArmorItem.Type.BOOTS,
+            new Item.Settings()
+                    .maxCount(1)
     );
 }

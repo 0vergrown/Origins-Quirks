@@ -7,6 +7,11 @@ import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.item.ModItems;
 import dev.overgrown.quirks.particle.registry.ModParticles;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.minecraft.entity.damage.DamageTypes;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
@@ -38,9 +43,25 @@ public class Quirks implements ModInitializer {
 		ModEntities.registerEntities();
 		ModSounds.initialize();
 
+		registerFallDamageHandler();
+
 		// Load Trinkets integration if available
 		if (FabricLoader.getInstance().isModLoaded("trinkets")) {
 			TrinketsIntegration.init();
 		}
+	}
+
+	private void registerFallDamageHandler() {
+		ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
+			if (source.isOf(DamageTypes.FALL)) {
+                return !isWearingHoledBoots(entity);
+			}
+			return true;
+		});
+	}
+
+	private boolean isWearingHoledBoots(LivingEntity entity) {
+		ItemStack boots = entity.getEquippedStack(EquipmentSlot.FEET);
+		return boots.isOf(ModItems.HOLED_BOOTS);
 	}
 }

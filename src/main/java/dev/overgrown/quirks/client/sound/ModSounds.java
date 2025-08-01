@@ -21,6 +21,9 @@ public class ModSounds {
     public static SoundEvent INVISIBILITY_BLINDED;
     public static SoundEvent INVISIBILITY_CLOAK;
     public static SoundEvent INVISIBILITY_COMBAT;
+    public static SoundEvent JET_TAILWIND;
+    public static SoundEvent JET_UPDRAFT;
+    public static SoundEvent JET_GUST_OF_AIR;
     public static SoundEvent MOVE_SELECTOR_CLICK;
     public static SoundEvent RIFLE_SHOOT1;
     public static SoundEvent RIFLE_SHOOT2;
@@ -50,6 +53,9 @@ public class ModSounds {
         INVISIBILITY_BLINDED = register("invisibility_blinded");
         INVISIBILITY_CLOAK = register("invisibility_cloak");
         INVISIBILITY_COMBAT = register("invisibility_combat");
+        JET_TAILWIND = register("jet_tailwind");
+        JET_UPDRAFT = register("jet_updraft");
+        JET_GUST_OF_AIR = register("jet_gust_of_air");
         MOVE_SELECTOR_CLICK = register("move_selector_click");
         RIFLE_SHOOT1 = register("rifle_shoot1");
         RIFLE_SHOOT2 = register("rifle_shoot2");
