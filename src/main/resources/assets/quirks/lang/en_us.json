@@ -273,9 +273,9 @@
     "death.attack.jet_smash.player": "%s was jet-propelled whilst trying to escape %s",
 
     "origin.quirks.life_force.name":"§a§lLife Force",
-    "origin.quirks.life_force.description":"Quirk Type: Mutant\n\nPlaceholder.",
-    "origin.quirks.life_force/double_lifespan.name":"Double Lifespan",
-    "origin.quirks.life_force/double_lifespan.description":"You can endure 2x more damage than the average person, and also heal 1.35x faster.",
+    "origin.quirks.life_force.description":"Quirk Type: Mutant\n\nLife Force grants the user the ability to double the user's life span.",
+    "power.quirks.life_force/double_lifespan.name":"Double Lifespan",
+    "power.quirks.life_force/double_lifespan.description":"You can endure 2x more damage than the average person, and also heal 1.35x faster.",
     "badge.quirks.life_force.double_lifespan":"You are also immune to all negative potion effects that can damage you.",
 
     "origin.quirks.ofa.name":"§2§lOne For All",

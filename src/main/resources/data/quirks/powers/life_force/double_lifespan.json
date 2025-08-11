@@ -14,7 +14,7 @@
        "modifier":{
           "attribute":"minecraft:generic.max_health",
           "operation":"addition",
-          "value":40,
+          "value":20,
           "name":"Increase Max Health"
        },
        "tick_rate":1,
@@ -27,11 +27,11 @@
        }
     },
     "more_damage":{
-       "type":"origins:modify_damage_dealt",
+       "type":"origins:modify_damage_taken",
        "modifier":{
           "operation":"multiply_total_multiplicative",
           "value":0.20,
-          "name":"Increase Damage Dealt"
+          "name":"Increase Damage Taken"
        },
        "condition":{
           "type":"origins:resource",
