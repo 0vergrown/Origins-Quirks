@@ -28,10 +28,10 @@ public class Quirks implements ModInitializer {
 		return new Identifier(MOD_ID, path);
 	}
 
-	public static final StatusEffect BLINDED = registerEffect("blinded", new BlindedStatusEffect());
+	public static final StatusEffect BLINDED = registerEffect(new BlindedStatusEffect());
 
-	private static StatusEffect registerEffect(String name, StatusEffect effect) {
-		return Registry.register(Registries.STATUS_EFFECT, identifier(name), effect);
+	private static StatusEffect registerEffect(StatusEffect effect) {
+		return Registry.register(Registries.STATUS_EFFECT, identifier("blinded"), effect);
 	}
 
 	@Override

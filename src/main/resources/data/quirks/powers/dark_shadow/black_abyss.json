@@ -73,7 +73,8 @@
                            "inventory_type":"inventory",
                            "slot":"armor.head",
                            "stack":{
-                              "item":"quirks:dark_shadow_head"
+                              "item":"quirks:dark_shadow_head",
+                             "tag": "{HideFlags:37,Unbreakable:1b,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}"
                            },
                            "merge_nbt":false
                         }

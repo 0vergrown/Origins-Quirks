@@ -6,6 +6,7 @@
     "quirks:blackwhip",
     "quirks:blazing_hair",
     "quirks:blueflame",
+    "quirks:dark_shadow",
     "quirks:erasure",
     "quirks:explosion",
     "quirks:fa_jin",
@@ -36,7 +37,6 @@
   "allow_random":true,
   "allow_random_unchoosable":false,
   "exclude_random": [
-    "quirks:dark_shadow",
     "quirks:frost"
   ],
   "auto_choose":false,
