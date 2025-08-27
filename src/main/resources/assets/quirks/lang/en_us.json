@@ -346,5 +346,11 @@
     "origin.quirks.zoom.name":"§f§lZoom",
     "origin.quirks.zoom.description":"Quirk Type: Mutant\n\nZoom grants the user the extraordinary ability to see distant objects and people with incredible clarity, functioning like a natural telescope built into their eyes. This ability also extends beyond simple zooming, the Quirk provides other sensory enhancements tied to visual acuity, such as better depth perception and heightened peripheral awareness, making the user a formidable scout, strategist, or precision specialist.",
     "power.quirks.zoom/zoomify.name":"Zoomify",
-    "power.quirks.zoom/zoomify.description":"The user can focus their vision on a specific distant target, zooming in to see up to 5 kilometers away with crystal-clear clarity. [Primary]"
+    "power.quirks.zoom/zoomify.description":"The user can focus their vision on a specific distant target, zooming in to see up to 5 kilometers away with crystal-clear clarity. [Primary]",
+    "power.quirks.zoom/magnify_mark.name":"Magnify Mark",
+    "power.quirks.zoom/magnify_mark.description":"By focusing on a target for an extended period, the user can mentally \"tag\" it, allowing them to track the object’s movements even when it goes out of direct sight. [Secondary]",
+  "power.quirks.zoom/night_scope.name":"Night Scope",
+  "power.quirks.zoom/night_scope.description":"The Quirk allows adaptation to low-light environments, enabling the user to see clearly in near-total darkness by amplifying available light. [Ternary]",
+  "power.quirks.zoom/hawks_panorama.name":"Hawk's Panorama",
+  "power.quirks.zoom/hawks_panorama.description":"The user can temporarily expand their field of vision to see in nearly all directions at once. [Quaternary]"
 }

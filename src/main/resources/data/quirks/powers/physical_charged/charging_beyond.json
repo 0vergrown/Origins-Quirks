@@ -158,6 +158,14 @@
           "resource":"quirks:physical_charged/charged_bar"
         },
         {
+          "type": "origins:clear_effect",
+          "effect": "minecraft:regeneration"
+        },
+        {
+          "type": "origins:clear_effect",
+          "effect": "minecraft:resistance"
+        },
+        {
           "type":"origins:apply_effect",
           "effects":[
             {
