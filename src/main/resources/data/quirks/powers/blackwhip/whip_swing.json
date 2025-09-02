@@ -1,318 +1,657 @@
 {
-    "type":"origins:multiple",
-    "callback":{
-       "type":"origins:action_on_callback",
-       "entity_action_gained":{
+  "type":"origins:multiple",
+  "actor_set":{
+    "type":"sync:entity_set",
+    "action_on_add":{
+      "type":"origins:target_action",
+      "action":{
+        "type":"origins:grant_power",
+        "power":"quirks:blackwhip/whip_swing_bat_effects",
+        "source":"quirks:blackwhip/whip_swing_bat_effects"
+      }
+    },
+    "action_on_remove":{
+      "type":"origins:target_action",
+      "action":{
+        "type":"origins:and",
+        "actions":[
+          {
+            "type":"origins:revoke_power",
+            "power":"quirks:blackwhip/whip_swing_bat_effects",
+            "source":"quirks:blackwhip/whip_swing_bat_effects"
+          },
+          {
+            "type":"origins:delay",
+            "action":{
+              "type":"origins:execute_command",
+              "command":"teleport @s ~ -200 ~"
+            },
+            "ticks":1
+          },
+          {
+            "type":"origins:delay",
+            "action":{
+              "type":"origins:execute_command",
+              "command":"kill @s"
+            },
+            "ticks":2
+          }
+        ]
+      }
+    }
+  },
+  "active":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type":"origins:if_else",
+      "condition":{
+        "type":"origins:and",
+        "conditions":[
+          {
+            "type":"sync:entity_set_size",
+            "set":"quirks:blackwhip/whip_swing_actor_set",
+            "comparison":">",
+            "compare_to":0
+          },
+          {
+            "type":"sync:entity_in_radius",
+            "bientity_condition":{
+              "type":"origins:target_condition",
+              "condition":{
+                "type":"origins:and",
+                "conditions":[
+                  {
+                    "type":"origins:entity_type",
+                    "entity_type":"minecraft:bat"
+                  },
+                  {
+                    "type":"sync:has_command_tag",
+                    "command_tag":"blackwhip.whip_swing_target"
+                  }
+                ]
+              }
+            },
+            "shape":"cube",
+            "radius":27.50,
+            "comparison":">",
+            "compare_to":0
+          }
+        ]
+      },
+      "if_action":{
+        "type":"sync:action_on_entity_set",
+        "set":"quirks:blackwhip/whip_swing_actor_set",
+        "bientity_action":{
+          "type":"sync:remove_from_entity_set",
+          "set":"quirks:blackwhip/whip_swing_actor_set"
+        },
+        "limit":1,
+        "reverse":false
+      },
+      "else_action":{
+        "type":"origins:raycast",
+        "distance":25.00,
+        "block":true,
+        "entity":false,
+        "shape_type":"collider",
+        "fluid_handling":"none",
+        "block_action":{
+          "type":"sync:spawn_entity",
+          "entity_type":"minecraft:bat",
+          "tag":"{Silent:1b,Invulnerable:1b,NoAI:1b,Tags:[\"blackwhip.whip_swing_target\"]}"
+        },
+        "hit_action":{
           "type":"origins:and",
           "actions":[
-             {
-                "type":"origins:execute_command",
-                "command":"tag @s add quirks.whip_swing_user"
-             },
-             {
-                "type":"origins:execute_command",
-                "command":"scoreboard objectives add BlackwhipUUID dummy"
-             },
-             {
-                "type":"origins:delay",
-                "action":{
-                   "type":"origins:execute_command",
-                   "command":"execute store result score @s BlackwhipUUID run data get entity @s UUID[0]"
-                },
-                "ticks":1
-             }
-          ]
-       },
-       "entity_action_lost":{
-         "type": "origins:and",
-         "actions": [
             {
-               "type":"origins:execute_command",
-               "command":"tag @s remove quirks.whip_swing_user"
+              "type": "origins:swing_hand",
+              "hand": "MAIN_HAND"
             },
             {
-               "type":"origins:execute_command",
-               "command":"power revokeall @s quirks:blackwhip"
-            }
-         ]
-       }
-    },
-    "spawn":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:if_else",
-          "condition":{
-             "type":"origins:command",
-             "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
-             "comparison":">",
-             "compare_to":0
-          },
-          "if_action":{
-             "type":"origins:execute_command",
-             "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function quirks:blackwhip/whip_swing_hook_kill"
-          },
-          "else_action":{
-             "type":"origins:raycast",
-             "distance":25.00,
-             "block":true,
-             "entity":false,
-             "shape_type":"collider",
-             "fluid_handling":"none",
-             "hit_action":{
-                "type":"origins:and",
-                "actions":[
-                   {
-                      "type":"origins:swing_hand",
-                      "hand":"MAIN_HAND"
-                   },
-                   {
-                      "type":"origins:play_sound",
-                      "sound":"minecraft:item.crossbow.shoot",
-                      "category":"players",
-                      "volume":0.20,
-                      "pitch":1.60
-                   },
-                   {
-                      "type":"origins:play_sound",
-                      "sound":"minecraft:entity.phantom.bite",
-                      "category":"players",
-                      "volume":1.00,
-                      "pitch":2.00
-                   }
-                ]
-             },
-             "command_at_hit":"function quirks:blackwhip/whip_swing_hook_spawn",
-             "command_hit_offset":0.5
-          }
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.quirks.primary",
-          "continuous":false
-       },
-       "condition": {
-         "type": "origins:resource",
-         "resource": "quirks:universal/quirk_erased",
-         "comparison": "==",
-         "compare_to": 0
-       }
-    },
-    "slow_falling":{
-       "type":"origins:modify_falling",
-       "take_fall_damage":false,
-       "velocity":0.04,
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
-          "comparison":">",
-          "compare_to":0
-       }
-    },
-    "pull":{
-       "type":"origins:action_over_time",
-       "entity_action":{
-          "type":"origins:and",
-          "actions":[
-             {
-                "type":"origins:execute_command",
-                "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run damage @s 0 generic_kill by @p[distance=0]"
-             },
-             {
-                "type":"origins:selector_action",
-                "selector":"@e[type = minecraft:bat,distance=7.5..27.5,nbt={Tags:['blackwhip_hook']}]",
+              "type":"origins:play_sound",
+              "sound":"minecraft:item.crossbow.shoot",
+              "volume":0.20,
+              "pitch":1.60
+            },
+            {
+              "type":"origins:play_sound",
+              "sound":"minecraft:entity.phantom.bite",
+              "volume":1.00,
+              "pitch":2.00
+            },
+            {
+              "type":"origins:delay",
+              "action":{
+                "type":"origins:area_of_effect",
+                "radius":64.00,
+                "shape":"cube",
                 "bientity_action":{
-                   "type":"origins:invert",
-                   "action":{
-                      "type":"origins:if_else",
-                      "condition":{
-                         "type":"origins:target_condition",
-                         "condition":{
-                            "type":"origins:sneaking"
-                         }
-                      },
-                      "if_action":{
-                         "type":"origins:add_velocity",
-                         "x":0.00,
-                         "y":0.00,
-                         "z":-0.035,
-                         "reference":"position",
-                         "set":false
-                      },
-                      "else_action":{
-                         "type":"origins:add_velocity",
-                         "x":0.00,
-                         "y":0.00,
-                         "z":-0.10,
-                         "reference":"position",
-                         "set":false
-                      }
-                   }
+                  "type":"sync:add_to_entity_set",
+                  "set":"quirks:blackwhip/whip_swing_actor_set"
                 },
                 "bientity_condition":{
-                   "type":"origins:attacker"
-                }
-             }
-          ]
-       },
-       "falling_action": {
-         "type":"origins:execute_command",
-         "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID run function quirks:blackwhip/whip_swing_hook_kill"
-       },
-       "interval":1,
-       "condition":{
-         "type": "origins:and",
-         "conditions": [
-            {
-               "type":"origins:command",
-               "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
-               "comparison":">",
-               "compare_to":0
-            },
-            {
-               "type": "origins:resource",
-               "resource": "quirks:universal/quirk_erased",
-               "comparison": "==",
-               "compare_to": 0
+                  "type":"origins:and",
+                  "conditions":[
+                    {
+                      "type":"sync:in_entity_set",
+                      "set":"quirks:blackwhip/whip_swing_actor_set",
+                      "inverted":true
+                    },
+                    {
+                      "type":"origins:target_condition",
+                      "condition":{
+                        "type":"origins:and",
+                        "conditions":[
+                          {
+                            "type":"origins:entity_type",
+                            "entity_type":"minecraft:bat"
+                          },
+                          {
+                            "type":"sync:has_command_tag",
+                            "command_tag":"blackwhip.whip_swing_target"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "include_actor":false
+              },
+              "ticks":1
             }
-         ]
-       }
+          ]
+        },
+        "command_step":1.00,
+        "command_along_ray_only_on_hit":false
+      }
     },
-    "forward":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:add_velocity",
-          "x":0.00,
-          "y":0.00,
-          "z":0.05,
-          "space":"local",
-          "set":false
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.forward",
-          "continuous":true
-       },
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
+    "cooldown":1,
+    "hud_render":{
+      "should_render":false
+    },
+    "key":{
+      "key":"key.quirks.primary",
+      "continuous":false
+    },
+    "condition":{
+      "type": "origins:resource",
+      "resource": "quirks:universal/quirk_erased",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "slow_falling":{
+    "type":"origins:modify_falling",
+    "velocity":0.04,
+    "take_fall_damage":false,
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
           "comparison":">",
           "compare_to":0
-       }
-    },
-    "back":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:add_velocity",
-          "x":0.00,
-          "y":0.00,
-          "z":-0.05,
-          "space":"local",
-          "set":false
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.back",
-          "continuous":true
-       },
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
           "comparison":">",
           "compare_to":0
-       }
-    },
-    "left":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:add_velocity",
-          "x":0.05,
-          "y":0.00,
-          "z":0.00,
-          "space":"local",
-          "set":false
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.left",
-          "continuous":true
-       },
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
-          "comparison":">",
-          "compare_to":0
-       }
-    },
-    "right":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:add_velocity",
-          "x":-0.05,
-          "y":0.00,
-          "z":0.00,
-          "space":"local",
-          "set":false
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.right",
-          "continuous":true
-       },
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..27.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
-          "comparison":">",
-          "compare_to":0
-       }
-    },
-    "up":{
-       "type":"origins:active_self",
-       "entity_action":{
-          "type":"origins:selector_action",
-          "selector":"@e[type = minecraft:bat,distance = 1..7.5,sort=nearest,limit=1,nbt={Tags:['blackwhip_hook']}]",
+        }
+      ]
+    }
+  },
+  "pull":{
+    "type":"origins:action_over_time",
+    "entity_action":{
+      "type":"origins:and",
+      "actions":[
+        {
+          "type":"origins:execute_command",
+          "command":"execute as @s at @e[type=minecraft:bat,limit=1,tag=blackwhip.whip_swing_target,sort=nearest] run teleport @e[distance=0] ~ ~ ~ facing entity @s"
+        },
+        {
+          "type":"sync:action_on_entity_set",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
           "bientity_action":{
-             "type":"origins:invert",
-             "action":{
+            "type":"origins:invert",
+            "action":{
+              "type":"origins:if_else",
+              "condition":{
+                "type":"origins:target_condition",
+                "condition":{
+                  "type":"origins:sneaking"
+                }
+              },
+              "if_action":{
+                "type":"origins:add_velocity",
+                "x":0.00,
+                "y":0.00,
+                "z":-0.035,
+                "reference":"position",
+                "set":false
+              },
+              "else_action":{
                 "type":"origins:add_velocity",
                 "x":0.00,
                 "y":0.00,
                 "z":-0.10,
                 "reference":"position",
                 "set":false
-             }
+              }
+            }
           },
           "bientity_condition":{
-             "type":"origins:attacker"
-          }
-       },
-       "cooldown":1,
-       "hud_render":{
-          "should_render":false
-       },
-       "key":{
-          "key":"key.jump",
-          "continuous":true
-       },
-       "condition":{
-          "type":"origins:command",
-          "command":"execute as @e[type=bat,nbt={Tags:['blackwhip_hook']},distance=..7.5] if score @s BlackwhipUUID = @p[distance=0] BlackwhipUUID",
+            "type":"origins:and",
+            "conditions":[
+              {
+                "type":"sync:in_entity_set",
+                "set":"quirks:blackwhip/whip_swing_actor_set"
+              },
+              {
+                "type":"origins:target_condition",
+                "condition":{
+                  "type":"origins:and",
+                  "conditions":[
+                    {
+                      "type":"origins:entity_type",
+                      "entity_type":"minecraft:bat"
+                    },
+                    {
+                      "type":"sync:has_command_tag",
+                      "command_tag":"blackwhip.whip_swing_target"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "limit":1,
+          "reverse":false
+        }
+      ]
+    },
+    "interval":1,
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
           "comparison":">",
           "compare_to":0
-       }
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
     }
+  },
+  "forward":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type":"origins:add_velocity",
+      "x":0.00,
+      "y":0.00,
+      "z":0.06,
+      "space":"local",
+      "set":false
+    },
+    "cooldown":1,
+    "hud_render":{
+      "should_render":false
+    },
+    "key":{
+      "key":"key.forward",
+      "continuous":true
+    },
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
+    }
+  },
+  "back":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type":"origins:add_velocity",
+      "x":0.00,
+      "y":0.00,
+      "z":-0.06,
+      "space":"local",
+      "set":false
+    },
+    "cooldown":1,
+    "hud_render":{
+      "should_render":false
+    },
+    "key":{
+      "key":"key.back",
+      "continuous":true
+    },
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
+    }
+  },
+  "left":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type":"origins:add_velocity",
+      "x":0.06,
+      "y":0.00,
+      "z":0.00,
+      "space":"local",
+      "set":false
+    },
+    "key":{
+      "key":"key.left",
+      "continuous":true
+    },
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
+    }
+  },
+  "right":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type":"origins:add_velocity",
+      "x":-0.06,
+      "y":0.00,
+      "z":0.00,
+      "space":"local",
+      "set":false
+    },
+    "cooldown":1,
+    "hud_render":{
+      "should_render":false
+    },
+    "key":{
+      "key":"key.right",
+      "continuous":true
+    },
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"sync:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":27.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
+    }
+  },
+  "up":{
+    "type":"origins:active_self",
+    "entity_action":{
+      "type": "origins:selector_action",
+      "selector":"@e[type=minecraft:bat,limit=1,tag=blackwhip.whip_swing_target]",
+      "bientity_action":{
+        "type":"origins:invert",
+        "action":{
+          "type":"origins:add_velocity",
+          "x":0.00,
+          "y":0.00,
+          "z":-0.10,
+          "reference":"position",
+          "set":false
+        }
+      },
+      "bientity_condition":{
+        "type":"origins:and",
+        "conditions":[
+          {
+            "type":"sync:in_entity_set",
+            "set":"quirks:blackwhip/whip_swing_actor_set"
+          },
+          {
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cooldown":1,
+    "hud_render":{
+      "should_render":false
+    },
+    "key":{
+      "key":"key.jump",
+      "continuous":true
+    },
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type":"sync:entity_set_size",
+          "set":"quirks:blackwhip/whip_swing_actor_set",
+          "comparison":">",
+          "compare_to":0
+        },
+        {
+          "type":"apoli:entity_in_radius",
+          "bientity_condition":{
+            "type":"origins:target_condition",
+            "condition":{
+              "type":"origins:and",
+              "conditions":[
+                {
+                  "type":"origins:entity_type",
+                  "entity_type":"minecraft:bat"
+                },
+                {
+                  "type":"sync:has_command_tag",
+                  "command_tag":"blackwhip.whip_swing_target"
+                }
+              ]
+            }
+          },
+          "shape":"cube",
+          "radius":7.50,
+          "comparison":">",
+          "compare_to":0
+        }
+      ]
+    }
+  }
 }

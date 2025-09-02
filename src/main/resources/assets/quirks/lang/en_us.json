@@ -1,8 +1,8 @@
 {
-  "origins.gui.choose_quirk.title":"Choose your Quirk.",
-  "origins.gui.view_quirk.title":"This is your Quirk.",
-  "origins.gui.missing_quirk.name":"Missing",
-  "origins.gui.missing_quirk.description":"An error occurred. You do not have an Quirk.",
+  "quirks.gui.choose_quirk.title":"Choose your Quirk.",
+  "quirks.gui.view_quirk.title":"This is your Quirk.",
+  "quirks.gui.missing_quirk.name":"Missing",
+  "quirks.gui.missing_quirk.description":"An error occurred. You do not have an Quirk.",
 
   "category.quirks":"Origins: Quirks",
   "key.quirks.primary":"Primary",
@@ -326,6 +326,13 @@
   "power.quirks.physical_charged/ally_charge.description":"Use 25% of your stored energy to charge people within 5 block range of you for 1 min, granting Speed II, Jump Boost I, and Regeneration I.  [Senary]",
   "power.quirks.physical_charged/final_discharge.name":"Final Discharge",
   "power.quirks.physical_charged/final_discharge.description":"Use all of your stored energy to explode a 30 block radius, dealing massive damage, including to yourself. (Cooldown: 5 Minutes) [Septenary]",
+
+  "origin.quirks.rivet_stab.name": "Rivet Stab",
+  "origin.quirks.rivet_stab.description": "",
+  "power.quirks.rivet_stab/rivet_lance.name":"Rivet Lance",
+  "power.quirks.rivet_stab/rivet_lance.description": "",
+  "power.quirks.hellfire_chain/rivet_lance.name":"Hell Chain",
+  "power.quirks.hellfire_chain/rivet_lance.description": "",
 
   "origin.quirks.quirkless.name":"§f§lQuirkless",
   "origin.quirks.quirkless.description":"Unlike 80% of the population, Quirkless individuals are those who possess absolutely no Quirk, particularly unique features, or anything that would put them under the classification of being superhuman.",

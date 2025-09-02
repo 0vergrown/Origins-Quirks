@@ -18,7 +18,7 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "execute anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^0.3 run function quirks:rivet_stab/hellfire_chain_particles"
+                    "command": "execute anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^0.3 run function quirks:rivet_stab/hell_chain_particles"
                 },
                 {
                     "type": "origins:play_sound",
@@ -39,7 +39,7 @@
                         "actions": [
                             {
                                 "type": "origins:execute_command",
-                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^1.1 run function quirks:rivet_stab/hellfire_chain_particles"
+                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^1.1 run function quirks:rivet_stab/hell_chain_particles"
                             },
                             {
                                 "type": "origins:play_sound",
@@ -64,7 +64,7 @@
                         "actions": [
                             {
                                 "type": "origins:execute_command",
-                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^1.1 run function quirks:rivet_stab/hellfire_chain_particles"
+                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^ ^-0.6 ^1.1 run function quirks:rivet_stab/hell_chain_particles"
                             },
                             {
                                 "type": "origins:play_sound",
@@ -89,7 +89,7 @@
                         "actions": [
                             {
                                 "type": "origins:execute_command",
-                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^-0.6 ^-1 ^1.2 run function quirks:rivet_stab/hellfire_chain_particles"
+                                "command": "execute as @s anchored eyes rotated ~ 0 positioned ^-0.6 ^-1 ^1.2 run function quirks:rivet_stab/hell_chain_particles"
                             },
                             {
                                 "type": "origins:play_sound",

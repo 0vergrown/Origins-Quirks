@@ -1,7 +1,7 @@
 {
 	"powers": [
 		"quirks:rivet_stab/rivet_lance",
-		"quirks:rivet_stab/hellfire_chain",
+		"quirks:rivet_stab/hell_chain",
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:red_glazed_terracotta",
