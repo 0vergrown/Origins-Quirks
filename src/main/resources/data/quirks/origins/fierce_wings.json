@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "quirks:fierce_wings/wings_default",
+    "quirks:universal/quirk_erased"
+  ],
+  "icon":"minecraft:elytra",
+  "unchoosable": false,
+  "order": 10,
+  "impact": 3,
+  "loading_priority": 0
+}

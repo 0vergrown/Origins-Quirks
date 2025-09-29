@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "quirks:fierce_wings/wings_icarae",
+    "quirks:universal/quirk_erased"
+  ],
+  "icon":"icarus:red_feathered_wings",
+  "unchoosable": false,
+  "order": 10,
+  "impact": 3,
+  "loading_priority": 1
+}

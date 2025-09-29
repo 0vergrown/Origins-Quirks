@@ -1,11 +1,12 @@
 package dev.overgrown.quirks;
 
-import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
+import dev.overgrown.quirks.compat.icarae_origin.IcaraeOriginIntegrationClient;
+import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
 import dev.overgrown.quirks.entity.ModEntities;
-import dev.overgrown.quirks.entity.client.ClientModels;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistModel;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistRenderer;
+import dev.overgrown.quirks.entity.client.ClientModels;
 import dev.overgrown.quirks.particle.blueflame.BlueflameParticle;
 import dev.overgrown.quirks.particle.hellflame.HellflameParticle;
 import dev.overgrown.quirks.particle.physical_charged.ChargedStrikeParticle;
@@ -52,5 +53,9 @@ public class QuirksClient implements ClientModInitializer {
 
         // Initialize blinded effect handler
         BlindedEffectHandler.initialize();
+
+        if(Quirks.ICARAE_COMPAT_ENABLED) {
+            IcaraeOriginIntegrationClient.init();
+        }
     }
 }

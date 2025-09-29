@@ -393,5 +393,7 @@
   "power.quirks.zoom/night_scope.name":"Night Scope",
   "power.quirks.zoom/night_scope.description":"The Quirk allows adaptation to low-light environments, enabling the user to see clearly in near-total darkness by amplifying available light. [Ternary]",
   "power.quirks.zoom/hawk_panorama.name":"Hawk's Panorama",
-  "power.quirks.zoom/hawk_panorama.description":"The user can temporarily expand their field of vision to see in nearly all directions at once. [Quaternary]"
+  "power.quirks.zoom/hawk_panorama.description":"The user can temporarily expand their field of vision to see in nearly all directions at once. [Quaternary]",
+
+  "datapack.quirks.compat.icarae_origin": "Compat for Icarae Origin"
 }
