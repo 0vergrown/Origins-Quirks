@@ -12,7 +12,17 @@
 		"Shroom",
 		"Charmcharmcharm",
 		"Selenivee",
-		"Nitgo"
+		"Nitgo",
+        {
+            "name": "Up",
+            "contact": {
+                "homepage": "https://upcraft.dev",
+                "github": "https://github.com/UpcraftLP",
+                "bsky": "https://bsky.app/profile/did:plc:77uzn2lx2zhtdgr5zfvzumji",
+                "curseforge": "https://www.curseforge.com/members/upcraftlp",
+                "modrinth": "https://modrinth.com/user/Up"
+            }
+        }
 	],
 	"contact": {
 		"homepage": "",
