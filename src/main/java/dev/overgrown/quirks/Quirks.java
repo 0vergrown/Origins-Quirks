@@ -1,6 +1,7 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.sound.ModSounds;
+import dev.overgrown.quirks.compat.icarae_origin.IcaraeOriginIntegration;
 import dev.overgrown.quirks.compat.trinkets.TrinketsIntegration;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedStatusEffect;
 import dev.overgrown.quirks.entity.ModEntities;
@@ -30,6 +31,8 @@ public class Quirks implements ModInitializer {
 
 	public static final StatusEffect BLINDED = registerEffect(new BlindedStatusEffect());
 
+    public static final boolean ICARAE_COMPAT_ENABLED = FabricLoader.getInstance().isModLoaded("icarae_origin");
+
 	private static StatusEffect registerEffect(StatusEffect effect) {
 		return Registry.register(Registries.STATUS_EFFECT, identifier("blinded"), effect);
 	}
@@ -49,6 +52,11 @@ public class Quirks implements ModInitializer {
 		if (FabricLoader.getInstance().isModLoaded("trinkets")) {
 			TrinketsIntegration.init();
 		}
+
+        // Load Icarae Origin integration if available
+        if (ICARAE_COMPAT_ENABLED) {
+            IcaraeOriginIntegration.init();
+        }
 	}
 
 	private void registerFallDamageHandler() {

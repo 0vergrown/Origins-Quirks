@@ -1,0 +1,32 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "key": {
+      "key": "key.quirks.primary",
+      "continuous": false
+    },
+    "active_by_default": false,
+    "retain_state": true
+  },
+  "active": {
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+    "texture_location": "minecraft:textures/entity/elytra.png",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  }
+}
