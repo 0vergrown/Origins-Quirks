@@ -16,7 +16,7 @@
 	],
 	"contact": {
 		"homepage": "",
-		"sources": "https://github.com/0vergrown/Origins-Quirks/tree/Minecraft-1.20.1-(Fabric)"
+		"sources": "https://github.com/0vergrown/Origins-Quirks"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/quirks/icon.png",
@@ -41,7 +41,8 @@
 		"java": ">=17",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"recommends": {
+		"icarae_origin": "^1.1.1",
+        "icarus": "^2.12.0"
 	}
 }
