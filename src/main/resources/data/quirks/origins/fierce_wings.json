@@ -1,6 +1,12 @@
 {
   "powers": [
+    "quirks:fierce_wings/feathers",
     "quirks:fierce_wings/wings_default",
+    "quirks:fierce_wings/feather_daggers",
+    "quirks:fierce_wings/multi_person_lift",
+    "quirks:fierce_wings/scarlet_cyclone",
+    "quirks:fierce_wings/blade_pinion",
+    "quirks:fierce_wings/sonic_dive",
     "quirks:universal/quirk_erased"
   ],
   "icon":"minecraft:elytra",

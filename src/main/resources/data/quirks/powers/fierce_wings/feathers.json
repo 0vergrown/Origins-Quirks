@@ -1,0 +1,42 @@
+{
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 160,
+    "start_value": 160,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 23
+    }
+  },
+  "regeneration": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:modify_resource",
+      "modifier": {
+        "operation": "add_base_early",
+        "value": 1
+      },
+      "resource": "quirks:fierce_wings/feathers_resource"
+    },
+    "interval": 100,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "quirks:fierce_wings/feathers_resource",
+          "comparison": "<",
+          "compare_to": 160
+        },
+        {
+          "type": "origins:resource",
+          "resource": "quirks:universal/quirk_erased",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  }
+}

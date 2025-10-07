@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "quirks:item/fierce_wings_feather"
+  }
+}

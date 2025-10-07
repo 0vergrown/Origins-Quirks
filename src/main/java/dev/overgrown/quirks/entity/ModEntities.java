@@ -2,6 +2,7 @@ package dev.overgrown.quirks.entity;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.entity.blueflame.VanishingFistEntity;
+import dev.overgrown.quirks.entity.fierce_wings.FierceWingsFeatherProjectileEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -17,8 +18,18 @@ public class ModEntities {
                     .trackedUpdateRate(10)
                     .build();
 
+    public static final EntityType<FierceWingsFeatherProjectileEntity> FIERCE_WINGS_FEATHER_PROJECTILE =
+            FabricEntityTypeBuilder.<FierceWingsFeatherProjectileEntity>create(SpawnGroup.MISC, FierceWingsFeatherProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f))
+                    .trackRangeBlocks(4)
+                    .trackedUpdateRate(20)
+                    .build();
+
     public static void registerEntities() {
         Registry.register(Registries.ENTITY_TYPE,
                 Quirks.identifier("vanishing_fist"), VANISHING_FIST);
+
+        Registry.register(Registries.ENTITY_TYPE,
+                Quirks.identifier("fierce_wings_feather_projectile"), FIERCE_WINGS_FEATHER_PROJECTILE);
     }
 }

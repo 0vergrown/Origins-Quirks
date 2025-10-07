@@ -20,6 +20,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_head"), DARK_SHADOW_HEAD);
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_claw"), DARK_SHADOW_CLAW);
         Registry.register(Registries.ITEM, Quirks.identifier("holed_boots"), HOLED_BOOTS);
+        Registry.register(Registries.ITEM, Quirks.identifier("fierce_wings_feather"), FIERCE_WINGS_FEATHER);
     }
 
     public static final Item GRENADIER_BRACER = new GrenadierBracer(
@@ -79,5 +80,11 @@ public class ModItems {
             ArmorItem.Type.BOOTS,
             new Item.Settings()
                     .maxCount(1)
+    );
+
+    public static final Item FIERCE_WINGS_FEATHER = new Item(
+            new Item.Settings()
+                    .maxCount(64)
+                    .rarity(Rarity.UNCOMMON)
     );
 }

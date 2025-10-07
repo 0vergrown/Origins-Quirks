@@ -7,6 +7,7 @@ import dev.overgrown.quirks.entity.ModEntities;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistModel;
 import dev.overgrown.quirks.entity.blueflame.client.VanishingFistRenderer;
 import dev.overgrown.quirks.entity.client.ClientModels;
+import dev.overgrown.quirks.entity.fierce_wings.client.FierceWingsFeatherProjectileRenderer;
 import dev.overgrown.quirks.particle.blueflame.BlueflameParticle;
 import dev.overgrown.quirks.particle.hellflame.HellflameParticle;
 import dev.overgrown.quirks.particle.physical_charged.ChargedStrikeParticle;
@@ -49,6 +50,12 @@ public class QuirksClient implements ClientModInitializer {
         EntityRendererRegistry.register(
                 ModEntities.VANISHING_FIST,
                 VanishingFistRenderer::new
+        );
+
+        // Register feather projectile renderer
+        EntityRendererRegistry.register(
+                ModEntities.FIERCE_WINGS_FEATHER_PROJECTILE,
+                FierceWingsFeatherProjectileRenderer::new
         );
 
         // Initialize blinded effect handler
