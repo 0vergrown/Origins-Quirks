@@ -1,4 +1,27 @@
 {
+  "badges":[
+    {
+      "type":"origins:tooltip",
+      "sprite":"origins:textures/gui/badge/active.png",
+      "text":{
+        "translate":"badge.quirks.jet.air_pivot",
+        "with":[
+          {
+            "keybind":"key.forward"
+          },
+          {
+            "keybind":"key.left"
+          },
+          {
+            "keybind":"key.back"
+          },
+          {
+            "keybind":"key.right"
+          }
+        ]
+      }
+    }
+  ],
   "type":"origins:multiple",
   "attack_triggered":{
     "type":"origins:resource",

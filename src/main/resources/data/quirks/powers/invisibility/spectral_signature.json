@@ -1,13 +1,4 @@
 {
-    "name": "Spectral Signature",
-    "description": "Toggle your invisibility, draining stamina. Entities within a short distance will recieve a glowing outline of you. IF they can see you, they will recieve an outline for you.",
-    "badges": [
-        {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/toggle.png",
-            "text": "Primary %s"
-        }
-    ],
     "type": "origins:multiple",
     "cooldown": {
         "type": "origins:cooldown",
@@ -31,7 +22,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 },
@@ -65,7 +56,7 @@
             "type": "origins:if_else",
             "condition": {
                 "type": "origins:resource",
-                "resource": "quirks:invisibility/stealth_cooldown",
+                "resource": "quirks:invisibility/spectral_signature_cooldown",
                 "comparison": "==",
                 "compare_to": 0
             },
@@ -92,7 +83,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:power_active",
-            "power": "quirks:invisibility/stealth_toggle"
+            "power": "quirks:invisibility/spectral_signature_toggle"
         }
     },
     "invisibility": {
@@ -109,11 +100,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -146,11 +137,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -183,11 +174,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": ">=",
                     "compare_to": 1,
                     "inverted": true
@@ -211,11 +202,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -229,11 +220,11 @@
                 "actions": [
                     {
                         "type": "origins:trigger_cooldown",
-                        "power": "quirks:invisibility/stealth_cooldown"
+                        "power": "quirks:invisibility/spectral_signature_cooldown"
                     },
                     {
                         "type": "origins:toggle",
-                        "power": "quirks:invisibility/stealth_resource"
+                        "power": "quirks:invisibility/spectral_signature_resource"
                     },
                     {
                         "type": "origins:execute_command",
@@ -250,11 +241,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -278,11 +269,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }
@@ -296,11 +287,11 @@
             "conditions": [
                 {
                     "type": "origins:power_active",
-                    "power": "quirks:invisibility/stealth_toggle"
+                    "power": "quirks:invisibility/spectral_signature_toggle"
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "quirks:invisibility/stealth_cooldown",
+                    "resource": "quirks:invisibility/spectral_signature_cooldown",
                     "comparison": "==",
                     "compare_to": 0
                 }

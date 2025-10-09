@@ -1,8 +1,8 @@
 {
 	"powers": [
-		"quirks:invisibility/stealth",
-		"quirks:invisibility/refract",
-		"quirks:invisibility/redirect",
+		"quirks:invisibility/spectral_signature",
+		"quirks:invisibility/warp_refraction",
+		"quirks:invisibility/fractal_redirection",
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:white_stained_glass",
