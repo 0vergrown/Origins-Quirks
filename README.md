@@ -41,7 +41,6 @@
 ## Planned Quirks
 - Hardening
 - Steel
-- Sugar Rush
 - Limitless
 
 ---
