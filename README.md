@@ -9,18 +9,34 @@
 
 ## Current Quirks
 - Acid
-- Blackwhip (In Progress)
+- All For One
+- Blackwhip
+- Blazing Hair
+- Blueflame
+- Dark Shadow
+- Erasure
+- Explosion
 - Fa Jin
+- Fierce Wings
 - Frog
-- Gigantification
+- Frost
 - Heal
 - Invisibility
+- Jet
 - Larceny
+- Life Force
+- One For All (Will Be Heavily Reworked)
 - Permeation
-- Power Reserve (Not Finished)
+- Physical Charged
+- Rivet Stab
 - Severance
 - Sloshed
 - Smokescreen
+- Somnambulist
+- Sugar Rush
+- Watergun (Will Be Heavily Reworked)
+- Zero Gravity
+- Zoom
 
 ## Planned Quirks
 - Hardening

@@ -371,6 +371,16 @@
   "death.attack.cleave":"%1$s was sliced to pieces.",
   "death.attack.cleave.player":"%1$s was sliced to pieces while fighting %2$s.",
 
+  "origin.quirks.sloshed.name":"Sloshed",
+  "origin.quirks.sloshed.description":"Quirk Type: Emitter\n\nThe Sloshed Quirk emits an aura that disorients nearby individuals, causing them to feel off-balance and unable to move properly. The user can choose specific targets to affect and has the ability to hide from view while the Quirk is active.",
+  "power.quirks.sloshed/sloshed_aura.name":"Sloshed Aura",
+  "power.quirks.sloshed/sloshed_aura.description":"Emits a disorienting aura that applies nausea to all nearby entities, creating a drunken-like effect within a 10-block radius. [Primary]",
+  "power.quirks.sloshed/targeted_slosh.name":"Targeted Slosh",
+  "power.quirks.sloshed/targeted_slosh.description":"Allows the user to select specific targets within 15 blocks, applying nausea and slowness effects for a short duration. Targeted entities are visibly outlined, making them easy to spot. [Secondary]",
+  "power.quirks.sloshed/hide_in_plain_sight.name":"Hide In Plain Sight",
+  "power.quirks.sloshed/hide_in_plain_sight.description":"Grants temporary invisibility to the user, preventing nearby entities within a 10-block range from rendering the user as long as the Sloshed Aura is active. [Ternary]",
+
+
   "origin.quirks.smokescreen.name":"Smokescreen",
   "origin.quirks.smokescreen.description":"Quirk Type: Emitter\n\nAllows the user to generate a thick cloud of purple smoke from any part of their body. The smoke can be spread to cover a wide area, obscuring the vision of opponents and providing cover.",
   "power.quirks.smokescreen/full_blast.name":"Full Blast",

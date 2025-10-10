@@ -80,7 +80,7 @@ dependencies {
     // Icarae Origin (runtime)
     modLocalRuntime "dev.cammiescorner.icarus:Icarus-Fabric:${icarus_version}"
     modLocalRuntime "dev.upcraft.origins.icarae:Icarae-Origin-Fabric:${icarae_origin_version}"
-
+	
 }
 
 processResources {
