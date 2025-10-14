@@ -1,6 +1,4 @@
 {
-   "name": "Warp Refraction",
-   "description": "Draw in the light nearby, refracting it in a small radius near you and blinding nearby people.",
    "type": "origins:active_self",
    "entity_action": {
       "type": "origins:and",

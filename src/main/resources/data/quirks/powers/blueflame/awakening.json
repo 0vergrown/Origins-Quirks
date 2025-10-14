@@ -26,20 +26,8 @@
             "resource":"quirks:blueflame/awakening_resource"
           },
           {
-            "type":"origins:spawn_particles",
-            "particle":{
-              "type":"quirks:blueflame",
-              "params":"0.3"
-            },
-            "count":800,
-            "speed":0,
-            "force":true,
-            "spread":{
-              "x":2.50,
-              "y":4.00,
-              "z":2.50
-            },
-            "offset_y":0.00
+            "type":"origins:execute_command",
+            "command":"particle quirks:blueflame 0.30 ~ ~ ~ 2.50 4.00 2.50 0.00 800 normal @a"
           },
           {
             "type":"origins:explode",
@@ -129,20 +117,8 @@
             "resource":"quirks:blueflame/awakening_resource"
           },
           {
-            "type":"origins:spawn_particles",
-            "particle":{
-              "type":"quirks:blueflame",
-              "params":"0.3"
-            },
-            "count":800,
-            "speed":0,
-            "force":true,
-            "spread":{
-              "x":2.50,
-              "y":4.00,
-              "z":2.50
-            },
-            "offset_y":0.00
+            "type":"origins:execute_command",
+            "command":"particle quirks:blueflame 0.30 ~ ~ ~ 2.50 4.00 2.50 0.00 800 normal @a"
           },
           {
             "type":"origins:explode",

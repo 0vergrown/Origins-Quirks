@@ -26,22 +26,12 @@
        }
     },
     "main_active_particles":{
-      "type": "origins:particle",
-      "particle":{
-        "type":"quirks:blueflame",
-        "params":"0.5"
+      "type": "origins:action_over_time",
+      "entity_action": {
+        "type":"origins:execute_command",
+        "command":"particle quirks:blueflame 0.05 ~ ~1.00 ~ 0.25 0.50 0.25 0.00 5 normal @a"
       },
-      "frequency":1,
-      "count":5,
-      "speed":0.00,
-      "spread":{
-         "x":0.25,
-         "y":0.50,
-         "z":0.25
-      },
-      "offset_y":1.00,
-      "visible_in_first_person":true,
-      "visible_while_invisible":false,
+      "interval": 1,
       "condition":{
           "type":"origins:power_active",
           "power":"quirks:blueflame/phosphor_toggle"
