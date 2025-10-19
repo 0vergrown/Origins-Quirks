@@ -1,6 +1,7 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
+import dev.overgrown.quirks.client.render.feather_blade.ChargeAttackRenderer;
 import dev.overgrown.quirks.compat.icarae_origin.IcaraeOriginIntegrationClient;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
 import dev.overgrown.quirks.entity.ModEntities;
@@ -25,6 +26,8 @@ public class QuirksClient implements ClientModInitializer {
     public void onInitializeClient() {
         // Register keybinds
         PowerKeybinds.register();
+
+        ChargeAttackRenderer.initialize();
 
         // Register particles
         ParticleFactoryRegistry.getInstance().register(
