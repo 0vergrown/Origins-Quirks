@@ -7,7 +7,6 @@ import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
 import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
 import dev.overgrown.quirks.item.weather_manipulation.LifeSupportTubes;
 import net.minecraft.item.*;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Rarity;
@@ -28,42 +27,9 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("feather_blade"), FEATHER_BLADE);
     }
 
-    // Feather Blade Tool Material
-    public static final ToolMaterial FEATHER_BLADE_MATERIAL = new ToolMaterial() {
-        @Override
-        public int getDurability() {
-            return 200; // Between stone (131) and iron (250)
-        }
-
-        @Override
-        public float getMiningSpeedMultiplier() {
-            return 4.0F; // Similar to stone tools
-        }
-
-        @Override
-        public float getAttackDamage() {
-            return 1.0F; // Base attack damage
-        }
-
-        @Override
-        public int getMiningLevel() {
-            return 1; // Stone level
-        }
-
-        @Override
-        public int getEnchantability() {
-            return 17; // Between stone (5) and iron (14), closer to gold (22)
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
-            return Ingredient.ofItems(ModItems.FIERCE_WINGS_FEATHER);
-        }
-    };
-
     // Feather Blade Item
     public static final Item FEATHER_BLADE = new FeatherBlade(
-            FEATHER_BLADE_MATERIAL,
+            FeatherBlade.MATERIAL,
             3, // Attack damage - middle ground between stone (3) and iron (4)
             -2.4F, // Attack speed - same as gold sword for fast attacks
             new Item.Settings()

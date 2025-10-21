@@ -6,6 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
@@ -23,6 +24,39 @@ public class FeatherBlade extends SwordItem {
     private static final float MAX_DAMAGE_MULTIPLIER = 10.0f; // Cap on maximum damage
     private static final float DAMAGE_MULTIPLIER = 0.5f; // Base damage multiplier
     private final Set<UUID> chargedEntities = new HashSet<>();
+
+    // Tool Material
+    public static final ToolMaterial MATERIAL = new ToolMaterial() {
+        @Override
+        public int getDurability() {
+            return 200; // Between stone (131) and iron (250)
+        }
+
+        @Override
+        public float getMiningSpeedMultiplier() {
+            return 4.0F; // Similar to stone tools
+        }
+
+        @Override
+        public float getAttackDamage() {
+            return 1.0F; // Base attack damage
+        }
+
+        @Override
+        public int getMiningLevel() {
+            return 1; // Stone level
+        }
+
+        @Override
+        public int getEnchantability() {
+            return 17; // Between stone (5) and iron (14), closer to gold (22)
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.ofItems(ModItems.FIERCE_WINGS_FEATHER);
+        }
+    };
 
     // Charge attack stages
     public enum ChargeStage {

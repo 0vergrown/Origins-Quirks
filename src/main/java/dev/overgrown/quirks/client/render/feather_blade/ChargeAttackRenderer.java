@@ -1,5 +1,6 @@
 package dev.overgrown.quirks.client.render.feather_blade;
 
+import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
@@ -8,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ChargeAttackRenderer implements HudRenderCallback {
-    private static final Identifier CHARGE_ICONS = new Identifier("quirks", "textures/gui/fierce_wings/charge_icons.png");
+    private static final Identifier CHARGE_ICONS = Quirks.identifier("textures/gui/sprites/fierce_wings/charge_icons.png");
 
     public static void initialize() {
         HudRenderCallback.EVENT.register(new ChargeAttackRenderer());
@@ -22,13 +23,11 @@ public class ChargeAttackRenderer implements HudRenderCallback {
         ItemStack mainHand = client.player.getMainHandStack();
         ItemStack offHand = client.player.getOffHandStack();
 
-        // Check if player is holding feather blade and charging
+        // Check if player is holding the Feather Blade and is charging it
         if ((mainHand.getItem() instanceof FeatherBlade || offHand.getItem() instanceof FeatherBlade)
                 && client.player.isUsingItem()) {
 
-            FeatherBlade.ChargeStage stage = FeatherBlade.getChargeStage(
-                    client.player.getActiveItem(), client.player);
-
+            FeatherBlade.ChargeStage stage = FeatherBlade.getChargeStage(client.player.getActiveItem(), client.player);
             if (stage != null) {
                 renderChargeIndicator(drawContext, client, stage);
             }
@@ -42,14 +41,20 @@ public class ChargeAttackRenderer implements HudRenderCallback {
         int x = screenWidth / 2 - 8;
         int y = screenHeight / 2 + 20;
 
-        // Render different icon based on charge stage
-        int u = 0;
-        switch (stage) {
-            case ENGAGED -> u = 0;
-            case TIRED -> u = 16;
-            case DISENGAGED -> u = 32;
-        }
+        // Select texture region based on charge stage
+        int u = switch (stage) {
+            case ENGAGED -> 0;
+            case TIRED -> 16;
+            case DISENGAGED -> 32;
+        };
 
-        drawContext.drawTexture(CHARGE_ICONS, x, y, u, 0, 16, 16, 48, 16);
+        // Ensure the texture is bound before drawing
+        drawContext.drawTexture(
+                CHARGE_ICONS, // Texture
+                x, y,         // Position
+                u, 0,         // Texture U/V
+                16, 16,       // Width / Height
+                48, 16        // Texture sheet width / height
+        );
     }
 }
