@@ -50,7 +50,8 @@ This data pack requires the following mods to function correctly:
 - [**Fabric Loader**](https://fabricmc.net/): The recommended mod loader for running the data pack.
 - [**Fabric API**](https://fabricmc.net/use/): Essential for running mods within the Fabric loader environment.
 - [**Origins Mod**](https://github.com/apace100/origins-fabric): Grants the base functionality for selecting an Origin with abilities and drawbacks.
-- [**Origins: Quirks (Resources)**](https://github.com/0vergrown/Origins-Quirks-Resources): A resource pack required for textures, translations, and additional visual assets.
+- [**Apugli**](https://github.com/MerchantCalico/apugli): Contains new power types, conditions and actions for Origins/Apoli datapack making.
+- [**Sync**](https://github.com/0vergrown/Sync): Library that backports some features that are present in newer versions of Origins/Apoli and brings them to 1.20.1.
 
 ## Installation
 
