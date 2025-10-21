@@ -1,6 +1,6 @@
 package dev.overgrown.quirks.client.render.feather_blade;
 
-import dev.overgrown.quirks.item.fierce_wings.FeatherBladeItem;
+import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -23,10 +23,10 @@ public class ChargeAttackRenderer implements HudRenderCallback {
         ItemStack offHand = client.player.getOffHandStack();
 
         // Check if player is holding feather blade and charging
-        if ((mainHand.getItem() instanceof FeatherBladeItem || offHand.getItem() instanceof FeatherBladeItem)
+        if ((mainHand.getItem() instanceof FeatherBlade || offHand.getItem() instanceof FeatherBlade)
                 && client.player.isUsingItem()) {
 
-            FeatherBladeItem.ChargeStage stage = FeatherBladeItem.getChargeStage(
+            FeatherBlade.ChargeStage stage = FeatherBlade.getChargeStage(
                     client.player.getActiveItem(), client.player);
 
             if (stage != null) {
@@ -35,7 +35,7 @@ public class ChargeAttackRenderer implements HudRenderCallback {
         }
     }
 
-    private void renderChargeIndicator(DrawContext drawContext, MinecraftClient client, FeatherBladeItem.ChargeStage stage) {
+    private void renderChargeIndicator(DrawContext drawContext, MinecraftClient client, FeatherBlade.ChargeStage stage) {
         int screenWidth = client.getWindow().getScaledWidth();
         int screenHeight = client.getWindow().getScaledHeight();
 

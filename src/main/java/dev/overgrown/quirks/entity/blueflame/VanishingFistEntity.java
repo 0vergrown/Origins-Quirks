@@ -1,6 +1,6 @@
 package dev.overgrown.quirks.entity.blueflame;
 
-import dev.overgrown.quirks.entity.ModEntities;
+import dev.overgrown.quirks.entity.registry.ModEntities;
 import dev.overgrown.quirks.particle.blueflame.BlueflameParticleEffect;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

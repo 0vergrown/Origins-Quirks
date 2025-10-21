@@ -444,5 +444,7 @@
   "power.quirks.zoom/hawk_panorama.name":"Hawk's Panorama",
   "power.quirks.zoom/hawk_panorama.description":"The user can temporarily expand their field of vision to see in nearly all directions at once. [Quaternary]",
 
-  "datapack.quirks.compat.icarae_origin": "Compat for Icarae Origin"
+  "datapack.quirks.compat.icarae_origin": "Compat for Icarae Origin",
+  "item.quirks.life_support_tubes": "Life-Support Tubes",
+  "item.quirks.life_support_tubes.lore": "A mask that slows the cellular degeneration in the user's body."
 }

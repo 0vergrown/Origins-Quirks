@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.entity;
+package dev.overgrown.quirks.entity.registry;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.entity.blueflame.VanishingFistEntity;

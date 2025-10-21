@@ -2,7 +2,7 @@ package dev.overgrown.quirks.entity.blueflame.client;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.entity.blueflame.VanishingFistEntity;
-import dev.overgrown.quirks.entity.client.ClientModels;
+import dev.overgrown.quirks.entity.registry.client.ClientModels;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;

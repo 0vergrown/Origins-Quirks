@@ -1,10 +1,11 @@
-package dev.overgrown.quirks.item;
+package dev.overgrown.quirks.item.registry;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowClaw;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowHead;
-import dev.overgrown.quirks.item.fierce_wings.FeatherBladeItem;
+import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
 import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
+import dev.overgrown.quirks.item.weather_manipulation.LifeSupportTubes;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
@@ -22,6 +23,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_head"), DARK_SHADOW_HEAD);
         Registry.register(Registries.ITEM, Quirks.identifier("dark_shadow_claw"), DARK_SHADOW_CLAW);
         Registry.register(Registries.ITEM, Quirks.identifier("holed_boots"), HOLED_BOOTS);
+        Registry.register(Registries.ITEM, Quirks.identifier("life_support_tubes"), LIFE_SUPPORT_TUBES);
         Registry.register(Registries.ITEM, Quirks.identifier("fierce_wings_feather"), FIERCE_WINGS_FEATHER);
         Registry.register(Registries.ITEM, Quirks.identifier("feather_blade"), FEATHER_BLADE);
     }
@@ -60,7 +62,7 @@ public class ModItems {
     };
 
     // Feather Blade Item
-    public static final Item FEATHER_BLADE = new FeatherBladeItem(
+    public static final Item FEATHER_BLADE = new FeatherBlade(
             FEATHER_BLADE_MATERIAL,
             3, // Attack damage - middle ground between stone (3) and iron (4)
             -2.4F, // Attack speed - same as gold sword for fast attacks
@@ -126,6 +128,12 @@ public class ModItems {
             ArmorItem.Type.BOOTS,
             new Item.Settings()
                     .maxCount(1)
+    );
+
+    public static final Item LIFE_SUPPORT_TUBES = new LifeSupportTubes(
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.UNCOMMON)
     );
 
     public static final Item FIERCE_WINGS_FEATHER = new Item(

@@ -1,6 +1,6 @@
 package dev.overgrown.quirks.entity.fierce_wings;
 
-import dev.overgrown.quirks.item.ModItems;
+import dev.overgrown.quirks.item.registry.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

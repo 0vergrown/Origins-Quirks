@@ -1,7 +1,7 @@
 package dev.overgrown.quirks.compat.trinkets;
 
 import dev.emi.trinkets.api.*;
-import dev.overgrown.quirks.item.ModItems;
+import dev.overgrown.quirks.item.registry.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 

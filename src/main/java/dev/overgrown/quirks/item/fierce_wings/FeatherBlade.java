@@ -1,6 +1,6 @@
 package dev.overgrown.quirks.item.fierce_wings;
 
-import dev.overgrown.quirks.item.ModItems;
+import dev.overgrown.quirks.item.registry.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -18,7 +18,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-public class FeatherBladeItem extends SwordItem {
+public class FeatherBlade extends SwordItem {
     private static final int MAX_CHARGE_TIME = 40; // 2 seconds at 20 ticks/second
     private static final float MAX_DAMAGE_MULTIPLIER = 10.0f; // Cap on maximum damage
     private static final float DAMAGE_MULTIPLIER = 0.5f; // Base damage multiplier
@@ -48,7 +48,7 @@ public class FeatherBladeItem extends SwordItem {
         }
     }
 
-    public FeatherBladeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public FeatherBlade(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 

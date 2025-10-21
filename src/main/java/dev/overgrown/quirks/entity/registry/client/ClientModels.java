@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.entity.client;
+package dev.overgrown.quirks.entity.registry.client;
 
 import dev.overgrown.quirks.Quirks;
 import net.minecraft.client.render.entity.model.EntityModelLayer;

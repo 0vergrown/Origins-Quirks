@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.item;
+package dev.overgrown.quirks.item.registry;
 
 import dev.overgrown.quirks.Quirks;
 import net.minecraft.item.ArmorItem;
