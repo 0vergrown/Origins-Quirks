@@ -8,12 +8,6 @@
             "text": "Secondary %s"
         }
     ],
-    "condition": {
-        "type": "origins:resource",
-        "resource": "quirks:universal/quirk_erased",
-        "compare_to": 0,
-        "comparison": "=="
-    },
     "type": "origins:active_self",
     "cooldown": 120,
     "entity_action": {
@@ -65,11 +59,17 @@
     },
     "hud_render": {
         "should_render": true,
-        "sprite_location": "powert:textures/gui/sprites/somnambulist/resource_bar_01.png",
+        "sprite_location": "quirks:textures/gui/sprites/somnambulist/resource_bar_01.png",
         "bar_index": 0
     },
     "key": {
         "key": "key.quirks.secondary",
         "continuous": false
-    }
+    },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "quirks:universal/quirk_erased",
+    "comparison": "==",
+    "compare_to": 0
+  }
 }

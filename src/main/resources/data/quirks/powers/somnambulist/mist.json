@@ -27,7 +27,7 @@
         "start_value": 0,
         "hud_render": {
             "should_render": true,
-            "sprite_location": "powert:textures/gui/sprites/somnambulist/resource_bar_01.png",
+            "sprite_location": "quirks:textures/gui/sprites/somnambulist/resource_bar_01.png",
             "bar_index": 1
         }
     },

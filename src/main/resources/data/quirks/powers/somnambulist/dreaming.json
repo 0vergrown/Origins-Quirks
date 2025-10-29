@@ -85,7 +85,7 @@
     },
     "mobile": {
         "type": "origins:overlay",
-        "texture": "powert:textures/overlay/sprites/vision/somnambulist/status.png",
+        "texture": "quirks:textures/overlay/sprites/vision/somnambulist/status.png",
         "red": 1,
         "green": 1,
         "blue": 1,
@@ -97,7 +97,7 @@
     },
     "vignette": {
         "type": "origins:overlay",
-        "texture": "powert:textures/overlay/sprites/vision/somnambulist/vignette.png",
+        "texture": "quirks:textures/overlay/sprites/vision/somnambulist/vignette.png",
         "red": 1,
         "green": 0.769,
         "blue": 0.98,

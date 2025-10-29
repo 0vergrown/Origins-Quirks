@@ -33,6 +33,7 @@
 - Sloshed
 - Smokescreen
 - Somnambulist
+- Steel
 - Sugar Rush
 - Watergun (Will Be Heavily Reworked)
 - Zero Gravity
@@ -40,7 +41,6 @@
 
 ## Planned Quirks
 - Hardening
-- Steel
 - Limitless
 
 ---
