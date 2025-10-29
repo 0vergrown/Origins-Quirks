@@ -163,13 +163,13 @@
       },
       "include_target":false
     },
-    "falling_action": {
-      "type": "origins:modify_resource",
-      "modifier": {
-        "operation": "set_total",
-        "value": 0
+    "falling_action":{
+      "type":"origins:modify_resource",
+      "modifier":{
+        "operation":"set_total",
+        "value":0
       },
-      "resource": "quirks:steel/rampage_resource"
+      "resource":"quirks:steel/rampage_resource"
     },
     "interval":1,
     "condition":{
@@ -182,19 +182,19 @@
           "compare_to":1
         },
         {
-          "type": "origins:or",
-          "conditions": [
+          "type":"origins:or",
+          "conditions":[
             {
-              "type": "origins:resource",
-              "resource": "quirks:steel/steel_activation_resource",
-              "comparison": "==",
-              "compare_to": 1
+              "type":"origins:resource",
+              "resource":"quirks:steel/steel_activation_resource",
+              "comparison":"==",
+              "compare_to":1
             },
             {
-              "type": "origins:resource",
-              "resource": "quirks:universal/quirk_erased",
-              "comparison": "==",
-              "compare_to": 0
+              "type":"origins:resource",
+              "resource":"quirks:universal/quirk_erased",
+              "comparison":"==",
+              "compare_to":0
             }
           ]
         },

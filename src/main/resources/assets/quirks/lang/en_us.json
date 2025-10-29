@@ -418,7 +418,7 @@
   "power.quirks.steel/steel_fist.name":"Steel Fist",
   "power.quirks.steel/steel_fist.description":"When Steel Form is active, sent enemies flying back, having them take massive amounts of damage!",
   "power.quirks.steel/rampage.name":"Rampage",
-  "power.quirks.steel/rampage.description":"Become enraged and rush toward targets that get stun when hit. [Secondary]",
+  "power.quirks.steel/rampage.description":"Become enraged and rush toward targets that get stun when hit but only for a few seconds. [Secondary]",
   "power.quirks.steel/heatetsu.name":"Heatetsu",
   "power.quirks.steel/heatetsu.description":"If on fire and Steel Form active, heat builds up which allows Steel Fist to set targets on fire.",
 

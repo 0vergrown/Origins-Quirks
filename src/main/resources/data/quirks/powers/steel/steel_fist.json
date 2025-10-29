@@ -1,14 +1,14 @@
 {
   "type":"origins:action_on_hit",
   "bientity_action":{
-    "type": "origins:and",
-    "actions": [
+    "type":"origins:and",
+    "actions":[
       {
-        "type": "origins:add_velocity",
-        "x": 0.00,
-        "y": 0.00,
-        "z": 2.00,
-        "set": false
+        "type":"origins:add_velocity",
+        "x":0.00,
+        "y":0.00,
+        "z":2.00,
+        "set":false
       },
       {
         "type":"origins:target_action",
