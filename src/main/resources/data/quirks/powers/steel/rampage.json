@@ -45,7 +45,7 @@
         },
         {
           "type":"origins:play_sound",
-          "sound":"minecraft:entity.goat.prepare_ram",
+          "sound":"minecraft:entity.iron_golem.attack",
           "volume":1.00,
           "pitch":1.00
         }
