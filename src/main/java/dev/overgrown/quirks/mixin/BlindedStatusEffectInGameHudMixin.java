@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(InGameHud.class)
-public class InGameHudMixin {
+public class BlindedStatusEffectInGameHudMixin {
 
 	@Inject(method = "render", at = @At("TAIL"))
 	private void renderBlindedOverlay(DrawContext context, float tickDelta, CallbackInfo ci) {

@@ -1,0 +1,22 @@
+{
+  "type":"origins:active_self",
+  "entity_action":{
+    "type":"origins:spawn_entity",
+    "entity_type":"minecraft:area_effect_cloud",
+    "tag":"{Particle:\"entity_effect\",Radius:3f,Duration:100,Color:9055202,Effects:[{Id:35,Amplifier:0b,Duration:100,ShowParticles:1b}]}"
+  },
+  "cooldown":60,
+  "hud_render":{
+    "should_render":false
+  },
+  "key":{
+    "key":"key.quirks.ternary",
+    "continuous":false
+  },
+  "condition":{
+    "type":"origins:resource",
+    "resource":"quirks:universal/quirk_erased",
+    "comparison":"==",
+    "compare_to":0
+  }
+}

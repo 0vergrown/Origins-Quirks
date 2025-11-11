@@ -2,6 +2,7 @@ package dev.overgrown.quirks.effect.invisibility.blinded.render;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import dev.overgrown.quirks.Quirks;
+import dev.overgrown.quirks.effect.registry.ModStatusEffects;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.GameRenderer;
@@ -16,7 +17,7 @@ public class BlindedOverlayRenderer {
 
     public static void renderOverlay(DrawContext context, float tickDelta) {
         MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null || !client.player.hasStatusEffect(Quirks.BLINDED)) return;
+        if (client.player == null || !client.player.hasStatusEffect(ModStatusEffects.BLINDED)) return;
 
         int width = client.getWindow().getScaledWidth();
         int height = client.getWindow().getScaledHeight();

@@ -3,7 +3,7 @@
 	"package": "dev.overgrown.quirks.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"InGameHudMixin"
+      "BlindedStatusEffectInGameHudMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

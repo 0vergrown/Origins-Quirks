@@ -1,4 +1,4 @@
-package dev.overgrown.quirks.client.render.feather_blade;
+package dev.overgrown.quirks.item.fierce_wings.render;
 
 import dev.overgrown.quirks.Quirks;
 import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
