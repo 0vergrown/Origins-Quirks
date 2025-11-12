@@ -11,6 +11,21 @@ base {
 }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven {
+        name = "Bawnorton Releases"
+        url = "https://maven.bawnorton.com/releases"
+    }
 	maven {
 		name = "Ladysnake Libs"
 		url = "https://maven.ladysnake.org/releases"
@@ -65,11 +80,11 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Origins dependency
-	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+	modImplementation "io.github.apace100:origins-fabric:${project.origins_version}"
 
 	// Apoli dependency
-	modApi "com.github.apace100:apoli:${project.apoli_version}"
-	include "com.github.apace100:apoli:${project.apoli_version}"
+    modApi "io.github.apace100:apoli:${project.apoli_version}"
+    include "io.github.apace100:apoli:${project.apoli_version}"
 
 	// Trinkets dependency (Optional)
 	modCompileOnly "dev.emi:trinkets:${trinkets_version}"
