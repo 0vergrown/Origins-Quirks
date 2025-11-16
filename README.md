@@ -36,6 +36,7 @@
 - Steel
 - Sugar Rush
 - Watergun (Will Be Heavily Reworked)
+- Wisteria
 - Zero Gravity
 - Zoom
 

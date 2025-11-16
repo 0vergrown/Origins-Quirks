@@ -6,6 +6,22 @@
       "type":"origins:and",
       "actions":[
         {
+          "type": "origins:modify_resource",
+          "modifier": {
+            "operation": "add_base_early",
+            "value": -10
+          },
+          "resource": "quirks:wisteria/toxin_synthesis_glands_resource"
+        },
+        {
+          "type": "origins:modify_resource",
+          "modifier": {
+            "operation": "add_base_early",
+            "value": 10
+          },
+          "resource": "quirks:wisteria/wisteria_toxemia_resource"
+        },
+        {
           "type":"origins:execute_command",
           "command":"playsound minecraft:item.trident.riptide_1 master @a ~ ~ ~ 2 2"
         },
@@ -249,18 +265,29 @@
     "cooldown":40,
     "hud_render":{
       "should_render":true,
-      "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+      "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_03.png",
       "bar_index":23
     },
     "key":{
       "key":"key.quirks.secondary",
       "continuous":false
     },
-    "condition":{
-      "type":"origins:resource",
-      "resource":"quirks:universal/quirk_erased",
-      "comparison":"==",
-      "compare_to":0
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type":"origins:resource",
+          "resource":"quirks:wisteria/toxin_synthesis_glands_resource",
+          "comparison":">=",
+          "compare_to":10
+        },
+        {
+          "type":"origins:resource",
+          "resource":"quirks:universal/quirk_erased",
+          "comparison":"==",
+          "compare_to":0
+        }
+      ]
     }
   }
 }

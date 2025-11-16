@@ -1,5 +1,7 @@
 {
   "powers": [
+    "quirks:wisteria/toxin_synthesis_glands",
+    "quirks:wisteria/wisteria_toxemia",
     "quirks:wisteria/toxic_bloom",
     "quirks:wisteria/purple_haze",
     "quirks:wisteria/cascade_of_thorns",
