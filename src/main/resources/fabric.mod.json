@@ -3,7 +3,7 @@
 	"id": "quirks",
 	"version": "${version}",
 	"name": "Quirks",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Origins Mod addon that introduces unique abilities inspired by Quirks from My Hero Academia!",
 	"authors": [
 		"Overgrown"
 	],
@@ -28,7 +28,7 @@
 		"homepage": "",
 		"sources": "https://github.com/0vergrown/Origins-Quirks"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/quirks/icon.png",
 	"environment": "*",
 	"entrypoints": {
