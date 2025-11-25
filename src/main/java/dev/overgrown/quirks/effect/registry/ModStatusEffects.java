@@ -1,6 +1,7 @@
 package dev.overgrown.quirks.effect.registry;
 
 import dev.overgrown.quirks.Quirks;
+import dev.overgrown.quirks.effect.somnambulist.dreaming.DreamingStatusEffect;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedStatusEffect;
 import dev.overgrown.quirks.effect.wisteria.WisteriaPoisonStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
@@ -11,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModStatusEffects {
     public static final StatusEffect BLINDED = register("blinded", new BlindedStatusEffect());
     public static final StatusEffect WISTERIA_POISON = register("wisteria_poison", new WisteriaPoisonStatusEffect());
+    public static final StatusEffect DREAMING = register("dreaming", new DreamingStatusEffect());
 
     private static StatusEffect register(String name, StatusEffect effect) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(Quirks.MOD_ID, name), effect);

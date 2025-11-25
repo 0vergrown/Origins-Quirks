@@ -279,23 +279,5 @@
                 }
             ]
         }
-    },
-    "label": {
-        "type": "apugli:prevent_label_render",
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:power_active",
-                    "power": "quirks:invisibility/spectral_signature_toggle"
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "quirks:invisibility/spectral_signature_cooldown",
-                    "comparison": "==",
-                    "compare_to": 0
-                }
-            ]
-        }
     }
 }

@@ -1,6 +1,7 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
+import dev.overgrown.quirks.effect.somnambulist.dreaming.DreamingEffectHandler;
 import dev.overgrown.quirks.item.fierce_wings.render.ChargeAttackRenderer;
 import dev.overgrown.quirks.compat.icarae_origin.IcaraeOriginIntegrationClient;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
@@ -60,9 +61,10 @@ public class QuirksClient implements ClientModInitializer {
                 ModEntities.FIERCE_WINGS_FEATHER_PROJECTILE,
                 FierceWingsFeatherProjectileRenderer::new
         );
-
-        // Initialize blinded effect handler
+        
+        // Initialize effect handlers
         BlindedEffectHandler.initialize();
+        DreamingEffectHandler.initialize();
 
         if(Quirks.ICARAE_COMPAT_ENABLED) {
             IcaraeOriginIntegrationClient.init();
