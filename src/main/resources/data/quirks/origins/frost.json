@@ -6,7 +6,7 @@
         "quirks:frost/cooldown/shardcd"
     ],
     "icon": "minecraft:blue_ice",
-    "unchoosable": false,
+    "unchoosable": true,
 	"order": 10,
 	"impact": 3,
 	"loading_priority": 0

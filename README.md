@@ -19,7 +19,6 @@
 - Fa Jin
 - Fierce Wings
 - Frog
-- Frost
 - Heal
 - Invisibility
 - Jet
@@ -34,15 +33,17 @@
 - Smokescreen
 - Somnambulist
 - Steel
-- Sugar Rush
 - Watergun (Will Be Heavily Reworked)
 - Wisteria
 - Zero Gravity
-- Zoom
 
 ## Planned Quirks
 - Hardening
 - Limitless
+- Decay
+- Frost
+- Sugar Rush
+- Zoom
 
 ---
 

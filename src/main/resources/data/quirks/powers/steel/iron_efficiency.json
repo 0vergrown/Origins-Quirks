@@ -11,57 +11,46 @@
     },
     "start_value":0
   },
-  "consume_food":{
-    "type":"apugli:edible_item",
-    "item_condition":{
-      "type":"origins:food"
+  "gain":{
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:modify_resource",
+      "modifier": {
+        "operation": "add_base_early",
+        "value": 1
+      },
+      "resource": "quirks:steel/iron_efficiency_resource"
     },
-    "food_component":{
-      "hunger":4,
-      "saturation":1.0,
-      "meat":false,
-      "always_edible":true,
-      "snack":false
-    },
-    "use_action":"eat",
-    "sound":"minecraft:entity.donkey.eat",
-    "entity_action":{
-      "type":"origins:choice",
-      "actions":[
+    "interval": 40,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
         {
-          "element":{
-            "type":"origins:modify_resource",
-            "modifier":{
-              "operation":"add_base_early",
-              "value":10
-            },
-            "resource":"quirks:steel/iron_efficiency_resource"
-          },
-          "weight":50
+          "type":"origins:resource",
+          "resource":"quirks:steel/iron_efficiency_resource",
+          "comparison":"!=",
+          "compare_to":100
         },
         {
-          "element":{
-            "type":"origins:modify_resource",
-            "modifier":{
-              "operation":"add_base_early",
-              "value":20
-            },
-            "resource":"quirks:steel/iron_efficiency_resource"
-          },
-          "weight":50
-        },
-        {
-          "element":{
-            "type":"origins:modify_resource",
-            "modifier":{
-              "operation":"add_base_early",
-              "value":30
-            },
-            "resource":"quirks:steel/iron_efficiency_resource"
-          },
-          "weight":50
+          "type": "origins:food_level",
+          "comparison": "!=",
+          "compare_to": 0
         }
       ]
+    }
+  },
+  "exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "value": 0.6,
+      "operation": "multiply_base",
+      "name": "Extra exhaustion from synthesizing"
+    },
+    "condition":{
+      "type":"origins:resource",
+      "resource":"quirks:wisteria/toxin_synthesis_glands_resource",
+      "comparison":"!=",
+      "compare_to":100
     }
   }
 }

@@ -6,7 +6,7 @@
 		"quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:sugar",
-	"unchoosable": false,
+	"unchoosable": true,
 	"order": 10,
 	"impact": 2,
 	"loading_priority": 0

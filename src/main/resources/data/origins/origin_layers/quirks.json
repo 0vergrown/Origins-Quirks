@@ -27,11 +27,9 @@
     "quirks:smokescreen",
     "quirks:somnambulist",
     "quirks:steel",
-    "quirks:sugar_rush",
     "quirks:watergun",
     "quirks:wisteria",
-    "quirks:zero_gravity",
-    "quirks:zoom"
+    "quirks:zero_gravity"
   ],
   "enabled":true,
   "replace":false,
@@ -44,7 +42,9 @@
   "allow_random":true,
   "allow_random_unchoosable":false,
   "exclude_random": [
-    "quirks:frost"
+    "quirks:frost",
+    "quirks:sugar_rush",
+    "quirks:zoom"
   ],
   "auto_choose":false,
   "hidden":false,
