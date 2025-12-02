@@ -1,6 +1,8 @@
 package dev.overgrown.quirks.item.registry;
 
 import dev.overgrown.quirks.Quirks;
+import dev.overgrown.quirks.item.chainsaw.ChainsawHand;
+import dev.overgrown.quirks.item.chainsaw.ChainsawHead;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowClaw;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowHead;
 import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
@@ -25,6 +27,8 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("life_support_tubes"), LIFE_SUPPORT_TUBES);
         Registry.register(Registries.ITEM, Quirks.identifier("fierce_wings_feather"), FIERCE_WINGS_FEATHER);
         Registry.register(Registries.ITEM, Quirks.identifier("feather_blade"), FEATHER_BLADE);
+        Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_hand"), CHAINSAW_HAND);
+        Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_head"), CHAINSAW_HEAD);
     }
 
     // Feather Blade Item
@@ -105,6 +109,21 @@ public class ModItems {
     public static final Item FIERCE_WINGS_FEATHER = new Item(
             new Item.Settings()
                     .maxCount(64)
+                    .rarity(Rarity.UNCOMMON)
+    );
+
+    public static final Item CHAINSAW_HAND = new ChainsawHand(
+            ChainsawHand.CHAINSAW_HAND_MATERIAL,
+            3, // Attack damage bonus
+            -2.4F, // Attack speed
+            new Item.Settings()
+                    .maxDamage(350)
+                    .rarity(Rarity.UNCOMMON)
+    );
+
+    public static final Item CHAINSAW_HEAD = new ChainsawHead(
+            new Item.Settings()
+                    .maxCount(1)
                     .rarity(Rarity.UNCOMMON)
     );
 }

@@ -1,0 +1,14 @@
+{
+  "powers":[
+    "quirks:chainsaw/slash",
+    "quirks:universal/quirk_erased"
+  ],
+  "icon":{
+    "item":"minecraft:player_head",
+    "tag":"{SkullOwner:{Id:[I;965041150,1908820146,-1894374811,108274893],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThjZjE0MTAxODUxMzMwMDIxMmYwZDZjNjJiYTlhY2M2NDc5NDUxMjg3M2UzNmZhZjBlZjVjN2U3NWQ2ODc3OCJ9fX0=\"}]}}}}}"
+  },
+  "unchoosable":false,
+  "order":10,
+  "impact":3,
+  "loading_priority":0
+}

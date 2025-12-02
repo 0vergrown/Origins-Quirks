@@ -156,6 +156,11 @@
   "power.quirks.blueflame/vanishing_fist.name":"Vanishing Fist",
   "power.quirks.blueflame/vanishing_fist.description":"Create a giant fist of fire, launching it at an opponent. [Octonary]",
 
+  "origin.quirks.chainsaw.name":"Chainsaw",
+  "origin.quirks.chainsaw.description":"Quirk Type: Mutant\n\n...",
+  "item.quirks.chainsaw_head": "Chainsaw Head",
+  "item.quirks.chainsaw_hand": "Chainsaw Hand",
+
   "origin.quirks.dark_shadow.name":"§5§lDark Shadow",
   "origin.quirks.dark_shadow.description":"Quirk Type: Emitter\n\nDark Shadow grants the user the ability to materialize a sentient, shadowy entity from within their body. This entity, also named Dark Shadow, acts as a guardian and extension of the user's will. Connected via an ethereal \"umbilical cord,\" Dark Shadow can be summoned or retracted at will, and its strength and personality fluctuate based on the surrounding light conditions.",
   "power.quirks.dark_shadow/dark_summoning.name":"Dark Summoning",
