@@ -119,4 +119,10 @@ public class ChainsawHand extends SwordItem implements Equipment {
             return TypedActionResult.fail(itemStack);
         }
     }
+
+    // Prevent enchantment glint from appearing
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return false;
+    }
 }

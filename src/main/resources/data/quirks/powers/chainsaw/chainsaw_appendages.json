@@ -1,0 +1,24 @@
+{
+  "type": "origins:starting_equipment",
+  "stacks": [
+    {
+      "item": "quirks:chainsaw_head",
+      "amount": 1,
+      "tag": "{HideFlags:37,Unbreakable:1b,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}",
+      "slot": 39
+    },
+    {
+      "item": "quirks:chainsaw_hand",
+      "amount": 1,
+      "tag": "{HideFlags:37,Unbreakable:1b,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}",
+      "slot": 40
+    },
+    {
+      "item": "quirks:chainsaw_hand",
+      "amount": 1,
+      "tag": "{HideFlags:37,Unbreakable:1b,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}",
+      "slot": 0
+    }
+  ],
+  "recurrent": true
+}
