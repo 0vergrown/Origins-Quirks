@@ -1,6 +1,7 @@
 {
   "order":10,
   "origins": [
+    "quirks:absorption_and_release",
     "quirks:acid",
     "quirks:all_for_one",
     "quirks:blackwhip",
