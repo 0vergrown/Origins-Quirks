@@ -1,4 +1,20 @@
 {
+  "badges":[
+    {
+      "type":"origins:tooltip",
+      "sprite":"quirks:textures/gui/badge/passive.png",
+      "text":{
+        "translate":"badge.quirks.passive"
+      }
+    },
+    {
+      "type":"origins:tooltip",
+      "sprite":"quirks:textures/gui/badge/bar.png",
+      "text":{
+        "translate":"badge.quirks.absorption_and_release.absorb_bar"
+      }
+    }
+  ],
   "type": "origins:multiple",
   "resource": {
     "type": "origins:resource",

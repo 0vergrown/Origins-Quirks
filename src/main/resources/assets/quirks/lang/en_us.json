@@ -4,6 +4,8 @@
   "quirks.gui.missing_quirk.name":"Missing",
   "quirks.gui.missing_quirk.description":"An error occurred. You do not have an Quirk.",
 
+  "badge.quirks.passive": "Passive ability.",
+
   "category.quirks":"Origins: Quirks",
   "key.quirks.primary":"Primary",
   "key.quirks.secondary":"Secondary",
@@ -65,6 +67,17 @@
   "item.quirks.fabric.red_fabric":"Red Fabric",
   "item.quirks.fabric.white_fabric":"White Fabric",
   "item.quirks.fabric.yellow_fabric":"Yellow Fabric",
+
+  "origin.quirks.absorption_and_release.name":"Absorption and Release",
+  "origin.quirks.absorption_and_release.description":"Quirk Type: Emitter\n\nAbsorption and Release gives its user the ability to absorb attacks, and send them back at their opponent.",
+  "power.quirks.absorption_and_release/absorb.name":"Absorb",
+  "power.quirks.absorption_and_release/absorb.description":"Getting hit by an attack causes the body to absorb the power of that attack and save it for later. However, this doesn't negate damage.",
+  "badge.quirks.absorption_and_release.absorb_bar": "Getting hit or attacked, fills up your bar.",
+  "power.quirks.absorption_and_release/release.name":"Release",
+  "power.quirks.absorption_and_release/release.description":"Release some of the stored energy in an explosion around you. [Primary]",
+  "badge.quirks.absorption_and_release.release_active": "Active ability, use with [%s].",
+  "badge.quirks.absorption_and_release.release_cycle": "Cycle ability, use with [%s].",
+  "badge.quirks.absorption_and_release.release_cycle_info": "You have 4 stages, 25%, 50%, 75%, and 100%, 25% does a small explosion with low damage and knockback, 50% does a medium explosion with medium damage and knockback, 75% does a large explosion with medium damage and knockback, and 100% does a large explosion with high damage and high knockback.",
 
   "origin.quirks.acid.name":"§d§lAcid",
   "origin.quirks.acid.description":"Quirk Type: Emitter\n\nAcid grants the user the ability to produce and manipulate a corrosive liquid from their body, allowing for a wide variety of offensive and defensive capabilities. This quirk is highly versatile, offering both ranged and close-combat options, as well as defensive shielding.",
