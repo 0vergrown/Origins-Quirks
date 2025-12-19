@@ -7,6 +7,7 @@ import dev.overgrown.quirks.item.dark_shadow.DarkShadowClaw;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowHead;
 import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
 import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
+import dev.overgrown.quirks.item.overhaul.PlagueMask;
 import dev.overgrown.quirks.item.weather_manipulation.LifeSupportTubes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -29,6 +30,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("feather_blade"), FEATHER_BLADE);
         Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_hand"), CHAINSAW_HAND);
         Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_head"), CHAINSAW_HEAD);
+        Registry.register(Registries.ITEM, Quirks.identifier("plague_mask"), PLAGUE_MASK);
     }
 
     // Feather Blade Item
@@ -125,5 +127,11 @@ public class ModItems {
             new Item.Settings()
                     .maxCount(1)
                     .rarity(Rarity.UNCOMMON)
+    );
+
+    public static final Item PLAGUE_MASK = new PlagueMask(
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.COMMON)
     );
 }

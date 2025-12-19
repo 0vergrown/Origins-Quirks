@@ -503,5 +503,6 @@
 
   "datapack.quirks.compat.icarae_origin": "Compat for Icarae Origin",
   "item.quirks.life_support_tubes": "Life-Support Tubes",
-  "item.quirks.life_support_tubes.lore": "A mask that slows the cellular degeneration in the user's body."
+  "item.quirks.life_support_tubes.lore": "A mask that slows the cellular degeneration in the user's body.",
+  "item.quirks.plague_mask": "Plague Mask"
 }
