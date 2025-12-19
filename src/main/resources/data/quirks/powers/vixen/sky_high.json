@@ -45,8 +45,8 @@
         {
           "type":"origins:spawn_particles",
           "particle":{
-            "type":"minecraft:dust_color_transition",
-            "params":"1 0.84 0 1 1 1 1"
+            "type":"minecraft:dust",
+            "params":"1 1 1 1"
           },
           "count":100,
           "speed":0.00,
@@ -82,8 +82,8 @@
     "entity_action":{
       "type":"origins:spawn_particles",
       "particle":{
-        "type":"minecraft:dust_color_transition",
-        "params":"1 0.84 0 1 1 1 1"
+        "type":"minecraft:dust",
+        "params":"1 1 1 1"
       },
       "count":5,
       "speed":0.00,
@@ -200,6 +200,32 @@
           "type":"origins:fall_distance",
           "comparison":">=",
           "compare_to":3
+        }
+      ]
+    }
+  },
+  "reset":{
+    "type":"origins:action_over_time",
+    "entity_action":{
+      "type": "origins:modify_resource",
+      "modifier": {
+        "operation": "set_total",
+        "value": 0
+      },
+      "resource": "quirks:vixen/sky_high_resource"
+    },
+    "interval":15,
+    "condition":{
+      "type":"origins:and",
+      "conditions":[
+        {
+          "type":"origins:resource",
+          "resource":"quirks:vixen/sky_high_resource",
+          "comparison":"==",
+          "compare_to":1
+        },
+        {
+          "type": "origins:on_block"
         }
       ]
     }

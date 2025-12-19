@@ -449,6 +449,15 @@
   "power.quirks.sugar_rush/candy_crush.name":"Candy Crush",
   "power.quirks.sugar_rush/candy_crush.description":"A devastating overhead slam punch designed to shatter barriers or knock an opponent to the ground with sheer force. [Secondary]",
 
+  "origin.quirks.vixen.name":"Vixen",
+  "origin.quirks.vixen.description":"Quirk Type: Emitter\n\nGrants the user the ability to temporarily increase their physical strength by converting sugar into raw power.",
+  "power.quirks.vixen/blue_fox.name":"Blue Fox",
+  "power.quirks.vixen/blue_fox.description":"Only 2.5 block tall, akin to a green-blue fox.",
+  "power.quirks.vixen/vulpine.name":"Vulpine",
+  "power.quirks.vixen/vulpine.description":"A basic claw attack. [Primary]",
+  "power.quirks.vixen/sky_high.name":"Sky High",
+  "power.quirks.vixen/sky_high.description":"Jump up into the air, leaping onto the target and causing damage in a small area after landing. [Secondary]",
+
   "origin.quirks.watergun.name":"§1§lWater Gun",
   "origin.quirks.watergun.description":"§nKota Izumi's Quirk",
 
