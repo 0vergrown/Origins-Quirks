@@ -12,6 +12,7 @@ public class ModSounds {
     public static SoundEvent ACID_SHOT_HIT;
     public static SoundEvent ACIDMAN_ACTIVATE;
     public static SoundEvent ALMA;
+    public static SoundEvent CHAINSAW;
     public static SoundEvent DANGER_SENSE_ALERT;
     public static SoundEvent STUN_GRENADE_CHARGING;
     public static SoundEvent FROSTBITE;
@@ -44,6 +45,7 @@ public class ModSounds {
         ACID_SHOT_HIT = register("acid_shot_hit");
         ACIDMAN_ACTIVATE = register("acidman_activate");
         ALMA = register("alma");
+        CHAINSAW = register("chainsaw");
         DANGER_SENSE_ALERT = register("danger_sense_alert");
         STUN_GRENADE_CHARGING = register("stun_grenade_charging");
         FROSTBITE = register("frostbite");

@@ -16,6 +16,10 @@
           "type": "origins:and",
           "actions": [
             {
+              "type": "origins:swing_hand",
+              "hand": "MAIN_HAND"
+            },
+            {
               "type": "origins:spawn_entity",
               "entity_type": "minecraft:area_effect_cloud",
               "tag": "{Duration:40,Tags:[\"quirks_vixen_vulpine_aoe\"]}",

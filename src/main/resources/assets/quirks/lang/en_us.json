@@ -170,7 +170,17 @@
   "power.quirks.blueflame/vanishing_fist.description":"Create a giant fist of fire, launching it at an opponent. [Octonary]",
 
   "origin.quirks.chainsaw.name":"Chainsaw",
-  "origin.quirks.chainsaw.description":"Quirk Type: Mutant\n\n...",
+  "origin.quirks.chainsaw.description":"Quirk Type: Mutant\n\nThe user possesses a permanent heteromorphic mutation that transforms their body into a hybrid of human and chainsaw mechanisms. Their head is replaced by a large, stylized chainsaw \"helmet\" (with the blade encircling the neck, teeth pointing upward), their forearms are replaced by fully integrated chainsaw blades extending from the elbows.",
+  "power.quirks.chainsaw/chainsaw_appendages.name":"Chainsaw Appendages",
+  "power.quirks.chainsaw/chainsaw_appendages.description":"While the blades and mechanisms are always physically present, they are inert and harmless until the Quirk is activated. Activation requires the user to \"rev\" their internal engine, typically initiated by a pulling motion on a cord-like tendon located on their chest. This converts ingested calories into bio-fuel, powering the blades and internal systems. [Primary]",
+  "power.quirks.chainsaw/fuel_dependency.name":"Fuel Dependency",
+  "power.quirks.chainsaw/fuel_dependency.description":"The Quirk's power and duration are directly tied to the user's caloric intake and metabolic fuel reserves. Fighting at full power burns energy extremely quickly, leading to rapid exhaustion and eventual \"stalling\" if not managed.",
+  "power.quirks.chainsaw/overheating.name":"Overheating",
+  "power.quirks.chainsaw/overheating.description":"Prolonged or maximum-output use generates intense friction and heat within the biological chainsaw systems. This can cause painful internal burns, muscle damage, and eventually a system \"seize-up,\" forcing a cooldown period where the Quirk is inoperable. External cooling can help mitigate this.",
+  "power.quirks.chainsaw/ripper_cutter.name":"Ripper Cutter",
+  "power.quirks.chainsaw/ripper_cutter.description":"Dash forward and do a standard, powerful slashing attack with one arm-blade. [Secondary]",
+  "power.quirks.chainsaw/cross_cutter.name":"Cross-Cutter",
+  "power.quirks.chainsaw/cross_cutter.description":"Crossing both arm-blades in a scissor motion to shred a target caught between them. [Ternary]",
   "item.quirks.chainsaw_head": "Chainsaw Head",
   "item.quirks.chainsaw_hand": "Chainsaw Hand",
 

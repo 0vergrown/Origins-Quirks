@@ -29,6 +29,12 @@
     ],
     "subtitle":"subtitles.quirks.alma"
   },
+  "chainsaw":{
+    "sounds":[
+      "quirks:chainsaw/chainsaw"
+    ],
+    "subtitle":"subtitles.quirks.chainsaw"
+  },
   "danger_sense_alert":{
     "sounds":[
       "quirks:danger_sense/alert"

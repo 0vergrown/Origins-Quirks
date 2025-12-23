@@ -1,6 +1,11 @@
 {
   "powers":[
     "quirks:chainsaw/chainsaw_appendages",
+    "quirks:chainsaw/fuel_dependency",
+    "quirks:chainsaw/overheating",
+    "quirks:chainsaw/ripper_cutter",
+    "quirks:chainsaw/cross_cutter",
+    "quirks:chainsaw/precision_cut",
     "quirks:universal/quirk_erased"
   ],
   "icon": "quirks:chainsaw_head",
