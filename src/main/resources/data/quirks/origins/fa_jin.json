@@ -1,12 +1,11 @@
 {
 	"powers": [
-		"quirks:fa_jin/kinetic_energy",
-		"quirks:fa_jin/kinetic_charge",
-		"quirks:fa_jin/burst_dash",
-		"quirks:fa_jin/energy_leap",
-		"quirks:fa_jin/power_strike",
-		"quirks:fa_jin/explosive_release",
-		"quirks:universal/quirk_erased"
+      "quirks:fa_jin/one_inch_burst",
+      "quirks:fa_jin/piston_step",
+      "quirks:fa_jin/staccato_strikes",
+      "quirks:fa_jin/kinetic_echo",
+      "quirks:fa_jin/full_body_cadence",
+      "quirks:universal/quirk_erased"
 	],
 	"icon":"minecraft:redstone",
 	"unchoosable": false,
