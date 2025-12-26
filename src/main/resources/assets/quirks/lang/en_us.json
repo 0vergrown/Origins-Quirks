@@ -247,10 +247,8 @@
   "power.quirks.fa_jin/piston_step.description":"Charging by rhythmically stamping in place, then releasing the energy into a single ground-shaking step that propels the user forward that creates a localized tremor. [Secondary]",
   "power.quirks.fa_jin/staccato_strikes.name":"Staccato Strikes",
   "power.quirks.fa_jin/staccato_strikes.description":"A combo technique. The user throws a quick, light jab (charge 1), a cross (charge 2), and a hook (charge 3), each building a separate charge. They then immediately repeat the exact combo, releasing all three charges in sequence. [Ternary]",
-  "power.quirks.fa_jin/kinetic_echo.name":"Kinetic Echo",
-  "power.quirks.fa_jin/kinetic_echo.description":"A defensive technique. By performing a precise, rhythmic bracing motion against an incoming attack, the user can store a small amount of the impact's energy and immediately release it back, creating a powerful parry. [Quaternary]",
   "power.quirks.fa_jin/full_body_cadence.name":"Full-Body Cadence",
-  "power.quirks.fa_jin/full_body_cadence.description":"... [Quinary]",
+  "power.quirks.fa_jin/full_body_cadence.description":"A full-body charging sequence. Takes much longer to build but creates a charge that can be released through any major motion, allowing for a single, full-power enhanced attack. [Quaternary]",
 
   "origin.quirks.fierce_wings.name":"§c§lFierce Wings",
   "origin.quirks.fierce_wings.description":"Quirk Type: Mutant\n\nFierce Wings grants the user a pair of large, crimson wings composed of dozens of individual, telekinetically controlled feathers.",
