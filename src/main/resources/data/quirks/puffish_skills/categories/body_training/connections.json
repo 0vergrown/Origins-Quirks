@@ -1,0 +1,58 @@
+{
+	"normal": {
+		"bidirectional": [
+			[
+				"i7u4tnyeqj0f8o62",
+				"jwmmijx0p32mx5qy"
+			],
+			[
+				"01d46r6qa8ek2po0",
+				"l2na3xyncgro7y46"
+			],
+			[
+				"2l6b9kv5skb0j8m5",
+				"xjxncqlmywn0xvfo"
+			],
+			[
+				"g583vshlavfw12q0",
+				"l6fs38acz91a0k60"
+			],
+			[
+				"43imvwai6rn79ec6",
+				"7zfbjz9uagtxf3ss"
+			],
+			[
+				"43imvwai6rn79ec6",
+				"3lbfgdhxk6ir27ov"
+			],
+			[
+				"43imvwai6rn79ec6",
+				"tfpea1t3x5li4ph6"
+			],
+			[
+				"43imvwai6rn79ec6",
+				"4k248wiab4qndi2r"
+			],
+			[
+				"4k248wiab4qndi2r",
+				"c6oz4qht3jayttcl"
+			],
+			[
+				"c6oz4qht3jayttcl",
+				"8kbthb1wjfp738z3"
+			]
+		]
+	},
+	"exclusive": {
+		"bidirectional": [
+			[
+				"3lbfgdhxk6ir27ov",
+				"7zfbjz9uagtxf3ss"
+			],
+			[
+				"4k248wiab4qndi2r",
+				"tfpea1t3x5li4ph6"
+			]
+		]
+	}
+}

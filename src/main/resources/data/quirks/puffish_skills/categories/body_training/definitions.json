@@ -1,0 +1,438 @@
+{
+	"stamina_basic": {
+		"title": {
+			"text": "Basic Stamina",
+			"color": "green"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:haste"
+			}
+		},
+		"description": {
+			"text": "Increase your stamina by 0.5",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		],
+		"cost": 1,
+		"metadata": {
+			"icon": "ogkblt4lfquilb2d"
+		}
+	},
+	"stamina_advanced": {
+		"title": {
+			"text": "Advanced Stamina",
+			"color": "dark_green"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:haste"
+			}
+		},
+		"description": {
+			"text": "Increase your stamina by 1.0",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		],
+		"cost": 2,
+		"metadata": {
+			"icon": "yfckg87jyq8hiybj"
+		}
+	},
+	"strength_basic": {
+		"title": {
+			"text": "Basic Strength",
+			"color": "red"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_sword"
+			}
+		},
+		"description": {
+			"text": "Increase attack damage by 10%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 1,
+		"metadata": {
+			"icon": "weyg8l85ear2cc9x"
+		}
+	},
+	"strength_advanced": {
+		"title": {
+			"text": "Advanced Strength",
+			"color": "dark_red"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_sword"
+			}
+		},
+		"description": {
+			"text": "Increase attack damage by 20%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 0.2,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 2,
+		"metadata": {
+			"icon": "s4nyq08z8q03tujq"
+		}
+	},
+	"speed_basic": {
+		"title": {
+			"text": "Basic Speed",
+			"color": "blue"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"description": {
+			"text": "Increase movement speed by 5%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 1,
+		"metadata": {
+			"icon": "6ffw3i6ogl8mvaoo"
+		}
+	},
+	"speed_advanced": {
+		"title": {
+			"text": "Advanced Speed",
+			"color": "dark_blue"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:speed"
+			}
+		},
+		"description": {
+			"text": "Increase movement speed by 10%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 2,
+		"metadata": {
+			"icon": "lc3psc0q61xq42tq"
+		}
+	},
+	"durability_basic": {
+		"title": {
+			"text": "Basic Durability",
+			"color": "yellow"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"description": {
+			"text": "Increase resistance by 5%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.05,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 1,
+		"metadata": {
+			"icon": "mo6e690m15yktynx"
+		}
+	},
+	"durability_advanced": {
+		"title": {
+			"text": "Advanced Durability",
+			"color": "gold"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:resistance"
+			}
+		},
+		"description": {
+			"text": "Increase resistance by 10%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:resistance",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 2,
+		"metadata": {
+			"icon": "gbn2otdz04r79c0t"
+		}
+	},
+	"reflexes_core": {
+		"title": {
+			"text": "Reflex Training",
+			"color": "aqua"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rabbit_foot"
+			}
+		},
+		"description": {
+			"text": "Unlock advanced reflex techniques",
+			"color": "white"
+		},
+		"cost": 1,
+		"metadata": {
+			"icon": "57txzxwulbl41udh"
+		}
+	},
+	"side_step_reflex": {
+		"title": {
+			"text": "Side Step",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"description": {
+			"text": "Double-tap movement keys to dash in that direction",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills_origins:power",
+				"data": {
+					"power": "quirks:universal/reflex_training/side_step"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "8t2kl51subi7ilif"
+		}
+	},
+	"double_jump_reflex": {
+		"title": {
+			"text": "Double Jump",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:levitation"
+			}
+		},
+		"description": {
+			"text": "Jump again while in mid-air",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills_origins:power",
+				"data": {
+					"power": "quirks:universal/reflex_training/double_jump"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "vd64m0igkseq5zyb"
+		}
+	},
+	"roll_reflex": {
+		"title": {
+			"text": "Roll",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:leather"
+			}
+		},
+		"description": {
+			"text": "Roll to dodge attacks and reduce damage",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills_origins:power",
+				"data": {
+					"power": "quirks:universal/reflex_training/roll"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "8nzdo4ghgof3o006"
+		}
+	},
+	"wall_run_reflex": {
+		"title": {
+			"text": "Wall Running",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:phantom_membrane"
+			}
+		},
+		"description": {
+			"text": "Run on walls for short distances",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills_origins:power",
+				"data": {
+					"power": "quirks:universal/reflex_training/wall_running"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "4pqbencyp4ka0g65"
+		}
+	},
+	"wall_jump_reflex": {
+		"title": {
+			"text": "Wall Jump",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:slime_block"
+			}
+		},
+		"description": {
+			"text": "Jump off walls to gain height",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills_origins:power",
+				"data": {
+					"power": "quirks:universal/reflex_training/wall_jump"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "v1l3zzddjdk9km73"
+		}
+	},
+	"fall_reduction_reflex": {
+		"title": {
+			"text": "Fall Reduction",
+			"color": "light_purple"
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "minecraft:slow_falling"
+			}
+		},
+		"description": {
+			"text": "Reduce fall damage by 25%",
+			"color": "white"
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 0.25,
+					"operation": "multiply_total"
+				}
+			}
+		],
+		"cost": 3,
+		"required_exclusions": 1,
+		"metadata": {
+			"icon": "43tfd16nighiogp4"
+		}
+	}
+}

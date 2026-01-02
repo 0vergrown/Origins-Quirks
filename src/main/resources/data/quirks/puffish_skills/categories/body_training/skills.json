@@ -1,0 +1,92 @@
+{
+	"01d46r6qa8ek2po0": {
+		"definition": "stamina_basic",
+		"x": 0,
+		"y": -32,
+		"root": true
+	},
+	"i7u4tnyeqj0f8o62": {
+		"definition": "strength_basic",
+		"x": -32,
+		"y": 0,
+		"root": true
+	},
+	"g583vshlavfw12q0": {
+		"definition": "speed_basic",
+		"x": 0,
+		"y": 32,
+		"root": true
+	},
+	"2l6b9kv5skb0j8m5": {
+		"definition": "durability_basic",
+		"x": 32,
+		"y": 0,
+		"root": true
+	},
+	"l2na3xyncgro7y46": {
+		"definition": "stamina_advanced",
+		"x": 0,
+		"y": -96,
+		"root": false
+	},
+	"jwmmijx0p32mx5qy": {
+		"definition": "strength_advanced",
+		"x": -96,
+		"y": 0,
+		"root": false
+	},
+	"l6fs38acz91a0k60": {
+		"definition": "speed_advanced",
+		"x": 0,
+		"y": 96,
+		"root": false
+	},
+	"xjxncqlmywn0xvfo": {
+		"definition": "durability_advanced",
+		"x": 96,
+		"y": 0,
+		"root": false
+	},
+	"43imvwai6rn79ec6": {
+		"definition": "reflexes_core",
+		"x": 0,
+		"y": 0,
+		"root": true
+	},
+	"7zfbjz9uagtxf3ss": {
+		"definition": "side_step_reflex",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"3lbfgdhxk6ir27ov": {
+		"definition": "double_jump_reflex",
+		"x": -64,
+		"y": -64,
+		"root": false
+	},
+	"tfpea1t3x5li4ph6": {
+		"definition": "roll_reflex",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"4k248wiab4qndi2r": {
+		"definition": "fall_reduction_reflex",
+		"x": -64,
+		"y": 64,
+		"root": false
+	},
+	"c6oz4qht3jayttcl": {
+		"definition": "wall_run_reflex",
+		"x": -96,
+		"y": 128,
+		"root": false
+	},
+	"8kbthb1wjfp738z3": {
+		"definition": "wall_jump_reflex",
+		"x": -64,
+		"y": 128,
+		"root": false
+	}
+}

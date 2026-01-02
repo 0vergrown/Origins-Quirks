@@ -1,0 +1,14 @@
+{
+  "normal":{
+    "bidirectional":[
+      [
+        "enhanced_gaze",
+        "extended_duration"
+      ],
+      [
+        "extended_duration",
+        "awakened_erasure"
+      ]
+    ]
+  }
+}

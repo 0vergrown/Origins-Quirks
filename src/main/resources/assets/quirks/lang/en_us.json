@@ -1,4 +1,22 @@
 {
+  "category.quirks.universal.title": "Universal Quirk Training",
+  "category.quirks.universal.description": "Basic attributes and abilities for all quirk users",
+
+  "category.quirks.erasure.title": "Erasure Mastery",
+  "category.quirks.erasure.description": "Enhance your ability to nullify quirks",
+
+  "category.quirks.invisibility.title": "Invisibility Evolution",
+  "category.quirks.invisibility.description": "Master the art of light manipulation",
+
+  "skill.quirks.universal.stamina_tier1.title": "Basic Stamina Training",
+  "skill.quirks.universal.stamina_tier1.description": "Increase your stamina capacity by 50%",
+
+  "skill.quirks.erasure.enhanced_gaze.title": "Enhanced Gaze",
+  "skill.quirks.erasure.enhanced_gaze.description": "Increases Erasure range by 50% and duration by 30%",
+
+  "skill.quirks.invisibility.improved_refraction.title": "Improved Refraction",
+  "skill.quirks.invisibility.improved_refraction.description": "Reduces visibility detection by 40%",
+
   "quirks.gui.choose_quirk.title":"Choose your Quirk.",
   "quirks.gui.view_quirk.title":"This is your Quirk.",
   "quirks.gui.missing_quirk.name":"Missing",
