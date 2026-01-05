@@ -11,8 +11,8 @@
        },
        {
          "attribute":"minecraft:generic.knockback_resistance",
-         "operation":"multiply_total",
-         "value":0.33,
+         "operation":"addition",
+         "value":999,
          "name": "Quirks: Fa Jin Staccato Strikes Disable Knockback"
        }
      ],
