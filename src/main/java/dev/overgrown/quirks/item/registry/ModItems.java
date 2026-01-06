@@ -6,6 +6,8 @@ import dev.overgrown.quirks.item.chainsaw.ChainsawHead;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowClaw;
 import dev.overgrown.quirks.item.dark_shadow.DarkShadowHead;
 import dev.overgrown.quirks.item.fierce_wings.FeatherBlade;
+import dev.overgrown.quirks.item.gearshift.GearshiftGauntlet;
+import dev.overgrown.quirks.item.gearshift.PointedBlade;
 import dev.overgrown.quirks.item.grenadier_bracer.GrenadierBracer;
 import dev.overgrown.quirks.item.overhaul.PlagueMask;
 import dev.overgrown.quirks.item.weather_manipulation.LifeSupportTubes;
@@ -31,6 +33,8 @@ public class ModItems {
         Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_hand"), CHAINSAW_HAND);
         Registry.register(Registries.ITEM, Quirks.identifier("chainsaw_head"), CHAINSAW_HEAD);
         Registry.register(Registries.ITEM, Quirks.identifier("plague_mask"), PLAGUE_MASK);
+        Registry.register(Registries.ITEM, Quirks.identifier("gearshift_gauntlet"), GEARSHIFT_GAUNTLET);
+        Registry.register(Registries.ITEM, Quirks.identifier("pointed_blade"), POINTED_BLADE);
     }
 
     // Feather Blade Item
@@ -133,5 +137,20 @@ public class ModItems {
             new Item.Settings()
                     .maxCount(1)
                     .rarity(Rarity.COMMON)
+    );
+
+    public static final Item GEARSHIFT_GAUNTLET = new GearshiftGauntlet(
+            GearshiftGauntlet.GEARSHIFT_GAUNTLET_MATERIAL,
+            6, // Attack damage bonus (total will be 6 + material base)
+            -2.8F, // Slower attack speed (blunt weapon)
+            new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.RARE)
+    );
+
+    public static final Item POINTED_BLADE = new PointedBlade(
+            new Item.Settings()
+                    .maxCount(16) // Can stack like arrows
+                    .rarity(Rarity.UNCOMMON)
     );
 }

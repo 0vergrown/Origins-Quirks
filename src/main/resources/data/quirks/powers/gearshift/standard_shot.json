@@ -1,0 +1,250 @@
+{
+  "type":"origins:fire_projectile",
+  "entity_type":"quirks:pointed_blade_projectile",
+  "cooldown":20,
+  "hud_render":{
+    "should_render":true,
+    "sprite_location":"origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index":2
+  },
+  "count":1,
+  "interval":1,
+  "start_delay":1,
+  "speed":2.00,
+  "divergence":1.00,
+  "key":{
+    "key":"key.quirks.primary",
+    "continuous":false
+  },
+  "projectile_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:dust",
+          "params": "0.11 0.44 0.85 0.5"
+        },
+        "count": 16,
+        "speed": 0.00,
+        "force": true,
+        "spread": {
+          "x": 0.50,
+          "y": 0.00,
+          "z": 0.50
+        },
+        "offset_x": 0.00,
+        "offset_y": 0.00,
+        "offset_z": 0.00
+      }
+    ]
+  },
+  "shooter_action":{
+    "type":"origins:modify_inventory",
+    "inventory_type":"inventory",
+    "item_action":{
+      "type":"origins:consume",
+      "amount":1
+    },
+    "item_condition":{
+      "type":"origins:ingredient",
+      "ingredient":{
+        "item":"quirks:pointed_blade"
+      }
+    },
+    "process_mode":"stacks",
+    "limit":1
+  },
+  "condition":{
+    "type":"origins:and",
+    "conditions":[
+      {
+        "type":"origins:equipped_item",
+        "equipment_slot":"mainhand",
+        "item_condition":{
+          "type":"origins:ingredient",
+          "ingredient":{
+            "item":"quirks:gearshift_gauntlet"
+          }
+        }
+      },
+      {
+        "type":"origins:inventory",
+        "inventory_types":[
+          "inventory"
+        ],
+        "process_mode":"stacks",
+        "item_condition":{
+          "type":"origins:ingredient",
+          "ingredient":{
+            "item":"quirks:pointed_blade"
+          }
+        },
+        "comparison":">=",
+        "compare_to":1
+      }
+    ]
+  }
+}

@@ -2,6 +2,8 @@ package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
 import dev.overgrown.quirks.effect.somnambulist.dreaming.DreamingEffectHandler;
+import dev.overgrown.quirks.entity.gearshift.client.PointedBladeModel;
+import dev.overgrown.quirks.entity.gearshift.client.PointedBladeProjectileRenderer;
 import dev.overgrown.quirks.item.fierce_wings.render.ChargeAttackRenderer;
 import dev.overgrown.quirks.compat.icarae_origin.IcaraeOriginIntegrationClient;
 import dev.overgrown.quirks.effect.invisibility.blinded.BlindedEffectHandler;
@@ -60,6 +62,17 @@ public class QuirksClient implements ClientModInitializer {
         EntityRendererRegistry.register(
                 ModEntities.FIERCE_WINGS_FEATHER_PROJECTILE,
                 FierceWingsFeatherProjectileRenderer::new
+        );
+
+        // Register Pointed Blade projectile renderer
+        EntityRendererRegistry.register(
+                ModEntities.POINTED_BLADE_PROJECTILE,
+                PointedBladeProjectileRenderer::new
+        );
+
+        EntityModelLayerRegistry.registerModelLayer(
+                ClientModels.POINTED_BLADE_LAYER,
+                PointedBladeModel::getTexturedModelData
         );
         
         // Initialize effect handlers
