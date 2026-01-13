@@ -5,6 +5,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -32,20 +33,12 @@ public class PointedBlade extends Item {
             projectile.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 1.0F);
 
             // Check if the item stack has CanRicochet NBT data
-            if (itemStack.hasNbt() && itemStack.getNbt().contains("CanRicochet")) {
+            if (itemStack.hasNbt()) {
                 NbtCompound nbt = itemStack.getNbt();
-                boolean canRicochet = false;
-
-                // Support both numeric (1/0) and boolean values
-                if (nbt.get("CanRicochet").getType() == 1) { // Byte type
-                    canRicochet = nbt.getByte("CanRicochet") == 1;
-                } else if (nbt.get("CanRicochet").getType() == 3) { // Int type
-                    canRicochet = nbt.getInt("CanRicochet") == 1;
-                } else {
-                    canRicochet = nbt.getBoolean("CanRicochet");
+                if (nbt != null && nbt.contains("CanRicochet")) {
+                    boolean canRicochet = readCanRicochetFromNbt(nbt);
+                    projectile.setCanRicochet(canRicochet);
                 }
-
-                projectile.setCanRicochet(canRicochet);
             }
 
             // Reduce item count in creative mode
@@ -60,5 +53,21 @@ public class PointedBlade extends Item {
         user.incrementStat(Stats.USED.getOrCreateStat(this));
 
         return TypedActionResult.success(itemStack, world.isClient());
+    }
+
+    private boolean readCanRicochetFromNbt(NbtCompound nbt) {
+        // Get the NbtElement safely
+        NbtElement element = nbt.get("CanRicochet");
+        if (element != null) {
+            // Support both numeric (1/0) and boolean values
+            if (element.getType() == NbtElement.BYTE_TYPE) { // Byte type
+                return nbt.getByte("CanRicochet") == 1;
+            } else if (element.getType() == NbtElement.INT_TYPE) { // Int type
+                return nbt.getInt("CanRicochet") == 1;
+            } else {
+                return nbt.getBoolean("CanRicochet");
+            }
+        }
+        return false;
     }
 }

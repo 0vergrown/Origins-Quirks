@@ -18,6 +18,11 @@ public class ModSounds {
     public static SoundEvent FROSTBITE;
     public static SoundEvent FROST_SHARD1;
     public static SoundEvent FROST_SHARD2;
+    public static SoundEvent GEARSHIFT_BARRAGE_PROTOCOL;
+    public static SoundEvent GEARSHIFT_FAILED;
+    public static SoundEvent GEARSHIFT_KINETIC_BRAKE;
+    public static SoundEvent GEARSHIFT_STANDARD_SHOT;
+    public static SoundEvent GEARSHIFT_STINGER_SHOT;
     public static SoundEvent HEAL_KISS;
     public static SoundEvent INVISIBILITY_BLINDED;
     public static SoundEvent INVISIBILITY_CLOAK;
@@ -51,6 +56,11 @@ public class ModSounds {
         FROSTBITE = register("frostbite");
         FROST_SHARD1 = register("frost_shard1");
         FROST_SHARD2 = register("frost_shard2");
+        GEARSHIFT_BARRAGE_PROTOCOL = register("gearshift_barrage_protocol");
+        GEARSHIFT_FAILED = register("gearshift_failed");
+        GEARSHIFT_KINETIC_BRAKE = register("gearshift_kinetic_brake");
+        GEARSHIFT_STANDARD_SHOT = register("gearshift_standard_shot");
+        GEARSHIFT_STINGER_SHOT = register("gearshift_stinger_shot");
         HEAL_KISS = register("heal_kiss");
         INVISIBILITY_BLINDED = register("invisibility_blinded");
         INVISIBILITY_CLOAK = register("invisibility_cloak");

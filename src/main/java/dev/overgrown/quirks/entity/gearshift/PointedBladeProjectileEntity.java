@@ -7,6 +7,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.hit.BlockHitResult;
@@ -78,18 +79,13 @@ public class PointedBladeProjectileEntity extends PersistentProjectileEntity {
 
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
-        // Check if we can ricochet
+        // Apply damage first (call parent method)
+        super.onEntityHit(entityHitResult);
+
+        // Then check if we can ricochet
         if (canRicochet && ricochetCount < MAX_RICOCHETS) {
             ricochet(entityHitResult);
             ricochetCount++;
-            return;
-        }
-
-        super.onEntityHit(entityHitResult);
-
-        // Play hit sound
-        if (!this.getWorld().isClient) {
-            this.playSound(SoundEvents.ITEM_TRIDENT_HIT, 1.0F, 1.0F);
         }
     }
 
@@ -196,13 +192,16 @@ public class PointedBladeProjectileEntity extends PersistentProjectileEntity {
 
         // Read ricochet data
         if (nbt.contains("CanRicochet")) {
-            // Support both numeric (1/0) and boolean values
-            if (nbt.get("CanRicochet").getType() == 1) { // Byte type
-                this.canRicochet = nbt.getByte("CanRicochet") == 1;
-            } else if (nbt.get("CanRicochet").getType() == 3) { // Int type
-                this.canRicochet = nbt.getInt("CanRicochet") == 1;
-            } else {
-                this.canRicochet = nbt.getBoolean("CanRicochet");
+            NbtElement element = nbt.get("CanRicochet");
+            if (element != null) {
+                // Support both numeric (1/0) and boolean values
+                if (element.getType() == NbtElement.BYTE_TYPE) { // Byte type
+                    this.canRicochet = nbt.getByte("CanRicochet") == 1;
+                } else if (element.getType() == NbtElement.INT_TYPE) { // Int type
+                    this.canRicochet = nbt.getInt("CanRicochet") == 1;
+                } else {
+                    this.canRicochet = nbt.getBoolean("CanRicochet");
+                }
             }
         }
         this.ricochetCount = nbt.getInt("RicochetCount");

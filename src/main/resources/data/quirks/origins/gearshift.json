@@ -1,5 +1,7 @@
 {
   "powers": [
+    "quirks:gearshift/peashooter",
+    "quirks:gearshift/five_minute_rule",
     "quirks:gearshift/standard_shot",
     "quirks:gearshift/stinger_shot",
     "quirks:gearshift/ricochet_symphony",

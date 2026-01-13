@@ -65,6 +65,36 @@
     ],
     "subtitle":"subtitles.quirks.frost_shard"
   },
+  "gearshift_barrage_protocol":{
+    "sounds":[
+      "quirks:gearshift/barrage_protocol"
+    ],
+    "subtitle":"subtitles.quirks.gearshift_barrage_protocol"
+  },
+  "gearshift_failed":{
+    "sounds":[
+      "quirks:gearshift/gearshift_failed"
+    ],
+    "subtitle":"subtitles.quirks.gearshift_failed"
+  },
+  "gearshift_kinetic_brake":{
+    "sounds":[
+      "quirks:gearshift/kinetic_brake"
+    ],
+    "subtitle":"subtitles.quirks.gearshift_kinetic_brake"
+  },
+  "gearshift_standard_shot":{
+    "sounds":[
+      "quirks:gearshift/standard_shot"
+    ],
+    "subtitle":"subtitles.quirks.gearshift_standard_shot"
+  },
+  "gearshift_stinger_shot":{
+    "sounds":[
+      "quirks:gearshift/stinger_shot"
+    ],
+    "subtitle":"subtitles.quirks.gearshift_stinger_shot"
+  },
   "heal_kiss":{
     "sounds":[
       "quirks:heal/kiss"

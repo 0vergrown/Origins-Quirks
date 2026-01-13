@@ -12,6 +12,8 @@
     "requireAnnotations": true
   },
   "client": [
-    "DreamingStatusEffectInGameHudMixin"
+    "DreamingStatusEffectInGameHudMixin",
+    "OverwindCameraShakeMixin",
+    "OverwindClientTickMixin"
   ]
 }

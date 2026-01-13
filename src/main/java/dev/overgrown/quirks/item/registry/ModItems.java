@@ -150,7 +150,7 @@ public class ModItems {
 
     public static final Item POINTED_BLADE = new PointedBlade(
             new Item.Settings()
-                    .maxCount(16) // Can stack like arrows
+                    .maxCount(12)
                     .rarity(Rarity.UNCOMMON)
     );
 }

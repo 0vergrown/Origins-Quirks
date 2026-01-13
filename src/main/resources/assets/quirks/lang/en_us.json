@@ -320,6 +320,7 @@
   "power.quirks.gearshift/barrage_protocol.description":"Loads the Gearshift Gauntlets with their full cylinder (6 shots each) and fire all 12 bullets in a spread, then uses Gearshift with both hands to individually guide each bullet in a simultaneous convergent attack from multiple angles. This technique instantly maxes out the cooldown timer and leaves the hands bleeding from nerve cluster strain. [Quinary]",
   "item.quirks.gearshift_gauntlet": "Gearshift Gauntlet",
   "item.quirks.pointed_blade": "Pointed Blade",
+  "quirks.warning.gearshift.failed": "Gearshift isn't able to manipulate that much weight, it's painful to force it. Try something else!",
 
   "origin.quirks.heal.name":"§4§lHeal",
   "origin.quirks.heal.description":"Quirk Type: Emitter\n\nHeal grants the user the ability to heal themselves and others, accelerating natural recovery processes. However, the greater the amount of health restored, the more stamina the user expends. The Quirk works both on living creatures and the user themselves, with a focus on rapid, targeted healing at a personal cost.",
