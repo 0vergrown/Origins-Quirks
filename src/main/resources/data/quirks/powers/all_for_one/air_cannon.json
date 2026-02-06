@@ -91,7 +91,7 @@
                                   {
                                      "type":"origins:origin",
                                      "origin":"quirks:all_for_one",
-                                     "layer":"origins:powers",
+                                     "layer":"origins:quirks",
                                      "inverted":true
                                   }
                                ]

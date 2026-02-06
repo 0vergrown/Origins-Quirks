@@ -1,7 +1,6 @@
 package dev.overgrown.quirks;
 
 import dev.overgrown.quirks.client.keybind.PowerKeybinds;
-import dev.overgrown.quirks.effect.gearshift.overwind.OverwindEffectHandler;
 import dev.overgrown.quirks.effect.somnambulist.dreaming.DreamingEffectHandler;
 import dev.overgrown.quirks.entity.gearshift.client.PointedBladeModel;
 import dev.overgrown.quirks.entity.gearshift.client.PointedBladeProjectileRenderer;
@@ -79,7 +78,6 @@ public class QuirksClient implements ClientModInitializer {
         // Initialize effect handlers
         BlindedEffectHandler.initialize();
         DreamingEffectHandler.initialize();
-        OverwindEffectHandler.initialize();
 
         if(Quirks.ICARAE_COMPAT_ENABLED) {
             IcaraeOriginIntegrationClient.init();
