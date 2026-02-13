@@ -8,7 +8,7 @@
   "icon": {
     "type": "texture",
     "data": {
-      "texture": "quirks:textures/icons/progression.png"
+      "texture": "quirks:textures/gui/skill_tree/icons/progression.png"
     }
   },
   "background": "minecraft:textures/block/stone_bricks.png",
