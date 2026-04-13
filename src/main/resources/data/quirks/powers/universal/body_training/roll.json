@@ -1,14 +1,5 @@
 {
   "type": "origins:multiple",
-  "jump": {
-    "type": "origins:modify_jump",
-    "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "quirks:universal/reflex_training/roll_bar",
-      "change": 1,
-      "operation": "add"
-    }
-  },
   "bar": {
     "type": "origins:resource",
     "min": 0,
@@ -20,6 +11,15 @@
       "bar_index": 4
     }
   },
+  "jump": {
+    "type": "origins:modify_jump",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "quirks:universal/body_training/roll_bar",
+      "change": 1,
+      "operation": "add"
+    }
+  },
   "recover": {
     "type": "origins:action_on_land",
     "entity_action": {
@@ -27,13 +27,13 @@
       "actions": [
         {
           "type": "origins:change_resource",
-          "resource": "quirks:universal/reflex_training/roll_bars",
+          "resource": "quirks:universal/body_training/roll_bars",
           "change": 4,
           "operation": "add"
         },
         {
           "type": "origins:change_resource",
-          "resource": "quirks:universal/reflex_training/roll_bar",
+          "resource": "quirks:universal/body_training/roll_bar",
           "change": 1,
           "operation": "add"
         }
@@ -45,12 +45,12 @@
       "type": "origins:and",
       "conditions": [
         {
-          "inverted": true,
-          "type": "origins:on_block"
+          "type": "origins:on_block",
+          "inverted": true
         },
         {
           "type": "origins:resource",
-          "resource": "quirks:universal/reflex_training/roll_bar",
+          "resource": "quirks:universal/body_training/roll_bar",
           "comparison": "==",
           "compare_to": 1
         }
@@ -72,7 +72,7 @@
           "type": "origins:delay",
           "action": {
             "type": "origins:change_resource",
-            "resource": "quirks:universal/reflex_training/roll_bar",
+            "resource": "quirks:universal/body_training/roll_bar",
             "change": -1,
             "operation": "add"
           },
@@ -128,7 +128,7 @@
         },
         {
           "type": "origins:resource",
-          "resource": "quirks:universal/reflex_training/roll_bar",
+          "resource": "quirks:universal/body_training/roll_bar",
           "comparison": "==",
           "compare_to": 0
         }

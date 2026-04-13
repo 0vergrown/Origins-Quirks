@@ -1,7 +1,7 @@
 {
     "name":"Glacial Shard",
     "description":"Throw out a shard of ice, slowing the entity hit.",
-    "type":"apugli:custom_projectile",
+    "type":"sync:custom_projectile",
     "cooldown":40,
     "hud_render":{
         "should_render":false,

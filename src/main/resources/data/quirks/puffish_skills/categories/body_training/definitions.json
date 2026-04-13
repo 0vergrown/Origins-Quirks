@@ -741,11 +741,9 @@
 				}
 			},
 			{
-				"type": "puffish_skills:attribute",
+				"type": "puffish_skills_origins:power",
 				"data": {
-					"attribute": "combatroll:distance",
-					"value": 0.3,
-					"operation": "multiply_base"
+					"power": "quirks:body_training/roll"
 				}
 			}
 		],

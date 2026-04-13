@@ -1,0 +1,18 @@
+{
+	"normal": {
+		"bidirectional": [
+			[
+				"spatial_efficiency",
+				"void_mastery"
+			],
+			[
+				"mental_resilience",
+				"void_mastery"
+			],
+			[
+				"void_mastery",
+				"awakened_limitless"
+			]
+		]
+	}
+}

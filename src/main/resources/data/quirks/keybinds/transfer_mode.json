@@ -1,4 +1,5 @@
 {
   "key": "key.keyboard.g",
-  "category": "key.category.all_for_one"
+  "category": "key.category.quirks",
+  "name": "Changes Transfer Modes"
 }

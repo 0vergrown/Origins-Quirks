@@ -1,31 +1,27 @@
 plugins {
-	id 'fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
 
-base {
-	archivesName = project.archives_base_name
-}
-
 repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
-            }
-        }
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
-    maven {
-        name = "Bawnorton Releases"
-        url = "https://maven.bawnorton.com/releases"
-    }
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+	maven {
+		name = "Bawnorton Releases"
+		url = "https://maven.bawnorton.com/releases"
+	}
 	maven {
 		name = "Ladysnake Libs"
 		url = "https://maven.ladysnake.org/releases"
@@ -48,20 +44,20 @@ repositories {
 	maven {
 		url = "https://maven.terraformersmc.com"
 	}
-    maven {
-        name = "TeamResourceful"
-        url = "https://maven.teamresourceful.com/repository/maven-releases"
-    }
-    maven {
-        name = "JourneyMap"
-        url = "https://jm.gserv.me/repository/maven-public"
-    }
-    maven {
-        url = "https://maven.uuid.gg/releases"
-    }
-    maven {
-        url "https://jitpack.io"
-    }
+	maven {
+		name = "TeamResourceful"
+		url = "https://maven.teamresourceful.com/repository/maven-releases"
+	}
+	maven {
+		name = "JourneyMap"
+		url = "https://jm.gserv.me/repository/maven-public"
+	}
+	maven {
+		url = "https://maven.uuid.gg/releases"
+	}
+	maven {
+		url "https://jitpack.io"
+	}
 }
 
 fabricApi {
@@ -77,24 +73,24 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	// Origins dependency
 	modImplementation "io.github.apace100:origins-fabric:${project.origins_version}"
 
 	// Apoli dependency
-    modApi "io.github.apace100:apoli:${project.apoli_version}"
-    include "io.github.apace100:apoli:${project.apoli_version}"
+	modApi "io.github.apace100:apoli:${project.apoli_version}"
+	include "io.github.apace100:apoli:${project.apoli_version}"
 
 	// Trinkets dependency (Optional)
 	modCompileOnly "dev.emi:trinkets:${trinkets_version}"
 
-    // Icarae Origin
-    modCompileOnly "dev.cammiescorner.icarus:Icarus-Fabric:${icarus_version}"
-    modCompileOnly "dev.upcraft.origins.icarae:Icarae-Origin-Fabric:${icarae_origin_version}"
-    // Icarae Origin (runtime)
-    modLocalRuntime "dev.cammiescorner.icarus:Icarus-Fabric:${icarus_version}"
-    modLocalRuntime "dev.upcraft.origins.icarae:Icarae-Origin-Fabric:${icarae_origin_version}"
+	// Icarae Origin
+	modCompileOnly "dev.cammiescorner.icarus:Icarus-Fabric:${icarus_version}"
+	modCompileOnly "dev.upcraft.origins.icarae:Icarae-Origin-Fabric:${icarae_origin_version}"
+	// Icarae Origin (runtime)
+	modLocalRuntime "dev.cammiescorner.icarus:Icarus-Fabric:${icarus_version}"
+	modLocalRuntime "dev.upcraft.origins.icarae:Icarae-Origin-Fabric:${icarae_origin_version}"
 	
 }
 
@@ -121,10 +117,10 @@ java {
 }
 
 jar {
-	inputs.property "archivesName", project.base.archivesName
+	inputs.property "projectName", project.name
 
 	from("LICENSE") {
-		rename { "${it}_${inputs.properties.archivesName}"}
+		rename { "${it}_${project.name}"}
 	}
 }
 
@@ -132,7 +128,6 @@ jar {
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
 			from components.java
 		}
 	}

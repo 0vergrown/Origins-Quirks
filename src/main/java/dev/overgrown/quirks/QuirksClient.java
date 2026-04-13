@@ -1,6 +1,5 @@
 package dev.overgrown.quirks;
 
-import dev.overgrown.quirks.client.keybind.PowerKeybinds;
 import dev.overgrown.quirks.effect.somnambulist.dreaming.DreamingEffectHandler;
 import dev.overgrown.quirks.entity.gearshift.client.PointedBladeModel;
 import dev.overgrown.quirks.entity.gearshift.client.PointedBladeProjectileRenderer;
@@ -27,8 +26,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 public class QuirksClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        // Register keybinds
-        PowerKeybinds.register();
 
         ChargeAttackRenderer.initialize();
 
