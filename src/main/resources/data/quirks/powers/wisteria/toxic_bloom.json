@@ -63,40 +63,17 @@
             },
             {
               "type":"origins:spawn_particles",
-              "particle":"minecraft:witch",
-              "count":50,
-              "speed":0.01,
-              "force":true,
-              "spread":{
-                "x":4.00,
-                "y":2.00,
-                "z":4.00
+              "particle": {
+                "type": "minecraft:dust_color_transition",
+                "params": "0.6 0.4 0.8 1.9 0.6 0.2 0.6"
               },
-              "offset_y":0.00
-            },
-            {
-              "type":"origins:spawn_particles",
-              "particle":"minecraft:dragon_breath",
-              "count":100,
+              "count":20,
               "speed":0.01,
               "force":true,
               "spread":{
-                "x":3.00,
-                "y":1.00,
-                "z":3.00
-              },
-              "offset_y":0.00
-            },
-            {
-              "type":"origins:spawn_particles",
-              "particle":"minecraft:dripping_obsidian_tear",
-              "count":50,
-              "speed":0.01,
-              "force":true,
-              "spread":{
-                "x":3.00,
-                "y":1.00,
-                "z":3.00
+                "x":1.40,
+                "y":1.40,
+                "z":1.40
               },
               "offset_y":0.00
             }
