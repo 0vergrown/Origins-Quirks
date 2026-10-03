@@ -1,6 +1,6 @@
-# Origins: Quirks
+# Quirks
 
-**Origins: Quirks** is a Minecraft data pack that introduces unique abilities inspired by Quirks from *My Hero Academia*. Each Quirk grants players new ways to interact with the world, offering a diverse and customizable gameplay experience. With a custom progression system, quirk strength scaling, and proficiency mechanics, players can evolve their abilities based on their gameplay style.
+## Setup
 
 ## Features
 - **Custom Quirks**: A variety of Quirks inspired by *My Hero Academia* with unique abilities.
@@ -73,8 +73,4 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 
 ## License
 
-This project is licensed under the All Rights Reserved License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-- Special thanks to the *My Hero Academia* community for inspiration.
-- Thanks to the [Origins Mod](https://github.com/apace100/origins-fabric) creators for providing a fantastic mod to build on.
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
