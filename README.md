@@ -54,6 +54,7 @@ This data pack requires the following mods to function correctly:
 - [**Origins Mod**](https://github.com/apace100/origins-fabric): Grants the base functionality for selecting an Origin with abilities and drawbacks.
 - [**Apugli**](https://github.com/MerchantCalico/apugli): Contains new power types, conditions and actions for Origins/Apoli datapack making.
 - [**Sync**](https://github.com/0vergrown/Sync): Library that backports some features that are present in newer versions of Origins/Apoli and brings them to 1.20.1.
+- [**Function Macro Backport**](https://github.com/ThatRobin/FunctionMacroBackport): Backports the Function Macro feature from 1.20.2 to 1.20.1.
 
 ## Installation
 
